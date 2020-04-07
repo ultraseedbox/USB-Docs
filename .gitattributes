@@ -1,0 +1,4 @@
+*.md       text
+*.html     text
+*.jpg -text
+*.png -text
