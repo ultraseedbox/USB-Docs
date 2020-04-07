@@ -47,6 +47,12 @@ For should you need to use callouts, refer to the following
 <p class="callout danger">Your danger text here.</p>
 ```
 
+Add `<c></c>` before the callout for MD-style links to work.
+
+```
+<c><p class="callout info">Your info text here [with some links](https://www.example.com/).</p></c>
+```
+
 # License
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0
