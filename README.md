@@ -6,7 +6,7 @@ This is an ongoing project. There maybe some missing guides and inconsistencies.
 
 # How to contribute?
 
-To contribute, just submit a PR here.
+To contribute, just submit a PR here. Once approved, it will be uploaded to USB Docs.
 
 Note that all of the articles in here and in the docs site uses Markdown except for the following:
 
@@ -21,7 +21,7 @@ Images needed to be in center.
 ```
 ## Callouts
 
-For should you need to use callouts, refer to the following 
+Should you need to use callouts, refer to the following 
 
 ### Info
 
