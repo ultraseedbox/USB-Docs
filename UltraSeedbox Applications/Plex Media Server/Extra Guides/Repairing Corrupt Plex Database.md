@@ -1,7 +1,11 @@
-This is a guide for recovering your plex database. You may get this error if your library fails to scan or maybe your plex logs contain the following lines,
-"Database corruption at line......"
+This is a guide for recovering your plex database. You may get this error if your library fails to scan or maybe your plex logs contain the following lines, "Database corruption at line......"
 
-Before starting *MAKE SURE* you have *plex stopped* in your UCP and your *gdrive mount is stopped (this includes mergerfs)* if you have this configured. 
+Before starting *MAKE SURE* you have *plex stopped* in your UCP and your *gdrive mount is stopped (this includes mergerfs)* if you have this configured. (Knowledge of the windows command line, using ssh to access your slot and ftp access will be used in this guide.)
+
+https://kb.ultraseedbox.com/display/DOC/How+to+connect+via+FTP+to+your+account+using+FileZilla
+https://kb.ultraseedbox.com/display/DOC/Connecting+to+seedbox+via+SSH
+https://www.digitalcitizen.life/command-prompt-how-use-basic-commands
+
 
 Next lets make a backup of your plex database directory over ssh by running this command, ``rar a plexdb.rar "$HOME/.config/plex/Library/Application Support/Plex Media Server/Plug-in Support/Databases/*"``
 ```bash
@@ -55,7 +59,7 @@ Next we need to download the sqlite tool package to repair the database. You can
 
 Once its downloaded make sure to extract the zip file.
 
-Now we need to transfer your database to your computer to be repaired. We can do this over sftp. If you dont know how to ftp into your box you can find out more here. https://kb.ultraseedbox.com/display/DOC/How+to+connect+via+FTP+to+your+account+using+FileZilla
+Now we need to transfer your database to your computer to be repaired. We can do this over sftp. If you dont know how to ftp into your box you can find out more here.
 
 In your remote site: Navigate to ``.config/plex/Library/Application Support/Plex Media Server/Plug-in Support/Databases/``
 
