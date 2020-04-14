@@ -72,7 +72,13 @@ Then we need to download the database file named: ``com.plexapp.plugins.library.
 <img src="https://i.imgur.com/1cvJEbj.png">
 </p>
 
-Open a command prompt directory in the path of your sqlite directory (If you do not know how to do this check out https://www.digitalcitizen.life/command-prompt-how-use-basic-commands)
+Open a command prompt window directory in the path of your sqlite directory (If you do not know how to do this check out https://www.digitalcitizen.life/command-prompt-how-use-basic-commands)
+
+An easy way to open a comand prompt windows is to travel to the sqlite directory inside windows explore, shift + right-click, open a powershell windows here, then run `cmd`
+
+<p align="center">
+<img src="https://i.imgur.com/sJcLuoX.png">
+</p>
 
 Now lets repair the database by running the following commands,
 ```batch
