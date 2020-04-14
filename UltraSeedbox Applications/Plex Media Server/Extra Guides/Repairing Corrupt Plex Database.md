@@ -47,7 +47,11 @@ Details: RAR 4
               3689392                    8
 ```
 
-Next we need to download the sqlite tool package to repair the database. You can find this at https://www.sqlite.org/download.html | Direct link to the one in this guide, https://www.sqlite.org/2020/sqlite-tools-win32-x86-3310100.zip
+Next we need to download the sqlite tool package to repair the database. You can find this at https://www.sqlite.org/download.html and you want `sqlite-tools-win32-x86` (Direct link to the one in this guide, https://www.sqlite.org/2020/sqlite-tools-win32-x86-3310100.zip )
+
+<p align="center">
+<img src="https://i.imgur.com/krJ1id8.png">
+</p>
 
 Once its downloaded make sure to extract the zip file.
 
@@ -56,6 +60,10 @@ Now we need to transfer your database to your computer to be repaired. We can do
 In your remote site: Navigate to ``.config/plex/Library/Application Support/Plex Media Server/Plug-in Support/Databases/``
 
 Then we need to download the database file named: ``com.plexapp.plugins.library.db`` To our sqlite directory. (This might be in your downloads or wherever your web browser downloads files too.)
+
+<p align="center">
+<img src="https://i.imgur.com/1cvJEbj.png">
+</p>
 
 Open a command prompt directory in the path of your sqlite directory (If you do not know how to do this check out https://www.digitalcitizen.life/command-prompt-how-use-basic-commands)
 
@@ -73,10 +81,17 @@ To make sure our database has been properly repaired we can run,
 ```batch
 sqlite3 com.plexapp.plugins.library.db "PRAGMA integrity_check"
 ```
+<p align="center">
+<img src="https://i.imgur.com/0ssdzyL.png">
+</p>
 
 Next we want to go back to filezilla to transfer the repaired database. 
 Drag the new repaired database back into the directory on your seedbox (/.config/plex/Library/Application Support/Plex Media Server/Plug-in Support/Databases)
 *if it asks you to overwrite the one on your seedbox hit yes.*
+
+<p align="center">
+<img src="https://i.imgur.com/prKYLue.png">
+</p>
 
 Now we need to delete two extra files before restarting plex (and mounts if you have them.)
 
@@ -85,5 +100,9 @@ Inside Filezilla delete,
 com.plexapp.plugins.library.db-shm
 com.plexapp.plugins.library.db-wal
 ```
+
+<p align="center">
+<img src="https://i.imgur.com/IVyxFBg.png">
+</p>
 
 Now from the UCP you can restart your mounts if you have them and plex. Some media might be missing if that was corrupted from the last import, you can trigger a manual re-scan or let plex auto re-scan. 
