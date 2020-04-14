@@ -99,8 +99,8 @@ sqlite3 com.plexapp.plugins.library.db "PRAGMA integrity_check"
 </p>
 
 Next we want to go back to filezilla to transfer the repaired database. 
-Drag the new repaired database back into the directory on your seedbox (/.config/plex/Library/Application Support/Plex Media Server/Plug-in Support/Databases)
-*if it asks you to overwrite the one on your seedbox hit yes.*
+Drag the new repaired database back into the directory on your seedbox `/.config/plex/Library/Application Support/Plex Media Server/Plug-in Support/Databases`
+*if it asks you to overwrite the one on your seedbox hit ok.*
 
 <p align="center">
 <img src="https://i.imgur.com/prKYLue.png">
