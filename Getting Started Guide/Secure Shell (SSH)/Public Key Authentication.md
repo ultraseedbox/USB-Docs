@@ -1,8 +1,9 @@
-**SSH key pair authentication** is a recommended method of logging into your seedbox via SSH for added security and convenience in place of our SSH password. You can place the public key on your slot, and then unlock it by connecting to it with a client that has the private key. When the two match up, the system unlocks without the need for a password. The major advantage of this is that it is not prone to brute-force attacks. You can increase security even more by protecting your private key with a passphrase.  
-  
+**SSH key pair authentication** is a recommended method of logging into your seedbox via SSH for added security and convenience in place of our SSH password. You can place the public key on your slot, and then unlock it by connecting to it with a client that has the private key. When the two match up, the system unlocks without the need for a password. The major advantage of this is that this authentication method provides greater cryptographic strength than long passwords, rendering it not prone to brute-force attacks. You can increase security even more by protecting your private key with a passphrase.
+
 In this tutorial, we would be showing you on how to generate your own key pair using several tools, how to transfer your public key to your slot and how to login using key pair authentication.
 
 ***
+
 #  OpenSSH
 
 This should work on Linux, MacOS and Windows 10 Users. If you haven't set OpenSSH up, you may refer to [on how to connect to your seedbox via SSH for installation and setup of OpenSSH for Windows 10, Linux and MacOS.](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/how-to-connect-to-your-seedbox-via-ssh "How to connect to your seedbox via SSH")
