@@ -2,9 +2,11 @@
 
 This is the git repository for [Ultraseedbox Docs](https://docs.usbx.me/) powered by [BookStack](https://www.bookstackapp.com/).
 
-This is an ongoing project. There maybe some missing guides and inconsistencies. This repo will be updated as new guides have been published to the USB Docs.
+This is an ongoing project. There maybe some missing guides and inconsistencies.
 
-# How to contribute?
+This repo will be updated as new guides have been published to the USB Docs.
+
+# How to contribute? (WIP)
 
 To contribute, just submit a PR here. Once approved, it will be uploaded to USB Docs.
 
