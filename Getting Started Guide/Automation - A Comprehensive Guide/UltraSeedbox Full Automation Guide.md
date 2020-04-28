@@ -17,16 +17,16 @@ In some sections, we provide options as to what software you will use and we als
 
 ***
 
-# Prerequisites
+## Prerequisites
 
 After your slot has been deployed and you've reset your UCP password, you first need to do to this.
 
-## FTP
+### FTP
 
 * [Connecting to your seedbox with FTP](https://docs.usbx.me/books/file-transfer-protocol-%28ftp%29/page/connecting-to-your-seedbox-with-ftp)
 * [Recommended FTP Clients](https://docs.usbx.me/books/file-transfer-protocol-%28ftp%29/page/recommended-ftp-clients)
 
-## SSH
+### SSH
 
 * [How to connect to your seedbox via SSH](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/how-to-connect-to-your-seedbox-via-ssh)
 * [Public Key Authentication (Optional but recommended)](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/public-key-authentication)
@@ -34,98 +34,96 @@ After your slot has been deployed and you've reset your UCP password, you first 
 
 ***
 
-# Download Clients
+## Download Clients
 
 Download clients are the ones tasked to download files from your sources. Depending on what you have, you may have access to trackers and/or usenet providers.
 
 With this assumption, we recommend choosing 1 torrent downloader and 1 usenet downloader to install.
 
-## Torrent Client
+### Torrent Client
 
-### rTorrent + ruTorrent (Recommended)
+#### rTorrent + ruTorrent (Recommended)
 
 * [ruTorrent Initial Setup and Configuration](https://docs.usbx.me/books/rtorrentrutorrent/page/initial-setup-and-configuration)
 * [Limiting Seeding Ratio in ruTorrent](https://docs.usbx.me/books/rtorrentrutorrent/page/limiting-seeding-ratio-in-rutorrent)
 * [Automatically Unpack Archived Files with ruTorrent](https://docs.usbx.me/books/rtorrentrutorrent/page/automatically-unpack-archived-files-with-rutorrent)
 
-### Deluge
+#### Deluge
 
 * [Deluge Initial Setup and Configuration](https://docs.usbx.me/books/deluge/page/initial-setup-and-configuration)
 * [Limiting Seeding Ratio in Deluge](https://docs.usbx.me/books/deluge/page/limiting-seeding-ratio-in-deluge)
 
 
-### Transmission
+#### Transmission
 
 * [Transmission Intiial Setup and Configuration](https://docs.usbx.me/books/transmission/page/initial-setup-and-configuration)
 * [Limit Seeding Ratio in Transmission](https://docs.usbx.me/books/transmission/page/limit-seeding-ratio-in-transmission)
 
-## Usenet Downloader
+### Usenet Downloader
 
-### SABnzbd (Recommended)
+#### SABnzbd (Recommended)
 
 * [Initial Setup and Configuration](https://docs.usbx.me/books/sabnzbd/page/initial-setup-and-configuration)
 
-### NZBGet
+#### NZBGet
 
 * [NZBGet Initial Setup and Configuration](https://docs.usbx.me/books/nzbget/page/initial-setup-and-configuration)
 
 ***
 
-# Media Library Managers
+## Media Library Managers
 
 Media Library Managers are the ones that integrate between your download clients, your media sources and your media players. These are the ones that download, organize your media and integrate with media players. The following are our recommendations.
 
-## Sonarr + Radarr (Recommended)
+### Sonarr + Radarr (Recommended)
 
-### Sonarr
+#### Sonarr
 
 * [Sonarr Initial Setup and Configuration](https://docs.usbx.me/books/sonarr/page/initial-setup-and-configuration)
 * [Sonarr Download Client Connection Details](https://docs.usbx.me/books/sonarr/page/download-client-connection-details)
 
-### Radarr
+#### Radarr
 
 * [Radarr Initial Setup and Configuration](https://docs.usbx.me/books/radarr/page/initial-setup-and-configuration)
 * [Radarr Download Client Connection Details](https://docs.usbx.me/books/radarr/page/download-client-connection-details)
 
-## Medusa + CouchPotato
+### Medusa + CouchPotato
 
-### Medusa
+#### Medusa
 
-### CouchPotato
+#### CouchPotato
 
 ***
 
-# Media Servers
+## Media Servers
 
 These are the ones that stream and playback your media using our servers to your home. You may choose either 1 of the following:
 
-## Plex Media Server (Recommended)
+### Plex Media Server (Recommended)
 
 * [PMS Initial Setup and Configuration](https://docs.usbx.me/books/plex-media-server/page/initial-setup-and-configuration)
 * [Plex Plugin Installers (Optional)](https://docs.usbx.me/books/plex-media-server/page/plex-plugin-installers)
 
-## Emby Media Server
+### Emby Media Server
 
 * [Emby Initial Setup and Configuration](https://docs.usbx.me/books/emby/page/initial-setup-and-configuration)
 * [Emby Client Connection Settings](https://docs.usbx.me/books/emby/page/emby-client-connection-settings)
 
-## Jellyfin
+### Jellyfin
 
 * [Initial Setup and Configuration](https://docs.usbx.me/books/jellyfin/page/initial-setup-and-configuration)
 * [Jellyfin Client Connection Settings](https://docs.usbx.me/books/jellyfin/page/jellyfin-client-connection-settings)
 
 ***
 
-# Request Agents
+## Request Agents
 
 Although not required, these applications integrate between your Media Managers and you by providing friendly user interfaces to request shows/movies instead of you accessing your media manager. It also has eatures that simplfy your media experience. The following apps are recommended:
 
-## Ombi
+### Ombi
 
 * [Ombi Initial Setup and Configuration](https://docs.usbx.me/books/ombi/page/initial-setup-and-configuration)
 
-## Requestrr
+### Requestrr
 
 * [Requestrr Initial Setup and Configuration](https://docs.usbx.me/books/requestrr/page/initial-setup-and-configuration)
-
-## NZB360

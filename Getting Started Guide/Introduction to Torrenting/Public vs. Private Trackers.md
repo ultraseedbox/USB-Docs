@@ -1,6 +1,8 @@
 While dealing with torrents you will likely come across the terminology "public" and "private". What these words are referring to are trackers or tracker communities. "Public trackers" are open sites where you can easily access all the content regardless of if you're a member or not. Likewise, "Private trackers" are closed sites which require you to be a member to access the content.
 
-# Public Trackers
+***
+
+## Public Trackers
 
 The vast majority of files shared via torrents are shared via public trackers. The reason for this is simple, anyone can access them. Things that are shared via public trackers include Linux ISOs, updates for games, public information dumps/leaks and other media.
 
@@ -8,14 +10,14 @@ Public trackers often contain a large variety of torrents without a huge amount 
 
 Public trackers do not have a requirement of seeding content you download, this is as it is difficult to track snatches and upload. As a result it is part of our terms that you do not seed a public torrent file past a ratio of 2:1 (uploading 2x what you downloaded). This is mostly to reduce network strain and keep our network pleasant for all customers to use.
 
-## Pros
+### Pros
 
 * Easily accessible
 * No ratio requirements
 * Large variety of material on a single site
 * No community standing to maintain
 
-## Cons
+### Cons
 
 * Unsorted content
 * Often less content than a more dedicated site
@@ -24,7 +26,7 @@ Public trackers do not have a requirement of seeding content you download, this 
 
 ***
 
-# Private Trackers
+## Private Trackers
 
 Private trackers are by nature, closed communities. Access to these sites requires a prospective member to either receive an invite from a friend, apply to an open signup or gain entry from invite forums on another site. While on one hand this can be seen as a great roadblock and unfair, it does aid in maintaining a community that truly cares about the content, and as a result these sites are often better organised or focused.
 
@@ -32,14 +34,14 @@ There are many private tracker sites, with most having a specific focus. The fra
 
 Private trackers often however have a ratio requirement, this means you must seed back a percentage of what you download, usually around 60-100%. This however means a lot of the time, torrents on private sites are in good health and well seeded.
 
-## Pros
+### Pros
 
 * Quality sorted content
 * Easily automated
 * Often strong sense of community
 * Home to rare and sought after files
 
-## Cons
+### Cons
 
 * Sometimes hard to gain access to
 * Ratio requirements can be difficult for new users
