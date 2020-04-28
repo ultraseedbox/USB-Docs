@@ -4,16 +4,16 @@ In this tutorial, we would be showing you on how to generate your own key pair u
 
 ***
 
-#  OpenSSH
+## OpenSSH
 
 This should work on Linux, MacOS and Windows 10 Users. If you haven't set OpenSSH up, you may refer to [on how to connect to your seedbox via SSH for installation and setup of OpenSSH for Windows 10, Linux and MacOS.](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/how-to-connect-to-your-seedbox-via-ssh "How to connect to your seedbox via SSH")
 
-## Creating Public and Private Keys
+### Creating Public and Private Keys
 
 * On your computer, type in `ssh-keygen` and press **ENTER**. This should start generating public and private key pairs.
   * By default it generates a 2048-bit RSA key pair which is sufficient in most cases
 
-```
+```sh
 $ ssh-keygen
 Generating public/private rsa key pair.
 ```
@@ -29,7 +29,7 @@ Generating public/private rsa key pair.
   * For linux it's `/home/username/.ssh`
   * You may also specify an alternate path.
 
-```
+```sh
 $ ssh-keygen -b 4096
 Generating public/private rsa key pair.
 Enter file in which to save the key (/your_home/.ssh/id_rsa):
@@ -39,7 +39,7 @@ Enter file in which to save the key (/your_home/.ssh/id_rsa):
   * It is recommended to add in a passphrase
   * A passphrase adds an additional layer of security to prevent unauthorized users from logging in should they have your private key
 
-```
+```sh
 $ ssh-keygen -b 4096
 Generating public/private rsa key pair.
 Enter file in which to save the key (/your_home/.ssh/id_rsa):
@@ -49,7 +49,7 @@ Enter same passphrase again:
 
 * Then you should see the following output. You now have a public (`id_rsa`) and a private key (`id_rsa.pub`) stored in your Home folder (or on the path you set) that you can use to authenticate when logging into SSH.
 
-```
+```sh
 $ ssh-keygen -b 4096
 Generating public/private rsa key pair.
 Enter file in which to save the key (/your_home/.ssh/id_rsa):
@@ -73,11 +73,11 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-## Importing Your Public Key into your Seedbox
+### Importing Your Public Key into your Seedbox
 
 Now, we will import the keys you just generated to your seedbox. There are several methods for this and is described below.
 
-### ssh-copy-id
+#### ssh-copy-id
 
 * This is the easiest and the most recommended but this command only works for Linux.
 * For MacOS, you might need to install it. To check, open up a terminal and type `ssh-copy-id`.
@@ -87,13 +87,13 @@ Now, we will import the keys you just generated to your seedbox. There are sever
   * Install using CURL: `curl -L https:``//raw.githubusercontent.com/beautifulcode/ssh-copy-id-for-OSX/master/install.sh | sh`
 * Type in `ssh-copy-id [username@lwxxx.usbx.me] or ssh-copy-id username@lwxxx.usbx.me`
 
-```
+```sh
 $ ssh-copy-id kbguides@kbguides.lw902.usbx.me
 ```
 
 * The following output appears. This is normal. This means that your computer does not recognize your seedbox. This will happen the first time you connect to a new host. Type `yes` and press **ENTER** to continue.
 
-```
+```sh
 $ ssh-copy-id kbguides@lw902.usbx.me
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/xanban/.ssh/id_rsa.pub"
 The authenticity of host 'kbguides.lw902.usbx.me (46.182.109.120)' can't be established.
@@ -103,7 +103,7 @@ Are you sure you want to continue connecting (yes/no)?
 
 * Type in the SSH password you set in UCP
 
-```
+```sh
 $ ssh-copy-id kbguides@kbguides.lw902.usbx.me
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/xanban/.ssh/id_rsa.pub"
 The authenticity of host 'kbguides.lw902.usbx.me (46.182.109.120)' can't be established.
@@ -116,7 +116,7 @@ kbguides@kbguides.lw902.usbx.me's password:
 
 * Once you entered your password, OpenSSH will connect to the seedbox. It will then copy the contents of your `~/.ssh/id_rsa.pub` key into a file in your seedbox's home directory at `~/.ssh` called `authorized_keys`. Then you should see the following output. At this point, your `id_rsa.pub` key has been uploaded to the seedbox.
 
-```
+```sh
 $ ssh-copy-id kbguides@kbguides.lw902.usbx.me
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/xanban/.ssh/id_rsa.pub"
 The authenticity of host 'kbguides.lw902.usbx.me (46.182.109.120)' can't be established.
@@ -136,7 +136,7 @@ Now try logging into the machine, with: "ssh 'kbguides@kbguides.lw902.usbx.me'" 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-10/CommandPrompt201905081116.gif"></p>
 
-### Manually copying contents of your public key to your seedbox
+#### Manually copying contents of your public key to your seedbox
 
 This is another way is to manually copy the contents of your private key file to your seedbox should ssh-copy-id failed. This method works on Windows, Linux and MacOS users.
 
@@ -150,7 +150,7 @@ This is another way is to manually copy the contents of your private key file to
 * Once logged in, create a directory named `.ssh` with `mkdir -p ~/.ssh`
 * Then do `echo public_key_string >> ~/.ssh/authorized_keys` replacing `public_key_string` with the contents of your public key file
 
-```
+```sh
 kbguides@lw902:~$ mkdir -p ~/.ssh
 kbguides@lw902:~$ echo ssh-rsa AAAAB3NzaC1ycrandom_characters_here_lol xanban@randomPC >> ~/.ssh/authorized_keys
 ```
@@ -171,13 +171,13 @@ kbguides@lw902:~$
 
 ***
 
-# PuTTYgen
+## PuTTYgen
 
 This method works for Windows users only. 
 
-## Creating Key Pairs Using PuTTYgen
+### Creating Key Pairs Using PuTTYgen
 
-*   Open up PuTTYgen. You'll be greeted with this window. 
+* Open up PuTTYgen. You'll be greeted with this window. 
 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-8-8_19-42-17%5B1%5D.png">
@@ -205,7 +205,7 @@ This method works for Windows users only. 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-10/3%5B1%5D.PNG">
 </p>
-                                                                           
+
 * When finished, you'll see the following information.
   * You may optionally enter your password in the Key Passphrase and Confirm passphrase text boxes
     * It is recommended to add in a passphrase
@@ -229,23 +229,23 @@ This method works for Windows users only. 
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-8-8_19-40-6%5B1%5D.png">
 </p>
 
-## Importing Public Key to your Seedbox
+### Importing Public Key to your Seedbox
 
 * Login to your seedbox using the set password in UCP
 * Once logged in, create a directory named `.ssh` with `mkdir -p ~/.ssh`
 * Then do `echo public_key_string >> ~/.ssh/authorized_keys` replacing `public_key_string` with the generated public key file in PuTTYgen.
 
-```
+```sh
 kbguides@lw950:~$ mkdir -p ~/.sshkbguides@lw950:~$ echo ssh-rsa AAAAAAAAlol rsa-key-2012-12-12 >> ~/.ssh/authorized_keys
 ```
 
 * Then type `chmod -R go= ~/.ssh` to recursively removes all “group” and “other” permissions for the `~/.ssh/` directory.
 
-```
+```sh
 kbguides@lw950:~$ chmod -R go= ~/.ssh
 ```
 
-## Setting PuTTY to use Key Authentication
+### Setting PuTTY to use Key Authentication
 
 * Open PuTTY and load up your session
 

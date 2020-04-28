@@ -9,7 +9,7 @@ All of our seedbox plans come with SSH access.
 
 ***
 
-# Changing your SSH Password
+## Changing your SSH Password
 
 Before logging into your SSH, you should first set your own SSH/FTP password.
 
@@ -45,13 +45,13 @@ Before logging into your SSH, you should first set your own SSH/FTP password.
 
 ***
 
-# SSH Clients and How to Connect
+## SSH Clients and How to Connect
 
-## OpenSSH
+### OpenSSH
 
 OpenSSH is an open source alternative to the proprietary Secure Shell software suite offered by SSH Communications Security and is bundled with some Linux distributions and MacOS. It is also an optional feature in Windows 10 since the October 2018 Update (Version 1809).
 
-### Installing OpenSSH in Windows 10
+#### Installing OpenSSH in Windows 10
 
 * To install OpenSSH client, go to Settings then go to **Apps** > **Apps and Features** > **Manage Optional Features**. Then, click **Add a feature**.
 
@@ -71,7 +71,7 @@ OpenSSH is an open source alternative to the proprietary Secure Shell software s
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-7_7-49-42%5B1%5D.png">
 </p>
 
-### Installing OpenSSH in Linux
+#### Installing OpenSSH in Linux
 
 Some LInux distributions have OpenSSH client installed as part of their bundle. Provided below are the commands to install OpenSSH client in some of the popular Linux distributions.
 
@@ -83,7 +83,7 @@ Arch Linux/Manjaro Linux: sudo pacman -Syyu openssh
 Fedora: sudo dnf install -y openssh-client;
 ```
 
-### Accessing Seedbox’s Terminal via OpenSSH
+#### Accessing Seedbox’s Terminal via OpenSSH
 
 The following screenshots are from Windows' command prompt but it should be the same on Windows, Linux and MacOS.
 
@@ -120,15 +120,15 @@ ssh username@username.lwxxx.usbx.me (usbdocs@usbdocs.lw500.usbx.me)
 
 ***
 
-## PuTTY
+### PuTTY
 
 PuTTY is a free and open-source GUI SSH, Telnet, Rlogin and serial port connection client for Windows. You may also use this to connect to your seedbox.
 
-### Installation
+#### Installation
 
 * Download and install the latest release of PuTTY [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 
-### Setting up PuTTY
+#### Setting up PuTTY
 
 * Launch PuTTY and you'll be greeted with this window.
 
