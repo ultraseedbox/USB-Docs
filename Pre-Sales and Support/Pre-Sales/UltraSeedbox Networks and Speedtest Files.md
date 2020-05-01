@@ -6,26 +6,39 @@ Here, we list the networks we use and the speed test options that you can do. We
 
 Server: LW9xx
 
-#### Speedtest
+#### Speedtest Files
 
-##### Standard HTTP Test File
-
-[http://speedtest.yisp.nl/files/10000mb.bin](http://speedtest.yisp.nl/files/10000mb.bin)
-
-##### wget
-
-```
-IPv4: wget -4 -O /dev/null http://speedtest.yisp.nl/files/10000mb.bin
-
-IPv6: wget -4 -O /dev/null http://speedtest.yisp.nl/files/10000mb.bin
-```
-
-##### iperf
-
-```
-Download: iperf3 -c speedtest.yisp.nl -P 10 -4 -R
-Upload: iperf3 -c speedtest.yisp.nl -P 10 -4
-```
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-nrix{text-align:center;vertical-align:middle}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-9wq8">Standard HTTP FIle</th>
+    <th class="tg-0pky">http://speedtest.yisp.nl/files/10000mb.bin</th>
+  </tr>
+  <tr>
+    <td class="tg-9wq8" rowspan="2">wget</td>
+    <td class="tg-0pky">IPV4: wget -4 -O /dev/null http://speedtest.yisp.nl/files/10000mb.bin<br></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">IPV6: wget -6 -O /dev/null http://speedtest.yisp.nl/files/10000mb.bin<br></td>
+  </tr>
+  <tr>
+    <td class="tg-nrix" rowspan="2">iperf</td>
+    <td class="tg-0lax">Download: iperf3 -c speedtest.yisp.nl -P 10 -4 -R<br></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Upload: iperf3 -c speedtest.yisp.nl -P 10 -4<br></td>
+  </tr>
+</table>
 
 #### Looking Glass/Reroute Tool
 
@@ -37,18 +50,28 @@ Upload: iperf3 -c speedtest.yisp.nl -P 10 -4
 
 Server: LW8xx
 
-#### Speedtest
-
-##### Standard HTTP Test File
-
-[http://speedtest.novoserve.com/10GB.bin](http://speedtest.novoserve.com/10GB.bin)
-
-##### wget
-
-```
-IPv4: wget -4 -O /dev/null http://speedtest.novoserve.com/10GB.bin
-IPv6: wget -6 -O /dev/null http://speedtest.novoserve.com/10GB.bin
-```
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-9wq8">Standard HTTP FIle</th>
+    <th class="tg-0pky">http://speedtest.novoserve.com/10GB.bin<br></th>
+  </tr>
+  <tr>
+    <td class="tg-9wq8" rowspan="2">wget</td>
+    <td class="tg-0pky">IPV4: wget -4 -O /dev/null http://speedtest.novoserve.com/10GB.bin<br></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">IPV6: wget -6 -O /dev/null http://speedtest.novoserve.com/10GB.bin<br></td>
+  </tr>
+</table>
 
 #### Looking Glass/Reroute Tool
 
