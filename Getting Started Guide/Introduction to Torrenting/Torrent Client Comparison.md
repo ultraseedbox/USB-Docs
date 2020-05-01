@@ -48,8 +48,6 @@ In this page we will discuss the multiple torrent clients we offer and which one
 
 ## Deluge
 
-### The Speed Demon
-
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2020-01/1-Deluge-Overview.png">
 </p>
@@ -61,8 +59,6 @@ Deluge is a powerful client and is popular for racing, it is an aggressive seedi
 The one major downside of Deluge is that it has trouble handling a large amount of torrents, it usually starts to struggle at ~700 loaded files.
 
 ## ruTorrent/rTorrent
-
-### The all-rounder
 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2020-01/2-ruTorrent-Overview.PNG">
@@ -76,12 +72,10 @@ rTorrent is a good option for decent seeding performance combined with high torr
 
 ## Transmission
 
-### No frills mass torrenting
-
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2020-01/3-Transmission-Overview.png">
 </p>
 
 Transmission is one of the least user friendly clients we offer. It has a very minimal interface with very few accessible options. While on one hand it is plain it is also very stable.
 
-Transmission does not have great seeding performance, but this is offset by the large amount of torrents it can handle. If you want a client that will handle many torrents long term seeding then this is for you.
+Transmission does not have great seeding performance, but this is offset by the large amount of torrents it can handle. If you want a client that will handle many torrents long term seeding then this is for you.In this page we will discuss the multiple torrent clients we offer and which one may be most suited to your usage.
