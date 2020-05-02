@@ -11,9 +11,8 @@ We’ll be doing the following steps:
 
 ***
 
-# Initial Setup
-
-## Setting Up Subtitle Providers
+## Initial Setup
+### Setting Up Subtitle Providers
 
 * Upon successful installation, wait for up to 5 minutes for Bazarr to initialize.
 * After clicking **Connect** on the UCP, you’ll be shown with Bazarr’s first time setup guide.
@@ -51,7 +50,7 @@ We’ll be doing the following steps:
 
 * Once that’s done, click **Next**
 
-## Connecting Sonarr and Radarr to Bazarr
+### Connecting Sonarr and Radarr to Bazarr
 
 * Login to your Sonarr instance and go to **Settings -> General**
 
@@ -120,7 +119,7 @@ Download Only Monitored: Enabled (Recommended)
 <img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583148108636.png">
 </p>
 
-## Setting Up Username and Password
+### Setting Up Username and Password
 
 * Click **Settings**
 
@@ -157,7 +156,7 @@ Download Only Monitored: Enabled (Recommended)
 <img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583148543220.png">
 </p>
 
-## Downloading Subtitles
+### Downloading Subtitles
 
 * At initial setup, Bazarr will add your existing entries on your Sonarr/Radarr instances search for existing subtitles from their root folders. Both series/movie entries are found in Series and Movies respectively.
 
@@ -197,9 +196,9 @@ Download Only Monitored: Enabled (Recommended)
 
 ***
 
-# Settings Overview
+## Settings Overview
 
-## General
+### General
 
 * Here you set Bazarr’s general settings. Here you can find the following relevant settings:
   * Security settings to set your credentials
@@ -214,7 +213,7 @@ Download Only Monitored: Enabled (Recommended)
 <img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583149820156.png">
 </p>
 
-## Sonarr and Radarr
+### Sonarr and Radarr
 
 * Here, you can enter your Sonarr and Radarr credentials
 * You may opt to enter if you want Bazarr to download only monitored releases
@@ -228,7 +227,7 @@ Download Only Monitored: Enabled (Recommended)
 <img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583149924824.png">
 </p>
 
-## Subtitles
+### Subtitles
 
 * Here, you can set which providers Bazarr looks for subtitles
 * You can set on the minimum rating for subtitles, where Bazarr saves your subtitles, and other options for subtitles
@@ -238,7 +237,7 @@ Download Only Monitored: Enabled (Recommended)
 <img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583149943608.png">
 </p>
 
-## Notifications
+### Notifications
 
 * Here, you can set notifications if Bazarr grabbed has grabbed any subtitles
 

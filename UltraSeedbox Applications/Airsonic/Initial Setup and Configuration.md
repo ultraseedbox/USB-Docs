@@ -1,13 +1,12 @@
 In this guide, we'll be setting up Airsonic for the first time. This assumes that your music library is in `~/media/Music`. We'll be doing the following steps:
 
-1.  Setting an admin password
-2.  Adding music folders
-3.  Add a limited user
+1. Setting an admin password
+1. Adding music folders
+2. Add a limited user
 
 ***
 
 ## Initial Setup
-
 ### Setting an administrator password
 
 * After installation, click **Connect** under Airsonic
@@ -42,6 +41,8 @@ Password: admin
 </p>
 
 * Once that’s done, click **Save.**
+
+***
 
 ### Setting Media Folders
 
@@ -95,7 +96,9 @@ Music
   * MusicBrainz Picard
   * [Lidarr](https://docs.usbx.me/books/lidarr "Lidarr")
 
-### Adding a Limited user
+***
+
+### Adding a Limited User
 
 * Accessing and playing your library using a limited user is recommended than using your admin account because it prevents any unauthorized and/or accidental changes to your Airsonic instance.
 * To add a limited user, Go to Settings-> Users

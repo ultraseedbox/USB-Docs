@@ -20,7 +20,7 @@ This guide shows you the following:
   * This creates a folder named `flexget` and it includes the prerequisites needed to run python apps locally.
   * This is much recommended because it is isolated from the rest of the server and can be easily deleted and recreated if needed.
 
-```
+```sh
 python3 -m venv ~/flexget/
 ```
 
@@ -28,20 +28,20 @@ python3 -m venv ~/flexget/
 
 * To install, navigate to your created folder by doing
 
-```
+```sh
 cd flexget
 ```
 
 * Then, install flexget by running the following command
 
-```
+```sh
 "$HOME"/flexget/bin/pip3 install flexget
 ```
 
 * Then make a symbolic link of the FlexGet binary by running the following command.
   * This allows you to call FlexGet whenever you are in your SSH
 
-```
+```sh
 ln -s ~/flexget/bin/flexget ~/bin/flexget
 ```
 
@@ -53,19 +53,19 @@ ln -s ~/flexget/bin/flexget ~/bin/flexget
 
 * Here, we will now create your first FlexGet YAML. Start by creating FlexGet's config folder by running the following command
 
-```
+```sh
 mkdir -p ~/.config/flexget
 ```
 
 * Navigate to your created folder by doing
 
-```
+```sh
 cd ~/.config/flexget
 ```
 
 * Create a config.yml with the following
 
-```
+```sh
 nano config.yml
 ```
 
@@ -80,7 +80,7 @@ For this example, I'll be configuring FlexGet to monitor RSS feeds every minute 
 
 #### Example YAML Config
 
-```
+```yaml
 tasks:
   test-1:
     rss:
@@ -99,7 +99,7 @@ tasks:
 
 #### YAML config with explanation
 
-```
+```yaml
 tasks: # A FlexGet config's main component are tasks, so we start here.
 
   test-1: # This is the first task. Here, we name our first task "test-1"
@@ -153,7 +153,7 @@ Now, depending on your config you can either run it using cron or FlexGet's daem
 
 * Type in your SSH window: `which flexget`. Take note of the output. This is the absolute path of flexget. Here, the absolute path is `/homexx/username/bin/flexget`
 
-```
+```sh
 usbdocs@lw975:~$ which flexget
 /home7/usbdocs/bin/flexget
 usbdocs@lw975:~$ 
@@ -186,7 +186,7 @@ usbdocs@lw975:~$
 
 #### YAML config with Scheduler Plugin
 
-```
+```yaml
 schedules:
   - tasks: [list, of, tasks]
     schedule:
@@ -217,7 +217,7 @@ tasks:
 * Say, I want to run test-1 at 22:05, 22:45, 23:05, 23:45 everyday and test-2 every minute, you'll set it as it is below
   * Take note that the scheduler plugin also supports cron expressions.
 
-```
+```yaml
 schedules:
   - tasks: [test-1]
     schedule:
@@ -287,7 +287,7 @@ WantedBy=default.target
 
 * To upgrade FlexGet, just run the following command:
 
-```
+```sh
 "$HOME"/flexget/bin/pip3 install flexget --upgrade
 ```
 
@@ -297,7 +297,7 @@ WantedBy=default.target
 
 * To remove FlexGet, simply delete the flexget folder and your symbolic link.
 
-```
+```sh
 rm -rfv ~/flexget
 rm ~/bin/flexget
 ```
