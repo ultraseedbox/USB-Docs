@@ -1,3 +1,6 @@
+*Written by [https://github.com/fringillidaes](fringillidaes)*
+***
+
 This is a guide for recovering your plex database. You may get this error if your library fails to scan or maybe your plex logs contain the following lines, `Database corruption at line......`
 
 It is useful to have knowledge of the windows command line, using ssh to access your slot and ftp access. Here are some of the guides that you might need.
