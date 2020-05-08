@@ -138,7 +138,7 @@ RequiresMountsFor=/home6/kbguides/Stuff/Mount
 [Service]
 Type=forking
 KillMode=none
-ExecStart=/hame6/kbguides/bin/mergerfs /home6/kbguides/Stuff/Local:/home6/kbguides/Stuff/Mount /home6/kbguides/MergerFS -o rw,async_read=false,use_ino,allow_other,function.getattr=newest,category.action=all,category.make=ff,cache.files=partial,dropcacheonclose=true,threads=8
+ExecStart=/home6/kbguides/bin/mergerfs /home6/kbguides/Stuff/Local:/home6/kbguides/Stuff/Mount /home6/kbguides/MergerFS -o rw,async_read=false,use_ino,allow_other,function.getattr=newest,category.action=all,category.make=ff,cache.files=partial,dropcacheonclose=true,threads=8
 ExecStop=/bin/fusermount -uz /home6/kbguides/MergerFS
 Restart=on-failure
 
@@ -165,7 +165,7 @@ WantedBy=default.target
 ```sh
 mkdir -p ~/scripts
 cd scripts/
-wget https://raw.githubusercontent.com/no5tyle/UltraSeedbox-Scripts/master/MergerFS-Rclone/rclone-upload.sh
+wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-upload.sh
 chmod +x rclone-upload.sh
 ```
 
@@ -174,7 +174,7 @@ chmod +x rclone-upload.sh
 ```sh
 mkdir -p ~/scripts
 cd scripts/
-https://raw.githubusercontent.com/no5tyle/UltraSeedbox-Scripts/master/MergerFS-Rclone/rclone-upload-with-notification.sh
+https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-upload-with-notification.sh
 chmod +x rclone-upload-with-notification.sh
 ```
 
