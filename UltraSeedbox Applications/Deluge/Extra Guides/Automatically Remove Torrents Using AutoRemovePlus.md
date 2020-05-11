@@ -38,4 +38,14 @@ https://forum.deluge-torrent.org/download/file.php?id=6306&sid=470233ee354e7045f
     * This sets the minimum HDD space.
     * When disk space goes lower than the value set, it removes the torrents that meets the critera until it reaches the minimum HDD space value set.
     * If set to -1, it will disable this option.
-  * 
+
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589198169952.png)
+
+* The next section concerns the global preferences for AutoRemovePlus to your torrents.
+  * For example, you can set AutoRemovePlus to delete all torrents that has at least 2.0 ratio
+
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589198650314.png)
+
+  * You can also set it to remove that has at least 2.0 ratio or has been seeded for 7 days
+
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589198800549.png)

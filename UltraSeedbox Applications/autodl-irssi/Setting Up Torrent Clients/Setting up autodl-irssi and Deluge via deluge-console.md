@@ -27,7 +27,7 @@ kbguides@lw902:~$
       * Details are in Deluge's Remote Access details in UCP
     * Press **OK** and confirm that your configuration files are loaded by checking the output of autodl-irssi window in ruTorrent
 
-![](https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_9-21-3%5B1%5D.png)
+<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_9-21-3%5B1%5D.png"></p>
 
 * Go back to your SSH window. Decide where you want to save the script. Here, it is saved to a folder named `scripts` to make easy to organize. Create a folder named scripts with `mkdir scripts`
 
@@ -46,11 +46,11 @@ kbguides@lw902:~/scripts$
 * Then, download the script to your seedbox using the following command
 
 ```sh
-wget https://raw.githubusercontent.com/no5tyle/UltraSeedbox-Scripts/master/Deluge/deluge-reannounce.sh
+wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/Deluge/deluge-reannounce.sh
 ```
 
 ```sh
-kbguides@lw902:~/scripts$ wget https://raw.githubusercontent.com/no5tyle/UltraSeedbox-Scripts/master/Deluge/deluge-reannounce.sh
+kbguides@lw902:~/scripts$ wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/Deluge/deluge-reannounce.sh
 --2019-06-03 10:17:06--  https://raw.githubusercontent.com/no5tyle/UltraSeedbox-Scripts/master/Deluge/deluge-reannounce.sh
 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.0.133, 151.101.64.133, 151.101.128.133, ...
 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.0.133|:443... connected.
@@ -67,12 +67,12 @@ kbguides@lw902:~/scripts$
 
 * Open up deluge-autoresume.sh using your preferred text editor. In this tutorial, we'll be using nano. So do `nano deluge-autoresume.sh`
 
-![](https://docs.usbx.me/uploads/images/gallery/2020-02/scaled-1680-/image-1582618070101.png)
+<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-02/scaled-1680-/image-1582618070101.png"></p>
 
 * Then, replace the following with the information from Deluge's Remote Access Details in UCP.
 * After you edit the necessary information, save it with **CTRL + O** then exit nano with **CTRL + X**
 
-![](https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-5-15_5-5-37%5B1%5D.png)
+<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-5-15_5-5-37%5B1%5D.png"></p>
 
 * Find this exact line in the config and change the values accordingly
 
@@ -114,8 +114,8 @@ kbguides@lw902:~/scripts$
 * Login to Deluge's WebUI via UCP or Deluge's Thin Client
 * Click **Preferences** → **Plugins** → **Check Execute Plugin**
 
-![](https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-45-36%5B1%5D.png)
-![](https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-43-42%5B1%5D.png)
+<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-45-36%5B1%5D.png"></p>
+<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-43-42%5B1%5D.png"></p>
 
 * Click the **Execute Category** and Press **Add**
 * Input the following
@@ -124,5 +124,5 @@ kbguides@lw902:~/scripts$
 * After that, click **add**. Then Press **OK**.
 * Close Deluge then restart your deluge instance via UCP or SSH (`app-deluge restart`)
 
-![](https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-52-30%5B1%5D.png)
-![](https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-53-23%5B1%5D.png)
+<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-52-30%5B1%5D.png"></p>
+<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-53-23%5B1%5D.png"></p>
