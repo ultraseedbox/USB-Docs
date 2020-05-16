@@ -32,10 +32,11 @@ python3 -m venv ~/flexget/
 cd flexget
 ```
 
-* Then, install flexget by running the following command
+* Then, install flexget by running the following commands
 
 ```sh
-"$HOME"/flexget/bin/pip3 install flexget
+"$HOME"/flexget/bin/pip3 install wheel
+"$HOME"/flexget/bin/pip3 install flexget --upgrade
 ```
 
 * Then make a symbolic link of the FlexGet binary by running the following command.
@@ -48,7 +49,6 @@ ln -s ~/flexget/bin/flexget ~/bin/flexget
 ***
 
 ## Configuring FlexGet
-
 ### Creating config.yml
 
 * Here, we will now create your first FlexGet YAML. Start by creating FlexGet's config folder by running the following command

@@ -25,7 +25,7 @@ In this guide, we'll be installing and setting up Nextcloud for the first time. 
 
 * Once you installed Nextcloud and click Connect, you'll be taken to Nextcloud's initial setup wizard.
 * First, create your own admin account by putting your preferred credentials
-    * Make sure this password is unique from your other passwords
+  * Make sure this password is unique from your other passwords
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583223094507.png"></p>
 

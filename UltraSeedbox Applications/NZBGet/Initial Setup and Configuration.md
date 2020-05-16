@@ -7,7 +7,6 @@ Here, we'll be setting up NZBGet for the first time. In this guide we'll be doin
 ***
 
 ## Initial Setup
-
 ### First Login
 
 * Upon clicking connect, you'll be greeted by this window. Enter the default credentials shown below
@@ -27,8 +26,6 @@ password: tegbzn6789
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1572879211864.png">
 </p>
 
-***
-
 ### Changing ControlUsername and ControlPassword
 
 * Here, we'll be replacing the default credentials. Go to **Settings** tab.
@@ -44,10 +41,10 @@ password: tegbzn6789
 </p>
 
 * Change both fields to your preferred credentials.
-    * Please make sure that the username and password you chose is unique and is not used in any of your accounts
-* Scroll down a bit to find **FormAuth** then click **yes**.
-    * FormAuth allows you to login via login credentials on the webpage instead of basic browser popup. This is particularly useful for password managers as some do not auto fill basic browser popups.
-    * This is a recommended step. You may opt to skip this if you prefer the default behavior, which is basic auth.
+  * Please make sure that the username and password you chose is unique and is not used in any of your accounts
+* Scroll down a bit to find **FormAuth** then click **yes**
+  * FormAuth allows you to login via login credentials on the webpage instead of basic browser popup. This is particularly useful for password managers as some do not auto fill basic browser popups.
+  * This is a recommended step. You may opt to skip this if you prefer the default behavior, which is basic auth.
 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1572885656464.png">
@@ -74,7 +71,7 @@ password: tegbzn6789
 
 ***
 
-### Adding News Servers
+## Adding News Servers
 
 * You can add your news servers in Settings -> News-Servers section.
 * Once you've added the necessary information. Click **Save all changes** and **Reload NZBGet** to load the new configuration.
@@ -85,8 +82,6 @@ password: tegbzn6789
 
 ***
 
-### Running NZBGet under SSL
+## Running NZBGet under SSL
 
-You can access NZBGet under SSL via `https://{username}.{servername}.usbx.me`
-
-No further configuration is necessary.
+You can access NZBGet under SSL via `https://{username}.{servername}.usbx.me`. No further configuration is needed.
