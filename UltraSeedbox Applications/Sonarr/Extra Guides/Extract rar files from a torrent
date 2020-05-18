@@ -1,0 +1,8 @@
+When using Sonarr, occasionally you may download a torrent file that contains multiple .rar / r.01 / r.02 files.
+This guide assumes you are using the Media Management feature of Sonarr, and will show you how to extract the files using SSH so Sonarr can complete the post processing.
+
+1.  Connect to your seedbox via [SSH](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/how-to-connect-to-your-seedbox-via-ssh)
+2.  Navigate to the path of the torrent folder using the `cd` command (eg `cd ~/files/NameOfTorrentFolder`). Tip: Use your favorite FTP client to easily locate the path to the folder.
+3.  Run the following command to begin the extraction process ```unrar x FILENAME.rar```
+
+Once the extraction has been completed, the extracted file will be in the folder, ready for Sonarr to complete the post processing.
