@@ -2,7 +2,7 @@ This guide will show you the initial setup and the configuration options for Del
 
 ***
 
-# Initial Setup
+## Initial Setup
 
 Deluge is already configured and tuned out of the box. Once logged in for the first time, there will be a textbox asking you if you want to change the default password, which is the one you set in UCP. Click **No**.
 
@@ -20,7 +20,7 @@ Then, the Connection Manager settings will appear. Just click the host in the bo
 
 ***
 
-# Default File Paths
+## Default File Paths
 
 Default Downloads Folder: `~/Downloads`
 
@@ -28,7 +28,7 @@ Deluge's config folder: `~/.config/deluge`
 
 ***
 
-# Settings Overview
+## Settings Overview
 
 * To access Deluge's settings, click the **Preferences** button.
 
@@ -38,7 +38,7 @@ Deluge's config folder: `~/.config/deluge`
 
 * Below are the following important settings that you might be interested at.
 
-## Downloads
+### Downloads
 
 * Here, you can set the location of the Deluge's Download folder. It is defaulted to `~/Downloads`
 * You can also set a folder to move your completed downloads, get a copy of .torrent files to a separate folder and auto-add .torrents
@@ -48,7 +48,7 @@ Deluge's config folder: `~/.config/deluge`
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1573826028621.png">
 </p>
 
-## Network
+### Network
 
 * Here, you can set option for port assignments, peer byte TOS, and BitTorrent Protocol extras.
 * The settings here are configured for the use of private trackers. It's best to leave these options as-is.
@@ -58,7 +58,7 @@ Deluge's config folder: `~/.config/deluge`
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1573826052419.png">
 </p>
 
-## Bandwidth
+### Bandwidth
 
 * Here, you may set bandwidth usage that will be applied to all of your seeding torrents.
 * Here, you can also set the Maximum Download and Upload speed here
@@ -68,7 +68,7 @@ Deluge's config folder: `~/.config/deluge`
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1573826085303.png">
 </p>
 
-## Interface
+### Interface
 
 * Here, you can set some changes to your Deluge WebUI
 * You can also change your set Deluge WebUI password here
@@ -80,7 +80,7 @@ Deluge's config folder: `~/.config/deluge`
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1573826101214.png">
 </p>
 
-## Queue
+### Queue
 
 * Here, you can change how many active, active downloading and active seeding.
     * You can set these to `-1` for unlimited Active torrents. Downside of this is that this will hamper performance, especially IO if you have lots of active torrents. 
@@ -92,7 +92,7 @@ Deluge's config folder: `~/.config/deluge`
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1573826215686.png">
 </p>
 
-## Plugins
+### Plugins
 
 * Here, you can enable and install plugins.
 * For more information on this, refer to this guide: [Installing Deluge Plugins](https://docs.usbx.me/books/deluge/page/installing-deluge-plugins "Installing Deluge Plugins")
@@ -101,7 +101,7 @@ Deluge's config folder: `~/.config/deluge`
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1573826287076.png">
 </p>
 
-## Execute
+### Execute
 
 * Here, you may put in the absolute path of scripts for it to be executed according to your set Torrent event.
 
