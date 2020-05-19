@@ -65,12 +65,9 @@ deluge-reannounce.sh               100%[========================================
 kbguides@lw902:~/scripts$
 ```
 
-* Open up deluge-autoresume.sh using your preferred text editor. In this tutorial, we'll be using nano. So do `nano deluge-autoresume.sh`
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-02/scaled-1680-/image-1582618070101.png"></p>
+* Open up deluge-reannounce.sh using your preferred text editor. In this tutorial, we'll be using nano. So do `nano deluge-reannounce.sh`
 
 * Then, replace the following with the information from Deluge's Remote Access Details in UCP.
-* After you edit the necessary information, save it with **CTRL + O** then exit nano with **CTRL + X**
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-5-15_5-5-37%5B1%5D.png"></p>
 
@@ -92,22 +89,23 @@ port=zzzzz
 username=yyyyyyy
 password=xxxxxxx
 ```
+* After you edit the necessary information, save it with **CTRL + O** then exit nano with **CTRL + X**
 
-* Then, make the script executable by doing `chmod +x deluge-autoresume.sh`
-*   To remove the invisible line endings, execute `sed -i 's/\r$//g' deluge-autoresume.sh`
+* Then, make the script executable by doing `chmod +x deluge-reannounce.sh`
+*   To remove the invisible line endings, execute `sed -i 's/\r$//g' deluge-reannounce.sh`
 
 ```sh
-kbguides@lw902:~/scripts$ nano deluge-autoresume.sh
-kbguides@lw902:~/scripts$ chmod +x deluge-autoresume.sh
-kbguides@lw902:~/scripts$ sed -i 's/\r$//g' deluge-autoresume.sh
+kbguides@lw902:~/scripts$ nano deluge-reannounce.sh
+kbguides@lw902:~/scripts$ chmod +x deluge-reannounce.sh
+kbguides@lw902:~/scripts$ sed -i 's/\r$//g' deluge-reannounce.sh
 kbguides@lw902:~/scripts$
 ```
 
-* Then, get the absolute path of the script by executing `readlink -f deluge-autoresume.sh` and take note of the output. This is the absolute of of your script.
+* Then, get the absolute path of the script by executing `readlink -f deluge-reannounce.sh` and take note of the output. This is the absolute of of your script.
 
 ```sh
-kbguides@lw902:~/scripts$ readlink -f deluge-autoresume.sh
-/home6/kbguides/scripts/deluge-autoresume.sh #TAKE NOTE AND COPY THIS LINE. YOU WILL NEED THIS LATER.
+kbguides@lw902:~/scripts$ readlink -f deluge-reannounce.sh
+/home6/kbguides/scripts/deluge-reannounce.sh #TAKE NOTE AND COPY THIS LINE. YOU WILL NEED THIS LATER.
 kbguides@lw902:~/scripts$
 ```
 
@@ -124,5 +122,4 @@ kbguides@lw902:~/scripts$
 * After that, click **add**. Then Press **OK**.
 * Close Deluge then restart your deluge instance via UCP or SSH (`app-deluge restart`)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-52-30%5B1%5D.png"></p>
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-53-23%5B1%5D.png"></p>
+<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589891033979.png"></p>
