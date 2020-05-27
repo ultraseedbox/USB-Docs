@@ -116,7 +116,7 @@ n) No
 y/n> n
 ```
 
-* Type `n` to choose to not use auto config and press **Enter**. You will be provided with a URL, copy this URL and paste it into your web browser. Choose the Google Drive account you wish to use and click Allow to give rclone permission to use it. You will be given a code, copy this and place it into your terminal, then press Enter. Finally type n to choose to not configure as a team drive and press **Enter**.
+* Type `n` to choose to not use auto config and press **Enter**. You will be provided with a URL, copy this URL and paste it into your web browser. Choose the Google Drive account you wish to use and click Allow to give rclone permission to use it. You will be given a code, copy this and place it into your terminal, then press Enter. Finally type `n` to choose to not configure as a team drive and press **Enter**.
 
 ```
 Use auto config?
