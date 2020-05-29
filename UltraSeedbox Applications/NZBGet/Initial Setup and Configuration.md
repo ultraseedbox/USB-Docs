@@ -9,6 +9,13 @@ Here, we'll be setting up NZBGet for the first time. In this guide we'll be doin
 ## Initial Setup
 ### First Login
 
+* After installation, run the commands below in SSH. This is to ensure that NZBGet is pointed to the correct folders in your slot.
+
+```sh
+sed  -i "s|MainDir=/downloads|MainDir=$HOME/.config/nzbget|g" "$HOME"/.apps/nzbget/nzbget.conf
+app-nzbget restart
+```
+
 * Upon clicking connect, you'll be greeted by this window. Enter the default credentials shown below
 
 ```

@@ -10,7 +10,7 @@ In this guide, we'll be briefly teach you how to set it up. For LabelPlus, we wi
 
 ***
 
-# Global Seeding Limit
+## Global Seeding Limit
 
 * To apply a certain ratio limit to all of your torrents, simply to your Deluge preferences and click Queue
 * Check "Stop seeding when share ratio reaches" and set the number in the box to any ratio you want.
@@ -23,37 +23,17 @@ In this guide, we'll be briefly teach you how to set it up. For LabelPlus, we wi
 
 ***
 
-# LabelPlus
+## LabelPlus
+### Installation
 
-## Installation
-
-* Grab and install Deluge PC Client and Label Plus from the links provided
+* Install Deluge Thin Client if you haven't already.
+  * For more information about installing Deluge Thin Client, refer to [this link.](https://docs.usbx.me/books/deluge/page/setting-up-deluge-thin-client)
+* Grab and install LabelPlus from the link provided
+  * For more information on how to install Deluge Plugins, refer to [this link.](https://docs.usbx.me/books/deluge/page/installing-deluge-plugins)
 
 ```
-Deluge Client 1.3.15
-    Windows - https://ftp.osuosl.org/pub/deluge/windows/deluge-1.3.15-win32-py2.7.exe
-    MacOS - http://download.deluge-torrent.org/mac_osx/deluge-1.3.15.1-macosx-x64.dmg
-    Linux - Refer to your distribution
-
 LabelPlus: https://github.com/ratanakvlun/deluge-labelplus/releases/download/v0.3.2.2/LabelPlus-0.3.2.2-py2.7.egg
 ```
-
-* Open up Deluge Client on your PC
-  * Click **Preferences -> Interface** and Uncheck Classic Mode
-  * Confirm to restart Deluge
-
-<p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-26_17-8-58%5B1%5D.png">
-</p>
-
-* Once Rebooted, a window named Connection Manager appears. Click Add.
-* Go back to your UCP, under Applications Tab find remote client access under Deluge and input the values accordingly.
-* Once that's done, click add and wait for the Green circle to pop up.
-* Once that's popped up, highlight your new details and click **Connect**.
-
-<p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-26_17-12-28%5B1%5D.png">
-</p>
 
 * Once connected, go to **Preferences -> Plugin**.
 * Click **Install Plugin** and navigate to the file named *LabelPlus-0.3.2.2-py2.7.egg* and click **Open**
@@ -83,9 +63,8 @@ LabelPlus: https://github.com/ratanakvlun/deluge-labelplus/releases/download/v0.
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-7-0%5B1%5D.png">
 </p>
 
-## LabelPlus Label Options
-
-### Downloads
+### LabelPlus Label Options
+#### Downloads
 
 * Here, you can set set the download directory and to move some of your specifically labelled torrents to different locations
 
@@ -93,7 +72,7 @@ LabelPlus: https://github.com/ratanakvlun/deluge-labelplus/releases/download/v0.
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-8-3%5B1%5D.png">
 </p>
 
-### Bandwidth
+#### Bandwidth
 
 * Here, you can set your labelled torrents your maximum DL, UL, connections and upload slots.
   * We do not recommend throttling upload speed on any trackers, whether is public or private. Throttling speeds will be detected by the tracker and your download speeds will also be throttled to a crawl or will be IP banned.
@@ -103,7 +82,7 @@ LabelPlus: https://github.com/ratanakvlun/deluge-labelplus/releases/download/v0.
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-8-34%5B1%5D.png">
 </p>
 
-### Queue
+#### Queue
 
 * Here, you can set to seed your set torrents at a certain ratio.
 * You may also opt to remove torrents once it reaches your certain ratio.
@@ -114,7 +93,7 @@ LabelPlus: https://github.com/ratanakvlun/deluge-labelplus/releases/download/v0.
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-26_17-21-16%5B1%5D.png">
 </p>
 
-### Autolabel
+#### Autolabel
 
 * It can check the following data. And if it matches, it'll assign the torrent to your set Label and it'll trigger whatever you set in the first three tabs of your Label.
   * Name of the torrent
