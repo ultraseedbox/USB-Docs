@@ -46,6 +46,8 @@ Server: LW9xx
 
 [YISP Looking Glass](http://lg.yisp.nl/)
 
+For instructions on how to use the reroute tool, click [here.](https://docs.usbx.me/books/rerouting-tools/page/using-yisp-rerouting-tool)
+
 ***
 
 ### NovoServe
@@ -80,3 +82,5 @@ Server: LW8xx
 #### Looking Glass/Reroute Tool
 
 [NovoServe Looking Glass](http://lg.novoserve.com/)
+
+For instructions on how to use the reroute tool, click [here.](https://docs.usbx.me/books/rerouting-tools/page/using-novoserve-rerouting-tool)

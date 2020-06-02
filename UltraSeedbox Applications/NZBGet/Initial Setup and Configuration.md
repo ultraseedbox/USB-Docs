@@ -4,6 +4,11 @@ Here, we'll be setting up NZBGet for the first time. In this guide we'll be doin
 * Change ControlUsername and ControlPassword
 * Add usenet indexers
 
+You may also need the following: 
+
+* A Usenet service provider, you can find a list of different providers here: [https://www.reddit.com/r/usenet/wiki/providers](https://www.reddit.com/r/usenet/wiki/providers)
+* An indexer to obtain `.nzb` files, these are used to tell the server where to find the files
+
 ***
 
 ## Initial Setup

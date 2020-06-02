@@ -1,3 +1,5 @@
+<c><p class="callout warning">This guide is for advanced users only and is not officially supported by USB, as it is frequently updated voluntarily by our staff and it may be broken in some slots. Only proceed if you know what you're doing. If there are any questions on the installation or the execution of the scripts, you may ask on the USB Community server.</p></c>
+
 As many of you know, Deluge is fast and more aggresive to upload but it starts to become a real nuisance once you load more than 500 torrents. rTorrent, on the other hand, is good at handling large amount of seeding torrents, making it ideal for long term seeding.
 
 This guide will help you automate the process of moving your torrents from Deluge to rTorrent for long-term seeding.

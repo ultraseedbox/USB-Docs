@@ -4,7 +4,7 @@ This short guide will walk you through on how to setup your OpenVPN Client in Wi
 
 ## Installing OpenVPN GUI
 
-* Download and install the appropriate version of OpenVPN GUI here: https://openvpn.net/community-downloads/
+* Download and install the appropriate version of OpenVPN GUI here: [OpenVPN GUI Downloads](https://openvpn.net/community-downloads/)
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590596209676.png"></p>
 

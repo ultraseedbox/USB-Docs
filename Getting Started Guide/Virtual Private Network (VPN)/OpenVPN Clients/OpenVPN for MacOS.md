@@ -4,7 +4,7 @@ This short guide will walk you through on how to setup your OpenVPN Client in Ma
 
 ## Installing Tunnelblick
 
-* Download and install the stable version of Tunnelblick here: https://tunnelblick.net/downloads.html
+* Download and install the stable version of Tunnelblick here: [Tunnelblick Downloads](https://tunnelblick.net/downloads.html)
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590687190416.png"></p>
 
