@@ -1,4 +1,4 @@
-NZBHydra 2 is a meta search for newznab indexers and torznab trackers. It consolidates all of your usenet indexers into 1 intuitive page. The following are the followign features: 
+NZBHydra2 is a meta search for newznab indexers and torznab trackers. It consolidates all of your usenet indexers into 1 intuitive page. The following are the apps' features: 
 
 * Ability to search all of your indexers in one page
 * Can send downloads from search results into your usenet downloaders
