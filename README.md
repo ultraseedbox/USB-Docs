@@ -2,15 +2,15 @@
 
 This is the git repository for [Ultraseedbox Docs](https://docs.usbx.me/) powered by [BookStack](https://www.bookstackapp.com/).
 
-This is an ongoing project. There maybe some missing guides and inconsistencies.
+This is an ongoing project and is updated as new guides are synced to Bookstack. There maybe some missing guides and inconsistencies.
 
-This repo will be updated as new guides have been published to the USB Docs.
-
-# How to contribute? (WIP)
+# How to contribute?
 
 To contribute, just submit a PR here. Once approved, it will be uploaded to USB Docs.
 
-Note that all of the articles in here and in the docs site uses Markdown except for the following:
+## Formatting
+
+Note that all of the articles in here and in the docs site uses Markdown but it has certain formatting rules followed.
 
 ## Images
 
@@ -54,6 +54,16 @@ Add `<c></c>` before the callout for markdown within callout to work.
 ```
 <c><p class="callout info">Your info text here [with some links](https://www.example.com/).</p></c>
 ```
+
+## replace.sh script
+
+* To automate the formatting, you can use `replace.sh` to automatically replace the markdown formatting to what iis listed above. It just needs the following:
+  * Images do not have comments in it (`![](image-link-here`))
+  * Callout tags should be in this format
+
+<callout {warning,info,danger,success}>Text here. You might need to <br> if you want</callout>
+
+* You can use the script by doing `./replace.sh Path/to/markdown.md`
 
 # License
 
