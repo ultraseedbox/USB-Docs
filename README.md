@@ -58,10 +58,13 @@ Add `<c></c>` before the callout for markdown within callout to work.
 ## replace.sh script
 
 * To automate the formatting, you can use `replace.sh` to automatically replace the markdown formatting to what iis listed above. It just needs the following:
-  * Images do not have comments in it (`![](image-link-here`))
+  * Images do not have comments in it
+
+`![](image-link-here)`
+
   * Callout tags should be in this format
 
-<callout {warning,info,danger,success}>Text here. You might need to <br> if you want</callout>
+`<callout {warning,info,danger,success}>Text here. You might need to <br> if you want</callout>`
 
 * You can use the script by doing `./replace.sh Path/to/markdown.md`
 
