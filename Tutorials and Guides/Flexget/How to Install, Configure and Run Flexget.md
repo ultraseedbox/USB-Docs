@@ -2,7 +2,7 @@ FlexGet is a multi-purpose automation tool for content like torrents, NZBs, podc
 
 This guide shows you the following:
 
-* Install FlexGet to your seedbox slot
+* Install Python 3 and FlexGet to your seedbox slot
 * Create your first FlexGet configuration
 * Running FlexGet
 * Scheduling your FlexGet tasks
@@ -11,39 +11,26 @@ This guide shows you the following:
 ***
 
 ## Installation of Flexget via python's virtual environment
-
-### Creating a Python Virtual Environment
+### Installing Python 3 and Flexget Into your Slot
 
 * First, login to your seedbox's SSH
   * For more information on how to access your seedbox's SSH, visit [this guide to learn more.](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/how-to-connect-to-your-seedbox-via-ssh "How to connect to your seedbox via SSH")
-* Create a python virtual environment by running the command below
-  * This creates a folder named `flexget` and it includes the prerequisites needed to run python apps locally.
-  * This is much recommended because it is isolated from the rest of the server and can be easily deleted and recreated if needed.
+* Run the following commands and follow the instructions. This will install Python 3 and Flexget into your slot.
+
+#### Python 3
 
 ```sh
-python3 -m venv ~/flexget/
+wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/Language%20Installers/python-pip-install.sh
+chmod +x python-pip-install.sh
+bash python-pip-install.sh
 ```
 
-### Installation
-
-* To install, navigate to your created folder by doing
+#### Flexget
 
 ```sh
-cd flexget
-```
-
-* Then, install flexget by running the following commands
-
-```sh
-"$HOME"/flexget/bin/pip3 install wheel
-"$HOME"/flexget/bin/pip3 install flexget --upgrade
-```
-
-* Then make a symbolic link of the FlexGet binary by running the following command.
-  * This allows you to call FlexGet whenever you are in your SSH
-
-```sh
-ln -s ~/flexget/bin/flexget ~/bin/flexget
+wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/Flexget/flexget-install.sh
+chmod +x flexget-install.sh
+bash flexget-install.sh
 ```
 
 ***
@@ -54,13 +41,13 @@ ln -s ~/flexget/bin/flexget ~/bin/flexget
 * Here, we will now create your first FlexGet YAML. Start by creating FlexGet's config folder by running the following command
 
 ```sh
-mkdir -p ~/.config/flexget
+mkdir -p "$HOME"/.config/flexget
 ```
 
 * Navigate to your created folder by doing
 
 ```sh
-cd ~/.config/flexget
+cd "$HOME"/.config/flexget
 ```
 
 * Create a config.yml with the following
@@ -120,7 +107,7 @@ tasks: # A FlexGet config's main component are tasks, so we start here.
 # TL;DR regex I used is .*, which matches any characters, including line breaks. I added it in the start and the end of 1080p.
 # You may refer to https://regexr.com/ to help you learn and build your own regex.
      
-    deluge: # This is an output plugin. This is to tell FlexGet what do with those things you want. Here, I want to use Deluge as my torrent client. Before I run this tho, I need to install another instance of deluge for FlexGet by running "$HOME"/flexget/bin/pip3 install deluge-client && ln -s ~/flexget/bin/deluge-client ~/bin/deluge-client. You'll only need this to communicate to your actual Deluge installation (The one you installed via UCP). Your preferred torrent client's setup may vary so you may look up to FlexGet's wiki for that.
+    deluge: # This is an output plugin. This is to tell FlexGet what do with those things you want. Here, I want to use Deluge as my torrent client. Before I run this tho, I need to install another instance of deluge for FlexGet by running "$HOME"/flexget/bin/python -m pip install deluge-client. You'll only need this to communicate to your actual Deluge installation (The one you installed via UCP). Your preferred torrent client's setup may vary so you may look up to FlexGet's wiki for that.
       
       host: 127.0.0.1
       port: 11123
@@ -288,7 +275,7 @@ WantedBy=default.target
 * To upgrade FlexGet, just run the following command:
 
 ```sh
-"$HOME"/flexget/bin/pip3 install flexget --upgrade
+"$HOME"/flexget/bin/python -m pip install flexget --upgrade
 ```
 
 ***
@@ -298,6 +285,20 @@ WantedBy=default.target
 * To remove FlexGet, simply delete the flexget folder and your symbolic link.
 
 ```sh
-rm -rfv ~/flexget
-rm ~/bin/flexget
+rm -rfv "$HOME"/flexget
+rm "$HOME"/bin/flexget
+```
+
+* If you want to uninstall Python 3 too, run the following commands
+
+```sh
+rm -rfv "$HOME"/.pyenv
+```
+
+* Remove the following lines from `.bashrc`
+
+```
+export PATH="/homexx/username/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 ```

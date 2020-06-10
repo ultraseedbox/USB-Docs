@@ -81,13 +81,15 @@ wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/clinton
 
 ### reverse_name.py
 
-* This extension script for NZBGet will reverse filenames first then rename to folder name on failure.
+* This extension script will reverse filenames first then rename to folder name on failure.
 
 ```sh
 wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/Prinz23/nzbget-pp-reverse/master/reverse_name.py
 ```
 
 ### VideoSort
+
+* This script uses scene-standard naming conventions to match TV shows and movies and rename/move/sort/organize them as you like.
 
 ```sh
 wget https://github.com/nzbget/VideoSort/releases/download/v8.0/videosort-8.0-dist.zip

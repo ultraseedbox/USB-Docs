@@ -47,7 +47,7 @@ If you are logging in for the first time after you've purchased your first USB s
   * Seedbox username and the server name
   * Seedbox type
   * Expiration date
-    * This is where you can 
+    * This is where you can see day where your seedbox will expire/bandwidth reset.
   * Download/Upload speeds
   * Disk info
   * Upload Bandwidth info

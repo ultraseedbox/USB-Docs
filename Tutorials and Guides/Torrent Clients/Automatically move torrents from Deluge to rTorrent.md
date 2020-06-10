@@ -19,9 +19,25 @@ This guide will help you automate the process of moving your torrents from Delug
 
 * Login to your slot's SSH terminal and execute the following commands
 
+### Python 3
+
 ```sh
-curl https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/deluge-rtorrent/pip-install.sh | bash
-pip3 install requests --user
+wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/Language%20Installers/python-pip-install.sh
+chmod +x python-pip-install.sh
+bash python-pip-install.sh
+```
+
+### perl
+
+```sh
+screen -m bash -c "curl -L http://xrl.us/installperlnix | bash"
+```
+
+* After that run the following commands
+
+```sh
+exec $SHELL
+python -m pip install requests service_identity cryptography perl
 perl -MCPAN -e 'install Convert::Bencode'
 ```
 
@@ -36,7 +52,7 @@ perl -MCPAN -e 'install Convert::Bencode'
 * After the installation, load `.bashrc` by doing the following command
 
 ```sh
-source .bashrc
+exec $SHELL
 ```
 
 ***
