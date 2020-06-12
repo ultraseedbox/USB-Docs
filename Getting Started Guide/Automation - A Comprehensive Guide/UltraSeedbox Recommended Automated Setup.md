@@ -47,7 +47,7 @@ Provided below is a checklist of what to do. Each section has links to step-by-s
 #### Plex Media Server
 
 <input type="checkbox">[PMS Initial Setup and Configuration](https://docs.usbx.me/books/plex-media-server/page/initial-setup-and-configuration)<br>
-<input type="checkbox">[Plex Plugin Installers (Optional)<br>](https://docs.usbx.me/books/plex-media-server/page/plex-plugin-installers)<br>
+<input type="checkbox">[Plex Plug-in Installers (Optional)<br>](https://docs.usbx.me/books/plex-media-server/page/plex-plug-in-installers)<br>
 
 #### Tautulli
 

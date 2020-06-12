@@ -21,7 +21,6 @@ This guide shows you the following:
 
 ```sh
 wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/Language%20Installers/python-pip-install.sh
-chmod +x python-pip-install.sh
 bash python-pip-install.sh
 ```
 
@@ -29,7 +28,6 @@ bash python-pip-install.sh
 
 ```sh
 wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/Flexget/flexget-install.sh
-chmod +x flexget-install.sh
 bash flexget-install.sh
 ```
 

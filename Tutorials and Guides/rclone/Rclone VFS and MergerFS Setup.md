@@ -129,6 +129,7 @@ WantedBy=default.target
 ```
 
 ### Example MergerFS Service File
+
 ```
 [Unit]
 Description = MergerFS Mount
@@ -166,13 +167,15 @@ WantedBy=default.target
 
 ```sh
 wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-uploader.service
+
 wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-uploader.timer
 ```
 
 * Do `pwd` and take note of the output. In this case, the output is `/home6/kbguides`
 
 ```sh
-kbguides@lw902:~$ pwd/home6/kbguides
+kbguides@lw902:~$ pwd
+/home6/kbguides
 ```
 
 * Then, navigate to `~/.config/systemd/user/` and edit each file by replacing `/home6/kbguides/` with the output from `pwd` using a text editor (nano, vim)

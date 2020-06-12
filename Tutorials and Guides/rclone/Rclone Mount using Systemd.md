@@ -21,7 +21,7 @@ Before we proceed, you may have to configure your cloud storage first. If you ha
 * Then, create a folder by doing `mkdir >folder name<`
 * For this guide, we'll be making a folder named Mount. So we will run `mkdir Mount`
 
-```shell
+```sh
 kbguides@lw902:~$ pwd
 /home6/kbguides
 kbguides@lw902:~$ mkdir Mount
@@ -39,15 +39,13 @@ kbguides@lw902:~$
 
 ### Rclone Mount for Most Remotes
 
-```shell
-
+```sh
 wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/rclone-normal.service && nano ~/.config/systemd/user/rclone-normal.service
 ```
 
 ### Google Drive Rclone Mount for Plex Streaming
 
-```shell
-
+```sh
 wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/rclone-vfs.service && nano ~/.config/systemd/user/rclone-vfs.service
 ```
 
@@ -102,7 +100,7 @@ WantedBy=default.target
 * To check if your service is running, do `systemctl --user status rclone-vfs.service`. It should have both loaded and active (running), noting that the rclone mount is executed and running
 * Then, to check if your mount is actually mounted to the folder properly, do `ls Mount`. Your files from your cloud storage account should show up.
 
-```
+```sh
 kbguides@lw902:~$ systemctl --user daemon-reload
 kbguides@lw902:~$ systemctl --user enable --now mount.service
 kbguides@lw902:~$ systemctl --user status mount.service
@@ -119,7 +117,7 @@ Linux ISOs  Documents  Legally Acquired Files  Homework  grocery-list.txt
 * If you encounter any errors when trying to start your service file, you can run the following command to quickly check your ExecStart and ExecStop.
     * This script can show your ExecStart and Execstop. It can also run your file temporarily to show any errors on your service file
 
-```shell
+```sh
 wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/Rclone%20Service%20File%20Check/service-file-check.sh
 chmod +x service-file-check.sh
 ./service-file-check.sh

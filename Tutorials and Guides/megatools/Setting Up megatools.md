@@ -14,7 +14,6 @@ In this short guide, we'll be showing you how to install/upgrade and uninstall m
 
 ```sh
 wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/megatools/megatools-installer.sh
-chmod +x megatools-installer.sh
 bash megatools-installer.sh
 ```
 

@@ -1,4 +1,4 @@
-*Written by [https://github.com/fringillidaes](fringillidaes)*
+*Written by [fringillidaes](https://github.com/fringillidaes)*
 ***
 
 This is a guide for recovering your plex database. You may get this error if your library fails to scan or maybe your plex logs contain the following lines, `Database corruption at line......`
