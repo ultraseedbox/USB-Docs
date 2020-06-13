@@ -14,5 +14,5 @@
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/credentials.PNG"></p>
 
-* On the next screen select other and then select **Create**. The default name is fine and you do not need to change it.
+* On the next screen select Desktop App and then select **Create**. The default name is fine and you do not need to change it.
 * After you click **Create**, the window to the right will pop up. These are our keys to use in rclone configuration. Copy these or leave the window open for when you need them.
