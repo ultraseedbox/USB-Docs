@@ -1,12 +1,6 @@
-The UltraSeedbox's Control Panel (UCP) is your one-stop, easy panel to managing your UltraSeedbox slot. 
+The UltraSeedbox's Control Panel (UCP) is your one-stop, easy panel to managing your UltraSeedbox slot. Here, you can easily set your slot access credentials, managing and accessing your apps.
 
-This short guide will walk you through the following:
-
-* Logging into your USB Control Panel
-* Resetting your password
-* Setting Up Access Details
-* Installing apps
-
+This short guide will walk you through the UltraSeedbox Control Panel.
 ***
 
 ## Accessing the Control Panel
@@ -95,24 +89,7 @@ If you are logging in for the first time after you've purchased your first USB s
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590585744840.png"></p>
 
-#### Installing Apps
-
-* To install an app, just find the app that you want on the list and click **Install**
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590586092241.png"></p>
-
-* A confirmation window appears. For some apps, just click **Install.**
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590586186357.png"></p>
-
-* Some apps, like Medusa, asks for a password before installing.
-* Once installed, your set password will be shown under Info. It will be hidden.
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590586250567.png"></p>
-
-* For some apps, you are required to put in a specific code before installation.
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590586293279.png"></p>
+* For more information on how to install/upgrade/uninstall apps, you may look into [this guide.](https://docs.usbx.me/books/ultraseedbox-control-panel-%28ucp%29/page/managing-your-ultraseedbox-apps)
 
 ### Profile
 

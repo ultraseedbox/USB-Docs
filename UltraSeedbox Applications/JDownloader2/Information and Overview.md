@@ -10,6 +10,4 @@
 
 For more information about this app, refer to this link: [https://jdownloader.org/](https://jdownloader.org/)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583406811864.png"></p>
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583414696302.png"></p>
+<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1592661355453.png"></p>

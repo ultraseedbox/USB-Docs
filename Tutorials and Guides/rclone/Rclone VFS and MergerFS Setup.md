@@ -79,7 +79,6 @@ kbguides@lw902:~$ which mergerfs
 
 ```sh
 wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/rclone-vfs.service
-
 wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/mergerfs.service
 ```
 
@@ -112,15 +111,15 @@ ExecStart=/home6/kbguides/bin/rclone mount gdrive: /home6/kbguides/Stuff/Mount \
   --user-agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36' \
   --config /home6/kbguides/.config/rclone/rclone.conf \
   --use-mmap \
-  --dir-cache-time 168h \
-  --timeout 1h \
+  --dir-cache-time 1h \
+  --timeout 1s \
   --umask 002 \
-  --poll-interval=1m \
-  --vfs-coche-mode writes \
-  --vfs-read-chank-size 64M \
-  --vfs-read-chank-size-limit 2048M \
-  --tpslimit 10 \
-  --tpslimit-burst 10
+  --bwlimit 5M \
+  --poll-interval=1h \
+  --vfs-cache-mode writes \
+  --vfs-read-chunk-size 8M \
+  --vfs-read-chunk-size-limit 32M \
+  --tpslimit 1
 ExecStop=/bin/fusermount -uz /home6/kbguides/Stuff/Mount
 Restart=on-failure
 
@@ -140,7 +139,7 @@ RequiresMountsFor=/home6/kbguides/Stuff/Mount
 [Service]
 Type=forking
 KillMode=none
-ExecStart=/hame6/kbguides/bin/mergerfs /home6/kbguides/Stuff/Local:/home6/kbguides/Stuff/Mount /home6/kbguides/MergerFS -o rw,async_read=false,use_ino,allow_other,function.getattr=newest,category.action=all,category.make=ff,cache.files=partial,dropcacheonclose=true,threads=8
+ExecStart=/hame6/kbguides/bin/mergerfs /home6/kbguides/Stuff/Local:/home6/kbguides/Stuff/Mount /home6/kbguides/MergerFS -o rw,async_read=false,use_ino,allow_other,func.getattr=newest,category.action=all,category.create=ff,cache.files=partial,dropcacheonclose=true,threads=2
 ExecStop=/bin/fusermount -uz /home6/kbguides/MergerFS
 Restart=on-failure
 
@@ -167,7 +166,6 @@ WantedBy=default.target
 
 ```sh
 wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-uploader.service
-
 wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-uploader.timer
 ```
 
@@ -192,18 +190,20 @@ Description=RClone Uploader
 Type=simple
 
 ExecStart=/home6/usbdocs/bin/rclone move /home6/usbdocs/Stuff/Local/ gdrive: \
-    --config=/home6/usbdocs/.config/rclone/rclone.conf \
-    --drive-chank-size 64M \
-    --tpslimit 5 \
-    --drive-acknowledge-aboose=true \
+    --config=/homexx/yyyyy/.config/rclone/rclone.conf \
+    --user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36' \
+    --drive-chunk-size 8M \
+    --tpslimit 1 \
+    --drive-acknowledge-abuse=true \
     -vvv \
     --delete-empty-src-dirs \
     --fast-list \
-    --bwlimit=8M \
+    --bwlimit=2M \
     --use-mmap \
-    --transfers=2 \
-    --checkers=4 \
-    --lag-file /home6/usbdocs/scripts/rclone-uploader.log
+    --transfers=1 \
+    --checkers=1 \
+    --drive-stop-on-upload-limit \
+    --log-file /homexx/yyyyy/scripts/rclone-uploader.log
 Restart=on-failure
 
 [Install]
@@ -273,10 +273,139 @@ then
     exit
 else
     touchme "$lock_file"
-    "$HOME"/bin/rclone move "$HOME"/Stuff/Local/ gdrive: --drive-chank-size 128M --tpslimit 5 --transfers 10 --checkers 10 --drive-acknowledge-aboose=true -vvv --delete-empty-src-dirs --fastlist --logfile "$HOME"/scripts/rclone-sync.log
+    "$HOME"/bin/rclone move "$HOME"/Stuff/Local/ gdrive: --user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36' --config="$HOME"/.config/rclone/rclone.conf --drive-chunk-size 8M --tpslimit 1 --drive-acknowledge-abuse=true -vvv --drive-stop-on-upload-limit --delete-empty-src-dirs --fast-list --bwlimit=2M --use-mmap --transfers=1 --checkers=1 --log-file "$HOME"/scripts/rclone-upload.log
     rm -f "$lock_file"
     trap - SIGINT SIGTERM
     exit
+fi
+```
+
+#### Example rclone-upload-with-notification.sh file
+
+```sh
+#!/bin/bash
+
+# Rclone upload script with optional Discord notification upon move completion (if something is moved)
+#
+# Recommended for use via cron
+# For example: */10 * * * * /path/to/rclone-upload.sh >/dev/null 2>&1
+# -----------------------------------------------------------------------------
+
+SOURCE_DIR="$HOME/Stuff/Local/"
+DESTINATION_DIR="gdrive:"
+
+DISCORD_WEBHOOK_URL=""
+DISCORD_ICON_OVERRIDE="https://i.imgur.com/MZYwA1I.png"
+DISCORD_NAME_OVERRIDE="RCLONE"
+
+LOCK_FILE="$HOME/rclone-upload.lock"
+LOG_FILE="$HOME/rclone-upload.log"
+
+# DO NOT EDIT BELOW THIS LINE UNLESS YOU KNOW WHAT YOU'RE DOING
+# -----------------------------------------------------------------------------
+
+trap 'rm -f $LOCK_FILE; exit 0' SIGINT SIGTERM
+if [ -e "$LOCK_FILE" ]
+then
+  echo "$0 is already running."
+  exit
+else
+  touch "$LOCK_FILE"
+  
+  rclone_move() {
+    rclone_command=$(
+      "$HOME"/bin/rclone move -vP \
+      --config="$HOME"/.config/rclone/rclone.conf \
+      --user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36' \
+      --drive-chunk-size 8M \
+      --use-mmap \
+      --delete-empty-src-dirs \
+      --fast-list \
+      --log-file="$LOG_FILE" \
+      --stats=9999m \
+      --tpslimit=1 \
+      --transfers=1 \
+      --checkers=1 \
+      --bwlimit=2M \
+      --drive-stop-on-upload-limit \
+      "$SOURCE_DIR" "$DESTINATION_DIR" 2>&1
+    )
+    # "--stats=9999m" mitigates early stats output 
+    # "2>&1" ensures error output when running via command line
+    echo "$rclone_command"
+  }
+  rclone_move
+
+  if [ "$DISCORD_WEBHOOK_URL" != "" ]; then
+  
+    rclone_sani_command="$(echo $rclone_command | sed 's/\x1b\[[0-9;]*[a-zA-Z]//g')" # Remove all escape sequences
+
+    # Notifications assume following rclone ouput: 
+    # Transferred: 0 / 0 Bytes, -, 0 Bytes/s, ETA - Errors: 0 Checks: 0 / 0, - Transferred: 0 / 0, - Elapsed time: 0.0s
+
+    transferred_amount=${rclone_sani_command#*Transferred: }
+    transferred_amount=${transferred_amount%% /*}
+    
+    send_notification() {
+      output_transferred_main=${rclone_sani_command#*Transferred: }
+      output_transferred_main=${output_transferred_main% Errors*}
+      output_errors=${rclone_sani_command#*Errors: }
+      output_errors=${output_errors% Checks*}
+      output_checks=${rclone_sani_command#*Checks: }
+      output_checks=${output_checks% Transferred*}
+      output_transferred=${rclone_sani_command##*Transferred: }
+      output_transferred=${output_transferred% Elapsed*}
+      output_elapsed=${rclone_sani_command##*Elapsed time: }
+      
+      notification_data='{
+        "username": "'"$DISCORD_NAME_OVERRIDE"'",
+        "avatar_url": "'"$DISCORD_ICON_OVERRIDE"'",
+        "content": null,
+        "embeds": [
+          {
+            "title": "Rclone Upload Task: Success!",
+            "color": 4094126,
+            "fields": [
+              {
+                "name": "Transferred",
+                "value": "'"$output_transferred_main"'"
+              },
+              {
+                "name": "Errors",
+                "value": "'"$output_errors"'"
+              },
+              {
+                "name": "Checks",
+                "value": "'"$output_checks"'"
+              },
+              {
+                "name": "Transferred",
+                "value": "'"$output_transferred"'"
+              },
+              {
+                "name": "Elapsed time",
+                "value": "'"$output_elapsed"'"
+              }
+            ],
+            "thumbnail": {
+              "url": null
+            }
+          }
+        ]
+      }'
+      
+      /usr/local/bin/curl -H "Content-Type: application/json" -d "$notification_data" $DISCORD_WEBHOOK_URL 
+    }
+    
+    if [ "$transferred_amount" != "0" ]; then
+      send_notification
+    fi
+
+  fi
+
+  rm -f "$LOCK_FILE"
+  trap - SIGINT SIGTERM
+  exit
 fi
 ```
 
@@ -302,3 +431,12 @@ kbguides@lw902:~/scripts$ readlink -f rclone-upload.sh
 
 * Save cron by doing CTRL + O and CTRL+ X to exit the editor
 * Now, all you need to do is to access all your apps and point it to your nerly made MergerFS folder which is `MergerFS`
+
+## Systemd Commands
+
+```
+Enabling and starting Rclone mount: systemctl --user enable --now {mount-name}.service
+Restart Rclone Mount: systemctl --user restart {mount-name}.service
+Stop Rclone Mount: systemctl --user stop {mount-name}.service
+Stop and disable Rclone mount: systemctl --user disable --now {mount-name}.service (Remove service file after)
+```

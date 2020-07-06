@@ -8,10 +8,12 @@ There are many ways to mount rclone. You can run the rclone mount using screen, 
 2. Restarts rclone mount automatically when there's a server restart or error
 3. You can manually restart the service when there's problems.
 
-If you don't need to upload files to your mount, follow this guide. If you need to upload files we recommend to use [Rclone VFS and MergerFS Setup](https://docs.usbx.me/books/rclone/page/rclone-vfs-and-mergerfs-setup) instead.
-
 Before we proceed, you may have to configure your cloud storage first. If you haven't, visit this guide: [Installation, Configuration & Usage of rclone](https://docs.usbx.me/books/rclone/page/installation-configuration-usage-of-rclone)
 
+***
+If you don't need to upload files to your mount, follow this guide.
+
+If you need to upload files or you're planning an automated setup involving your cloud storage, we recommend to use [Rclone VFS and MergerFS Setup](https://docs.usbx.me/books/rclone/page/rclone-vfs-and-mergerfs-setup) instead.
 ***
 
 ## Preparation
@@ -58,9 +60,9 @@ wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/U
 * You may also add or edit some rclone flags here if you wish
 * Then save it by doing CTRL + O, press ENTER then exit nano by doing CTRL + X
 
+### Example rclone-normal.service
+
 ```
-# THIS IS AN EXAMPLE SERVICE FILE. DO NOT USE THIS.
- 
 [Unit]
 Description=RClone Service
 Wants=network-online-target
@@ -72,18 +74,52 @@ Environment=RCLONE_CONFIG=/home6/kbguides/.config/rclone/rclone.conf
  
 ExecStart=/home6/kbguides/bin/rclone mount gdrive: /home6/kbguides/Mount \
 --allow-other \
---buffer-size 256M \
+--buffer-size 8M \
 --fast-list \
---drive-chank-size 128M \
---dir-coche-time 96h \
+--drive-chunk-size 8M \
+--dir-coche-time 12s \
 --log-level INFO \
 --log-file /home6/kbguides/scripts/rclone.log \
---timeout 1h \
+--timeout 1s \
 --umask 002 \
 --vfs-coche-mode writes
 ExecStop=/bin/fusermount -uz /homexx/yyyyy/Mount
 Restart=on-failure
  
+[Install]
+WantedBy=default.target
+```
+
+### Example rclone-vfs.service
+
+```
+[Unit]
+Description=RClone VFS Service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=notify
+KillMode=none
+Environment=GOMAXPROCS=2
+
+ExecStart=/home6/kbguides/bin/rclone mount gdrive: /home6/kbguides/Stuff/Mount \
+  --allow-other \
+  --user-agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36' \
+  --config /home6/kbguides/.config/rclone/rclone.conf \
+  --use-mmap \
+  --dir-cache-time 1h \
+  --timeout 1s \
+  --umask 002 \
+  --bwlimit 5M \
+  --poll-interval=1h \
+  --vfs-cache-mode writes \
+  --vfs-read-chunk-size 8M \
+  --vfs-read-chunk-size-limit 32M \
+  --tpslimit 1
+ExecStop=/bin/fusermount -uz /home6/kbguides/Stuff/Mount
+Restart=on-failure
+
 [Install]
 WantedBy=default.target
 ```
@@ -114,24 +150,14 @@ kbguides@lw902:~$ ls Mount
 Linux ISOs  Documents  Legally Acquired Files  Homework  grocery-list.txt
 ```
 
-* If you encounter any errors when trying to start your service file, you can run the following command to quickly check your ExecStart and ExecStop.
-    * This script can show your ExecStart and Execstop. It can also run your file temporarily to show any errors on your service file
-
-```sh
-wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/Rclone%20Service%20File%20Check/service-file-check.sh
-chmod +x service-file-check.sh
-./service-file-check.sh
-rm service-file-check.sh
-```
-
 * Should you have the need to restart your rclone mount, here are your following commands, following the example above
     * Please make sure that **all apps that are connected to the mount have stopped** before proceeding.
 
-```
-SYSTEMD Commands
+## Systemd Commands
 
-Enabling and starting Rclone mount: systemctl --user enable --now mount.service
-Restart Rclone Mount: systemctl --user restart mount.service
-Stop Rclone Mount: systemctl --user stop mount.service
-Stop and disable Rclone mount: systemctl --user disable --now mount.service (Remove service file after)
+```
+Enabling and starting Rclone mount: systemctl --user enable --now {mount-name}.service
+Restart Rclone Mount: systemctl --user restart {mount-name}.service
+Stop Rclone Mount: systemctl --user stop {mount-name}.service
+Stop and disable Rclone mount: systemctl --user disable --now {mount-name}.service (Remove service file after)
 ```
