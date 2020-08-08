@@ -5,6 +5,8 @@ In this guide, we'll be installing 2 scripts, `killstream.py` and `limiterr.py` 
 * `killstream.py` to disallow transcoding of 4k sources
 * `limiterr.py` to limit amount of plays of a show during night time.
 
+<c><p class="callout info">Take note that the scripts in this guide requires Plex Pass and will only work on Plex Pass users.</p></c>
+
 ## Prerequisites
 
 * Login to your seedbox's SSH
@@ -25,7 +27,7 @@ usbdocs@lw975:~/scripts$
 * Download the latest revision of the script below using `wget`
 
 ```sh
-wget https://raw.githubusercontent.com/blacktwin/JBOPS/master/killstream/kill_stream.py
+wget https://raw.githubusercontent.com/blacktwin/JBOPS/python3/killstream/kill_stream.py
 ```
 
 * After that, change the owner and make it executable by running the following commands

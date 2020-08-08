@@ -33,7 +33,6 @@ Password: Password: As configured in UCP under ruTorrent
 Relative Path: /rutorrent
 ```
 
-
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589349214407.png"></p>
 
 <c><p class="callout info">This will throw an `Server responded with an irregular HTTP code` when adding a torrent. You can safely ignore this error.</p></c>
@@ -57,7 +56,7 @@ Relative Path: /deluge
 ```
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589349399186.png"></p>
 
-##### Transmission
+#### Transmission
 
 ```
 Server name: {any name}
@@ -111,7 +110,7 @@ Click Save after configuring
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589350939412.png"></p>
 
-##### Transmission
+#### Transmission
 
 ```
 Server name: {any name}

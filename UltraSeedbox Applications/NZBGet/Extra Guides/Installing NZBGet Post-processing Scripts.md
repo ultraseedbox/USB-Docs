@@ -97,4 +97,12 @@ unzip videosort-8.0-dist.zip -d "$HOME"/.config/nzbget/scripts
 rm videosort-8.0-dist.zip
 ```
 
+### Clean.py
+
+* This script removes certain suffixes from NZB name.
+
+```sh
+wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/TRaSH-/Tutorials-FAQ/master/NZBGet/scripts/Clean/Clean.py
+```
+
 For more information and other recommended post-processing scripts, you can visit [NZBGet's Catalog of Post-processing scripts.](https://nzbget.net/catalog-of-extension-scripts)

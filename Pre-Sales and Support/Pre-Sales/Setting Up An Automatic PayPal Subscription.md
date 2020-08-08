@@ -2,7 +2,7 @@ This guide will show you how to setup an automatic PayPal subscription. This is 
 
 ***
 
-* Login to your Ultraseedbox client area and click on **View All**
+* Login to your UltraSeedbox client area and click on **View All**
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588619314505.png"></p>
 

@@ -4,7 +4,7 @@ We offer a community powered support Discord server. While staff may sometimes b
 
 Please keep in mind our Discord support is primarily community driven. As such please be patient with whoever helps you and if you are requiring more sensitive or immediate support try submitting a ticket.
 
-[Our community Discord server can be found at this link.](https://discord.gg/dZtmf3d)
+[Our community Discord server can be found at this link.](https://discord.com/invite/YXGYS9D)
 
 ### Submitting a Ticket
 
