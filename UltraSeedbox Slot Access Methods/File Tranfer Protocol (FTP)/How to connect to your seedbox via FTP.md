@@ -46,24 +46,25 @@ File Transfer Protocol over SSL (FTPS) and SSH File Transfer Protocol (SFTP) are
 
 ## FTPS
 
+* Does not count towards your allocated upload bandwidth
 * Widely Supported
 * Runs over TCP port 21
-* Stream-based protocol
 * Site to site transfers possible
+* Only supports username and password for authentication
 
 ## SFTP
 
+* It is counted towards your allocated upload bandwidth
 * Not all devices supported SFTP
-* Packet-based protocol
-* Runs on TCP 22
-* Much more simple to 
-* Can be more secure by using SSH key pairs as authentication method
-* Slower than SFTP
-
+* Runs on TCP port 22
+* Can be more secure by using SSH key pairs as authentication method, aside from username and password
+* Potentially much slower than FTPS due to the encryption protocols used
 
 ## Recomendations
 
 Both procols are safe to use but we recommended that you should use **SFTP with [Public Key Authentication](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/public-key-authentication)** for file transfers and interacting with the seedbox's terminal. This provides greater cryptographic strength than even long passwords provide and makes it easier for you to login by providing automated, passwordless login to your seedbox.
+
+***
 
 # Connecting to your seedbox using FTP Client
 

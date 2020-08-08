@@ -2,7 +2,7 @@ Megatools is a collection of programs for accessing and managing Mega.co.nz acco
 
 * Copy individual files as well as entire directory trees to and from your account
 * Perform streaming downloads without needing to download the entire file.
-* Rregister your account using `megareg` tool, with the benefit of having true control of your encryption keys.
+* Register your account using `megareg` tool, with the benefit of having true control of your encryption keys.
 
 In this short guide, we'll be showing you how to install/upgrade and uninstall megatools from your USB slot as well as a short description of the commands you can do on megatools.
 

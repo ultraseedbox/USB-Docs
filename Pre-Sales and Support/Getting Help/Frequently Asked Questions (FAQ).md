@@ -6,8 +6,7 @@ The download is unthrottled, so you are free to download as much from public tra
 
 ##### Do you offer any trials?
 
-We do not offer any trials, however if the service is not up to your standards, we will give you a pro rated refund within  
-your first 7 days.
+We do not offer any trials, however if the service is not up to your standards, we will give you a pro rated refund within  your first 7 days.
 
 ##### Where are your servers located?
 
@@ -18,15 +17,15 @@ Our servers are located in the Netherlands in the following data centers:
 
 ##### Can other users see my data?
 
-Other users cannot see your data. They are all locked to their own user folders and cannot access anyone elses.
+Other users cannot see your data. They are all locked to their own user folders and cannot access anyone else.
 
 ##### Do I get root? Can I install my own software?
 
-Users are not provided with root. However, you are more than welcome to install any programs in your userspace/Home directory by using your shell access, providing they do not abuse server resources.
+Users are not provided with root. However, you may install and run any programs in your userspace/Home directory via your slot's [shell access](https://docs.usbx.me/books/secure-shell-%28ssh%29), providing they do not abuse server resources.
 
 ##### Do you keep any logs of any kind?
 
-No, we do not log anything that is not necessary. Anything that is necessary to be logged are wiped every 12 hours.
+We do not log anything that is not necessary. Anything that is necessary to be logged are wiped every 12 hours.
 
 ##### How can I upgrade/downgrade my slot?
 
@@ -43,22 +42,24 @@ No, this is not possible for technical reasons. If you wish to change your curre
 
 ##### Why is my slot suspended?
 
-This is almost always down to a late payment. If you don't pay by your due date, your slot will be suspended. You have 7 days from your due date to pay your overdue invoices. Once it goes past 7 days and you haven't paid the invoice, your slot will be automatically purged.
+This is almost always due to a late payment.
+
+10 days before your due, you will be receiving an email with your invoice. Failure to pay on time will lead to the suspension of your slot. After this, you have 7 days to pay your overdue invoices after which it gets automatically purged from our systems if not paid after that.
 
 ##### Can I make a late payment?
 
-Just pay the invoice as you normally would. After you have paid your invoice, your slot will be automatically  
-reactivated within an hour. If it does not occur in this time, simply put in a ticket and explain your situation. The team will verify it has been paid and re activate it for you.
+Just pay the invoice as you normally would. After you have paid your invoice, your slot will be automatically reactivated within an hour.
+
+If, for any reason you cannot pay your invoice on time, simply put in a ticket to request for an extension. This is given on a case-to-case basis.
 
 ##### What is counted towards upload traffic?
 
-The following are counted towards upload traffic?
+The following are not counted towards your allocated upload bandwidth
 
 * FTP
-* SSH
 * Media Centers such as Plex, Emby and Jellyfin
 
-Other traffic such as rclone and torrent seeding is counted towards your quota.
+Other traffic such as rclone, JDownloader and torrent seeding is counted towards your quota.
 
 ##### When does my traffic usage reset?
 

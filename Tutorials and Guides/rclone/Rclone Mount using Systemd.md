@@ -1,25 +1,28 @@
 <p class="callout warning">This guide is for advanced users only and it serves as a guide for you to use rclone. The systemd files here are the recommended settings for our slots and will subject to change whenever there are new configurations that are appropriate for the slots. Furthermore, USB is not responsible for any data loss or application errors due to this setup should you proceed and will not provide official support for it due to the large volume of variables and different configurations possible with rclone. You may visit the community discord server for help.</p>
 
-Rclone's mount allows you to mount any of your cloud storage accounts as part of your slot's file system using FUSE. In this guide, we will teach you how to run an rclone mount using systemd. Take note that this guide is setup using Google Drive as the cloud storage provider used. Should you use any other cloud storage providers, you may need consult Rclone documentation for the appropriate flags for your setup.
+Rclone's mount allows you to mount any of your cloud storage accounts as part of your slot's file system using FUSE. In this guide, we will teach you how to run an rclone mount using systemd. Take note that this guide is setup using Google Drive as the cloud storage provider used. Should you use any other cloud storage providers, you may need consult rclone documentation for the appropriate flags for your setup.
 
-There are many ways to mount rclone. You can run the rclone mount using screen, create a script for running rclone mount and checking if the command is still alive, using `--daemon` flag, just to mention a few. We recommend using systemd for several reasons:
+There are many ways to mount rclone. You can run the rclone mount using screen, create a script for running rclone mount and checking if the command is still alive, using `--daemon` flag, just to mention a few.
+
+We recommend using systemd for several reasons:
 
 1. Easy to setup and configure
 2. Restarts rclone mount automatically when there's a server restart or error
-3. You can manually restart the service when there's problems.
+3. You can manually restart the service when there're problems.
 
-Before we proceed, you may have to configure your cloud storage first. If you haven't, visit this guide: [Installation, Configuration & Usage of rclone](https://docs.usbx.me/books/rclone/page/installation-configuration-usage-of-rclone)
+Before we proceed, you may have to install rclone and configure your cloud storage first. If you haven't, visit this guide: [Installation, Configuration & Usage of rclone](https://docs.usbx.me/books/rclone/page/installation-configuration-usage-of-rclone)
 
 ***
+
 If you don't need to upload files to your mount, follow this guide.
 
-If you need to upload files or you're planning an automated setup involving your cloud storage, we recommend to use [Rclone VFS and MergerFS Setup](https://docs.usbx.me/books/rclone/page/rclone-vfs-and-mergerfs-setup) instead.
+Should you need to upload files or you're planning an automated setup involving your cloud storage, we recommend to use [Rclone VFS and MergerFS Setup](https://docs.usbx.me/books/rclone/page/rclone-vfs-and-mergerfs-setup) instead.
 ***
 
 ## Preparation
 
 * Login to your seedbox's SSH
-* Do pwd and take note of the output. In this case, the output is `/home6/kbguides`
+* Do `pwd` and take note of the output. In this case, the output is `/home6/kbguides`
 * Then, create a folder by doing `mkdir >folder name<`
 * For this guide, we'll be making a folder named Mount. So we will run `mkdir Mount`
 
@@ -30,14 +33,21 @@ kbguides@lw902:~$ mkdir Mount
 kbguides@lw902:~$
 ```
 
+* Next, create a folder named `scripts`. This is where you'll find logs of the rclone mounts should there be any problems.
+
+```sh
+kbguides@lw902:~$ mkdir scripts
+kbguides@lw902:~$
+```
+
 ***
 
 ## Downloading Rclone Service File
 
 * Choose and run the following command below
 * There are 2 systemd files listed here. You have to choose either one of these files.
-    * The first one should work on most remotes supported by rclone.
-    * The second one is specific for Google Drive for Streaming.
+  * The first one should work on most remotes supported by rclone.
+  * The second one is specific for Google Drive that is optimized for streaming.
 
 ### Rclone Mount for Most Remotes
 
@@ -45,7 +55,7 @@ kbguides@lw902:~$
 wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/rclone-normal.service && nano ~/.config/systemd/user/rclone-normal.service
 ```
 
-### Google Drive Rclone Mount for Plex Streaming
+### Google Drive Rclone Mount for Media Streaming
 
 ```sh
 wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/rclone-vfs.service && nano ~/.config/systemd/user/rclone-vfs.service
@@ -55,10 +65,12 @@ wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/U
 
 ## Editing your service file
 
-* After you run the command, a nano text window appears. In this example service file, I chose Google Drive Rclone Mount for Plex Streaming
-* Edit `/homexx/yyyyy` to your output in `pwd` and to your preferred folder (eg `/home6/kbguides/Rclone/Mount/Folder/here)`
+* After you run the command, a nano text window appears. In this example service file, we'll be using Google Drive Rclone Mount for Plex Streaming.
+* Edit `/homexx/yyyyy` to your output in `pwd` and to your preferred folder (e.g. `/home6/kbguides/Rclone/Mount/Folder/here`).
 * You may also add or edit some rclone flags here if you wish
-* Then save it by doing CTRL + O, press ENTER then exit nano by doing CTRL + X
+* Then save it by doing CTRL + O, press ENTER then exit nano by doing **CTRL + X**.
+
+<c><p class="callout info">Shown below are example service files. Do not copy paste anything from the example files as it does not always reflect the contants of the service files from our repository and in this guide. Please read the guide thoroughly before setting it up.</p></c>
 
 ### Example rclone-normal.service
 
@@ -73,17 +85,10 @@ Type=notify
 Environment=RCLONE_CONFIG=/home6/kbguides/.config/rclone/rclone.conf
  
 ExecStart=/home6/kbguides/bin/rclone mount gdrive: /home6/kbguides/Mount \
---allow-other \
---buffer-size 8M \
---fast-list \
---drive-chunk-size 8M \
---dir-coche-time 12s \
---log-level INFO \
---log-file /home6/kbguides/scripts/rclone.log \
---timeout 1s \
---umask 002 \
---vfs-coche-mode writes
-ExecStop=/bin/fusermount -uz /homexx/yyyyy/Mount
+  --user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36' \
+  --config /home6/kbguides/.config/rclone/rclone.conf \
+  --use-mmap
+ExecStop=/bin/fusermount -uz /home6/kbguides/Mount
 Restart=on-failure
  
 [Install]
@@ -104,18 +109,16 @@ KillMode=none
 Environment=GOMAXPROCS=2
 
 ExecStart=/home6/kbguides/bin/rclone mount gdrive: /home6/kbguides/Stuff/Mount \
-  --allow-other \
-  --user-agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36' \
+  --user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36' \
   --config /home6/kbguides/.config/rclone/rclone.conf \
   --use-mmap \
   --dir-cache-time 1h \
-  --timeout 1s \
+  --timeout 30s \
   --umask 002 \
-  --bwlimit 5M \
   --poll-interval=1h \
   --vfs-cache-mode writes \
-  --vfs-read-chunk-size 8M \
-  --vfs-read-chunk-size-limit 32M \
+  --vfs-read-chunk-size 1M \
+  --vfs-read-chunk-size-limit 64M \
   --tpslimit 1
 ExecStop=/bin/fusermount -uz /home6/kbguides/Stuff/Mount
 Restart=on-failure
@@ -133,7 +136,7 @@ WantedBy=default.target
 * Reload systemd Daemon by doing `systemctl --user daemon-reload`. You will do this every time you change something in your system files.
 * After that enable and start the service that we added immediately by doing `systemctl --user enable --now rclone-vfs.service`
     * `enable --now` will run the rclone mount service and will keep it alive. It also automatically starts during server restarts and rclone crashes.
-* To check if your service is running, do `systemctl --user status rclone-vfs.service`. It should have both loaded and active (running), noting that the rclone mount is executed and running
+* To check if your service is running, do `systemctl --user status rclone-vfs.service`. It should have both loaded and active (running), noting that the rclone mount is executed and running.
 * Then, to check if your mount is actually mounted to the folder properly, do `ls Mount`. Your files from your cloud storage account should show up.
 
 ```sh
@@ -145,7 +148,7 @@ kbguides@lw902:~$ systemctl --user status mount.service
    Active: active (running) since Sun 2019-06-30 18:32:24 CEST; 19h ago
  Main PID: 38563 (rclone)
    CGroup: /user.slice/user-xxxx.slice/user@xxxx.service/mount.service
-           └─38563 /home6/kbguides/bin/rclone mount gdrive: /home17/usb770/Stuff/Mount --allow-other --buffer-size 256M --drive-chunk-size
+           └─38563 /home6/kbguides/bin/rclone mount gdrive: /home17/usb770/Stuff/Mount --allow-other --buffer-size 1M --drive-chunk-size
 kbguides@lw902:~$ ls Mount
 Linux ISOs  Documents  Legally Acquired Files  Homework  grocery-list.txt
 ```
@@ -161,3 +164,9 @@ Restart Rclone Mount: systemctl --user restart {mount-name}.service
 Stop Rclone Mount: systemctl --user stop {mount-name}.service
 Stop and disable Rclone mount: systemctl --user disable --now {mount-name}.service (Remove service file after)
 ```
+
+## App Optimizations
+
+* You may need to tweak some of your apps so it plays well with your rclone mount. Refer to the following page for more information on these tweaks.
+
+[rclone Optimizations for Apps](https://docs.usbx.me/books/rclone/page/rclone-optimizations-for-apps)

@@ -1,10 +1,11 @@
 * Navigate to [Google Developer Console](https://console.developers.google.com/) and log into your Google account.
-* Click Create on the right hand side of the screen. On the screen that pops up enter a Project name and then click create
+* Click Create on the right-hand side of the screen. On the screen that pops up enter a Project name and then click **Create**.
   * I'd recommend against using rclone in the project name, even just the default will do.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/Create.PNG"></p>
 
-* Click **Enable APIs and Services**, search for Drive and select **Google Drive**. Click **Enable** on the window that pops up.
+* Click **Enable APIs and Services**, search for Drive and select **Google Drive**.
+* Click **Enable** on the window that pops up.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/Enable.PNG"></p>
 

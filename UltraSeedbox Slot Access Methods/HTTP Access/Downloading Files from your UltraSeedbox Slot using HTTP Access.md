@@ -2,6 +2,8 @@ One of the ways to manage files from your seedbox into your computer is through 
 
 It is not meant for you to share files to your friends. For that you need to either use [Userland ProFTPD](https://docs.usbx.me/books/file-transfer-protocol-%28ftp%29/page/userland-proftpd), [Nextcloud](https://docs.usbx.me/books/nextcloud) or [Pydio](https://docs.usbx.me/books/pydio).
 
+Take note that HTTP Access counts towards your allocated upload bandwidth.
+
 <c><p class="callout warning">Sharing your files to the public is considered to be abuse by USB TOS and will be subjected to immediate termination.</p></c>
 
 In this guide, we'll be setting up HTTP access and adding a folder into your HTTP Access page.

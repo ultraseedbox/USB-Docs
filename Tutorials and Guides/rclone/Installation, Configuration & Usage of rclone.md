@@ -26,7 +26,7 @@ curl https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/
 
 ## Configuration
 
-Now we need to configure a remote to use with rclone. For this guide we will be configuring Google Drive. This is the most common remote people tend to use as it offers large storage capacities for a reasonable price. If you wish to use a different cloud host feel free to modify the steps you take.
+Now we need to configure a remote to use with rclone. For this guide we will be configuring Google Drive. This is the most common remote people tend to use as it offers large storage capacities for a reasonable price. Should you wish to use a different cloud host, feel free to modify the steps you take.
 
 * Run the command `rclone config`
 
@@ -58,7 +58,7 @@ Choose a number from below, or type in your own value
 ```
 
 * You will be prompted to enter your `client_id`. If you have not generated your keys yet or do not know what it is I recommend using this guide to help you generate them [Configuring Oauth for Google Drive](https://docs.usbx.me/books/rclone/page/configuring-oauth-for-google-drive).
-* Once you have followed the steps in the guide, copy your client ID and paste it into the terminal, next press **Enter**. Now copy your client secret, paste it in, and again press **Enter**
+* Once you have followed the steps in the guide, copy your client ID and paste it into the terminal, next press **Enter**. Now copy your client secret, paste it in, and again press **Enter**.
 
 ```
 Google Application Client Id
@@ -72,7 +72,7 @@ Enter a string value. Press Enter for the default ("").
 client_secret> example12345
 ```
 
-* Choose the scope you wish to give rclone. Full access is safe and likely the most useful one to you, so in this case we will type `1` then press **Enter**.
+* Choose the scope you wish to give to rclone. Full access is safe and is likely the most useful one to you, so in this case we will type `1` then press **Enter**.
 
 ```
 Scope that rclone should use when requesting access from drive.
@@ -116,7 +116,10 @@ n) No
 y/n> n
 ```
 
-* Type `n` to choose to not use auto config and press **Enter**. You will be provided with a URL, copy this URL and paste it into your web browser. Choose the Google Drive account you wish to use and click Allow to give rclone permission to use it. You will be given a code, copy this and place it into your terminal, then press Enter. Finally type `n` to choose to not configure as a team drive and press **Enter**.
+* Type `n` to choose to not use auto config and press **Enter**. You will be provided with a URL, copy this URL and paste it into your web browser.
+* Choose the Google Drive account you wish to use and click **Allow**, giving rclone permission to use it.
+* You will be given a code, copy this and place it into your terminal, then press Enter.
+* Finally, type `n` to choose to not configure as a team drive and press **Enter**.
 
 ```
 Use auto config?
@@ -136,7 +139,8 @@ n) No
 y/n> n
 ```
 
-* You will be shown a confirmation screen. If all is okay type `y` and then press **Enter** to save your configuration. If you notice any issues, you can edit them from here by typing `e`, or delete them using `d`. Finally, press `q` and then **Enter** to quit the rclone config wizard.
+* You will be shown a confirmation screen. If all is okay, type `y` and then press **Enter** to save your configuration.
+* If you notice any issues, you can edit them from here by typing `e`, or delete them using `d`. Finally, press `q` and then **Enter** to quit the rclone config wizard.
     
 
 ```
@@ -158,7 +162,7 @@ y/e/d>
 
 ## Usage
 
-rclone is interacted with purely through SSH. Please ensure you are familiar with the Linux terminal and using SSH prior to trying to use rclone.
+rclone is interacted with purely through SSH. Please ensure you are familiar with the Linux terminal and using SSH prior to using rclone.
 
 ### General Commands
 

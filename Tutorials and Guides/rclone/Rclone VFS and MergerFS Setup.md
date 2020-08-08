@@ -1,8 +1,8 @@
 <p class="callout warning">This guide is for advanced users only and it serves as a guide for you to use rclone and mergerFS. The files here are the recommended settings for our slots and will subject to change whenever there are new configurations that are appropriate for the slots. Furthermore, USB is not responsible for any data loss or application errors due to this setup should you proceed and will not provide official support for it due to the large volume of variables and different configurations possible with rclone and mergerFS. You may visit the community discord server or the software's respective forums for assistance.</p>
 
-This guide will teach you how to how to setup a rclone VFS mount and MergerFS on USB slots and it assumes the following:
+This guide will teach you how to setup a rclone VFS mount and MergerFS on USB slots and it assumes the following:
 
-* You have a working RClone setup, especially correctly configured remotes of your preferred cloud storage provider. In this tutorial, we’ll be using Google Drive. If you use another cloud storage provider, change the flags that are appropriate to your setup and visit RClone documentation for more information.
+* You have a working rclone setup, especially correctly configured remotes of your preferred cloud storage provider. In this tutorial, we’ll be using Google Drive. If you use another cloud storage provider, change the flags that are appropriate to your setup and visit rclone documentation for more information.
 * You have the appropriate knowledge of setting up and running your own systemd services.
 * You are comfortable working in CLI, compiling from sources and setting up cron jobs.
 
@@ -11,20 +11,20 @@ Workflow of the setup is as follows:
 1. There are 2 folders, one local and the rclone mount named Mount
 2. These 2 folders are merged via MergerFS and is mounted to another folder. All apps such as Plex, Radarr, Sonarr and such will be pointed to this folder.
 3. When you copy a file to MergerFS, this will be copied to Local First. Directory structures will be retained.
-4. A rclone move script moves all of the contents inside Local every 3AM, retaining the directory structures.
+4. A rclone move script moves all the contents inside Local every 3AM, retaining the directory structures.
 5. Applications that are pointed to MergerFS wouldn’t know the difference.
 
 Pros of this setup are as follows:
 
 1. New files will be immediately available in Plex and has faster loading times due to it being available locally.
 2. Uploads is lesser prone to errors than moving files directly via rclone mount.
-3. It's essentially a "set it up and forget" setup
+3. It's essentially a “set it and forget it“ setup
 
 Cons of this setup are as follows:
 
 1. New files will not be available on Google Drive until you run the rclone move script
 2. There will be 3 points of failure on this setup, RClone, apps that are connected to MergerFS folder and MergerFS
-3. Monitoring functions such as Plex's "Update my library automatically" will not work for mounts. You may need to set your application to periodically scan the mount.
+3. Monitoring functions such as Plex's “Update my library automatically“ will not work for mounts. You may need to set your application to periodically scan the mount.
 
 Before we proceed, it is imperative to stop all rclone/plexdrive processes and stop all the apps that are connected to your rclone mount before proceeding.
 
@@ -34,9 +34,9 @@ Before we proceed, it is imperative to stop all rclone/plexdrive processes and s
 
 * Install and configure rclone if you haven't already. Refer here for more information: [Installation, Configuration & Usage of rclone](https://docs.usbx.me/books/rclone/page/installation-configuration-usage-of-rclone "Installation, Configuration & Usage of rclone")
 * Create all the necessary folders.
-* Here, we need to create 4 folders,
   * First, a local folder and a rclone mount folder. You can put these folders anywhere in your home folder but I’d like to put these inside another folder. We'll name it Stuff just to make it cleaner.
   * Then, we create another folder where we’ll mount MergerFS. Let’s name it MergerFS.
+  * Lastly, create scripts folder. This is where you'll find logs for your rclone/mergerfs mounts. This is where you'll store the bash upload script if you choose the bash upload script, which will be explained more later.
 
 ```
 FILE STRUCTURE
@@ -45,6 +45,7 @@ FILE STRUCTURE
     -Local #servers as our local mount
     -Mount #Rclone mount point
 /home6/kbguides/MergerFS/ #actual mergerfs mount point
+/home6/kbguides/scripts/ #Where you'll find logs for rclone/mergerfs mounts
 ```
 
 <p class="callout warning">Do not attempt to mount your rclone remote directly on your home directory. This will lead to instabilities. Instead, always mount to an empty folder within your home directory.</p>
@@ -72,10 +73,10 @@ kbguides@lw902:~$ which mergerfs
 
 ***
 
-## Setting up Systemd files and running MergerFS/Rclone
+## Setting up systemd files and running MergerFS/Rclone
 
 * Run the following commands to your terminal
-  * This will download the latest revisions of the service files from our repository repository directly to your systemd folder.
+  * This will download the latest revisions of the service files from our repository directly to your systemd folder.
 
 ```sh
 wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/rclone-vfs.service
@@ -85,13 +86,16 @@ wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/U
 * Do `pwd` and take note of the output. In this case, the output is `/home6/kbguides`
 
 ```sh
-kbguides@lw902:~$ pwd/home6/kbguides
+kbguides@lw902:~$ pwd
+/home6/kbguides
 ```
 
-* Then, navigate to `~/.config/systemd/user/` and edit each file by replacing `/home6/kbguides/` with the output from `pwd` using a text editor (nano, vim)
-  * In these systemd files, these are for Google Drive and is the recommended settings for our slots (Plex Streaming and Uploading)
+* Then, navigate to `~/.config/systemd/user/` and edit each file by replacing `/home6/kbguides/` with the output from `pwd` using a text editor (`nano`, `vim`)
+  * In these systemd files, these are for Google Drive and is the recommended settings for our slots (Plex Streaming)
   * You may wish to add or edit additional flags/options that will be best for your setup.
     * We recommend starting off with our defaults first.
+
+<c><p class="callout info">Shown below are example service files. Do not copy and paste anything from the example files as it does not always reflect the contents of the service files from our repository and in this guide. Please read the guide thoroughly before setting it up.</p></c>
 
 ### Example Rclone Service File
 
@@ -156,20 +160,21 @@ WantedBy=default.target
 
 ## Setting Up Rclone Uploader
 
-* Here, we will setup the uploader. You may choose between Bash Upload script or Systemd service.
-* We recommend using the *systemd uploader*
+* Here, we will set up the uploader. The rclone uploader is a script that uploads the contents of your `Local` folder and merge it to your rclone mount.
+* You may choose between **Bash Upload script** or S**ystemd service**.
+* We recommend using the **systemd uploader**
 
 ### Systemd Uploader
 
 * Run the following commands to your terminal
-  * This will download the latest revisions of the service files from our repository repository directly to your systemd folder.
+  * This will download the latest revisions of the service files from our repository directly to your systemd folder.
 
 ```sh
 wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-uploader.service
 wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-uploader.timer
 ```
 
-* Do `pwd` and take note of the output. In this case, the output is `/home6/kbguides`
+* Do `pwd` and take note of the output. In this case, the output is `/home6/kbguides`.
 
 ```sh
 kbguides@lw902:~$ pwd
@@ -232,15 +237,14 @@ WantedBy=timers.target
 
 ### Bash Upload Script
 
-* Download this script to whatever folder you wish. In this case, I’d like to put it inside a folder, so I made a directory called `scripts`, navigate, download the script there and make the script executable  
-    * You may choose between the normal upload script (no notifications) or rclone upload script that sends discord notifications whenever there's a successful transfer.
+* Download this script to whatever folder you wish. In this case, `scripts` will be the folder where you'll save the script.
+  * You may choose between the normal upload script (no notifications) or rclone upload script that sends discord notifications whenever there's a successful transfer.
 * Change the scripts permission to 755, so it makes it executable by you. So do `chmod +x >name of script<.sh`
-    * In the proceeding examples, I decided to use the normal rclone script so do `chmod +x rclone-upload.sh`
+  * In the proceeding examples, I decided to use the normal rclone script so do `chmod +x rclone-upload.sh`
 
 #### Normal Upload Script
 
 ```sh
-mkdir -p ~/scripts
 cd scripts/
 wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-upload.sh
 chmod +x rclone-upload.sh
@@ -249,7 +253,6 @@ chmod +x rclone-upload.sh
 #### Upload Script with Discord Notifications via Webhook
 
 ```sh
-mkdir -p ~/scripts
 cd scripts/
 wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-upload-with-notification.sh
 chmod +x rclone-upload-with-notification.sh
@@ -440,3 +443,9 @@ Restart Rclone Mount: systemctl --user restart {mount-name}.service
 Stop Rclone Mount: systemctl --user stop {mount-name}.service
 Stop and disable Rclone mount: systemctl --user disable --now {mount-name}.service (Remove service file after)
 ```
+
+## App Optimizations
+
+* You may need to tweak some of your apps so it plays well with your MergerFS setup. Refer to the following page for more information on these tweaks.
+
+[rclone Optimizations for Apps](https://docs.usbx.me/books/rclone/page/rclone-optimizations-for-apps)

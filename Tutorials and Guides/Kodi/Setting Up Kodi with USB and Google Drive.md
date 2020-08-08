@@ -1,4 +1,4 @@
-This guide will show you how to setup Kodi as your media center for your media. This will show you the following:
+This guide will show you how to set up Kodi as your media center for your media. This will show you the following:
 
 * Mounting your USB seedbox to Kodi as your Media source via FTP
 * Setting Google Drive as a source
@@ -11,7 +11,7 @@ Take note that Kodi only does direct play. It does not transcode your media.
 
 * You must download and install Kodi to your devices. Visit the [Kodi Downloads Page](https://kodi.tv/download) to learn more.
   * The setup below is done on a Windows PC using Kodi 18.7.
-* You must setup a FTP/SSH password on your slot. You must also know the path to where your media is. Refer to [this link](https://docs.usbx.me/books/file-transfer-protocol-%28ftp%29/page/connecting-to-your-seedbox-with-ftp#bkmrk-changing-your-ssh%2Fft) to learn more.
+* You must set up an FTP/SSH password on your slot. You must also know the path to where your media is. Refer to [this link](https://docs.usbx.me/books/file-transfer-protocol-%28ftp%29/page/connecting-to-your-seedbox-with-ftp#bkmrk-changing-your-ssh%2Fft) to learn more.
 * Mount your Google Drive to your slot. You can refer to [this link](https://docs.usbx.me/books/rclone) to learn more.
 
 ## Setting Up Kodi
@@ -26,7 +26,7 @@ Take note that Kodi only does direct play. It does not transcode your media.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591551639251.png"></p>
 
-* Click **Add network location** and add the following info. Click **OK** to save the remote location
+* Click **Add network location** and add the following info. Click **OK** to save the remote location.
 
 ```
 Protocol: FTP Server
@@ -45,11 +45,11 @@ Password: {set FTP password}
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556879970.png"></p>
 
-* Then add a name to your added path. In this guide, we'll be using USB_Movies
+* Then add a name to your added path. In this guide, we'll be using `USB_Movies`
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556929342.png"></p>
 
-* A Set content window comes up. Since the path contains Movies, change the **This directory contains** dialogue to Movies.
+* A Set content window comes up. Since the path contains Movies, change **This directory contains** dialogue to Movies.
 * Select the information provider that you want. In this case, it's The Movie Database.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591557089707.png"></p>
@@ -60,7 +60,7 @@ Password: {set FTP password}
 
 ### Google Drive
 
-* Install the Google Drive Plugin by going to Settings -> Add-ons -> Install from repository
+* Install the Google Drive Plugin by going to Settings ⇾ Add-ons ⇾ Install from repository
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558410337.png"></p>
 
@@ -68,13 +68,13 @@ Password: {set FTP password}
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558431770.png"></p>
 
-* Finally, click Install. It'll ask for you to install other dependinces, click OK to proceed.
+* Finally, click Install. It'll ask for you to install other dependencies, click OK to proceed.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558445816.png"></p>
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558475601.png"></p>
 
-* Go back to the Home screen -> Add-ons and select Google Drive
+* Go back to the Home screen ⇾ Add-ons and select Google Drive
 
 * Click **Add an account**
 
@@ -86,8 +86,8 @@ Password: {set FTP password}
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558816723.png"></p>
 
-* Next, create a folder somewhere on your device that you can save exported GDrive `*.strm` files to.
-  * In this example, `C:\Users\{username}\strm` is used
+* Next, create a folder somewhere on your device that you can save exported Google Drive `*.strm` files to.
+  * In this example, `C:\Users\{username}\strm` is used.
 
 * Reopen your Google Drive add-on and browse through your account
 
@@ -97,7 +97,7 @@ Password: {set FTP password}
 
 * Right click to the media folders you want to set. Right click it and select `export to .strm files...`
 * Set the destination folder to the folder you set, which in this case is `C:\Users\{username}\strm`
-* Enable **Update library after export** and **Watch for changes in the Cloud folder** then click OK. Let Kodi scan for all of the files in your Google Drive folders.
+* Enable **Update library after export** and **Watch for changes in the Cloud folder** then click OK. Let Kodi scan for all the files in your Google Drive folders.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591561568087.png"></p>
 
@@ -105,7 +105,7 @@ Password: {set FTP password}
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591551573826.png"></p>
 
-* Click **Add Videos**. The Add video source appears. Click **Browse** then browse to where you created your folder, which should have the folders with .strm files.
+* Click **Add Videos**. The Add video source appears. Click **Browse** then browse to where you created your folder, which should have the folders with `.strm` files.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591562454512.png"></p>
 
@@ -115,12 +115,12 @@ Password: {set FTP password}
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556879970.png"></p>
 
-* Then add a name to your added path. In this guide, we'll be using `TV`
+* Then add a name to your added path. In this guide, we'll be using `TV`.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591562603998.png"></p>
 
-* A Set content window comes up. Since the path contains TV SHows, change the **This directory contains** dialogue to Movies.
-* Select the information provider that you want. In this case, it's choose TVDB. You can select that from the Get More button.
+* A Set content window comes up. Since the path contains TV Shows, change **This directory contains** dialogue to Movies.
+* Select the information provider that you want. In this case, it's choose `TVDB`. You can select that from the Get More button.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591562714511.png"></p>
 
