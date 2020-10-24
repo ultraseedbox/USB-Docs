@@ -7,6 +7,7 @@
 
 # MD Image Replace
 sed -i -E 's|\[!\[\]\(.*\)\]\(|<p align="center"><img src="|g' "$1"
+sed -i -E 's|!\[.*\]\(|<p align="center"><img src="|g' "$1"
 sed -i -E 's|!\[\]\(|<p align="center"><img src="|g' "$1"
 sed -i -E 's|\[!\[(.*)]\((.*)\)\]\(|<p align="center"><img src="|g' "$1"
 
