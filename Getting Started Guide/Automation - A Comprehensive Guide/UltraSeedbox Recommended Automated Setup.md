@@ -14,7 +14,7 @@ You'll be installing the following software:
 5. Tautulli
 6. Ombi
 
-Provided below is a checklist of what to do. Each section has links to step-by-step guide of said apps. It is recommended to right click each link and open in a new tab. Once you've finished, you can tick this and proceed to the next link.
+Provided below is a checklist of what to do. Each section has links to a step-by-step guide of said apps. It is recommended to right-click each link and open in a new tab. Once you've finished, you can tick this and proceed to the next link.
 
 ***
 

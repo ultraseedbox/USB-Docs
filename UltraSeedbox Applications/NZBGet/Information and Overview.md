@@ -1,4 +1,4 @@
-NZBGet is a binary downloader written in C++, which downloads files from Usenet based on information given in nzb-files. It is designed with performance in mind to achieve maximum download speed by using very little system resources. Some of the features are:
+NZBGet is a binary downloader written in C++, which downloads files from Usenet based on the information given in nzb-files. It is designed with performance in mind to achieve maximum download speed by using very little system resources. Some of the features are:
 
 * Fast deobfuscation (par-rename)
 * RSS with duplicate check

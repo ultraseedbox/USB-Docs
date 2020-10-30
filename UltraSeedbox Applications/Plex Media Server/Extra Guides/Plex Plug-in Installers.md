@@ -1,4 +1,4 @@
-Listed below are scripts that installs some of the popular Plex Plugins into your PMS instance. To use it, just run the commands of the plug-ins that you need on your seedbox's SSH terminal and access your Plex afterwards. Some post-installation notes are detailed on each plug-in.
+Listed below are scripts that installs some of the popular Plex Plugins into your PMS instance. To use it, just run the commands of the plug-ins that you need on your seedbox's SSH terminal and access your Plex afterward. Some post-installation notes are detailed on each plug-in.
 
 ***
 

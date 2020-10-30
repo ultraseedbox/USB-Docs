@@ -1,4 +1,4 @@
-This guide lists optimizations when using rclone mount to host your files to your seedbox. This is to lessen the API request hits made by rclone to your cloud streaming service and to not hit your cloud streaming's download quotas.
+This guide lists optimizations when using `rclone mount` to host your files to your seedbox. This is to lessen the API request hits made by rclone to your cloud streaming service and to not hit your cloud streaming's download quotas.
 
 ***
 
@@ -14,7 +14,7 @@ This guide lists optimizations when using rclone mount to host your files to you
 * `Generate intro video markers`: never
 * `Generate chapter thumbnails`: never
 * `Analyze audio tracks for loudness`: never
-  * The following settings do a full download of the file and is only used to create intro markers, generate thumbnails and analyze audio track of each file.
+  * The following settings do a full download of the file and is only used to create intro markers, generate thumbnails and analyze the audio track of each file.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-08/image-1596905991296.png"></p>
 
@@ -40,7 +40,7 @@ This guide lists optimizations when using rclone mount to host your files to you
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-08/image-1596906695674.png"></p>
 
 * `Thumbnail Image Extraction`: none
-  * It does full download of the file and is only used to generate thumbnails. This can be set per-library.
+  * It does the full download of the file and is only used to generate thumbnails. This can be set per-library.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-08/image-1596906693494.png"></p>
 
@@ -50,7 +50,7 @@ This guide lists optimizations when using rclone mount to host your files to you
 
 * `Analyze video files`: Unchecked
   * It downloads the media file in full to perform media analysis (Extracting video information from the media file)
-  * This should be turned off as this happens frequently on library refreshes, if left on.
+  * This should be turned off as this happens frequently on library refreshes if left on.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-08/image-1596907268973.png"></p>
 

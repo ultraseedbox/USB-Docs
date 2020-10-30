@@ -2,11 +2,11 @@
 
 No, The only type of tracker we restrict is seeding to public ones. We ask you limit your public torrents to a ratio of 2. You can see how to do this on your respective clients here: [Deluge](https://docs.usbx.me/books/deluge/page/limiting-seeding-ratio-in-deluge), [ruTorrent](https://docs.usbx.me/books/rtorrentrutorrent/page/limiting-seeding-ratio-in-rutorrent) and [Transmission](https://docs.usbx.me/books/transmission/page/limit-seeding-ratio-in-transmission).
 
-The download is unthrottled, so you are free to download as much from public trackers as you wish.
+The download is not throttled, so you are free to download as much from public trackers as you wish.
 
 ##### Do you offer any trials?
 
-We do not offer any trials, however if the service is not up to your standards, we will give you a pro rated refund within  your first 7 days.
+We do not offer any trials, however if the service is not up to your standards, we will give you a prorated refund within the first 7 days.
 
 ##### Where are your servers located?
 
@@ -29,8 +29,7 @@ We do not log anything that is not necessary. Anything that is necessary to be l
 
 ##### How can I upgrade/downgrade my slot?
 
-Simply put in a ticket [here](https://my.ultraseedbox.com/submitticket.php) and ask for the team to upgrade or downgrade your plan to which ever you wish. If you want 
-data to be transferred, please ask the team to do so. They will be more than happy to! The data will be placed into a folder called "transfer" in your new slot. It is up to you to move this data to where ever you wish it to be.
+Simply put in a ticket [here](https://my.ultraseedbox.com/submitticket.php) and ask for the team to upgrade or downgrade your plan to which ever you wish. If you want data to be transferred, please ask the team to do so. They will be more than happy to! The data will be placed into a folder called `transfer` in your new slot. It is up to you to move this data to where ever you wish it to be. You may also refer to USB's [extensive guide to Migrate your UltraSeedbox slot's data](https://docs.usbx.me/books/migrating-your-ultraseedbox-data/page/migrating-your-ultraseedbox-slot) if you prefer to do it on your own.
 
 ##### Can I change the username of my slot?
 

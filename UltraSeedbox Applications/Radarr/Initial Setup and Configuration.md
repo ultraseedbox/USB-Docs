@@ -1,4 +1,4 @@
-In this guide, we'll be setting up Radarr. This guide assumes that that this is your first time installing Radarr and you'll be storing your media locally, saving it to `~/media`. We'll be doing the following:
+In this guide, we'll be setting up Radarr. This guide assumes that this is your first time installing Radarr and you'll be storing your media locally, saving it to `~/media`. We'll be doing the following:
 
 1. Enabling Automatic Organization
 1. Adding indexers
@@ -108,7 +108,7 @@ For connection details on each client, you may refer to this guide: [Download Cl
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-02/scaled-1680-/image-1581336706270.png"></p>
 
-* After that is set, you can choose either the green plus button to add your movie or green magnifying glass button to start searching your indexers for the movie.
+* After that is set, you can choose either the green plus button to add your movie or the green magnifying glass button to start searching your indexers for the movie.
 
 ***
 
@@ -145,7 +145,7 @@ For connection details on each client, you may refer to this guide: [Download Cl
 
 ### Indexers
 
-* This is where Radarr will grab releases from. You can set your preferred tracker and/or usenet indexers.
+* This is where Radarr will grab releases from. You can set your preferred tracker and/or Usenet indexers.
 * You may also set some options on how frequent you check your torrents, your torrent minimum age and set your restrictions.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-12/scaled-1680-/image-1575387799248.png"></p>

@@ -58,7 +58,7 @@ For download client setup settings, you may refer to this guide: [Medusa Downloa
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232323433.png"></p>
 
-* After you have selected your torrent search providers, click on the **Save Changes** button below the provider list, and then also click the **Save Changes** button in the lower left corner.
+* After you have selected your torrent search providers, click on the **Save Changes** button below the provider list, and then also click the **Save Changes** button in the lower-left corner.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/img-2422224233.png"></p>
 
@@ -78,7 +78,7 @@ For download client setup settings, you may refer to this guide: [Medusa Downloa
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2224243433.png"></p>
 
-* After you have entered your provider credentials and settings, click on the **Save Changes** button below the provider list, and then also click the **Save Changes** button in the lower left corner.
+* After you have entered your provider credentials and settings, click on the **Save Changes** button below the provider list, and then also click the **Save Changes** button in the lower-left corner.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232242433.png"></p>
 
@@ -105,7 +105,7 @@ For download client setup settings, you may refer to this guide: [Medusa Downloa
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2222225433.png"></p>
 
-<c><p class="callout info">Its important to be be sure only your **COMPLETED** downloads are in this location, otherwise Medusa's Post-Processor may import incomplete media and cause errors. You may refer to the [Medusa Download Client Connection Details](https://docs.usbx.me/books/medusa/page/download-client-connection-details) to set completed directories for your download clients to this location</p></c>
+<c><p class="callout info">Its important to be sure only your **COMPLETED** downloads are in this location, otherwise Medusa's Post-Processor may import incomplete media and cause errors. You may refer to the [Medusa Download Client Connection Details](https://docs.usbx.me/books/medusa/page/download-client-connection-details) to set completed directories for your download clients to this location</p></c>
 
 * You will need to set the **Processing Method**:
 
@@ -125,7 +125,7 @@ If your torrent trackers have archives, it would be recommended to enable Medusa
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232222433.png"></p>
 
-* To save your **Post Processing** settings, click on the **Save Changes** button below the provider list, and then click the **Save Changes** button in the lower left corner.
+* To save your **Post Processing** settings, click on the **Save Changes** button below the provider list, and then click the **Save Changes** button in the lower-left corner.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2239722223.png"></p>
 

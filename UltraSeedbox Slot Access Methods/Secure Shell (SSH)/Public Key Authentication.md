@@ -1,4 +1,4 @@
-**SSH key pair authentication** is a recommended method of logging into your seedbox via SSH for added security and convenience in place of our SSH password. You can place the public key on your slot, and then unlock it by connecting to it with a client that has the private key. When the two match up, the system unlocks without the need for a password. The major advantage of this is that this authentication method provides greater cryptographic strength than long passwords, rendering it not prone to brute-force attacks. You can increase security even more by protecting your private key with a passphrase.
+**SSH key pair authentication** is a recommended method of logging into your seedbox via SSH for added security and convenience in place of our SSH password. You can place the public key on your slot, and then unlock it by connecting to it with a client that has the private key. When the two matches up, the system unlocks without the need for a password. The major advantage of this is that this authentication method provides greater cryptographic strength than long passwords, rendering it not prone to brute-force attacks. You can increase security even more by protecting your private key with a passphrase.
 
 In this tutorial, we would be showing you on how to generate your own key pair using several tools, how to transfer your public key to your slot and how to login using key pair authentication.
 
@@ -6,7 +6,7 @@ In this tutorial, we would be showing you on how to generate your own key pair u
 
 ## OpenSSH
 
-This should work on Linux, MacOS and Windows 10 Users. If you haven't set OpenSSH up, you may refer to [on how to connect to your seedbox via SSH for installation and setup of OpenSSH for Windows 10, Linux and MacOS.](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/how-to-connect-to-your-seedbox-via-ssh "How to connect to your seedbox via SSH")
+This should work on Linux, macOS and Windows 10 Users. If you haven't set OpenSSH up, you may refer to [on how to connect to your seedbox via SSH for installation and setup of OpenSSH for Windows 10, Linux and MacOS.](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/how-to-connect-to-your-seedbox-via-ssh "How to connect to your seedbox via SSH")
 
 ### Creating Public and Private Keys
 
@@ -19,14 +19,14 @@ Generating public/private rsa key pair.
 ```
 
 * We also recommend to generating the  following keys which are more secure than the default.
-  * To generate a RSA 4096 key: `ssh-keygen -b 4096`
+  * To generate an RSA 4096 key: `ssh-keygen -b 4096`
     * Much more secure than 2048 bit is slower when logging into your seedbox
   * To generate a ed25519 key: `ssh-keygen -t ed25519`
-    * New algorithm, has smaller key size and faster generation with security comparable to RSA ~3000
+    * New algorithm, has a smaller key size and faster generation with security comparable to RSA ~3000
 
 * Here, you can press **ENTER** to save the key pair into the `.ssh/` subdirectory in your home directory
   * For Windows, your User Folder is typically in `C:\Users\username\.ssh`
-  * For linux it's `/home/username/.ssh`
+  * For Linux it's `/home/username/.ssh`
   * You may also specify an alternate path.
 
 ```sh
@@ -80,7 +80,7 @@ Now, we will import the keys you just generated to your seedbox. There are sever
 #### ssh-copy-id
 
 * This is the easiest and the most recommended but this command only works for Linux.
-* For MacOS, you might need to install it. To check, open up a terminal and type `ssh-copy-id`.
+* For macOS, you might need to install it. To check, open up a terminal and type `ssh-copy-id`.
 * If not found, you can install it using these commands below
   * Install using Homebrew: `brew install ssh-copy-id`
   * Install using Macports: `sudo port install openssh +ssh-copy-id`
@@ -138,7 +138,7 @@ Now try logging into the machine, with: "ssh 'kbguides@kbguides.lw902.usbx.me'" 
 
 #### Manually copying contents of your public key to your seedbox
 
-This is another way is to manually copy the contents of your private key file to your seedbox should ssh-copy-id failed. This method works on Windows, Linux and MacOS users.
+This is another way is to manually copy the contents of your private key file to your seedbox should ssh-copy-id failed. This method works on Windows, Linux and macOS users.
 
 * View your public key file `id_rsa.pub` by opening it using your text editor and copy the whole content
 
@@ -183,7 +183,7 @@ This method works for Windows users only. 
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-8-8_19-42-17%5B1%5D.png">
 </p>
 
-* On the bottom under Parameters section, you can choose which key do you want to generate and how many bits that you generate
+* On the bottom under the Parameters section, you can choose which key do you want to generate and how many bits that you generate
 * The default is RSA-2048 which is sufficient in most cases.
   * You may also change the parameters to your liking. The following are:
     * RSA 4096
@@ -200,7 +200,7 @@ This method works for Windows users only. 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-10/2%5B1%5D.PNG"></p>
 
-* After that, actual generation of key takes place.
+* After that, the actual generation of the key takes place.
 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-10/3%5B1%5D.PNG">
@@ -210,7 +210,7 @@ This method works for Windows users only. 
   * You may optionally enter your password in the Key Passphrase and Confirm passphrase text boxes
     * It is recommended to add in a passphrase
     * A passphrase adds an additional layer of security to prevent unauthorized users from logging in should they have your private key.
-    * If you opt to not add an password so you can login to your slot's SSH without inputting any password, you can leave these blank.
+    * If you opt to not add a password so you can login to your slot's SSH without inputting any password, you can leave these blank.
 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-8-8_19-39-1%5B1%5D.png">
@@ -253,7 +253,7 @@ kbguides@lw950:~$ chmod -R go= ~/.ssh
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-8-8_20-0-16%5B1%5D.png">
 </p>
 
-* In **Connection → SSH → Auth**, you'll see an option for Private key file for authentication.
+* In **Connection → SSH → Auth**, you'll see an option for the Private key file for authentication.
 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-8-8_19-55-54%5B1%5D.png">

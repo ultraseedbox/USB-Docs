@@ -7,7 +7,7 @@ Ombi is a self-hosted web application that automatically gives your shared Plex 
 * Allows your users to get custom notifications
 * Will show if the request is already on Plex or even if it's already monitored.
 * Automatically updates the status of requests when they are available on Plex/Emby
-* Slick, responsive and mobile friendly UI
+* Slick, responsive and mobile-friendly UI
 
 For more information about this app, you may visit the app's [GitHub repo.](https://github.com/tidusjar/Ombi)
 

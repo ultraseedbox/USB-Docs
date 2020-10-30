@@ -1,4 +1,4 @@
-This short guide will walk you through on how to setup your OpenVPN Client in MacOS using Tunnelblick.
+This short guide will walk you through on how to setup your OpenVPN Client in macOS using Tunnelblick.
 
 ***
 

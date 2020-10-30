@@ -84,7 +84,7 @@ cd ~/www/rutorrent/plugins/ && svn checkout https://github.com/Novik/rutorrent/t
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/unknown.png"></p>
 
 * Should there be public torrents that are not throttled, it may be due to it not being included to ruTorrent's Public Tracker list.
-  * You may have to manually add the tracker url by selecting **One of torrent tracker's URLs contains** from the dropbox then input the public tracker's hostname.
+  * You may have to manually add the tracker URL by selecting **One of torrent tracker's URLs contains** from the dropbox then input the public tracker's hostname.
 * You can also set the following in the If dropbox, according to your needs
   * Torrent label contains
   * One of torrent tracker's URLs contains

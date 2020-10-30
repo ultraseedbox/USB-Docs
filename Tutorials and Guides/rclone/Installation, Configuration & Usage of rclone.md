@@ -1,6 +1,6 @@
 <p class="callout warning">USB support is unable to provide support for rclone, this is due to the large volume of variables and different configurations possible with rclone. The guides found here on the knowledge-base should be able to guide you through using rclone, and any further questions can easily be answered with a quick Google search. You may also be able to find community support for rclone through our community Discord server or the Rclone forums.</p>
 
-In this guide we will be going over the installation of rclone. We'll also cover basic usage such as setting up a remote, and how to copy files between your seedbox and a remote file host.
+In this guide we will be going over the installation of rclone. We'll also cover the basic usages such as setting up a remote, and how to copy files between your seedbox and a remote file host.
 
 ***
 
@@ -116,7 +116,7 @@ n) No
 y/n> n
 ```
 
-* Type `n` to choose to not use auto config and press **Enter**. You will be provided with a URL, copy this URL and paste it into your web browser.
+* Type `n` to choose to not use auto-config and press **Enter**. You will be provided with a URL, copy this URL and paste it into your web browser.
 * Choose the Google Drive account you wish to use and click **Allow**, giving rclone permission to use it.
 * You will be given a code, copy this and place it into your terminal, then press Enter.
 * Finally, type `n` to choose to not configure as a team drive and press **Enter**.

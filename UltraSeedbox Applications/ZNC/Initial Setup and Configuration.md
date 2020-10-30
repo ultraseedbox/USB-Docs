@@ -86,15 +86,15 @@ Password: admin
     * Makes ZNC's \*modules to be "online"
       * This is useful if you're using multiple IRC clients connected to ZNC
   * `route_replies`
-      * It send replies (e.g. to /who) to the right client only,
+      * It send replies (e.g. to /who) to the right client-only,
       * Prevents the client to excessively send /who requests
       * It is also useful if you're using multiple IRC clients
   * `sasl` or `nickserv`
       * This is where you'll put your IRC password
 
-If you're using `sasl`, you'll put your IRC credentials under Network modules of your network.
+If you're using `sasl`, you'll put your IRC credentials under the Network modules of your network.
 
-You'll see this on either the left or right hand side of the page (depending on the theme) after you have saved your config.
+You'll see this on either the left or right-hand side of the page (depending on the theme) after you have saved your config.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-12/scaled-1680-/image-1576502955430.png"></p>
 
@@ -134,7 +134,7 @@ If you're using `nickserv`, input your IRC password on the textbox beside it
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-12/scaled-1680-/image-1576920325013.png"></p>
 
-* Uncheck Use global user information and on User name field, put in `admin/network_name`, replacing `network_name` with the name you set in ZNC
+* Uncheck Use global user information and on the User name field, put in `admin/network_name`, replacing `network_name` with the name you set in ZNC
 * In login method, select Server password (/PASS password)
 * On Password, input your set ZNC password.
 * Check if everything is correct. Once confirmed, Click Close, highlight your new network and click Connect
@@ -154,34 +154,3 @@ If you're using `nickserv`, input your IRC password on the textbox beside it
 * If configured properly, you'll be greeted by your IRC network's Message of the Day.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-12/scaled-1680-/image-1576920728181.png"></p>
-
-* * *
-
-## Settings Overview
-### Global Settings
-
-* This is where you'll change themes and enable Global Modules.
-* It's recommended not to touch any of the settings here except
-  * Skin
-  * Maximum Buffer Size
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-12/scaled-1680-/image-1576921006834.png"></p>
-
-### Your Settings
-
-* Here, you can change your Authentication details per user, IRC information, Add or edit networks, Enable per-network modules and settings that alter ZNC behavior.
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-12/scaled-1680-/image-1576924412510.png"></p>
-
-### Traffic Info
-
-* Here, your ZNC traffic and storage stats are shown
-* It also shows your users' traffic info
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-12/scaled-1680-/image-1576924432741.png"></p>
-
-### Manage Users
-
-* Here, you can see the list of the registered users in your ZNC bouncer.
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-12/scaled-1680-/image-1576924456371.png"></p>

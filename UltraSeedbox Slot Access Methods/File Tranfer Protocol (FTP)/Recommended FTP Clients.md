@@ -2,7 +2,7 @@ Here are the FTP clients we recommended and how to setup FTP on each client to c
 
 # FileZilla
 
-Filezilla is a free FTP application that is available in most platforms. This supports Explicit FTPS and SFTP protocols in addtition to the following features:
+Filezilla is a free FTP application that is available in most platforms. This supports Explicit FTPS and SFTP protocols in addition to the following features:
 
 * Supports resume of files
 * Parallel downloading of files (up to 10 simultaneous transfers)
@@ -15,12 +15,12 @@ You can download and install FileZilla by going to the [FileZilla Downloads Page
 
 ## Setting Up FileZilla
 
-* When launching for the first time, you'll be greeted by the main GUI of FIleZilla.
+* When launching for the first time, you'll be greeted by the main GUI of FileZilla.
 * Click the Site Manager
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image-1586891413312.png"><p/>
 
-* A new window appears. Click New site and name it.
+* A new window appears. Click the site and name it.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image-1586891738433.png"></p>
 
@@ -71,7 +71,7 @@ Key file: <your-usb-public-key>
 
 * Once that's done, press OK.
 
-* Another windor appears, asking if you want to save your password. We recommend selecting Save passwords protected by a master password. Add your master password and click OK
+* Another window appears, asking if you want to save your password. We recommend selecting Save passwords protected by a master password. Add your master password and click OK
 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587050535259.png">

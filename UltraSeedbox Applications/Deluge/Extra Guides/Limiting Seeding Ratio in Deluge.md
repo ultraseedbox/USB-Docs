@@ -1,12 +1,12 @@
-In this guide, we'll be exploring options on how to limit your seeding torrent's ratio. One where you will apply seeding limit to all of your torrents and using one of Deluge's third party plugins called LabelPlus. With LabelPlus, you can label some torrents you chose automatically according to your set filters and more, depending on what you set each label. You can also move and throttle torrents within a label with ease.
+In this guide, we'll be exploring options on how to limit your seeding torrent ratio. One where you will apply a seeding limit to all of your torrents and using one of Deluge's third-party plugins called `LabelPlus`. With `LabelPlus`, you can label some torrents you chose automatically according to your set filters and more, depending on what you set each label. You can also move and throttle torrents within a label with ease.
 
 This requires the following:
 
 * Deluge installed on your seedbox
 * Deluge Thin Client (It does not have WebUI access)
-* LabelPlus egg
+* `LabelPlus` egg
 
-In this guide, we'll be briefly teach you how to set it up. For LabelPlus, we will also guide you on how to automatically label and set max seeding ratio to some torrents.
+In this guide, we'll be briefly teach you how to set it up. For `LabelPlus`, we will also guide you on how to automatically label and set max seeding ratio to some torrents.
 
 ***
 
@@ -15,7 +15,7 @@ In this guide, we'll be briefly teach you how to set it up. For LabelPlus, we wi
 * To apply a certain ratio limit to all of your torrents, simply to your Deluge preferences and click Queue
 * Check "Stop seeding when share ratio reaches" and set the number in the box to any ratio you want.
   * In this example, we set it to 2
-  * Click apply and then OK
+  * Click **Apply** and then OK
 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2020-03/deluge-seed.png">
@@ -28,7 +28,7 @@ In this guide, we'll be briefly teach you how to set it up. For LabelPlus, we wi
 
 * Install Deluge Thin Client if you haven't already.
   * For more information about installing Deluge Thin Client, refer to [this link.](https://docs.usbx.me/books/deluge/page/setting-up-deluge-thin-client)
-* Grab and install LabelPlus from the link provided
+* Grab and install `LabelPlus` from the link provided
   * For more information on how to install Deluge Plugins, refer to [this link.](https://docs.usbx.me/books/deluge/page/installing-deluge-plugins)
 
 ```
@@ -50,14 +50,14 @@ LabelPlus: https://github.com/ratanakvlun/deluge-labelplus/releases/download/v0.
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-4-27%5B1%5D.png">
 </p>
 
-* Right click the space → **Add Label** and give it a name.
+* Right-click space → **Add Label** and give it a name.
 * Click **OK**. You'll see your newly created Label.
 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-5-11%5B1%5D.png">
 </p>
 
-* Right click that new label and select Label Options to set your preferences, as described below.
+* Right-click that new label and select Label Options to set your preferences, as described below.
 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-7-0%5B1%5D.png">
@@ -66,7 +66,7 @@ LabelPlus: https://github.com/ratanakvlun/deluge-labelplus/releases/download/v0.
 ### LabelPlus Label Options
 #### Downloads
 
-* Here, you can set set the download directory and to move some of your specifically labelled torrents to different locations
+* Here, you can set the download directory and to move some of your specifically labeled torrents to different locations
 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-8-3%5B1%5D.png">
@@ -74,7 +74,7 @@ LabelPlus: https://github.com/ratanakvlun/deluge-labelplus/releases/download/v0.
 
 #### Bandwidth
 
-* Here, you can set your labelled torrents your maximum DL, UL, connections and upload slots.
+* Here, you can set your labeled torrents your maximum DL, UL, connections and upload slots.
   * We do not recommend throttling upload speed on any trackers, whether is public or private. Throttling speeds will be detected by the tracker and your download speeds will also be throttled to a crawl or will be IP banned.
   * We recommend seeding them at a certain ratio instead.
 

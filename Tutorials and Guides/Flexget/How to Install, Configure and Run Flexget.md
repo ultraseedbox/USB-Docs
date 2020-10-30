@@ -10,12 +10,12 @@ This guide shows you the following:
 
 ***
 
-## Installation of Flexget via python's virtual environment
-### Installing Python 3 and Flexget Into your Slot
+## Installation of FlexGet via python's virtual environment
+### Installing Python 3 and FlexGet Into your Slot
 
 * First, login to your seedbox's SSH
   * For more information on how to access your seedbox's SSH, visit [this guide to learn more.](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/how-to-connect-to-your-seedbox-via-ssh "How to connect to your seedbox via SSH")
-* Run the following commands and follow the instructions. This will install Python 3 and Flexget into your slot.
+* Run the following commands and follow the instructions. This will install Python 3 and FlexGet into your slot.
 
 #### Python 3
 
@@ -24,7 +24,7 @@ wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/
 bash python-pip-install.sh
 ```
 
-#### Flexget
+#### FlexGet
 
 ```sh
 wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/Flexget/flexget-install.sh
@@ -36,7 +36,7 @@ bash flexget-install.sh
 ## Configuring FlexGet
 ### Creating config.yml
 
-* Here, we will now create your first FlexGet YAML. Start by creating FlexGet's config folder by running the following command
+* Here, we will now create your first FlexGet YAML. Start by creating FlexGet's config folder by running the following command:
 
 ```sh
 mkdir -p "$HOME"/.config/flexget
@@ -58,7 +58,7 @@ nano config.yml
 
 In this part, depending on what you want to achieve your configuration may vary but take note that:
 
-* Flexget config uses YAML. Indentation and spacing is critical so take care when writing your config.
+* FlexGet config uses YAML. Indentation and spacing is critical so take care when writing your config.
 * YAML uses spaces, not tabs.
 
 For this example, we'll be configuring FlexGet to monitor RSS feeds every minute and filters out the results using [Regular Expressions](https://www.geeksforgeeks.org/write-regular-expressions/) (regex). Those that are accepted will be fed directly to Deluge for it to download. The config is shown below.
@@ -94,7 +94,7 @@ tasks:
 # Now, we will now add plugins. There are three main types of plugins we normally want in a task in order: an input, a filter, and an output.
 
     rss:
-# This is an example of an input plugin, the first one to run in a task. This tells FlexGet where do you want it to look for things. In this example, we tell to look into rss feeds.
+# This is an example of an input plugin, the first one to run in a task. This tells FlexGet where do you want it to look for things. In this example, we tell FlexGet to look into the RSS feeds for any updates.
 
       url: https://rss.to/any/f4lt3r-h4h4
 # Here, you'll add your RSS link
@@ -114,12 +114,6 @@ tasks:
     deluge:
 # This is an output plugin. This is to tell FlexGet what do with those things you want.
 
-# Here, Deluge is used as the torrent client. Before running, you may need to install an separate instance of deluge for FlexGet by running the following command
-
-# "$HOME"/flexget/bin/python -m pip install deluge-client. 
-
-# You'll only need this to communicate to your actual Deluge installation (The one you installed via UCP). Your preferred torrent client's setup may vary so you may look up to FlexGet's wiki for that.
-
       host: 127.0.0.1
       port: 11123
       username: xan
@@ -134,10 +128,7 @@ To check if your config is correctly formatted and configured, you may have to d
 * `flexget check` to check the config file for any errors
 * `flexget --test execute` to test run your configuration.
 
-<c><p class="callout warning">In my example, when you run it the first time, it may grab and download multiple torrents which may affect your tracker ratio. To mitigate this:<br><br>1. Remove the output plugins from your config<br>
-2. Run `flexget execute`<br>
-3. After it finishes put back the output plugins<br><br>
-This will save the entries accepted so it won't download again in the future.</p></c>
+<c><p class="callout warning">In my example, when you run it the first time, it may grab and download multiple torrents which may affect your tracker ratio. To mitigate this, run `flexget execute --learn`. This will save the entries accepted so it won't download again in the future.</p></c>
 
 <c><p class="callout info">You may refer to [FlexGet Configuration](https://flexget.com/Configuration) for more information about making your own config as well as [FlexGet Cookbook](https://flexget.com/Cookbook) for some basic automation tasks that you can do with FlexGet.</p></c>
 
@@ -158,13 +149,13 @@ usbdocs@lw975:~$
 ```
 
 * Then type `crontab -e`.
-  * If this is your first time running this command, there would be an option asking for your text editor. Select the editor you want but I would suggest selecting `1`
+  * If this is your first time running this command, there would be an option asking for your text editor. Select the editor you want but I would suggest selecting `1`.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/scaled-1680-/image-1585835022440.png"></p>
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/scaled-1680-/image-1585835057313.png"></p>
 
-* To set it running every minute, you may set it as `* * * * *` then the absolute path of FlexGet, which is `/homexx/username/bin/flexget`. Then, add in the arguments of FlexFet which is `--cron execute`.
+* To set it running every minute, you may set it as `* * * * *` then the absolute path of FlexGet, which is `/homexx/username/bin/flexget`. Then, add in the arguments of FlexGet which is `--cron execute`.
 * If we put it together, we get `* * * * * /homexx/username/bin/flexget --cron execute`
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/scaled-1680-/image-1585835133246.png"></p>
@@ -177,7 +168,7 @@ usbdocs@lw975:~$
 
 * Save your work with **CTRL + O**, press ENTER then **CTRL + X**
 
-### Systemd/Daemon mode
+### systemd/Daemon mode
 
 <c><p class="callout info">For more information, please refer to [FlexGet Scheduler](https://flexget.com/Plugins/Daemon/scheduler).</p></c>
 
@@ -261,7 +252,7 @@ tasks:
 
 ```
 [Unit]
-Description=Flexget Daemon
+Description=FlexGet Daemon
 
 [Service]
 Type=simple
@@ -294,14 +285,14 @@ WantedBy=default.target
 
 ## Removing FlexGet
 
-* To remove FlexGet, simply delete the flexget folder and your symbolic link.
+* To remove FlexGet, simply delete the `flexget` folder and your symbolic link.
 
 ```sh
 rm -rfv "$HOME"/flexget
 rm "$HOME"/bin/flexget
 ```
 
-* If you want to uninstall Python 3, run the following commands
+* If you also want to uninstall Python 3, run the following commands:
 
 ```sh
 rm -rfv "$HOME"/.pyenv

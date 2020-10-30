@@ -16,7 +16,6 @@ Like all applications Plex Media Server is installed from the UltraSeedbox Contr
 
 ![](https://docs.usbx.me/uploads/images/gallery/2019-10/Claim-Code.PNG)
 
-If you have not done so already, sign into your Plex account and copy the claim code provided. Paste this in to the prompt and then click Install.
+If you have not done so already, sign into your Plex account and copy the claim code provided. Paste this into the prompt and then click Install.
 
 Your Plex Media Server is also configured out of the box. Just connect to your Plex Media Server instance by following the link in the UCP - as is normal with all your other applications.
-

@@ -1,5 +1,4 @@
 ## Torrent Clients
-
 ### Deluge
 
 ```
@@ -38,7 +37,6 @@ Use SSL: YES
 ```
 
 ## Usenet Clients
-
 ### SABnzbd
 
 ```
@@ -53,7 +51,6 @@ Use SSL: YES
 ```
 
 ### Nzbget
-
 #### Non-SSL
 
 ```

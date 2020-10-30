@@ -1,0 +1,1 @@
+Recently, Bazarr 0.9 was released with 

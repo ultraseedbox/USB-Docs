@@ -1,4 +1,4 @@
-Pydio is an open-source file-sharing and synchronisation software that runs on the user's own server or in the cloud. It has the following features:
+Pydio is an open-source file-sharing and synchronization software that runs on the user's own server or in the cloud. It has the following features:
 
 * File sharing between different internal users and across other Pydio instances
 * SSL/TLS Encryption

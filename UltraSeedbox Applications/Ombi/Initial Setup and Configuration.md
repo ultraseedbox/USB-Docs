@@ -32,7 +32,7 @@ In this guide, we'll be setting up Ombi for the first time. This assumes the fol
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588618407086.png"></p>
 
-* Then, here you can add your app details here. Please efer to the following guide for connecting apps to your Ombi instance.
+* Then, here you can add your app details here. Please refer to the following guide for connecting apps to your Ombi instance.
 
 [Ombi Client Connection Details](https://docs.usbx.me/books/ombi/page/ombi-client-connection-details)
 

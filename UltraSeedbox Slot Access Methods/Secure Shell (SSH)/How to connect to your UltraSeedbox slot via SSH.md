@@ -1,6 +1,6 @@
 **SSH**, also known as **Secure Shell**, is a network protocol that gives users a secure way to remotely access your seedbox. With SSH, you can do the following:
 
-* Provides a secure access for users to your seedbox
+* Provides secure access for users to your seedbox
 * Can be used for secure file transfers to and from your PC
 * Issue remote commands
 * Can be used to diagnose and troubleshoot if there are problems with your apps
@@ -49,7 +49,7 @@ Before logging into your SSH, you should first set your own SSH/FTP password.
 
 ### OpenSSH
 
-OpenSSH is an open source alternative to the proprietary Secure Shell software suite offered by SSH Communications Security and is bundled with some Linux distributions and MacOS. It is also an optional feature in Windows 10 since the October 2018 Update (Version 1809).
+OpenSSH is an open-source alternative to the proprietary Secure Shell software suite offered by SSH Communications Security and is bundled with some Linux distributions and macOS. It is also an optional feature in Windows 10 since the October 2018 Update (Version 1809).
 
 #### Installing OpenSSH in Windows 10
 
@@ -73,7 +73,7 @@ OpenSSH is an open source alternative to the proprietary Secure Shell software s
 
 #### Installing OpenSSH in Linux
 
-Some LInux distributions have OpenSSH client installed as part of their bundle. Provided below are the commands to install OpenSSH client in some of the popular Linux distributions.
+Some Linux distributions have OpenSSH client installed as part of their bundle. Provided below are the commands to install OpenSSH clients in some of the popular Linux distributions.
 
 ```
 Ubuntu/Debian: sudo apt install openssh-client
@@ -85,9 +85,9 @@ Fedora: sudo dnf install -y openssh-client;
 
 #### Accessing Seedbox’s Terminal via OpenSSH
 
-The following screenshots are from Windows' command prompt but it should be the same on Windows, Linux and MacOS.
+The following screenshots are from Windows' command prompt but it should be the same on Windows, Linux and macOS.
 
-* Open up a command prompt window, Windows PowerShell window or a terminal window (MacOS/Linux) and type in either of the following
+* Open up a command prompt window, Windows PowerShell window or a terminal window (macOS/Linux) and type in either of the following
 
 ```
 ssh username@IP_of_seedbox (usbdocs@123.456.789)

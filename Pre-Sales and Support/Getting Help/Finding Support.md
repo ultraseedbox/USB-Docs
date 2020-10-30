@@ -1,8 +1,8 @@
 ### Community Discord Support
 
-We offer a community powered support Discord server. While staff may sometimes be available here, it is not an official line of support and as a result we can't guarantee support through this channel 24/7.
+We offer a community-powered support Discord server. While staff may sometimes be available here, it is not an official line of support and as a result we cannot guarantee support through the server.
 
-Please keep in mind our Discord support is primarily community driven. As such please be patient with whoever helps you and if you are requiring more sensitive or immediate support try submitting a ticket.
+Please keep in mind our Discord support is primarily community-driven. As such please be patient with whoever helps you. If you are requiring more sensitive or immediate support, try submitting a ticket.
 
 [Our community Discord server can be found at this link.](https://discord.com/invite/YXGYS9D)
 

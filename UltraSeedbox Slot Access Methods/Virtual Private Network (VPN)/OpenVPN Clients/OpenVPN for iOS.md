@@ -8,13 +8,13 @@ This short guide will walk you through on how to setup your OpenVPN Client in iO
 
 ## Syncing OVPN Files
 
-* Once installed, sync your ovpn files to you iOS device via itunes' File Sharing Window
+* Once installed, sync your ovpn files to you iOS device via iTunes' File Sharing Window
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590776930146.png"></p>
 
 ## Running OpenVPN Connect
 
-* Tap the OpenVPN Conenct icon. First time you launched it, allow it to send notifications and tap Agree to the Data Collection Policy.
+* Tap the OpenVPN Connect icon. The first time you launched it, allow it to send notifications and tap Agree to the Data Collection Policy.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590777052326.png"></p>
 

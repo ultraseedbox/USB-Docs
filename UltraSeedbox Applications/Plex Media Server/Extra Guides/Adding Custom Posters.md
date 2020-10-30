@@ -1,11 +1,11 @@
-*Written by [https://github.com/debian-d](debian-d)*
+*Written by [debian-d](https://github.com/debian-d)*
 ***
 
 This guide will show you how to change a movie poster on Plex.
 
 The poster website of choice for this guide will be ThePosterDB (https://theposterdb.com/). You can use any poster website for this.
 
-This can be done in order to be able to change the poster to reflect a different style, for either a collection or personal choice, or can be done in order to put a poster on one that imdb does not have.
+This can be done in order to be able to change the poster to reflect a different style, for either a collection or personal choice, or can be done in order to put a poster on one that IMDb does not have.
 
 For example, the movie I will be changing is Star Wars (1977) and changing it to this poster: https://theposterdb.com/poster/39586
 

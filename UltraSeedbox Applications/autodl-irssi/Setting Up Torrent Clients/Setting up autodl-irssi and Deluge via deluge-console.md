@@ -56,7 +56,7 @@ Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.0.133
 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.0.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 955 [text/plain]
-Saving to: ‘deluge-autoresume.sh’
+Saving to: ‘deluge-reannounce.sh’
  
 deluge-reannounce.sh               100%[=============================================================>]     955  --.-KB/s    in 0s
  
@@ -66,11 +66,8 @@ kbguides@lw902:~/scripts$
 ```
 
 * Open up deluge-reannounce.sh using your preferred text editor. In this tutorial, we'll be using nano. So do `nano deluge-reannounce.sh`
-<<<<<<< HEAD
-=======
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-02/scaled-1680-/image-1582618070101.png"></p>
->>>>>>> c59a318183cfeb8908ff8e7cbb554372d1d9624b
 
 * Then, replace the following with the information from Deluge's Remote Access Details in UCP.
 
@@ -79,7 +76,9 @@ kbguides@lw902:~/scripts$
 * Find this exact line in the config and change the values accordingly
 
 ```sh
-# This script required the update-tracker.py from https://raw.githubusercontent.com/s0undt3ch/Deluge/master/delu$
+#!/bin/bash
+
+# This script required the update-tracker.py from https://raw.githubusercontent.com/s0undt3ch/Deluge/master/deluge/ui/console/commands/update-tracker.py
 
 # Change the below output location to any folder owned by your user for which you have write permissions
 OUTPUT="/homeXX/user/scripts"
@@ -97,16 +96,14 @@ password=xxxxxxx
 * After you edit the necessary information, save it with **CTRL + O** then exit nano with **CTRL + X**
 
 * Then, make the script executable by doing `chmod +x deluge-reannounce.sh`
-*   To remove the invisible line endings, execute `sed -i 's/\r$//g' deluge-reannounce.sh`
 
 ```sh
 kbguides@lw902:~/scripts$ nano deluge-reannounce.sh
 kbguides@lw902:~/scripts$ chmod +x deluge-reannounce.sh
-kbguides@lw902:~/scripts$ sed -i 's/\r$//g' deluge-reannounce.sh
 kbguides@lw902:~/scripts$
 ```
 
-* Then, get the absolute path of the script by executing `readlink -f deluge-reannounce.sh` and take note of the output. This is the absolute of of your script.
+* Then, get the absolute path of the script by executing `readlink -f deluge-reannounce.sh` and take note of the output. This is the absolute of your script.
 
 ```sh
 kbguides@lw902:~/scripts$ readlink -f deluge-reannounce.sh
@@ -123,12 +120,8 @@ kbguides@lw902:~/scripts$
 * Click the **Execute Category** and Press **Add**
 * Input the following
   * Event = Torrent Added
-  * Command = The absolute path of the autoresume script
+  * Command = The absolute path of the reannounce script
 * After that, click **add**. Then Press **OK**.
 * Close Deluge then restart your deluge instance via UCP or SSH (`app-deluge restart`)
 
-<<<<<<< HEAD
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589891033979.png"></p>
-=======
-<p align="center"><img src="https://i.imgur.com/aQ1cE1n.png"></p>
->>>>>>> c59a318183cfeb8908ff8e7cbb554372d1d9624b

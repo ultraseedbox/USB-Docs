@@ -50,7 +50,7 @@ usbdocs@lw701:~$
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583227315662.png"></p>
 
-* Create a new external storage with the following options:
+* Create new external storage with the following options:
   * **Folder name**: Can be anything you want. Here, we set it to USB Docs
   * **External Storage**: Local
   * **Authentication**: None
@@ -58,7 +58,7 @@ usbdocs@lw701:~$
     * Paste the output of your SSH here
   * **Available for:** Leave blank if you are the only user on your Nextcloud. Otherwise select the users you want to have access to this folder.
   * **Enable sharing:** Check
-  * **Read only:** Check if you want your folder to be read only from Nextcloud. In the screenshot below, read only is checked.
+  * **Read only:** Check if you want your folder to be read-only from Nextcloud. In the screenshot below, read-only is checked.
     * You can leave this unchecked this if you or your users want to add/edit/remove files or add folders
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583227506003.png"></p>
@@ -79,7 +79,7 @@ usbdocs@lw701:~$
 
 ### Upload a file
 
-* Click the + on the navigation bar and select Upload file.
+* Click the + on the navigation bar and select the Upload file button.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583228299252.png"></p>
 
@@ -99,12 +99,12 @@ usbdocs@lw701:~$
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583228572276.png"></p>
 
-* There you can select options such as whether to share the item as read only, to password protect it, to set an expiration date, etc. Then click Copy to clipboard to copy the generated link
+* There you can select options such as whether to share the item as read-only, to password protect it, to set an expiration date, etc. Then click Copy to clipboard to copy the generated link
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583228642591.png"></p>
 
 * The item will show up as shared in your files tab and you can add new links, modify them, or remove them at any time.
-  * It will also show up under Shares tab on the left-pane
+  * It will also show up under the Shares tab on the left-pane
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583228718629.png"></p>
 
@@ -137,6 +137,6 @@ usbdocs@lw701:~$
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image-1588266527032.png"></p>
 
-* Click connect to finish setup. The client will start syncing your files.
+* Click connect to finish the setup. The client will start syncing your files.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image-1588267044747.png"></p>

@@ -15,7 +15,7 @@ We’ll be doing the following steps:
 ### Setting Up Subtitle Providers
 
 * Upon successful installation, wait for up to 5 minutes for Bazarr to initialize.
-* After clicking **Connect** on the UCP, you’ll be shown with Bazarr’s first time setup guide.
+* After clicking **Connect** on the UCP, you’ll be shown with Bazarr’s first-time setup guide.
 * You may leave the first page as-is. Click **Next** to save and move on to the next step
 * Here, we will set up subtitle providers.
 * On subtitles options section, leave both options as-is
@@ -27,7 +27,7 @@ We’ll be doing the following steps:
 
 * Then enable the subtitle providers that you wish to use
   * Some providers require you to add your credentials. Be sure to enter it accordingly
-  * There are also some providers that needed anti-captcha API key.
+  * There are also some providers that needed an anti-captcha API key.
     * You may add the API key after the setup has finished under **Settings -> Subtitles -> Anti-Captcha Options**
 
 <p align ="center">
@@ -76,7 +76,7 @@ Download Only Monitored: Enabled (Recommended)
 ```
 
 * Once that’s done, Click the **Test** button to validate the settings.
-* If it shows green text, click **Next** to move to Radarr
+* If it shows a green text indicating that Bazarr is successfully connected to Sonarr, click **Next** to move to Radarr
 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583146810530.png">
@@ -193,54 +193,3 @@ Download Only Monitored: Enabled (Recommended)
 </p>
 
 * Depending on your library, this will take a while to search and download your subtitles.
-
-***
-
-## Settings Overview
-
-### General
-
-* Here you set Bazarr’s general settings. Here you can find the following relevant settings:
-  * Security settings to set your credentials
-  * Your Bazarr API Key
-  * Sonarr and Radarr Integration switches
-  * Path Mappings for both Movies and TV Shows
-    * This is used when your Radarr/Sonarr Instance is on another machine
-  * Setting up post-processing commands
-  * Analytics for the Developers
-
-<p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583149820156.png">
-</p>
-
-### Sonarr and Radarr
-
-* Here, you can enter your Sonarr and Radarr credentials
-* You may opt to enter if you want Bazarr to download only monitored releases
-* You can also set here the automated task on when you want each to download wanted subtitles
-
-<p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583149887650.png">
-</p>
-
-<p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583149924824.png">
-</p>
-
-### Subtitles
-
-* Here, you can set which providers Bazarr looks for subtitles
-* You can set on the minimum rating for subtitles, where Bazarr saves your subtitles, and other options for subtitles
-* Each subtitle provider requires either your token, your API key or your credentials. Some providers needed an anti-captcha key which you can also put in here.
-
-<p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583149943608.png">
-</p>
-
-### Notifications
-
-* Here, you can set notifications if Bazarr grabbed has grabbed any subtitles
-
-<p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583149963886.png">
-</p>

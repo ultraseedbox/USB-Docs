@@ -36,7 +36,7 @@ In this guide, we'll be setting up Jackett for the first time. We'll go through 
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571731756265.png"></p>
 
-* Scroll down a bit and you'll see a section called **Capabilities**. This shows categories and description of each category.
+* Scroll down a bit and you'll see a section called **Capabilities**. This shows the categories and descriptions of each category.
     * This is important for adding categories on apps like Sonarr/Radarr.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571731827045.png"></p>
@@ -57,43 +57,7 @@ In this guide, we'll be setting up Jackett for the first time. We'll go through 
 
 ***
 
-## Web Interface and Settings Overview
-
-Jackett is pretty straightforward. Here are some of the important buttons and settings that you may need to know.
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571733331533.png"></p>
-
-### API Key
-
-* Found on the top of the page, here  you'll get the generated API key to be used when connecting Jackett to other applications
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571733568810.png"></p>
-
-### Configured Indexer Buttons
-
-#### Add Indexer
-
-* This is where you'll add new indexers to Jackett
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571736151221.png"></p>
-
-#### Manual Search
-
-* Here, you can search and download torrents from all of your configured indexers.
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571736179893.png"></p>
-
-#### View cached releases
-
-* In this screen, you'll find recent releases from your set indexers that is cached in Jackett. Only 300 releases per indexer are cached.
-
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571736221903.png"></p>
-
-#### Test all
-
-* This is where you'll test all of your indexers. Should there will be indexer failures, it'll show a warning icon beside the indexer and show you the error. This error will also be logged.
-
-### Jackett Configuration
+## Jackett Configuration
 
 Most of the settings here are preconfigured and you can leave it as it is but there are some that could be useful for you.
 

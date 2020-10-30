@@ -16,7 +16,7 @@ usbdocs@lw873:~/Syncthing$ pwd
 /home20/usbdocs/Syncthing
 ```
 
-<p class="callout warning">Do not attempt to mount your rclone remote directly on your home directory. This will lead to instabilities. Instead, always create and use empty folder within your home directory.</p>
+<p class="callout warning">Do not attempt to mount your rclone remote directly on your home directory. This will lead to instabilities. Instead, always create and use an empty folder within your home directory.</p>
 
 ## Setting up Syncthing on Seedbox
 

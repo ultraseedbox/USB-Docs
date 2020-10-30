@@ -2,7 +2,7 @@ Lidarr is a fork of Sonarr that can download and organize your music library. It
 
 * Automatically detects new tracks from NZB and Torrent sources
 * Can scan your existing library and download any missing tracks
-* Can watch for better quality of the tracks you already have and do an automatic upgrade
+* Can watch for better quality versions of tracks you already have and do an automatic upgrade
 * Automatic failed download handling
 * Manual search so you can pick any release or to see why a release was not downloaded automatically
 * Fully configurable track renaming

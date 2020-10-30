@@ -5,7 +5,7 @@ Tautulli is a python based web application for monitoring, analytics and notifi
 * Easy configuration setup (no separate web server required).
 * Monitor current Plex Media Server activity.
 * Fully customizable notifications for stream activity and recently added media.
-* Top statistics on home page with configurable duration and measurement metric.
+* Top statistics on the home page with configurable duration and measurement metric.
 * Global watching history with search/filtering & dynamic column sorting.
 * Full user list with general information and comparison stats.
 * Individual user information including devices IP addresses.

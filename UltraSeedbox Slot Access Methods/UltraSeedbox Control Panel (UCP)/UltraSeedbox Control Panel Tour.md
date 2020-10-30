@@ -11,7 +11,7 @@ This short guide will walk you through the UltraSeedbox Control Panel.
 
 * You may also visit (and bookmark) the link below.
 
-https://cp.ultraseedbox.com/
+[https://cp.ultraseedbox.com/](https://cp.ultraseedbox.com/)
 
 ### Resetting The UCP Password
 
@@ -26,7 +26,7 @@ If you are logging in for the first time after you've purchased your first USB s
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590576243060.png"></p>
 
-* You will recieve an email with a link to reset your password.
+* You will receive an email with a link to reset your password.
 * Enter your desired password. Once that's done, you'll be redirected to the login page. Enter your registered email address and your newly set password to continue.
 
 ## UltraSeedbox Control Panel Tour
@@ -43,7 +43,7 @@ If you are logging in for the first time after you've purchased your first USB s
   * Seedbox username and the server name
   * Seedbox type
   * Expiration date
-    * This is where you can see day where your seedbox will expire/bandwidth reset.
+    * This is where you can see the day where your seedbox will expire/bandwidth reset.
   * Download/Upload speeds
   * Disk info
   * Upload Bandwidth info
@@ -53,7 +53,7 @@ If you are logging in for the first time after you've purchased your first USB s
 * Also in this page you will find 2 buttons for your slot's webserver.
   * The webserver allows you to access your apps via HTTPS.
   * If you get an error such as Error 502: Bad Gateway upon accessing your app, you can try clicking **Restart webserver** first. Wait for the confirmation and try accessing it again.
-  * If that does not work, you may also try **Reinstall webserver**. This will reset your webserver to defaults.
+  * If that does not work, you may also try **Reinstall webserver**. This will reset your webserver to the default settings.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590587891193.png"></p>
 

@@ -88,8 +88,8 @@ Select an option:
 ```
 
 * You can change the limited commands by replacing ALL with specific commands or groups of commands as listed on [ProFTPD's <Limit> documentation](http://www.proftpd.org/docs/howto/Limit.html).
-* You can also add subdirectories by copying the entire block and changing `~` to `~/directory` where directory is the subdirectory you want to modify permissions.
-* Shown here is an permissions example
+* You can also add subdirectories by copying the entire block and changing `~` to `~/directory` where the directory is the subdirectory you want to modify permissions.
+* Shown here is a permissions example
 
 ```
 # Permissions example

@@ -1,4 +1,4 @@
-While dealing with torrents you will likely come across the terminology "public" and "private". What these words are referring to are trackers or tracker communities. "Public trackers" are open sites where you can easily access all the content regardless of if you're a member or not. Likewise, "Private trackers" are closed sites which require you to be a member to access the content.
+While dealing with torrents you will likely come across the terminology “public” and “private”. What these words are referring to are trackers or tracker communities. “Public trackers” are open sites where you can easily access all the content regardless of if you're a member or not. Likewise, “Private trackers” are closed sites which require you to be a member to access the content.
 
 ***
 
@@ -28,9 +28,9 @@ Public trackers do not have a requirement of seeding content you download, this 
 
 ## Private Trackers
 
-Private trackers are by nature, closed communities. Access to these sites requires a prospective member to either receive an invite from a friend, apply to an open signup or gain entry from invite forums on another site. While on one hand this can be seen as a great roadblock and unfair, it does aid in maintaining a community that truly cares about the content, and as a result these sites are often better organized or focused.
+Private trackers are by nature, closed communities. Access to these sites requires a prospective member to either receive an invite from a friend, apply to open signup or gain entry from invite forums on another site. While on one hand this can be seen as a great roadblock and unfair, it does aid in maintaining a community that truly cares about the content, and as a result these sites are often better organized or focused.
 
-There are many private tracker sites, with most having a specific focus. The frameworks these sites are built on lend themselves to better organisation and coordination - often having multiple sources for one piece of media depending on what specifically you are looking for. This also lends itself perfectly to automation, as these sites often provide a robust and easy to use API.
+There are many private tracker sites, with most having a specific focus. The frameworks these sites are built on lend themselves to better organization and coordination — often having multiple sources for one piece of media depending on what specifically you are looking for. This also lends itself perfectly to automation, as these sites often provide a robust and easy to use API.
 
 Private trackers often however have a ratio requirement, this means you must seed back a percentage of what you download, usually around 60-100%. This however means a lot of the time, torrents on private sites are in good health and well seeded.
 

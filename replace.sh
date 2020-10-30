@@ -7,9 +7,10 @@
 
 # MD Image Replace
 sed -i -E 's|\[!\[\]\(.*\)\]\(|<p align="center"><img src="|g' "$1"
-sed -i -E 's|!\[.*\]\(|<p align="center"><img src="|g' "$1"
-sed -i -E 's|!\[\]\(|<p align="center"><img src="|g' "$1"
+sed -i -E 's|\[!\[.*\]\(|<p align="center"><img src="|g' "$1"
+sed -i -E 's|\[!\[\]\(|<p align="center"><img src="|g' "$1"
 sed -i -E 's|\[!\[(.*)]\((.*)\)\]\(|<p align="center"><img src="|g' "$1"
+sed -i -E 's|!\[.*\]\(|<p align="center"><img src="|g' "$1"
 
 # png replace
 sed -i 's|png)|png"><\/p>|g' "$1"

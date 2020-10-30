@@ -1,6 +1,6 @@
 All UltraSeedbox plans have complimentary HTTP Proxy included. HTTP Proxy is used for quickly circumventing blocks or to quickly anonymize your connection by acting as a gateway between you and the internet, sending all of your web requests to your slot first before going to the site.
 
-If you need to compeletely anonymize and encrypt your connection, you may look into our [VPN service](https://docs.usbx.me/books/virtual-private-network-%28vpn%29) instead.
+If you need to completely anonymize and encrypt your connection, you may look into our [VPN service](https://docs.usbx.me/books/virtual-private-network-%28vpn%29) instead.
 
 This guide shows you how to use the HTTP proxy by using a browser extension to quickly set and switch proxy servers.
 
@@ -58,7 +58,7 @@ Port: 8080
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590938056237.png"></p>
 
-* You may also rename the default name from proxy to whatever name you desier by clicking Rename on the top left corner of the page.
+* You may also rename the default name from proxy to whatever name you desire by clicking Rename on the top left corner of the page.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590938221286.png"></p>
 

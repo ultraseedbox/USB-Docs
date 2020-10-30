@@ -3,7 +3,7 @@ This guide as your guide to fully setting up your UltraSeedbox slot as your full
 This guide assumes the following:
 
 * All of your media will be in your seedbox
-* You have access to torrent trackers and usenet providers
+* You have access to torrent trackers and Usenet providers
 
 Each section provides essential steps that you need to do:
 
@@ -30,9 +30,9 @@ After your slot has been deployed and you've reset your UCP password, you first 
 
 ## Download Clients
 
-Download clients are the ones tasked to download files from your sources. Depending on what you have, you may have access to trackers and usenet providers.
+Download clients are the ones tasked to download files from your sources. Depending on what you have, you may have access to trackers and Usenet providers.
 
-With this assumption, we recommend choosing 1 torrent downloader and 1 usenet downloader to install.
+With this assumption, we recommend choosing 1 torrent downloader and 1 Usenet downloader to install.
 
 ### Torrent Client
 
@@ -50,7 +50,7 @@ With this assumption, we recommend choosing 1 torrent downloader and 1 usenet do
 
 #### Transmission
 
-* [Transmission Intiial Setup and Configuration](https://docs.usbx.me/books/transmission/page/initial-setup-and-configuration)
+* [Transmission Initial Setup and Configuration](https://docs.usbx.me/books/transmission/page/initial-setup-and-configuration)
 * [Limit Seeding Ratio in Transmission](https://docs.usbx.me/books/transmission/page/limit-seeding-ratio-in-transmission)
 
 ### Usenet Downloader
@@ -116,7 +116,7 @@ These are the ones that stream and playback your media using our servers to your
 
 ## Request Agents
 
-Although not required, these applications integrate between your Media Managers and you by providing friendly user interfaces to request shows/movies instead of you accessing your media manager. It also has eatures that simplfy your media experience. The following apps are recommended:
+Although not required, these applications integrate between your Media Managers and you by providing friendly user interfaces to request shows/movies instead of you accessing your media manager. It also has features that simplify your media experience. The following apps are recommended:
 
 ### Ombi
 
@@ -130,7 +130,7 @@ Although not required, these applications integrate between your Media Managers 
 
 ## File Transfer
 
-Here are some of the methods you can do to transfer your files from your seedbox to your devices.
+Here are some methods you can do to transfer your files from your seedbox to your devices.
 
 ### FTP
 

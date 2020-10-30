@@ -1,6 +1,6 @@
 The terminal is your gateway to the inner workings of your UltraSeedbox slot. It is essentially a remote computer running Linux, and when you SSH into it you are connecting to that computer's terminal.
 
-The terminal is a powerful tool where you can execute written commands to perform many simple or even very complicated tasks. This guide will help you understand a few simple commands to get you started in navigating and making use of the Linux terminal, it can also serve as a cheat sheet later down the track if you need to recall anything you may have forgotten.
+A terminal is a powerful tool where you can execute written commands to perform many simple or even very complicated tasks. This guide will help you understand a few simple commands to get you started in navigating and making use of the Linux terminal, it can also serve as a cheat sheet later down the track if you need to recall anything you may have forgotten.
 
 ***
 
@@ -14,7 +14,7 @@ The first thing you are going to want to do in your terminal is navigate between
 
 When you first SSH into your slot, you will be in your personal **home** directory. This is the location of all your files, anything you wish to accomplish must be done within the **home** directory as this is the only folder you have read, write and execute permissions for. If while navigating your terminal you wish to return to your **home** directory, you can do so by typing `cd ~`.
 
-This brings us to a command you will likely find yourself using a large amount of the time; `cd`. This command is used to navigate between different directories in Linux and stands for _change directory_. To use this command you simply type `cd` followed by the directory you wish to navigate to.
+This brings us to the command you will likely find yourself using a large amount of the time; `cd`. This command is used to navigate between different directories in Linux and stands for _change directory_. To use this command you simply type `cd` followed by the directory you wish to navigate to.
 
 In Linux when navigating using the `cd` command, there are multiple ways to tell the operating system where exactly you want to be. If for example you want to move one directory deeper from a directory you are already in you would use `cd [directory]`. If you know the directory structure already and you simply want to go to a path relative to your current location you can use `cd path/to/directory` where each / stands for a directory deeper. Just like `~` refers to the **home** directory `/` refers to the root of the filesystem. If for example you wanted to navigate to a folder called **media** in your **home** directory you would use the command `cd ~/media`.
 
@@ -42,7 +42,7 @@ The `cp` command stands for _copy_, it is used in much the same way as `mv` howe
 
 ### rm
 
-The rm command stands for _remove_, it is used to delete files or directories you no longer wish to use. **It is very important to keep in mind that there is no recycling bin in Linux, any files you delete are permanently lost.** Syntax for rm is much the same as cp, if you wish to remove a file named **Movie1.mkv** you'd simply type `rm Movie1.mkv`. If you wish to remove an entire directory, once again you need to use the `-r` flag; `rm -r media` would delete the entire **media** directory. If you wanted to remove all the files inside the **media** directory, you'd use `rm media/*` or `rm -r media/*` if there are directories inside media.
+The rm command stands for _remove_, it is used to delete files or directories you no longer wish to use. **It is very important to keep in mind that there is no recycling bin in Linux, any files you delete are permanently lost.** Syntax for rm is much the same as cp if you wish to remove a file named **Movie1.mkv** you'd simply type `rm Movie1.mkv`. If you wish to remove an entire directory, once again you need to use the `-r` flag; `rm -r media` would delete the entire **media** directory. If you wanted to remove all the files inside the **media** directory, you'd use `rm media/*` or `rm -r media/*` if there are directories inside the media.
 
 ### Further Info
 
@@ -68,4 +68,4 @@ To change the running state of an application we use `app-[appname] [start|stop|
 
 #### Further Info
 
-For further information regarding specific commands for a particular application run `app-[appname] help`. This will provide all sub-commands available for said app.
+For further information regarding specific commands for a particular application run `app-[appname] help`. This will provide all sub-commands available for the said app.

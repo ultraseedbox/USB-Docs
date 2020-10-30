@@ -1,12 +1,12 @@
 <p class="callout warning">This guide is for advanced users only and it serves as a guide for you to use rclone. The systemd files here are the recommended settings for our slots and will subject to change whenever there are new configurations that are appropriate for the slots. Furthermore, USB is not responsible for any data loss or application errors due to this setup should you proceed and will not provide official support for it due to the large volume of variables and different configurations possible with rclone. You may visit the community discord server for help.</p>
 
-Rclone's mount allows you to mount any of your cloud storage accounts as part of your slot's file system using FUSE. In this guide, we will teach you how to run an rclone mount using systemd. Take note that this guide is setup using Google Drive as the cloud storage provider used. Should you use any other cloud storage providers, you may need consult rclone documentation for the appropriate flags for your setup.
+Rclone's mount allows you to mount any of your cloud storage accounts as part of your slot's file system using FUSE. In this guide, we will teach you how to run a rclone mount using systemd. Take note that this guide is setup using Google Drive as the cloud storage provider used. Should you use any other cloud storage providers, you may need consult rclone documentation for the appropriate flags for your setup.
 
-There are many ways to mount rclone. You can run the rclone mount using screen, create a script for running rclone mount and checking if the command is still alive, using `--daemon` flag, just to mention a few.
+There are many ways to mount rclone. You can run the rclone mount using the `screen` utility, create a script for running rclone mount and checking if the command is still alive, using the `--daemon` flag, just to mention a few.
 
 We recommend using systemd for several reasons:
 
-1. Easy to setup and configure
+1. Easy to set up and configure
 2. Restarts rclone mount automatically when there's a server restart or error
 3. You can manually restart the service when there're problems.
 
@@ -70,7 +70,7 @@ wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/U
 * You may also add or edit some rclone flags here if you wish
 * Then save it by doing CTRL + O, press ENTER then exit nano by doing **CTRL + X**.
 
-<c><p class="callout info">Shown below are example service files. Do not copy paste anything from the example files as it does not always reflect the contants of the service files from our repository and in this guide. Please read the guide thoroughly before setting it up.</p></c>
+<c><p class="callout info">Shown below are example service files. Do not copy and paste anything from the example files as it does not always reflect the contents of the service files from our repository and in this guide. Please read the guide thoroughly before setting it up.</p></c>
 
 ### Example rclone-normal.service
 

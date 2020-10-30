@@ -1,4 +1,4 @@
-Medusa is an open sourced fully-automated PVR written in Python. It enables you to download your favorite TV shows, then processes and stores them in your library, all with minimal user intervention. Some of the features are the following:
+Medusa is an open-sourced fully-automated PVR written in Python. It enables you to download your favorite TV shows, then processes and stores them in your library, all with minimal user intervention. Some of the features are the following:
 
 * Automatic torrent/nzb searching, downloading, and processing at the qualities you want
 * Automatic subtitle downloads for your shows.

@@ -40,7 +40,7 @@ This guide will show you how to setup NZBHydra2 for the first time. You'll be do
   * Host: The Hostname of the indexer
   * API Key: The API key from your account
   * API hit Limit and Download Limit: Usually NZBHydra2 detects this already but you may add your account's Download and API limit here if you wish.
-* You may have to refer to your usenet indexer for their specific configuration.
+* You may have to refer to your Usenet indexer for their specific configuration.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591776410072.png"></p>
 

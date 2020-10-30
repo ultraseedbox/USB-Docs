@@ -1,8 +1,8 @@
-This guide will teach you how to install Deluge plugins. Delige plugins extend the functionality of what Deluge provides, giving you more ways to automate processes or simplifying tasks. Take note that you need to check what plugin you download. Specifically:
+This guide will teach you how to install Deluge plugins. Deluge plugins extend the functionality of what Deluge provides, giving you more ways to automate processes or simplifying tasks. Take note that you need to check what plugin you download. Specifically:
 
 *   If the plugin is written for Deluge v.1.3.15
 *   It's written using python 2.7
-*   Its extention is `.egg`
+*   Its extension is `.egg`
 
 Also take note if your plugin can be accessed with the thin client or the web client.
 
@@ -35,6 +35,7 @@ https://github.com/cvarta/deluge-extractor/releases/download/v.0.4.1/SimpleExtra
 
 * This plugin allows you to download torrents from RSS feeds of trackers
 * This also allows you to filter out the releases that you want using regex
+* Take note that you have to set YaRSS2's options in Deluge's Thin Client. For more information, visit this link: [Setting Up Deluge Thin Client](https://docs.usbx.me/books/deluge/page/setting-up-deluge-thin-client)
 
 ```
 https://bitbucket.org/bendikro/deluge-yarss-plugin/downloads/YaRSS2-1.4.3-py2.7.egg
@@ -47,6 +48,6 @@ https://bitbucket.org/bendikro/deluge-yarss-plugin/downloads/YaRSS2-1.4.3-py2.7.
 
 ### LabelPlus
 
-* A configurable plugin for Delige Thin client that allows you to organize torrents by labels
+* A configurable plugin for Deluge Thin client that allows you to organize torrents by labels
 * This is useful if you want to separate public torrents from your privates, with different seeding limits
 * An in-depth guide is written [in this link.](https://docs.usbx.me/books/deluge/page/limiting-seeding-ratio-in-deluge#bkmrk-labelplus)

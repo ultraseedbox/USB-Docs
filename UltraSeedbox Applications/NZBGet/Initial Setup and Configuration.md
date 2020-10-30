@@ -2,7 +2,7 @@ Here, we'll be setting up NZBGet for the first time. In this guide we'll be doin
 
 * Login to the NZBGet instance for the first time
 * Change ControlUsername and ControlPassword
-* Add usenet indexers
+* Add Usenet indexers
 
 You may also need the following: 
 
@@ -40,7 +40,7 @@ password: tegbzn6789
 
 ### Changing ControlUsername and ControlPassword
 
-* Here, we'll be replacing the default credentials. Go to **Settings** tab.
+* Here, we'll be replacing the default credentials. Go to the **Settings** tab.
 
 <p align="center">
 <img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1572879825259.png">
@@ -55,7 +55,7 @@ password: tegbzn6789
 * Change both fields to your preferred credentials.
   * Please make sure that the username and password you chose is unique and is not used in any of your accounts
 * Scroll down a bit to find **FormAuth** then click **yes**
-  * FormAuth allows you to login via login credentials on the webpage instead of basic browser popup. This is particularly useful for password managers as some do not auto fill basic browser popups.
+  * FormAuth allows you to login via login credentials on the webpage instead of the basic browser popup. This is particularly useful for password managers as some do not auto-fill basic browser popups.
   * This is a recommended step. You may opt to skip this if you prefer the default behavior, which is basic auth.
 
 <p align="center">

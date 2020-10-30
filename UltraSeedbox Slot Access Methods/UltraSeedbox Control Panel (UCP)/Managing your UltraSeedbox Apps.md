@@ -4,7 +4,7 @@ In this guide, we'll be showing you ways on managing your UltraSeedbox installab
 
 ## Installing Apps
 
-* To install an app, go to Installers tab and just find the app that you want on the list.
+* To install an app, go to the Installers tab and just find the app that you want on the list.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590585744840.png"></p>
 
@@ -32,7 +32,7 @@ In this guide, we'll be showing you ways on managing your UltraSeedbox installab
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1592033022481.png"></p>
 
-* Once clicked, press **confirm** to perform upgrade.
+* Once clicked, press **confirm** to perform the upgrade.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1592033091578.png"></p>
 
@@ -59,7 +59,7 @@ You will need to uninstall Plex in order to proceed with this installation.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1592031962065.png"></p>
 
-* Once clicked, press **confirm** to perform cleanup.
+* Once clicked, press **confirm** to perform the cleanup.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1592032210916.png"></p>
 

@@ -55,11 +55,11 @@ usbdocs@lw975:~$
 
 ## Sharing Files/Folders
 
-* To share a file/folder on your seedbox, go to created workspace.
+* To share a file/folder on your seedbox, go to the created workspace.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623010360.png"></p>
 
-* Right click the file that you want to share and select Share.
+* Right-click the file that you want to share and select Share.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623161806.png"></p>
 

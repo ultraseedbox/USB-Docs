@@ -45,7 +45,7 @@ This guide give you an overview of Tautulli's Initial Setup Wizard and the relev
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590155439065.png"></p>
 
-* Then on Web interface, add `/tautulli` on HTTP Root and check **Enable HTTP Proxy**. Once that's done, scroll down and click **Save**.
+* Then on the Web interface, add `/tautulli` on HTTP Root and check **Enable HTTP Proxy**. Once that's done, scroll down and click **Save**.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590155576285.png"></p>
 

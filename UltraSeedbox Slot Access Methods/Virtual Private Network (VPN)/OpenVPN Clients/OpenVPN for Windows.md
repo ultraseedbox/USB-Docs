@@ -22,7 +22,7 @@ This short guide will walk you through on how to setup your OpenVPN Client in Wi
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590686618150.png"></p>
 
-* To connect to your VPN, just right click the icon and select **Connect**. A window will show containing the logs of the VPN connection.
+* To connect to your VPN, just right-click the icon and select **Connect**. A window will show containing the logs of the VPN connection.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590686702740.png"></p>
 

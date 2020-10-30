@@ -9,7 +9,6 @@
 ```
 
 ### Emby/Jellyfin
-
 #### Emby
 
 ```

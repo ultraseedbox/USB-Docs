@@ -12,7 +12,7 @@ Note that all of the articles in here and in the docs site uses mostly Markdown 
 
 ## Images
 
-Images needed to be in center.
+Images needed to be in the center.
 
 ```html
 <p align="center"><img src="https://i.ibb.co/XS9Q7C3/22601782810-cbe3ede5f5-o-focus-none-original.jpg"></p>

@@ -16,7 +16,7 @@ This short guide will walk you through on how to setup your OpenVPN Client in An
 
 ## Running OpenVPN Connect
 
-* Tap the OpenVPN Conenct icon. First time you launched it, allow it to send notifications and tap **Agree** to the Data Collection Policy.
+* Tap the OpenVPN Connect icon. The first time you launched it, allow it to send notifications and tap **Agree** to the Data Collection Policy.
 * Tap the File Tab and accept File Access permission on your app
 * Navigate to where you extracted your ovpn files. In this case, it'll be in `Downloads`
 
@@ -24,7 +24,7 @@ This short guide will walk you through on how to setup your OpenVPN Client in An
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590932974389.png"></p>
 
-* Select the ovpn file displayed and click **Import**. Once profile is successfully added, tap **Add**
+* Select the ovpn file displayed and click **Import**. Once the profile is successfully added, tap **Add**
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590932997165.png"></p>
 

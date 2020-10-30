@@ -3,7 +3,7 @@ This guide will show you how to setup Custom Tautulli Scripts. These scripts ext
 In this guide, we'll be installing 2 scripts, `killstream.py` and `limiterr.py` from [blacktwin's JBOPS repository.](https://github.com/blacktwin/JBOPS). We'll be setting up the following:
 
 * `killstream.py` to disallow transcoding of 4k sources
-* `limiterr.py` to limit amount of plays of a show during night time.
+* `limiterr.py` to limit the amount of plays of a show during night time.
 
 <c><p class="callout info">Take note that the scripts in this guide requires Plex Pass and will only work on Plex Pass users.</p></c>
 

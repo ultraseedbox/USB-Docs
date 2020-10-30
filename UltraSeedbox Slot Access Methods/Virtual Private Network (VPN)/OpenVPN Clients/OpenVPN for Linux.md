@@ -17,13 +17,13 @@ cd ~/Downloads
 sudo unzip {username}-x.zip -d /etc/openvpn/
 ```
 
-* Then run openvpn using the following command
+* Then run OpenVPN using the following command
 
 ```sh 
 sudo openvpn {username}-x.ovpn
 ```
 
-* It'll show you the logs of the connection. Wait for a few minutes for it to successtully connect. You can also run above command under `screen` or `tmux`.
+* It'll show you the logs of the connection. Wait for a few minutes for it to successfully connect. You can also run the above command under `screen` or `tmux`.
 
 * To stop the connection, do **CTRL + C** to stop the OVPN client.
 

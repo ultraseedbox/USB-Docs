@@ -58,7 +58,7 @@ In this guide, we'll be setting up HTTP access and adding a folder into your HTT
 
 `ln -s ~/{folder-name} ~/www/{folder-name}`
 
-* For example, to set `Downloads` folder on your HTTP access
+* For example, to set the `Downloads` folder on your HTTP access
 
 ```sh
 usbdocs@lw873:~$ ls
@@ -67,6 +67,6 @@ usbdocs@lw873:~$ ln -s ~/Downloads/ ~/www/Downloads
 usbdocs@lw873:~$
 ```
 
-* Once that's done, visit your HTTP Access Page to see `Downloads` folder added to the list.
+* Once that's done, visit your HTTP Access Page to see the `Downloads` folder added to the list.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590951359270.png"></p>

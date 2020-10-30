@@ -6,7 +6,7 @@ This guide will teach you how to setup a rclone VFS mount and MergerFS on USB sl
 * You have the appropriate knowledge of setting up and running your own systemd services.
 * You are comfortable working in CLI, compiling from sources and setting up cron jobs.
 
-Workflow of the setup is as follows:
+The workflow of the setup is as follows:
 
 1. There are 2 folders, one local and the rclone mount named Mount
 2. These 2 folders are merged via MergerFS and is mounted to another folder. All apps such as Plex, Radarr, Sonarr and such will be pointed to this folder.
@@ -23,7 +23,7 @@ Pros of this setup are as follows:
 Cons of this setup are as follows:
 
 1. New files will not be available on Google Drive until you run the rclone move script
-2. There will be 3 points of failure on this setup, RClone, apps that are connected to MergerFS folder and MergerFS
+2. There will be 3 points of failure on this setup, RClone, apps that are connected to the MergerFS folder and MergerFS
 3. Monitoring functions such as Plex's “Update my library automatically“ will not work for mounts. You may need to set your application to periodically scan the mount.
 
 Before we proceed, it is imperative to stop all rclone/plexdrive processes and stop all the apps that are connected to your rclone mount before proceeding.
@@ -36,7 +36,7 @@ Before we proceed, it is imperative to stop all rclone/plexdrive processes and s
 * Create all the necessary folders.
   * First, a local folder and a rclone mount folder. You can put these folders anywhere in your home folder but I’d like to put these inside another folder. We'll name it Stuff just to make it cleaner.
   * Then, we create another folder where we’ll mount MergerFS. Let’s name it MergerFS.
-  * Lastly, create scripts folder. This is where you'll find logs for your rclone/mergerfs mounts. This is where you'll store the bash upload script if you choose the bash upload script, which will be explained more later.
+  * Lastly, create a scripts folder. This is where you'll find logs for your rclone/mergerfs mounts. This is where you'll store the bash upload script if you choose the bash upload script, which will be explained more later.
 
 ```
 FILE STRUCTURE
@@ -46,6 +46,16 @@ FILE STRUCTURE
     -Mount #Rclone mount point
 /home6/kbguides/MergerFS/ #actual mergerfs mount point
 /home6/kbguides/scripts/ #Where you'll find logs for rclone/mergerfs mounts
+```
+
+* Doing this in SSH, the following commands are
+
+```sh
+mkdir -p ~/Stuff
+mkdir -p ~/Stuff/Local
+mkdir -p ~/Stuff/Mount
+mkdir -p ~/MergerFS
+mkdir -p ~/scripts
 ```
 
 <p class="callout warning">Do not attempt to mount your rclone remote directly on your home directory. This will lead to instabilities. Instead, always mount to an empty folder within your home directory.</p>
@@ -64,7 +74,7 @@ curl https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/
 <img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image2019-6-30_17-16-0.png">
 </p>
 
-* To confirm if installation is completed, do `which mergerfs`
+* To confirm if the installation is completed, do `which mergerfs`
 
 ```sh
 kbguides@lw902:~$ which mergerfs
@@ -75,14 +85,6 @@ kbguides@lw902:~$ which mergerfs
 
 ## Setting up systemd files and running MergerFS/Rclone
 
-* Run the following commands to your terminal
-  * This will download the latest revisions of the service files from our repository directly to your systemd folder.
-
-```sh
-wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/rclone-vfs.service
-wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/mergerfs.service
-```
-
 * Do `pwd` and take note of the output. In this case, the output is `/home6/kbguides`
 
 ```sh
@@ -90,10 +92,24 @@ kbguides@lw902:~$ pwd
 /home6/kbguides
 ```
 
-* Then, navigate to `~/.config/systemd/user/` and edit each file by replacing `/home6/kbguides/` with the output from `pwd` using a text editor (`nano`, `vim`)
+* Then, run the following commands to your terminal
+  * This will download the latest revisions of the service files from our repository directly to your systemd folder.
+* After you run the commands, a nano text window appears.
+  * Edit `/homexx/yyyyy` to your output in `pwd` and to your preferred folder (e.g. `/home6/kbguides/Rclone/Mount/Folder/here`).
+  * Then save it by doing CTRL + O, press ENTER then exit nano by doing **CTRL + X**.
   * In these systemd files, these are for Google Drive and is the recommended settings for our slots (Plex Streaming)
   * You may wish to add or edit additional flags/options that will be best for your setup.
     * We recommend starting off with our defaults first.
+
+### rclone VFS Service
+```sh
+wget -P $HOME/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/rclone-vfs.service && nano $HOME/.config/systemd/user/rclone-vfs.service
+```
+
+### mergerfs Service
+```sh
+wget -P $HOME/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/mergerfs.service && nano $HOME/.config/systemd/user/mergerfs.service
+```
 
 <c><p class="callout info">Shown below are example service files. Do not copy and paste anything from the example files as it does not always reflect the contents of the service files from our repository and in this guide. Please read the guide thoroughly before setting it up.</p></c>
 
@@ -168,22 +184,13 @@ WantedBy=default.target
 
 * Run the following commands to your terminal
   * This will download the latest revisions of the service files from our repository directly to your systemd folder.
+  * After you run the commands, a nano text window appears.
+  * Edit `/homexx/yyyyy` to your output in `pwd` and to your preferred folder (e.g. `/home6/kbguides/Rclone/Mount/Folder/here`).
+  * Then save it by doing CTRL + O, press ENTER then exit nano by doing **CTRL + X**.
 
 ```sh
-wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-uploader.service
-wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-uploader.timer
+wget -P $HOME/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-uploader.service && nano $HOME/.config/systemd/user/rclone-uploader.service && wget -P $HOME/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Upload%20Scripts/rclone-uploader.timer
 ```
-
-* Do `pwd` and take note of the output. In this case, the output is `/home6/kbguides`.
-
-```sh
-kbguides@lw902:~$ pwd
-/home6/kbguides
-```
-
-* Then, navigate to `~/.config/systemd/user/` and edit each file by replacing `/home6/kbguides/` with the output from `pwd` using a text editor (nano, vim)
-  * We recommend starting off with our defaults first.
-  * The defaults trigger an upload daily.
 
 #### Example Rclone Upload Service File
 
@@ -238,8 +245,8 @@ WantedBy=timers.target
 ### Bash Upload Script
 
 * Download this script to whatever folder you wish. In this case, `scripts` will be the folder where you'll save the script.
-  * You may choose between the normal upload script (no notifications) or rclone upload script that sends discord notifications whenever there's a successful transfer.
-* Change the scripts permission to 755, so it makes it executable by you. So do `chmod +x >name of script<.sh`
+  * You may choose between the normal upload script (no notifications) or the rclone upload script that sends discord notifications whenever there's a successful transfer.
+* Change the script's permission to 755, so it makes it executable by you. So do `chmod +x >name of script<.sh`
   * In the proceeding examples, I decided to use the normal rclone script so do `chmod +x rclone-upload.sh`
 
 #### Normal Upload Script
@@ -415,7 +422,7 @@ fi
 * Then, decide how often you want to execute the script. Our servers are in the Netherlands so the timezone is set to CET
   * In my case, I’d like to run the script at 1900 CEST every night. Translated to cron, that is `0 19 * * *`
 
-<c><p class="callout info">If you need help in translating the time you want to cron, you can visit [https://crontab.guru/](https://crontab.guru/) and [https://www.worldtimebuddy.com/](https://www.worldtimebuddy.com/)</p></c>
+<c><p class="callout info">If you need help in translating the time you want to cron, you can visit [Crontab Guru](https://crontab.guru/) and [World Time Buddy](https://www.worldtimebuddy.com/) to help you with setting up the time.</p></c>
 
 * Do `readlink -f rclone-upload.sh` to get the absolute path
 
@@ -433,7 +440,7 @@ kbguides@lw902:~/scripts$ readlink -f rclone-upload.sh
 </p>
 
 * Save cron by doing CTRL + O and CTRL+ X to exit the editor
-* Now, all you need to do is to access all your apps and point it to your nerly made MergerFS folder which is `MergerFS`
+* Now, all you need to do is to access all your apps and point it to your newly made MergerFS folder which is `MergerFS`
 
 ## Systemd Commands
 

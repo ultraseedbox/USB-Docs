@@ -9,11 +9,11 @@ In this guide, we'll be setting up extensions that send torrent files from your 
 ## Setting Up
 ### Remote Torrent Adder
 
-* Once installed, right click the extension and click **Options**
+* Once installed, right-click the extension and click **Options**.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589347104757.png"></p>
 
-* Then, a new tab appears with the Remote Torrent Adder setup page. Click Add server to add one. The following connection details are shown below
+* Then, a new tab appears with the Remote Torrent Adder setup page. Click the Add server button to add one. The following connection details are shown below:
 
 #### ruTorrent
 
@@ -35,7 +35,7 @@ Relative Path: /rutorrent
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589349214407.png"></p>
 
-<c><p class="callout info">This will throw an `Server responded with an irregular HTTP code` when adding a torrent. You can safely ignore this error.</p></c>
+<c><p class="callout info">This will throw a `Server responded with an irregular HTTP code` when adding a torrent. You can safely ignore this error.</p></c>
 
 #### Deluge
 
