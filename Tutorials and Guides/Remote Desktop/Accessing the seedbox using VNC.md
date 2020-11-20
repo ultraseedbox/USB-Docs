@@ -1,4 +1,4 @@
-<c><p class="callout info">VNC Access is only available to 30 EUR plans and above.</p></c>
+<c><p class="callout info">VNC Access is being phased out on UltraSeedbox's new plans. This page will still be up for clients on legacy plans.</p></c>
 
 In this guide, we'll be teaching you on how to access your seedbox's GUI via VNC. We'll be doing the following steps:
 
@@ -47,7 +47,7 @@ usbdocs@lw701:~$
 ## Accessing seedbox's GUI via VNC
 
 * Open up your VNC client.
-* Then put the address from the `connect to` section in the Address text box and click Connect
+* Then put the address from the `connect to` section in the Address text box and click Connect
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583231883057.png"></p>
 

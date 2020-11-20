@@ -1,4 +1,4 @@
-<c><p class="callout info">x2go access is only available to 30 EUR plans and above.</p></c>
+<c><p class="callout info">x2go access is being phased out on UltraSeedbox's new plans. This page will still be up for clients on legacy plans.</p></c>
 
 X2Go is a secure alternative to VNC which uses encryption via the SSH protocol to remotely login and access your seedbox. In this guide, we'll be guiding you on how to do it. We'll be doing the following:
 
