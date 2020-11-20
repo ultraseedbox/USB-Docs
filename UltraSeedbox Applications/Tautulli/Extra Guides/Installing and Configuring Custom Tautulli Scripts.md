@@ -27,7 +27,7 @@ usbdocs@lw975:~/scripts$
 * Download the latest revision of the script below using `wget`
 
 ```sh
-wget https://github.com/blacktwin/JBOPS/blob/master/killstream/kill_stream.py
+wget https://raw.githubusercontent.com/blacktwin/JBOPS/master/killstream/kill_stream.py
 ```
 
 * After that, change the owner and make it executable by running the following commands

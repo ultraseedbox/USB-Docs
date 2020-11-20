@@ -29,6 +29,7 @@ We will be using SSH most of this guide, if you are unfamiliar with SSH we have 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-7_11-25-0%5B1%5D.png"></p>
 
 * If possible, it is recommended to stop your applications on your original slot while doing the transfer. This will help prevent possible changes in data during the transfer, and will likely assist with the actual data migration speeds to run as intended.
+* Also, you may want to stop any rclone/mergerfs mounts as a precaution.
 
 ***
 
@@ -93,7 +94,7 @@ exit
 * If you were to disconnect from your `screen` (closed your local SSH terminal, or lost internet temporarily for example). You can recall the `screen` back with the command
 
 ```sh
-screen -r  transfer
+screen -rd  transfer
 ```
 
 ***
@@ -178,7 +179,12 @@ sed -i 's/homeOLD/homeNEW/g' ~/transfer/.config/deluge/state/torrents.state
 sed -i 's/home8/home34/g' ~/transfer/.config/deluge/state/torrents.state
 ```
 
-* Now that we have our Deluge session data files correctly set to our current home directory, and have moved our Deluge torrent data directories to their correct place, we can restart Deluge with the following command
+* Copy the torrents to where they belong with th following SSH command:  
+```
+cp -a ~/transfer/.config/deluge/state/* ~/.config/deluge/state/
+```
+
+* Now that we have our Deluge session data files correctly set to our current home directory, and have moved our Deluge torrent data directories to their correct place, we can restart Deluge with the following SSH command:
 
 ```sh
 app-deluge restart
@@ -238,7 +244,12 @@ So for example, from the screenshot examples in this section, the `sed` command 
 sed -i 's/home8/home34/g' ~/transfer/.config/rtorrent/session/*.rtorrent
 ```
 
-* Now that we have our rTorrent session data files correctly set to our current home directory, and have moved our rTorrent torrent data directories to their correct place, we can restart rtorrent with the following command
+* Copy the torrents to where they belong with th following SSH command:  
+```
+cp -a ~/transfer/.config/rtorrent/session/* ~/.config/rtorrent/session/
+```
+
+* Now that we have our rTorrent session data files correctly set to our current home directory, and have moved our rTorrent torrent data directories to their correct place, we can restart rtorrent with the following SSH command:
 
 ```sh
 app-rtorrent restart
@@ -298,7 +309,12 @@ sed -i 's/homeOLD/homeNEW/g' ~/transfer/.config/transmission-daemon/resume/*.res
 sed -i 's/home8/home34/g' ~/transfer/.config/transmission-daemon/resume/*.resume
 ```
 
-Now that we have our Transmission session data files correctly set to our current home directory, and have moved our Deluge torrent data directories to their correct place, we can restart Transmission with the following command
+* Copy the torrents to where they belong with th following SSH command:  
+```
+cp -a ~/transfer/.config/transmission-daemon/resume/* ~/.config/transmission-daemon/resume/
+```
+
+Now that we have our Transmission session data files correctly set to our current home directory, and have moved our Deluge torrent data directories to their correct place, we can restart Transmission with the following SSH command:
 
 ```sh
 app-transmission restart
@@ -387,7 +403,7 @@ mv ~/transfer/.apps/bazarr ~/.apps/bazarr
 * Run the Bazarr repair SSH command
 
 ```sh
-app-sabnzbd upgrade
+app-bazarr upgrade
 ```
 
 * Navigate to your UCP and click the green "Actions" drop-down menu button for Bazarr, and select **Change Password**
@@ -1059,7 +1075,7 @@ mv ~/transfer/.apps/radarr ~/.apps/radarr
 * Run the Radarr repair SSH command
 
 ```sh
-app-sonarr upgrade
+app-radarr upgrade
 ```
 
 * Navigate to your UCP and click the green "Actions" drop-down menu button for Radarr, and select **Change Password**
