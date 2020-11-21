@@ -1,14 +1,14 @@
-## How UltraSeedbox Stores Passwords
+## How Ultraseedbox Stores Passwords
 
-UltraSeedbox uses trusted software platforms, allowing you to have the best possible experience. Here, we describe the platforms used to power our services and how each platform manages the passwords stored. Please note that most of the passwords stored on our servers are encrypted and hashed using various secure algorithms.
+Ultraseedbox uses trusted software platforms, allowing you to have the best possible experience. Here, we describe the platforms used to power our services and how each platform manages the passwords stored. Please note that most of the passwords stored on our servers are encrypted and hashed using various secure algorithms.
 
-### myUltraSeedbox (WHMCS)
+### myUltraseedbox (WHMCS)
 
 Ultraseedbox uses WHMCS for managing sales, provisioning of seedbox slots, email dissemination, service announcements, and payment. It uses industry-leading security standards to encrypt and secure your information stored on our servers. The password stored on our servers is hashed using Bcrypt.
 
-### UltraSeedbox Control Panel (Django)
+### Ultraseedbox Control Panel (Django)
 
-UltraSeedbox uses Django to power the UltraSeedbox Control Panel. It provides a one-stop panel to manage your UltraSeedbox slot by managing your applications and passwords. It also gives the user a quick overview of your slot.
+Ultraseedbox uses Django to power the Ultraseedbox Control Panel. It provides a one-stop panel to manage your Ultraseedbox slot by managing your applications and passwords. It also gives the user a quick overview of your slot.
 
 ### UCP login password
 
@@ -16,11 +16,11 @@ Your login password, used to access your UCP profile, is hashed using the PBKDF2
 
 ### UCP App Passwords
 
-Your app passwords, which are the password used to login to your installed applications, are stored in plain text and are only available to the user and the UltraSeedbox support team; this is for the UltraSeedbox support team to access your installed applications whenever you ask for support. UltraSeedbox support staff would not access said installed applications unless the user sends a support ticket, or asks a staff member for it on the community Discord server via Direct Messages. In such cases, we would encourage you to set a temporary password prior.
+Your app passwords, which are the password used to login to your installed applications, are stored in plain text and are only available to the user and the Ultraseedbox support team; this is for the Ultraseedbox support team to access your installed applications whenever you ask for support. Ultraseedbox support staff would not access said installed applications unless the user sends a support ticket, or asks a staff member for it on the community Discord server via Direct Messages. In such cases, we would encourage you to set a temporary password prior.
 
 ### Third-Party App Passwords
 
-Certain applications (for instance, Deluge or SickChill) are known to store authentication details and sensitive information in plaintext, including passwords and API keys. This behavior is beyond the control of UltraSeedbox, and it is at the user’s sole discretion to decide to trust these applications with this data. If you wish to see the application’s behavior in question change, please report this issue to the project maintainers directly. That said, UltraSeedbox slots are locked down so that only you can access your data on your slot and not anyone else’s.
+Certain applications (for instance, Deluge or SickChill) are known to store authentication details and sensitive information in plaintext, including passwords and API keys. This behavior is beyond the control of Ultraseedbox, and it is at the user’s sole discretion to decide to trust these applications with this data. If you wish to see the application’s behavior in question change, please report this issue to the project maintainers directly. That said, Ultraseedbox slots are locked down so that only you can access your data on your slot and not anyone else’s.
 
 ## How can you help
 

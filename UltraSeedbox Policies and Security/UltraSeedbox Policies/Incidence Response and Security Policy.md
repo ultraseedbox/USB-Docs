@@ -33,12 +33,12 @@ As we describe in our Terns of Service and on our security page, we do our utmos
 
 * Adhere to our password policy. You can read our password policy [here](https://docs.usbx.me/books/ultraseedbox-policies/page/password-policy).
 * Moderate your account sharing, do not share your account with people you do not know. 
-* Notify UltraSeedbox if you notice any unauthorized use of or access our platform through your account, including any unauthorized use of your password.
+* Notify Ultraseedbox if you notice any unauthorized use of or access our platform through your account, including any unauthorized use of your password.
 * Enable two-factor authentication (2FA).
 
 ### Report a security event, vulnerability, or abuse
 
-* Please notify UltraSeedbox support to report a security event, like unauthorized account usage or a suspected data breach.
+* Please notify Ultraseedbox support to report a security event, like unauthorized account usage or a suspected data breach.
 * Report a vulnerability - Please visit our [Bug Bounty Program](https://docs.usbx.me/books/ultraseedbox-bug-bounty-program) for detailed information on how you can report any vulnerabilities and get rewarded.
 * Remove sensitive data - Need sensitive data removed from an Ultraseedbox? See our [Ultraseedbox Sensitive Data Removal Policy](https://docs.usbx.me/books/ultraseedbox-policies/page/sensitive-data-removal-policy)
 * Read our [Content Abuse Policy](https://docs.usbx.me/books/ultraseedbox-policies/page/content-abuse-policy) and how you can report any copyright content abuse.

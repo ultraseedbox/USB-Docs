@@ -1,4 +1,4 @@
-Usernames at Ultraseedbox are available on a first-come, first-served basis and intended for immediate use. It is possible to have the same username for multiple slots that you rent at UltraSeedbox.
+Usernames at Ultraseedbox are available on a first-come, first-served basis and intended for immediate use. It is possible to have the same username for multiple slots that you rent at Ultraseedbox.
 
 If another user has already used the username you prefer, consider other names or unique variations. Using a number, hyphen, or an alternative spelling might help you identify a desirable username still available.
 
@@ -8,8 +8,8 @@ Ultraseedbox also recycles the unused account usernames every six months. If we 
 
 ## Name Squatting Policy
 
-UltraSeedbox prohibits account name squatting, and account names may not be reserved or inactive for future use. Accounts violating this name squatting policy may be removed or renamed without notice. Any attempt to sell, buy or solicit other forms of payment in exchange for account names is prohibited and may result in permanent account suspension.
+Ultraseedbox prohibits account name squatting, and account names may not be reserved or inactive for future use. Accounts violating this name squatting policy may be removed or renamed without notice. Any attempt to sell, buy or solicit other forms of payment in exchange for account names is prohibited and may result in permanent account suspension.
 
 OR
 
-UltraSeedbox restricts account name hunching down, and account names may not be saved or idly held for some time later. Records abusing this name crouching strategy might be eliminated or renamed without notice. Endeavors to sell, purchase, or request different installments in return for account names are disallowed and may bring about perpetual record suspension.
+Ultraseedbox restricts account name hunching down, and account names may not be saved or idly held for some time later. Records abusing this name crouching strategy might be eliminated or renamed without notice. Endeavors to sell, purchase, or request different installments in return for account names are disallowed and may bring about perpetual record suspension.

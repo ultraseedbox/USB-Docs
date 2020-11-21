@@ -1,4 +1,4 @@
-In this guide, we'll be showing you ways on managing your UltraSeedbox installable apps. This includes installing, uninstalling, upgrading and cleanup of the apps.
+In this guide, we'll be showing you ways on managing your Ultraseedbox installable apps. This includes installing, uninstalling, upgrading and cleanup of the apps.
 
 *** 
 

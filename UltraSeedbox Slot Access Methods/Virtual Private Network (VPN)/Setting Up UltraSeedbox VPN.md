@@ -1,10 +1,10 @@
-All UltraSeedbox plans have complimentary VPN service included, which allows you to surf the web securely and anonymously by tunneling your internet traffic through your seedbox. We're using OpenVPN, a mature and secure VPN protocol.
+All Ultraseedbox plans have complimentary VPN service included, which allows you to surf the web securely and anonymously by tunneling your internet traffic through your seedbox. We're using OpenVPN, a mature and secure VPN protocol.
 
 This guide shows you how to get OVPN config files to be used to your OpenVPN clients and setting up OpenVPN clients.
 
 ***
 
-## Setting Up UltraSeedbox VPN
+## Setting Up Ultraseedbox VPN
 
 * Login to your UCP and go to Access details
 * Under OpenVPN access, you'll have 3 buttons which allows you to download 3 OVPN configs.

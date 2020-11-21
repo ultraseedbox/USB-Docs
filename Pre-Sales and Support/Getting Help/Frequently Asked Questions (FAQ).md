@@ -29,7 +29,7 @@ We do not log anything that is not necessary. Anything that is necessary to be l
 
 ##### How can I upgrade/downgrade my slot?
 
-Simply put in a ticket [here](https://my.ultraseedbox.com/submitticket.php) and ask for the team to upgrade or downgrade your plan to which ever you wish. If you want data to be transferred, please ask the team to do so. They will be more than happy to! The data will be placed into a folder called `transfer` in your new slot. It is up to you to move this data to where ever you wish it to be. You may also refer to USB's [extensive guide to Migrate your UltraSeedbox slot's data](https://docs.usbx.me/books/migrating-your-ultraseedbox-data/page/migrating-your-ultraseedbox-slot) if you prefer to do it on your own.
+Simply put in a ticket [here](https://my.ultraseedbox.com/submitticket.php) and ask for the team to upgrade or downgrade your plan to which ever you wish. If you want data to be transferred, please ask the team to do so. They will be more than happy to! The data will be placed into a folder called `transfer` in your new slot. It is up to you to move this data to where ever you wish it to be. You may also refer to USB's [extensive guide to Migrate your Ultraseedbox slot's data](https://docs.usbx.me/books/migrating-your-ultraseedbox-data/page/migrating-your-ultraseedbox-slot) if you prefer to do it on your own.
 
 ##### Can I change the username of my slot?
 

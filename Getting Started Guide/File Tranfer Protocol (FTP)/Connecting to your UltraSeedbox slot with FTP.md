@@ -43,7 +43,7 @@ Before logging into your FTP Client, you should first set your own SSH/FTP passw
 
 ## FTPS vs. SFTP
 
-UltraSeedbox supports the File Transfer Protocol over SSL (FTPS) and SSH File Transfer Protocol (SFTP). These file transfer protocols provide secure file transfers between your slots and your PC. Also, both protocols do not count towards your allocated upload bandwidth.
+Ultraseedbox supports the File Transfer Protocol over SSL (FTPS) and SSH File Transfer Protocol (SFTP). These file transfer protocols provide secure file transfers between your slots and your PC. Also, both protocols do not count towards your allocated upload bandwidth.
 
 ### File Transfer Protocol over SSL (FTPS)
 

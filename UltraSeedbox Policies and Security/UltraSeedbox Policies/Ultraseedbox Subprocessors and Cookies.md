@@ -1,4 +1,4 @@
-UltraSeedbox provides a great deal of transparency regarding how we collect, store, process, and share your data. We provide this page, which details our subprocessors, how we use cookies, and tracking methods to improve our services.
+Ultraseedbox provides a great deal of transparency regarding how we collect, store, process, and share your data. We provide this page, which details our subprocessors, how we use cookies, and tracking methods to improve our services.
 
 When we share your information with third-party subprocessors, we remain responsible for it. We work very hard to maintain your trust when we bring on new vendors; we require them to enter into data protection agreements that restrict their processing of Users' Personal Information (as defined in the Privacy Statement).
 

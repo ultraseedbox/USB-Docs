@@ -1,4 +1,4 @@
-The terminal is your gateway to the inner workings of your UltraSeedbox slot. It is essentially a remote computer running Linux, and when you SSH into it you are connecting to that computer's terminal.
+The terminal is your gateway to the inner workings of your Ultraseedbox slot. It is essentially a remote computer running Linux, and when you SSH into it you are connecting to that computer's terminal.
 
 A terminal is a powerful tool where you can execute written commands to perform many simple or even very complicated tasks. This guide will help you understand a few simple commands to get you started in navigating and making use of the Linux terminal, it can also serve as a cheat sheet later down the track if you need to recall anything you may have forgotten.
 
@@ -50,7 +50,7 @@ For any commands you need to find more information on you can use the command `m
 
 ***
 
-## UltraSeedbox Specific Commands
+## Ultraseedbox Specific Commands
 
 ### Application Management
 

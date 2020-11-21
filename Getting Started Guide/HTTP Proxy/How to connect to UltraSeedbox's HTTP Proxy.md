@@ -1,4 +1,4 @@
-All UltraSeedbox plans have complimentary HTTP Proxy included. HTTP Proxy is used for quickly circumventing blocks or to quickly anonymize your connection by acting as a gateway between you and the internet, sending all of your web requests to your slot first before going to the site.
+All Ultraseedbox plans have complimentary HTTP Proxy included. HTTP Proxy is used for quickly circumventing blocks or to quickly anonymize your connection by acting as a gateway between you and the internet, sending all of your web requests to your slot first before going to the site.
 
 If you need to completely anonymize and encrypt your connection, you may look into our [VPN service](https://docs.usbx.me/books/virtual-private-network-%28vpn%29) instead.
 

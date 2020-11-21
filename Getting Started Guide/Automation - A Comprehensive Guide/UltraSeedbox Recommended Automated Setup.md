@@ -1,4 +1,4 @@
-This guide as your guide to fully setting up your UltraSeedbox slot based on our recommended apps.
+This guide as your guide to fully setting up your Ultraseedbox slot based on our recommended apps.
 
 This guide assumes the following:
 
@@ -18,15 +18,15 @@ Provided below is a checklist of what to do. Each section has links to a step-by
 
 ***
 
-#### UltraSeedbox Control Panel 
-<input type="checkbox"> [UltraSeedbox Control Panel Tour](https://docs.usbx.me/books/ultraseedbox-control-panel-%28ucp%29/page/ultraseedbox-control-panel-tour)<br>
-<input type="checkbox"> [Managing your UltraSeedbox Apps](https://docs.usbx.me/books/ultraseedbox-control-panel-%28ucp%29/page/managing-your-ultraseedbox-apps)<br>
+#### Ultraseedbox Control Panel 
+<input type="checkbox"> [Ultraseedbox Control Panel Tour](https://docs.usbx.me/books/ultraseedbox-control-panel-%28ucp%29/page/ultraseedbox-control-panel-tour)<br>
+<input type="checkbox"> [Managing your Ultraseedbox Apps](https://docs.usbx.me/books/ultraseedbox-control-panel-%28ucp%29/page/managing-your-ultraseedbox-apps)<br>
 
 #### SSH
 
 <input type="checkbox"> [How to connect to your seedbox via SSH](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/how-to-connect-to-your-seedbox-via-ssh)<br>
 <input type="checkbox"> [Public Key Authentication (Optional but recommended)](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/public-key-authentication)<br>
-<input type="checkbox"> [Your UltraSeedbox Linux Terminal - Helpful Commands for Learning Linux (Optional)](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/your-ultraseedbox-linux-terminal---helpful-commands-for-learning-linux)<br>
+<input type="checkbox"> [Your Ultraseedbox Linux Terminal - Helpful Commands for Learning Linux (Optional)](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/your-ultraseedbox-linux-terminal---helpful-commands-for-learning-linux)<br>
 
 #### rTorrent + ruTorrent
 

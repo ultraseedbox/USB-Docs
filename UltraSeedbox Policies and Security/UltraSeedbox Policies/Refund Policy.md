@@ -1,13 +1,13 @@
-At UltraSeedbox, we want to ensure that you are 100% happy with your purchase.
+At Ultraseedbox, we want to ensure that you are 100% happy with your purchase.
 
 * If you have any questions about our services, please don’t hesitate to ask us through our Official Support Ticket System.
 * If you attempt to resolve issues with Support staff and you feel that the products you purchased do not best fit your requirements, we want to make things right through this policy.
 
-UltraSeedbox offers a **prorated refund** to **all new clients** within **seven days from the purchase of your first slot.** You can purchase any of our plans to test it out, and if that does not satisfy your needs, you can cancel your slot and send us a ticket to get your refund.
+Ultraseedbox offers a **prorated refund** to **all new clients** within **seven days from the purchase of your first slot.** You can purchase any of our plans to test it out, and if that does not satisfy your needs, you can cancel your slot and send us a ticket to get your refund.
 
 ## Eligibility Guidelines
 
-1. You must be a new client and have purchased your first slot from UltraSeedbox.
+1. You must be a new client and have purchased your first slot from Ultraseedbox.
 2. If you purchase multiple slots from us, you are allowed a one-time refund of **one Essential Plan**, **one xStream plan**, and **one Bolt NVME plan**. These are counted within seven days of purchasing your first slot.
 
 ## Refund Calculation
@@ -29,9 +29,9 @@ All of our refunds are calculated on a prorated basis. This means that you only 
 
 ## PayPal-Related Policies
 ### PayPal Subscriptions and Overpayments
-UltraSeedbox cannot manage your PayPal subscriptions on your behalf at any stage of service and is your sole responsibility to cancel your PayPal subscription with UltraSeedbox.
+Ultraseedbox cannot manage your PayPal subscriptions on your behalf at any stage of service and is your sole responsibility to cancel your PayPal subscription with Ultraseedbox.
 
-Any overpayment(s) on service(s) are **non-refundable** and will be added to your UltraSeedbox account credit, which can be accessed and used as credit on future invoices/services.
+Any overpayment(s) on service(s) are **non-refundable** and will be added to your Ultraseedbox account credit, which can be accessed and used as credit on future invoices/services.
 
 ### Chargebacks & PayPal Disputes
 When opening a service with us, you agree to contact us first regarding any issues. The use of a PayPal dispute or a chargeback to forcibly revoke funding from us is considered a violation of our Terms of Service.

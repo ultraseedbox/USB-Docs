@@ -1,11 +1,11 @@
-At UltraSeedbox, we ask and store the minimum amount of information from you that is necessary to maintain our records and provide the services that you’d expect from us. The UltraSeedbox team is also well-trained to handle your data with the utmost privacy and security in mind and are required to observe strict rules, which includes using strong credentials and multi-factor authentication.
-Also, all of the payment processing is entirely handled by our payment processors, and none of your financial information is stored to UltraSeedbox, aside from the user’s payment and their respective transaction IDs.
+At Ultraseedbox, we ask and store the minimum amount of information from you that is necessary to maintain our records and provide the services that you’d expect from us. The Ultraseedbox team is also well-trained to handle your data with the utmost privacy and security in mind and are required to observe strict rules, which includes using strong credentials and multi-factor authentication.
+Also, all of the payment processing is entirely handled by our payment processors, and none of your financial information is stored to Ultraseedbox, aside from the user’s payment and their respective transaction IDs.
 
 ### Email
 * **Uses**
-  * Serve as your login on your UltraSeedbox Client Area and UltraSeedbox Control Panel.
-  * Point of contact for UltraSeedbox service announcements
-  * Point of contact for UltraSeedbox Ticket System inquiries
+  * Serve as your login on your Ultraseedbox Client Area and Ultraseedbox Control Panel.
+  * Point of contact for Ultraseedbox service announcements
+  * Point of contact for Ultraseedbox Ticket System inquiries
 * **Collection**
   * The user provides this during signup.
 * **Storage**
@@ -13,7 +13,7 @@ Also, all of the payment processing is entirely handled by our payment processor
   * Django Suit = Cleartext
 * **Access and Reasons for Access**
   * User
-  * UltraSeedbox team
+  * Ultraseedbox team
     * This is for contacting the user for support or any service announcements.
 * **Retention**
   * Indefinite
@@ -22,8 +22,8 @@ Also, all of the payment processing is entirely handled by our payment processor
 
 ### Username
 * **Uses**
-  * This is to identify the user on the UltraSeedbox Ticket System.
-  * It also will be the name of the user’s UltraSeedbox slot.
+  * This is to identify the user on the Ultraseedbox Ticket System.
+  * It also will be the name of the user’s Ultraseedbox slot.
   * It’ll be registered as a local user on the server that the user’s slot has deployed in. This will also show any running processes that the user has.
   * It’ll also serve as the user’s username for installed applications.
 * **Collection**
@@ -34,7 +34,7 @@ Also, all of the payment processing is entirely handled by our payment processor
   * Installed Applications = Depends on the Application
 * **Access and Reasons for Access**
   * User
-  * UltraSeedbox team
+  * Ultraseedbox team
     * This is needed for any support inquiries.
     * This is also required to investigate any server issues by searching for applications that have high resource consumption, server instability source, or any illegitimate applications that the user runs.
 * **Retention**
@@ -51,24 +51,24 @@ Also, all of the payment processing is entirely handled by our payment processor
   * WHMCS = Cleartext
 * **Access and Reasons for Access**
   * User
-  * UltraSeedbox team
+  * Ultraseedbox team
 * **Retention**
   * Indefinite
 * **More Information**
   * Sensitive Data Removal Policy
 
 ### Password
-#### UltraSeedbox Client Area Password
+#### Ultraseedbox Client Area Password
 * **Uses**
-  * Serve as the user’s password on your UltraSeedbox Client Area.
+  * Serve as the user’s password on your Ultraseedbox Client Area.
 * **Collection**
-  * The user provides this during signup on the UltraSeedbox Client Area.
+  * The user provides this during signup on the Ultraseedbox Client Area.
 * **Storage**
   * WHMCS = Encrypted
 * **Access and Reasons for Access**
 * User
-* Limited access by the UltraSeedbox team
-  * The UltraSeedbox team has no means of seeing the user’s password as it is hashed, but they can reset your password for you after verification.
+* Limited access by the Ultraseedbox team
+  * The Ultraseedbox team has no means of seeing the user’s password as it is hashed, but they can reset your password for you after verification.
 
 * **Retention**
   * Indefinite
@@ -76,17 +76,17 @@ Also, all of the payment processing is entirely handled by our payment processor
   * Sensitive Data Removal Policy
   * Password Policy
 
-#### UltraSeedbox Control Panel Password
+#### Ultraseedbox Control Panel Password
 * **Uses**
-  * Serve as the user’s password on the UltraSeedbox Control Panel to gain access to their slot.
+  * Serve as the user’s password on the Ultraseedbox Control Panel to gain access to their slot.
 * **Collection**
   * The user provides this after the deployment of the user’s slot.
 * **Storage**
   * Django Suit = Encrypted
 * **Access and Reasons for Access**
 * User
-* Limited access by the UltraSeedbox team
-  * The UltraSeedbox team has no means of seeing the user’s password as it is hashed, but they can reset your password for you after verification.
+* Limited access by the Ultraseedbox team
+  * The Ultraseedbox team has no means of seeing the user’s password as it is hashed, but they can reset your password for you after verification.
 
 * **Retention**
   * Indefinite
@@ -104,7 +104,7 @@ Also, all of the payment processing is entirely handled by our payment processor
   * Installed Applications = Depends on the Application
 * **Access and Reasons for Access**
 * User
-* UltraSeedbox team
+* Ultraseedbox team
   * This is needed to provide application-specific support inquiries, with the user’s permission.
 * **Retention**
   * Until the user uninstalls the application
@@ -115,27 +115,27 @@ Also, all of the payment processing is entirely handled by our payment processor
 ### Payment Processing
 #### PayPal
 * **Uses**
-  * Serves as one of UltraSeedbox’s payment gateways
+  * Serves as one of Ultraseedbox’s payment gateways
 * **Collection**
   * Payment processing is done entirely by PayPal. The only data that is saved in WHMCS under the user’s account is the **PayPal Transaction ID**.
 * **Storage**
   * WHMCS = Cleartext (PayPal Transaction ID)
 * **Access and Reasons for Access**
-* UltraSeedbox Sales Team
-  * The UltraSeedbox Sales Team may verify the user’s information with PayPal as part of our sales process.
+* Ultraseedbox Sales Team
+  * The Ultraseedbox Sales Team may verify the user’s information with PayPal as part of our sales process.
 * **Retention**
   * Indefinite
 
 #### Coinbase
 * **Uses**
-  * Serves as one of UltraSeedbox’s payment gateways
+  * Serves as one of Ultraseedbox’s payment gateways
 * **Collection**
   * Payment processing is done entirely by PayPal. The only data that is saved in WHMCS under the user’s account is the **Coinbase Payment ID and Hash**.
 * **Storage**
   * WHMCS = Cleartext (Coinbase Payment ID and Hash)
 * **Access and Reasons for Access**
-* UltraSeedbox Sales Team
-  * The UltraSeedbox Sales Team may verify the user’s information with Coinbase as part of our sales process.
+* Ultraseedbox Sales Team
+  * The Ultraseedbox Sales Team may verify the user’s information with Coinbase as part of our sales process.
 * **Retention**
   * Indefinite
 
@@ -146,7 +146,7 @@ Also, all of the payment processing is entirely handled by our payment processor
 * **Collection**
   * The user provides this after the deployment of the user’s slot.
 * **Storage**
-  * UltraSeedbox Servers = Cleartext
+  * Ultraseedbox Servers = Cleartext
   * Django Suit = Cleartext
   * Sentry.io = Cleartext
 * **Access and Reasons for Access**
@@ -162,14 +162,14 @@ Also, all of the payment processing is entirely handled by our payment processor
     * Disk space
     * Quota disk space (your allocated disk space)
     * Physical disk space
-* UltraSeedbox Team
-  * In addition to the metrics above, the UltraSeedbox team uses Sentry.io to quickly aggregate all metrics from all of the servers and warn the team of any errors in any servers.
+* Ultraseedbox Team
+  * In addition to the metrics above, the Ultraseedbox team uses Sentry.io to quickly aggregate all metrics from all of the servers and warn the team of any errors in any servers.
   * Server metrics can be used for support inquiries and to investigate any resource abuse in any server.
 * **Retention**
   * Indefinite
 
 #### Authentication Logs
-##### UltraSeedbox Control Panel Login Attempts
+##### Ultraseedbox Control Panel Login Attempts
 * **Uses**
   * Any invalid access accepts are logged into Django Suit, which bars the user from logging into the UCP after a certain number of attempts for a certain period of time. This includes the following:
     * Username, as inputted by the user
@@ -181,7 +181,7 @@ Also, all of the payment processing is entirely handled by our payment processor
 * **Storage**
   * Django Suit = Cleartext
 * **Access and Reasons for Access**
-* UltraSeedbox Team
+* Ultraseedbox Team
   * These are used to identify any brute-force attempts
   * User can also request to lift his timeout and remove the access attempt, upon request and verification via the Ticket system
 * **Retention**
@@ -193,10 +193,10 @@ Also, all of the payment processing is entirely handled by our payment processor
 * **Collection**
   * These are collected when SSH Daemon is operational
 * **Storage**
-  * UltraSeedbox Servers = Cleartext
+  * Ultraseedbox Servers = Cleartext
 * **Access and Reasons for Access**
-* Limited Access UltraSeedbox team
-  * These are checked for possible network intrusions, checking certificates for expiry and SSH daemon troubleshooting by the UltraSeedbox Technical Support Team and are accessed only when necessary.
+* Limited Access Ultraseedbox team
+  * These are checked for possible network intrusions, checking certificates for expiry and SSH daemon troubleshooting by the Ultraseedbox Technical Support Team and are accessed only when necessary.
 * **Retention**
   * Indefinite
 
@@ -206,10 +206,10 @@ Also, all of the payment processing is entirely handled by our payment processor
 * **Collection**
   * These are logs that are generated by the operating system of the servers.
 * **Storage**
-  * UltraSeedbox Servers = Cleartext
+  * Ultraseedbox Servers = Cleartext
   * Sentry.io = Cleartext
 * **Access and Reasons for Access**
-* Limited Access UltraSeedbox team
+* Limited Access Ultraseedbox team
   * They are used to identify any issues in a specific server.
   * The logs are also aggregated by Sentry.io, which warns the team of any errors in any servers.
 * **Retention**
@@ -225,7 +225,7 @@ Also, all of the payment processing is entirely handled by our payment processor
   * Installed Applications = Cleartext
 * **Access and Reasons for Access**
 * User
-* UltraSeedbox team
+* Ultraseedbox team
   * This is needed to provide application-specific support inquiries, with your permission.
 * **Retention**
   * Until the user uninstalls the application or removes it.
@@ -236,10 +236,10 @@ Also, all of the payment processing is entirely handled by our payment processor
 * **Collection**
   * Each command entered on the shell is recorded.
 * **Storage**
-  * UltraSeedbox Servers = Cleartext
+  * Ultraseedbox Servers = Cleartext
 * **Access and Reasons for Access**
 * User
-* UltraSeedbox team
+* Ultraseedbox team
   * These are used for general or application-specific inquiries such as checking if the entered commands by the user are correct.
   * Also used to check for possible intrusions or server abuse.
 * **Retention**
@@ -252,10 +252,10 @@ Also, all of the payment processing is entirely handled by our payment processor
 * **Collection**
   * The user installs this on your slot.
 * **Storage**
-  * UltraSeedbox Servers = Depends on the Application
+  * Ultraseedbox Servers = Depends on the Application
 * **Access and Reasons for Access**
 * User
-* UltraSeedbox team
+* Ultraseedbox team
   * This is for application-centric support inquiries, with the user’s permission.
 * **Retention**
   * Indefinite until the user removes it.
@@ -266,11 +266,11 @@ Also, all of the payment processing is entirely handled by our payment processor
 * **Collection**
   * This is created by the user and/or the user’s applications.
 * **Storage**
-  * UltraSeedbox Servers = Cleartext
+  * Ultraseedbox Servers = Cleartext
 * **Access and Reasons for Access**
 * User
-  * The user’s files are stored in one of the home folders in one of UltraSeedbox’s servers and are isolated from other users. Only the user can access it.
-* UltraSeedbox team
+  * The user’s files are stored in one of the home folders in one of Ultraseedbox’s servers and are isolated from other users. Only the user can access it.
+* Ultraseedbox team
   * This can be accessed for any support inquiries, with the user’s permission.
 * **Retention**
   * Indefinite until the user removes it.

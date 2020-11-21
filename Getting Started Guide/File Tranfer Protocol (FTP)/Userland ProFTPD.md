@@ -9,7 +9,7 @@ In this guide, we'll be installing and setting up Userland ProFTPD into your slo
 * Run the following command to download the script and make it executable.
 
 ```sh
-wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/ProFTPD/proftpd-install.sh
+wget https://raw.githubusercontent.com/ultraseedbox/Ultraseedbox-Scripts/master/ProFTPD/proftpd-install.sh
 chmod +x proftpd-install.sh
 ```
 

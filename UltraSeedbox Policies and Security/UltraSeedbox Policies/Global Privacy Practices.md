@@ -1,4 +1,4 @@
-Ultraseedbox provides the same high standard of privacy protection—as described in Ultraseedbox’s Privacy and Data Handling Policy—to all our users and customers worldwide, regardless of their country of origin. UltraSeedbox is proud of the level of notice, choice, accountability, security, data integrity, access, and recourse we provide.
+Ultraseedbox provides the same high standard of privacy protection—as described in Ultraseedbox’s Privacy and Data Handling Policy—to all our users and customers worldwide, regardless of their country of origin. Ultraseedbox is proud of the level of notice, choice, accountability, security, data integrity, access, and recourse we provide.
 
 Our Privacy Frameworks are based on principles, and Ultraseedbox adheres to them in the following ways:
 
@@ -23,7 +23,7 @@ Our Privacy Frameworks are based on principles, and Ultraseedbox adheres to them
 * We collect as little information about you as we can unless you choose to give us more.
 
 ## Access
-* You are always able to access the data we have about you in your UltraSeedbox user profile. You may access, update, alter, or delete your information there.
+* You are always able to access the data we have about you in your Ultraseedbox user profile. You may access, update, alter, or delete your information there.
 
 ## Recourse, Enforcement, and Liability
 * If you have questions about our privacy practices, you can reach us with our ticketing system or our community Discord server, and we will respond as soon as possible.

@@ -1,4 +1,4 @@
-<c><p class="callout info">VNC Access is being phased out on UltraSeedbox's new plans. This page will still be up for clients on legacy plans.</p></c>
+<c><p class="callout info">VNC Access is being phased out on Ultraseedbox's new plans. This page will still be up for clients on legacy plans.</p></c>
 
 In this guide, we'll be teaching you on how to access your seedbox's GUI via VNC. We'll be doing the following steps:
 

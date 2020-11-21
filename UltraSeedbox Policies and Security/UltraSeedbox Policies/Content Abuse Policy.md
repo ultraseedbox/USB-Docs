@@ -2,7 +2,7 @@
 
 We understand that our client may distribute copyrighted, trademarked, or sensitive content – either accidentally or on purpose - without appropriate rights. In that case, if you’re a copyright owner, you can contact us under the Digital Millennium Copyright Act of 1998 at abuse@usbx.me. 
 
-We’ll respond to copyright infringement claims on UltraSeedbox and take whatever action we think is appropriate, which may include removing the reported content or termination of accounts of clients who repeatedly infringe or charge often with infringing copyrights.
+We’ll respond to copyright infringement claims on Ultraseedbox and take whatever action we think is appropriate, which may include removing the reported content or termination of accounts of clients who repeatedly infringe or charge often with infringing copyrights.
 
 We follow a straightforward procedure for this circumstance with the following steps:
 
@@ -19,20 +19,20 @@ The copyright owner must initially investigate to confirm that they legally own 
 
 This will be sent to abuse@usbx.me and will be subject to review by our team.
 
-### UltraSeedbox reviews the report and passes it to the client to be removed from his slot in 24 hours.
+### Ultraseedbox reviews the report and passes it to the client to be removed from his slot in 24 hours.
 
 Upon approval, we will notify the client through email and USB’s ticketing system and will be given 24 hours to remove infringing content. If the client does not respond within this period, his service will be suspended and will only be unsuspended when the client contacts us and confirms the removal of said content.
 
 ### Copyright Owner Revises or Retracts the Report
 
-UltraSeedbox will contact the Copyright Owner once our client completes the removal of infringing content within two business days. The copyright owner must review the action taken by the client and renew or revise their report.
+Ultraseedbox will contact the Copyright Owner once our client completes the removal of infringing content within two business days. The copyright owner must review the action taken by the client and renew or revise their report.
 
 ### The client may Send A Counter-Notice
 
-If the client believes that they’ve appropriate rights on the reported content, they can legally dispute the report against the complainant directly but must inform us first with sufficient information. In this legal matter, UltraSeedbox won't act as an intermediary.
+If the client believes that they’ve appropriate rights on the reported content, they can legally dispute the report against the complainant directly but must inform us first with sufficient information. In this legal matter, Ultraseedbox won't act as an intermediary.
 
 ## Termination of Clients with Multiple Infringes
 
-UltraSeedbox reserves the right to terminate the client’s service charged or determined to be “Repeat Infringer” or has not removed the reported content after the set period. UltraSeedbox reserves the right to define the criteria by which UltraSeedbox will determine that a person is a 'repeat infringer.’ A period of 24 hours will be provided before the termination action so the client can backup his data present on their UltraSeedbox service.
+Ultraseedbox reserves the right to terminate the client’s service charged or determined to be “Repeat Infringer” or has not removed the reported content after the set period. Ultraseedbox reserves the right to define the criteria by which Ultraseedbox will determine that a person is a 'repeat infringer.’ A period of 24 hours will be provided before the termination action so the client can backup his data present on their Ultraseedbox service.
 
-**With this Agreement of Abuse Policy, both Complainant and our Client agree that UltraSeedbox is not liable for any legal actions against any client’s content on its services. UltraSeedbox acts as a common carrier only, as explained in its Terms of Service.**
+**With this Agreement of Abuse Policy, both Complainant and our Client agree that Ultraseedbox is not liable for any legal actions against any client’s content on its services. Ultraseedbox acts as a common carrier only, as explained in its Terms of Service.**
