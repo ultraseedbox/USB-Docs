@@ -68,7 +68,9 @@ mkdir -p ~/scripts
   * Select 1 or 2 when prompted. We recommend selecting `2` when prompted by the installer.
 
 ```sh
-curl https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Installer%20Scripts/mergerfs-install.sh | bash
+wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Installer%20Scripts/mergerfs-install.sh
+bash mergerfs-install.sh
+rm mergerfs-install.sh
 ```
 
 <p align="center">
