@@ -73,10 +73,6 @@ bash mergerfs-install.sh
 rm mergerfs-install.sh
 ```
 
-<p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image2019-6-30_17-16-0.png">
-</p>
-
 * To confirm if the installation is completed, do `which mergerfs`
 
 ```sh
