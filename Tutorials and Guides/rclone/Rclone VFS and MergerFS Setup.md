@@ -65,6 +65,7 @@ mkdir -p ~/scripts
 ## Installing MergerFS
 
 * Run this command to your terminal. This should automatically install MergerFS to your slot.
+  * Select 1 or 2 when prompted. We recommend selecting `2` when prompted by the installer.
 
 ```sh
 curl https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Installer%20Scripts/mergerfs-install.sh | bash
