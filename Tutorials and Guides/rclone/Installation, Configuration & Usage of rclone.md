@@ -40,7 +40,7 @@ q) Quit config
 n/s/q>
 ```
 
-* Press `n` and then **Enter**. Type the name you wish to use for your remote and then press **Enter** once more.
+* Press `n` and then **Enter**. Type the name you wish to use for your remote and then press **Enter** once more. Here, we'll use `gdrive` as our remote name.
 * Scroll through the list of supported remotes and pick the one you wish. For this example we will be using Google Drive, so we will type `12` then press **Enter**.
 
 ```
@@ -145,7 +145,7 @@ y/n> n
 
 ```
 --------------------
-[test]
+[gdrive]
 type = drive
 client_id = blank
 client_secret = blank

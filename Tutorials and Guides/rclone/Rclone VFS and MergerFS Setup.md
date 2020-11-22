@@ -92,10 +92,32 @@ kbguides@lw902:~$ pwd
 /home6/kbguides
 ```
 
+* Confirm your remote name by running `rclone config` and take note of the name you've set. Once that's done, type `q` to quit config.
+
+```sh
+$ rclone config
+Current remotes:
+
+Name                 Type
+====                 ====
+gdrive               drive 
+
+e) Edit existing remote
+n) New remote
+d) Delete remote
+r) Rename remote
+c) Copy remote
+s) Set configuration password
+q) Quit config
+e/n/d/r/c/s/q>
+
+```
+
 * Then, run the following commands to your terminal
   * This will download the latest revisions of the service files from our repository directly to your systemd folder.
 * After you run the commands, a nano text window appears.
-  * Edit `/homexx/yyyyy` to your output in `pwd` and to your preferred folder (e.g. `/home6/kbguides/Rclone/Mount/Folder/here`).
+  * Edit `/homexx/yyyyy` to your output in `pwd` and to your preferred folder.
+  * Replace `remote:` to the remote name you set previously from [the previous guide.](https://docs.usbx.me/books/rclone/page/installation-configuration-usage-of-rclone)
   * Then save it by doing CTRL + O, press ENTER then exit nano by doing **CTRL + X**.
   * In these systemd files, these are for Google Drive and is the recommended settings for our slots (Plex Streaming)
   * You may wish to add or edit additional flags/options that will be best for your setup.
@@ -127,19 +149,14 @@ KillMode=none
 Environment=GOMAXPROCS=2
 
 ExecStart=/home6/kbguides/bin/rclone mount gdrive: /home6/kbguides/Stuff/Mount \
-  --allow-other \
-  --user-agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36' \
   --config /home6/kbguides/.config/rclone/rclone.conf \
   --use-mmap \
-  --dir-cache-time 1h \
-  --timeout 1s \
-  --umask 002 \
-  --bwlimit 5M \
-  --poll-interval=1h \
+  --dir-cache-time 1000h \
+  --poll-interval=15s \
   --vfs-cache-mode writes \
-  --vfs-read-chunk-size 8M \
-  --vfs-read-chunk-size-limit 32M \
-  --tpslimit 1
+  --tpslimit 10
+
+StandardOutput=file:/home6/kbguides/scripts/rclone_vfs_mount.log
 ExecStop=/bin/fusermount -uz /home6/kbguides/Stuff/Mount
 Restart=on-failure
 
@@ -151,7 +168,7 @@ WantedBy=default.target
 
 ```
 [Unit]
-Description = MergerFS Mount
+Description = MergerFS Service
 After=rclone-vfs.service
 RequiresMountsFor=/home6/kbguides/Stuff/Local
 RequiresMountsFor=/home6/kbguides/Stuff/Mount
@@ -159,7 +176,12 @@ RequiresMountsFor=/home6/kbguides/Stuff/Mount
 [Service]
 Type=forking
 KillMode=none
-ExecStart=/hame6/kbguides/bin/mergerfs /home6/kbguides/Stuff/Local:/home6/kbguides/Stuff/Mount /home6/kbguides/MergerFS -o rw,async_read=false,use_ino,allow_other,func.getattr=newest,category.action=all,category.create=ff,cache.files=partial,dropcacheonclose=true,threads=2
+ExecStart=/home6/kbguides/bin/mergerfs \
+    -o use_ino,func.getattr=newest,category.action=all \
+    -o category.create=ff,cache.files=auto-full,threads=8 \
+    /home6/kbguides/Stuff/Local:/home6/kbguides/Stuff/Mount /home6/kbguides/MergerFS
+
+StandardOutput=file:/home6/kbguides/scripts/mergerfs_mount.log
 ExecStop=/bin/fusermount -uz /home6/kbguides/MergerFS
 Restart=on-failure
 
@@ -177,7 +199,7 @@ WantedBy=default.target
 ## Setting Up Rclone Uploader
 
 * Here, we will set up the uploader. The rclone uploader is a script that uploads the contents of your `Local` folder and merge it to your rclone mount.
-* You may choose between **Bash Upload script** or S**ystemd service**.
+* You may choose between **Bash Upload script** or **Systemd service**.
 * We recommend using the **systemd uploader**
 
 ### Systemd Uploader
@@ -185,7 +207,8 @@ WantedBy=default.target
 * Run the following commands to your terminal
   * This will download the latest revisions of the service files from our repository directly to your systemd folder.
   * After you run the commands, a nano text window appears.
-  * Edit `/homexx/yyyyy` to your output in `pwd` and to your preferred folder (e.g. `/home6/kbguides/Rclone/Mount/Folder/here`).
+  * Edit `/homexx/yyyyy` to your output in `pwd` and to your preferred folder.
+  * Replace `remote:` to the remote name you set previously from [the previous guide.](https://docs.usbx.me/books/rclone/page/installation-configuration-usage-of-rclone)
   * Then save it by doing CTRL + O, press ENTER then exit nano by doing **CTRL + X**.
 
 ```sh
@@ -202,8 +225,7 @@ Description=RClone Uploader
 Type=simple
 
 ExecStart=/home6/usbdocs/bin/rclone move /home6/usbdocs/Stuff/Local/ gdrive: \
-    --config=/homexx/yyyyy/.config/rclone/rclone.conf \
-    --user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36' \
+    --config=/home6/kbguides/.config/rclone/rclone.conf \
     --drive-chunk-size 8M \
     --tpslimit 1 \
     --drive-acknowledge-abuse=true \
@@ -215,7 +237,7 @@ ExecStart=/home6/usbdocs/bin/rclone move /home6/usbdocs/Stuff/Local/ gdrive: \
     --transfers=1 \
     --checkers=1 \
     --drive-stop-on-upload-limit \
-    --log-file /homexx/yyyyy/scripts/rclone-uploader.log
+    --log-file /home6/kbguides/scripts/rclone-uploader.log
 Restart=on-failure
 
 [Install]
@@ -266,24 +288,37 @@ chmod +x rclone-upload-with-notification.sh
 ```
 
 * Then open the script using your preferred text editor and change the values as needed.
-  * The normal upload script works out of the box without any configuration
-  * The upload script with discord notifications needs to be setup before using it
+  * Both normal and upload script with discord notifications needs to be setup before using it
+  * Replace `remote:` to the remote name you set previously from [the previous guide.](https://docs.usbx.me/books/rclone/page/installation-configuration-usage-of-rclone)
 
 #### Example rclone-upload.sh file
 
 ```sh
 #!/bin/bash
- 
-lock_file="$HOME/rclone.lock"
- 
-trap "rm -f $lock_file; exit 0" SIGINT SIGTERM
+
+lock_file="$HOME/scripts/rclone-upload.lock"
+
+trap 'rm -f "$lock_file"; exit 0' SIGINT SIGTERM
 if [ -e "$lock_file" ]
 then
-    echo "$base_name is already running."
+    echo "Rclone upload script is already running."
     exit
 else
-    touchme "$lock_file"
-    "$HOME"/bin/rclone move "$HOME"/Stuff/Local/ gdrive: --user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36' --config="$HOME"/.config/rclone/rclone.conf --drive-chunk-size 8M --tpslimit 1 --drive-acknowledge-abuse=true -vvv --drive-stop-on-upload-limit --delete-empty-src-dirs --fast-list --bwlimit=2M --use-mmap --transfers=1 --checkers=1 --log-file "$HOME"/scripts/rclone-upload.log
+    rm "$HOME"/scripts/rclone-upload.log
+    touch "$lock_file"
+    "$HOME"/bin/rclone move "$HOME"/Stuff/Local/ gdrive: \
+        --config="$HOME"/.config/rclone/rclone.conf \
+        --drive-chunk-size 64M \
+        --tpslimit 5 \
+        -vvv \
+        --drive-stop-on-upload-limit \
+        --delete-empty-src-dirs \
+        --fast-list \
+        --bwlimit=8M \
+        --use-mmap \
+        --transfers=2 \
+        --checkers=4 \
+        --log-file "$HOME"/scripts/rclone-upload.log
     rm -f "$lock_file"
     trap - SIGINT SIGTERM
     exit

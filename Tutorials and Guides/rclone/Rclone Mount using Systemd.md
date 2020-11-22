@@ -40,6 +40,26 @@ kbguides@lw902:~$ mkdir scripts
 kbguides@lw902:~$
 ```
 
+* Confirm your remote name by running `rclone config` and take note of the name you've set. Once that's done, type `q` to quit config.
+
+```sh
+$ rclone config
+Current remotes:
+
+Name                 Type
+====                 ====
+gdrive               drive 
+
+e) Edit existing remote
+n) New remote
+d) Delete remote
+r) Rename remote
+c) Copy remote
+s) Set configuration password
+q) Quit config
+e/n/d/r/c/s/q>
+
+```
 ***
 
 ## Downloading Rclone Service File
@@ -66,7 +86,8 @@ wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/U
 ## Editing your service file
 
 * After you run the command, a nano text window appears. In this example service file, we'll be using Google Drive Rclone Mount for Plex Streaming.
-* Edit `/homexx/yyyyy` to your output in `pwd` and to your preferred folder (e.g. `/home6/kbguides/Rclone/Mount/Folder/here`).
+* Edit `/homexx/yyyyy` to your output in `pwd` and to your preferred folder, which in this case is `/home6/kbguides/Mount`.
+* Replace `remote:` to the remote name you set previously from [the previous guide.](https://docs.usbx.me/books/rclone/page/installation-configuration-usage-of-rclone)
 * You may also add or edit some rclone flags here if you wish
 * Then save it by doing CTRL + O, press ENTER then exit nano by doing **CTRL + X**.
 
@@ -76,21 +97,23 @@ wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/U
 
 ```
 [Unit]
-Description=RClone Service
-Wants=network-online-target
-After=network-online-target
- 
+Description=RClone Normal Mount Service
+Wants=network-online.target
+After=network-online.target
+
 [Service]
 Type=notify
-Environment=RCLONE_CONFIG=/home6/kbguides/.config/rclone/rclone.conf
- 
-ExecStart=/home6/kbguides/bin/rclone mount gdrive: /home6/kbguides/Mount \
-  --user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36' \
+KillMode=none
+Environment=GOMAXPROCS=2
+
+ExecStart=/home6/kbguides/bin/rclone mount remote: /home6/kbguides/Mount \
   --config /home6/kbguides/.config/rclone/rclone.conf \
   --use-mmap
+
+StandardOutput=file:/home6/kbguides/scripts/rclone_mount.log
 ExecStop=/bin/fusermount -uz /home6/kbguides/Mount
 Restart=on-failure
- 
+
 [Install]
 WantedBy=default.target
 ```
@@ -108,19 +131,16 @@ Type=notify
 KillMode=none
 Environment=GOMAXPROCS=2
 
-ExecStart=/home6/kbguides/bin/rclone mount gdrive: /home6/kbguides/Stuff/Mount \
-  --user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36' \
+ExecStart=/home6/kbguides/bin/rclone mount remote: /home6/kbguides/Mount \
   --config /home6/kbguides/.config/rclone/rclone.conf \
   --use-mmap \
-  --dir-cache-time 1h \
-  --timeout 30s \
-  --umask 002 \
-  --poll-interval=1h \
+  --dir-cache-time 1000h \
+  --poll-interval=15s \
   --vfs-cache-mode writes \
-  --vfs-read-chunk-size 1M \
-  --vfs-read-chunk-size-limit 64M \
-  --tpslimit 1
-ExecStop=/bin/fusermount -uz /home6/kbguides/Stuff/Mount
+  --tpslimit 10
+
+StandardOutput=file:/home6/kbguides/scripts/rclone_vfs_mount.log
+ExecStop=/bin/fusermount -uz /home6/kbguides/Mount
 Restart=on-failure
 
 [Install]
@@ -141,13 +161,13 @@ WantedBy=default.target
 
 ```sh
 kbguides@lw902:~$ systemctl --user daemon-reload
-kbguides@lw902:~$ systemctl --user enable --now mount.service
-kbguides@lw902:~$ systemctl --user status mount.service
+kbguides@lw902:~$ systemctl --user enable --now rclone-vfs.service
+kbguides@lw902:~$ systemctl --user status rclone-vfs.service
 ● mount.service - RClone Service
-   Loaded: loaded (/home6/kbguides/.config/systemd/user/mount.service; enabled; vendor preset: enabled)
+   Loaded: loaded (/home6/kbguides/.config/systemd/user/rclone-vfs.service; enabled; vendor preset: enabled)
    Active: active (running) since Sun 2019-06-30 18:32:24 CEST; 19h ago
  Main PID: 38563 (rclone)
-   CGroup: /user.slice/user-xxxx.slice/user@xxxx.service/mount.service
+   CGroup: /user.slice/user-xxxx.slice/user@xxxx.service/rclone-vfs.service
            └─38563 /home6/kbguides/bin/rclone mount gdrive: /home17/usb770/Stuff/Mount --allow-other --buffer-size 1M --drive-chunk-size
 kbguides@lw902:~$ ls Mount
 Linux ISOs  Documents  Legally Acquired Files  Homework  grocery-list.txt
