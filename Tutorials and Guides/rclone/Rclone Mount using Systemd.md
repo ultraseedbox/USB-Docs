@@ -172,7 +172,7 @@ kbguides@lw902:~$ systemctl --user status rclone-vfs.service
 kbguides@lw902:~$ ls Mount
 Linux ISOs  Documents  Legally Acquired Files  Homework  grocery-list.txt
 ```
-
+* In the event the mount fails to show as running, you will need to manually create a log file with this command `touch /homexx/yyyyy/scripts/rclone_vfs_mount.log` Edit /homexx/yyyyy to your output in `pwd` then run `systemctl --user status rclone-vfs.service` again this should now show the service as running.
 * Should you have the need to restart your rclone mount, here are your following commands, following the example above
     * Please make sure that **all apps that are connected to the mount have stopped** before proceeding.
 

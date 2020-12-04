@@ -1,4 +1,4 @@
-The terminal is your gateway to the inner workings of your Ultraseedbox slot. It is essentially a remote computer running Linux, and when you SSH into it you are connecting to that computer's terminal.
+The terminal is your gateway to the inner workings of your UltraSeedbox slot. It is essentially a remote computer running Linux, and when you SSH into it you are connecting to that computer's terminal.
 
 A terminal is a powerful tool where you can execute written commands to perform many simple or even very complicated tasks. This guide will help you understand a few simple commands to get you started in navigating and making use of the Linux terminal, it can also serve as a cheat sheet later down the track if you need to recall anything you may have forgotten.
 
@@ -50,7 +50,7 @@ For any commands you need to find more information on you can use the command `m
 
 ***
 
-## Ultraseedbox Specific Commands
+## UltraSeedbox Specific Commands
 
 ### Application Management
 
@@ -66,6 +66,9 @@ Likewise, to uninstall an application we can use the command `app-[appname] unin
 
 To change the running state of an application we use `app-[appname] [start|stop|restart]`. These commands will be useful for you throughout the usage of your USB slot for troubleshooting or further customizing your experience.
 
+#### Checking Used Space
+
+To display your folder structure and space taken by individual  files the `ncdu -x` command is included in every Ultraseedbox slot. After a short scan largest items are displayed top and size is in descending order
 #### Further Info
 
 For further information regarding specific commands for a particular application run `app-[appname] help`. This will provide all sub-commands available for the said app.
