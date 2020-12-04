@@ -169,6 +169,18 @@ Yes. While remote file systems by nature will not be as stable as using local st
 
 Yes, but using a direct rclone remote file system mount as an endpoint for an application’s endpoint path is not recommended for stability reasons. MergerFS is a much more stable method to accomplish this and is strongly recommended. We have a MergerFS automation detailed guide located [here](https://docs.usbx.me/books/rclone/page/rclone-vfs-and-mergerfs-setup) on how to set this up.
 
+##### Why is my all allocated traffic all consumed?
+
+Usual reasons are the following:
+
+* You may have a public torrent left seeding.
+  * We have guides here that limit seeding of public torrents to 2 ratio as per USB policies.
+    * [rTorrent](https://docs.usbx.me/books/rtorrent-rutorrent/page/limiting-seeding-ratio-in-rutorrent). Also, take note that rTorrent has a script that blocks common public torrents from seeding after downloading.
+    * [Deluge](https://docs.usbx.me/books/deluge/page/limiting-seeding-ratio-in-deluge)
+    * [Transmission](https://docs.usbx.me/books/transmission/page/limit-seeding-ratio-in-transmission)
+* You have continuously synced your files using rclone, Resilio Sync, Nextcloud, or Syncthing.
+  * These applications are counted towards your upload bandwidth. You may have to throttle the speeds or schedule your transfers.
+  * Another alternative is using FTP or SFTP for your transfers.
 #### Support
 ##### Why is my slot suspended?
 
