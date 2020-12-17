@@ -1,7 +1,6 @@
 Mirrored from [the GitHub repo](https://github.com/ultraseedbox/UltraSeedbox-Scripts/blob/master/FileBot)
 
 ***
-
 ## Prerequisites
 
 For the installers and the AMC scripts hosted here to work, you may have to do the following:
@@ -11,7 +10,16 @@ For the installers and the AMC scripts hosted here to work, you may have to do t
 
 ## Installation
 
-### Version 4.9.1 (Recommended)
+### Version 4.9.2 (Recommended)
+You can install this version using the instructions below:
+
+1. `wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/FileBot/filebot-492-installer.sh`
+2. `chmod +x filebot-492-installer.sh`
+3. `./filebot-492installer.sh`
+4. `rm filebot-492-installer.sh`
+5. `filebot --license /path/to/FileBot_License_P1234567.psm`
+
+### Version 4.9.1
 You can install this version using the instructions below:
 
 1. `wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/FileBot/filebot-491-installer.sh`
@@ -20,26 +28,17 @@ You can install this version using the instructions below:
 4. `rm filebot-491-installer.sh`
 5. `filebot --license /path/to/FileBot_License_P1234567.psm`
 
-### Version 4.8.5
-You can install this version using the instructions below:
-
-1. `wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/FileBot/filebot-485-installer.sh`
-2. `chmod +x filebot-485-installer.sh`
-3. `./filebot-485-installer.sh`
-4. `rm filebot-485-installer.sh`
-5. `filebot --license /path/to/FileBot_License_P1234567.psm`
-
 > To switch version, uninstall it first. This is to prevent any conflicts.
 
 ### AMC/ Torrent Client Post-processing
 
-If you're using FileBot for your torrent client post-processing, refer to the [AMC folder.](https://docs.usbx.me/books/filebot/page/automated-media-center-%28amc%29-scripts)
+If you're using FileBot for your torrent client post-processing, refer to the [AMC folder.](https://github.com/ultraseedbox/UltraSeedbox-Scripts/tree/master/FileBot/AMC)
 
 ## Uninstallation
 
-### Version 4.8.5
+### Version 4.9.2
 
-1. `rm -rfv "$HOME"/filebot-485`
+1. `rm -rfv "$HOME"/filebot-492`
 2. `rm "$HOME"/bin/filebot`
 
 ### Version 4.9.1
