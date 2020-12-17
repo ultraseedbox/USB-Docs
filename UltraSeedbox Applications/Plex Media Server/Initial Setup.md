@@ -1,18 +1,16 @@
-In this guide, we will be detailing the initial configuration of your Plex Media Server. This assumes the following:
-
-1. You have stored your media in `~/media`
+In this guide, we will be detailing the initial configuration of your Plex Media Server. This assumes that You have stored your media in `~/media`
 
 ***
 
 ## Prerequisites
 
 * A Plex account - you can make one at https://plex.tv
-* A Plex supported Ultraseedbox plan
+* A Plex supported UltraSeedbox plan
 * Plex Pass - This is optional but is required if you want to take advantage of GPU acceleration for Pro NVMe Streaming Plans.
 
 ## Initial UCP Configuration
 
-Like all applications Plex Media Server is installed from the Ultraseedbox Control Panel, this application however has one extra step. When you click on Install and are prompted with this screen you will need to visit [https://www.plex.tv/claim/](https://www.plex.tv/claim/)
+Like all applications Plex Media Server is installed from the UltraSeedbox Control Panel, this application however has one extra step. When you click on Install and are prompted with this screen you will need to visit [https://www.plex.tv/claim/](https://www.plex.tv/claim/)
 
 ![](https://docs.usbx.me/uploads/images/gallery/2019-10/Claim-Code.PNG)
 

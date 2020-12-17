@@ -13,27 +13,27 @@ In this guide, we'll be showing you how to setup and enable Post-processing scri
 * Login to your seedbox's SSH and run the following command to create the `scripts` subfolder inside nzbget's config folder:
 
 ```
-mkdir -p "$HOME"/.config/nzbget/scripts
+mkdir -p "$HOME"/.apps/nzbget/scripts
 ```
 
 ## Downloading Scripts
 
-* After that, just put any scripts that want on your newly created folder in `"$HOME"/.config/nzbget/scripts`
+* After that, just put any scripts that want on your newly created folder in `"$HOME"/.apps/nzbget/scripts`
   * The next section contains some of our recommended scripts.
   * In this guide, we'll be installing `flatten.py`.
 
 ```sh
-usbdocs@lw976:~$ wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/clinton-hall/GetScripts/master/flatten.py
+usbdocs@lw976:~$ wget -P "$HOME"/.apps/nzbget/scripts https://raw.githubusercontent.com/clinton-hall/GetScripts/master/flatten.py
 --2020-06-02 13:01:17--  https://raw.githubusercontent.com/clinton-hall/GetScripts/master/flatten.py
 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.192.133, 151.101.64.133, 151.101.128.133, ...
 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.192.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 5075 (5.0K) [text/plain]
-Saving to: ‘/home25/usbdocs/.config/nzbget/scripts/flatten.py’
+Saving to: ‘/home25/usbdocs/.apps/nzbget/scripts/flatten.py’
 
 flatten.py                    100%[=================================================>]   4.96K  --.-KB/s    in 0s
 
-2020-06-02 13:01:17 (54.3 MB/s) - ‘/home25/usbdocs/.config/nzbget/scripts/flatten.py’ saved [5075/5075]
+2020-06-02 13:01:17 (54.3 MB/s) - ‘/home25/usbdocs/.apps/nzbget/scripts/flatten.py’ saved [5075/5075]
 
 usbdocs@lw976:~$
 ```
@@ -52,7 +52,7 @@ usbdocs@lw976:~$
 * This script removes subdirectories and put all downloaded files into the root download directory. You can specify a unique directory and append category sub directory if wanted.
 
 ```sh
-wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/clinton-hall/GetScripts/master/flatten.py
+wget -P "$HOME"/.apps/nzbget/scripts https://raw.githubusercontent.com/clinton-hall/GetScripts/master/flatten.py
 ```
 
 ### DeleteSamples.py
@@ -60,7 +60,7 @@ wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/clinton
 * This script delete "-sample" files found alongside downloaded files.
 
 ```sh
-wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/clinton-hall/GetScripts/master/DeleteSamples.py
+wget -P "$HOME"/.apps/nzbget/scripts https://raw.githubusercontent.com/clinton-hall/GetScripts/master/DeleteSamples.py
 ```
 
 ### HashRenamer.py
@@ -68,7 +68,7 @@ wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/clinton
 * This script rename files with hashes from NZB's filename.
 
 ```sh
-wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/Cloudbox/Cloudbox/master/roles/nzbget/files/HashRenamer.py
+wget -P "$HOME"/.apps/nzbget/scripts https://raw.githubusercontent.com/Cloudbox/Cloudbox/master/roles/nzbget/files/HashRenamer.py
 ```
 
 ### Passwordlist.py
@@ -76,7 +76,7 @@ wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/Cloudbo
 * This script attempts to extract password-protected archives using a list of possible passwords.
 
 ```sh
-wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/clinton-hall/GetScripts/master/passwordList.py
+wget -P "$HOME"/.apps/nzbget/scripts https://raw.githubusercontent.com/clinton-hall/GetScripts/master/passwordList.py
 ```
 
 ### reverse_name.py
@@ -84,7 +84,7 @@ wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/clinton
 * This extension script will reverse filenames first then rename to folder name on failure.
 
 ```sh
-wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/Prinz23/nzbget-pp-reverse/master/reverse_name.py
+wget -P "$HOME"/.apps/nzbget/scripts https://raw.githubusercontent.com/Prinz23/nzbget-pp-reverse/master/reverse_name.py
 ```
 
 ### VideoSort
@@ -92,17 +92,8 @@ wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/Prinz23
 * This script uses scene-standard naming conventions to match TV shows and movies and rename/move/sort/organize them as you like.
 
 ```sh
-wget https://github.com/nzbget/VideoSort/releases/download/v8.0/videosort-8.0-dist.zip
-unzip videosort-8.0-dist.zip -d "$HOME"/.config/nzbget/scripts
-rm videosort-8.0-dist.zip
-```
-
-### Clean.py
-
-* This script removes certain suffixes from NZB name.
-
-```sh
-wget -P "$HOME"/.config/nzbget/scripts https://raw.githubusercontent.com/TRaSH-/Tutorials-FAQ/master/NZBGet/scripts/Clean/Clean.py
+cd "$HOME"/.apps/nzbget/scripts
+git clone https://github.com/nzbget/VideoSort
 ```
 
 For more information and other recommended post-processing scripts, you can visit [NZBGet's Catalog of Post-processing scripts.](https://nzbget.net/catalog-of-extension-scripts)

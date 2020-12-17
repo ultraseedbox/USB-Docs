@@ -26,7 +26,7 @@ In this guide, we'll be setting up Ombi for the first time. This assumes the fol
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588617502703.png"></p>
 
-## Setting Ombi
+### Setting Ombi
 
 * To enter setup, go to Settings
 
@@ -37,3 +37,12 @@ In this guide, we'll be setting up Ombi for the first time. This assumes the fol
 [Ombi Client Connection Details](https://docs.usbx.me/books/ombi/page/ombi-client-connection-details)
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588618468854.png"></p>
+
+## Setting up SSL on your Ombi Instance
+
+* Go to Settings > Ombi
+* Add `/ombi` under Base URL and restart your Ombi Instance
+
+<p align="center"><img src="https://i.imgur.com/AqGTfyA.png"></p>
+
+* Then you can access it via https://[username].[servername].usbx.me/ombi

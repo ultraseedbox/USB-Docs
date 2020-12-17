@@ -1,14 +1,13 @@
-The Ultraseedbox's Control Panel (UCP) is your one-stop, easy panel to managing your Ultraseedbox slot. Here, you can easily set your slot access credentials, managing and accessing your apps.
+The UltraSeedbox's Control Panel (UCP) is your one-stop, easy panel to managing your UltraSeedbox slot. Here, you can easily set your slot access credentials, managing and accessing your apps.
 
-This short guide will walk you through the Ultraseedbox Control Panel.
-
+This short guide will walk you through the UltraSeedbox Control Panel.
 ***
 
 ## Accessing the Control Panel
 
-* You can access the USB control panel by visiting the USB main page. Then go to My account -> Control Panel
+* You can access the USB control panel by visiting the USB main page. Go to Control Panel in the top right-hand side of the website, This will take you directly to our Control Panel
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590563451797.png"></p>
+<p align="center"><img src="https://i.imgur.com/gzxkxRe.png"></p>
 
 * You may also visit (and bookmark) the link below.
 
@@ -30,7 +29,7 @@ If you are logging in for the first time after you've purchased your first USB s
 * You will receive an email with a link to reset your password.
 * Enter your desired password. Once that's done, you'll be redirected to the login page. Enter your registered email address and your newly set password to continue.
 
-## Ultraseedbox Control Panel Tour
+## UltraSeedbox Control Panel Tour
 ### Dashboard
 
 * Here, you can see an overview of all of your active seedboxes under your account.
@@ -60,7 +59,7 @@ If you are logging in for the first time after you've purchased your first USB s
 
 ### Access Details
 
-* Here you can get connection details of your slot. You have several ways to interact, connect and use your Ultraseedbox slot.
+* Here you can get connection details of your slot. You have several ways to interact, connect and use your UltraSeedbox slot.
 * Here it shows the access details, the ports listed and the password. You can also change the password for each access.
 
 <p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590585466490.png"></p>

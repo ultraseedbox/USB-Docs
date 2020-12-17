@@ -15,29 +15,27 @@ We’ll be doing the following steps:
 ### Setting Up Subtitle Providers
 
 * Upon successful installation, wait for up to 5 minutes for Bazarr to initialize.
-* After clicking **Connect** on the UCP, you’ll be shown with Bazarr’s first-time setup guide.
-* You may leave the first page as-is. Click **Next** to save and move on to the next step
-* Here, we will set up subtitle providers.
-* On subtitles options section, leave both options as-is
+* After clicking **Connect** on the UCP, you’ll be shown with Bazarr’s General settings.
+* On subtitles options section, Leave all options as-is
   * Plex requires that subtitle files should be at the same location as your movie file for it to be detected
+   * You may add the API key or account login for any anti captcha service you may use on this page, included are **Anti- Captcha or Death by Captcha** If you happen to add one of these options be sure to press Save in the top left hand corner
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583144550353.png">
+<img src="https://i.imgur.com/dOvoopM.png">
 </p>
 
-* Then enable the subtitle providers that you wish to use
+* Then enable the subtitle providers that you wish to use click Providers on the left hand side tick your required providers and click save to complete the providers page
   * Some providers require you to add your credentials. Be sure to enter it accordingly
   * There are also some providers that needed an anti-captcha API key.
-    * You may add the API key after the setup has finished under **Settings -> Subtitles -> Anti-Captcha Options**
-
+   
 <p align ="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583144623799.png">
+<img src="https://i.imgur.com/RF67f3d.png">
 </p>
 
-* Under Subtitle languages, click the drop-down box on enabled languages and select your preferred languages for Bazarr to search
+* Under languages on the left hand side, click the drop-down box on enabled languages and select your preferred languages for Bazarr to search
 
-<p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583144684332.png>
+<p align ="center">
+<img src="https://i.imgur.com/Mskn9nw.png">
 </p>
 
 * Then you can set the defaults for both Series and Movies
@@ -45,7 +43,7 @@ We’ll be doing the following steps:
   * You can leave them as default and set them later or do it now, as shown in the following screenshot
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-04/firefox_2aAn2QiG5i[1].png">
+<img src="https://i.imgur.com/zZpZsiF.png">
 </p>
 
 * Once that’s done, click **Next**
@@ -55,16 +53,16 @@ We’ll be doing the following steps:
 * Login to your Sonarr instance and go to **Settings -> General**
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583146447858.png">
+<img src="https://i.imgur.com/MqtNFJh.png">
 </p>
 
 * Then under Security, copy the API key provided
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583146641628.png">
+<img src="https://i.imgur.com/NHPLgKv.png">
 </p>
 
-* Go back to Bazarr. Under Sonarr, enable Use Sonarr and input the following
+* Go back to Bazarr. Under Settings> Sonarr, enable Use Sonarr and input the following
 
 ```
 Hostname or IP address: username.lwxxx.usbx.me
@@ -76,10 +74,10 @@ Download Only Monitored: Enabled (Recommended)
 ```
 
 * Once that’s done, Click the **Test** button to validate the settings.
-* If it shows a green text indicating that Bazarr is successfully connected to Sonarr, click **Next** to move to Radarr
+* If it shows a green text indicating that Bazarr is successfully connected to Sonarr.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583146810530.png">
+<img src="https://i.imgur.com/KiWYQcl.png">
 </p>
 
 * Repeat the same steps on Radarr, using the following information:
@@ -96,64 +94,53 @@ Download Only Monitored: Enabled (Recommended)
 * To get Radarr's API key, select **Settings -> General** and copy the API key Under Security Settings
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583147755658.png">
+<img src="https://i.imgur.com/I0kyZPq.png">
 </p>
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583147843356.png">
+<img src="https://i.imgur.com/hvI2Hvm.png">
 </p>
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583147908422.png">
+<img src="https://i.imgur.com/ionYkTe.png">
 </p>
 
 * Click **Save** to save your changes once testing is passed
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583148067332.png">
+<img src="https://i.imgur.com/1uQaRkQ.png">
 </p>
 
-* Then click **Restart** on the red banner to restart the instance to properly apply the changes
-
-<p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583148108636.png">
-</p>
 
 ### Setting Up Username and Password
 
 * Click **Settings**
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583148199535.png">
+<img src="https://i.imgur.com/SOha9cU.png">
 </p>
 
 * Then on General settings, under Security settings Click on the **Authentication dropbox** and select either **Basic** (browser popup) or **Forms** (Login Page).
   * We recommend selecting Forms (Login page) since it is non-intrusive and works on password managers
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583148270049.png">
+<img src="https://i.imgur.com/mZ4qcGC.png">
 </p>
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583148338632.png">
+<img src="https://i.imgur.com/laawLAE.png">
 </p>
 
 * Then input the credentials that you want
 
-<p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583148419788.png">
-</p>
 
-* Once that’s done, click **Save** and restart the instance when prompted
+* Once that’s done, click **Save** 
 
-<p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583148452418.png">
-</p>
 
-* Wait for a few minutes. It’ll redirect directly to your login page. Login using your set credentials to proceed.
+* Wait for a few seconds and refresh. It’ll redirect directly to your login page. Login using your set credentials to proceed.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583148543220.png">
+<img src="https://i.imgur.com/L8yFG4F.png">
 </p>
 
 ### Downloading Subtitles
@@ -161,7 +148,11 @@ Download Only Monitored: Enabled (Recommended)
 * At initial setup, Bazarr will add your existing entries on your Sonarr/Radarr instances search for existing subtitles from their root folders. Both series/movie entries are found in Series and Movies respectively.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583148848038.png">
+<img src="https://i.imgur.com/1wIkOlm.png">
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/dHpQDxI.png">
 </p>
 
 * If there are no entries on either of the two, you can force to refresh by going to System -> Tasks (Red Box) and click the Refresh icon on the following tasks in order.
@@ -172,16 +163,20 @@ Download Only Monitored: Enabled (Recommended)
 * Depending on the size of your library, this could take a while.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583149148784.png">
+<img src="https://i.imgur.com/aBLftC0.png">
 </p>
 
 * If everything is set, you can now download subtitles. You can opt to do the following
   * Let Bazarr download the subtitles by itself. There's an automated task that downloads wanted subtitles daily.
   * Force Bazarr to download wanted subtitles by either
-    * Going to Wanted and click **Download Wanted Subtitles on Series** and/or Movies
+    * Going to Wanted and click **Search All** on Series or Movies
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583149680566.png">
+<img src="https://i.imgur.com/5RMxDhM.png">
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/4tgbeCy.png">
 </p>
 
   * Go to **System -> Tasks** and click the following
@@ -189,7 +184,7 @@ Download Only Monitored: Enabled (Recommended)
     * Update all Movie Subtitles from disk
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583149549373.png">
+<img src="https://i.imgur.com/2hFF1rD.png">
 </p>
 
 * Depending on your library, this will take a while to search and download your subtitles.

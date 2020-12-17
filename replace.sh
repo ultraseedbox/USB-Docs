@@ -6,6 +6,7 @@
 # Made by Xan#7777
 
 # MD Image Replace
+sed -i -E 's|\[https://i\.imgur\.com|\![https://i\.imgur\.com|g' "$1"
 sed -i -E 's|\[!\[\]\(.*\)\]\(|<p align="center"><img src="|g' "$1"
 sed -i -E 's|\[!\[.*\]\(|<p align="center"><img src="|g' "$1"
 sed -i -E 's|\[!\[\]\(|<p align="center"><img src="|g' "$1"

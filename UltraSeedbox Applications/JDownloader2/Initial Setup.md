@@ -1,4 +1,4 @@
-In this guide, we'll be setting up JDownloader2 for the first time. We'll be doing the following:
+In this guide, we'll be setting up JDownloader2 for the first time. We'll be doing the following:
 
 1. Accessing JDownloader Interface
 2. Changing the Generated Password
@@ -22,11 +22,9 @@ In this guide, we'll be setting up JDownloader2 for the first time. We'll be do
 
 ### Changing the Generated Password
 
-Upon installation, JDownloader will generate a password for you. If you need to set a new password, you have 2 choices.
+Upon installation, JDownloader will generate a password for you. If you need to set a new password, do the following:
 
-* You can generate a new password by running `Upgrade and repair` on the UCP
-
-* You can also set your own password by logging in to your seedbox's SSH and enter the following command.
+* Log in to your seedbox's SSH and enter the following command:
 
 ```sh
 nano "$HOME"/.config/jdownloader2/.vncpass_clear && jd2pass=$(cat "$HOME"/.config/jdownloader2/.vncpass_clear) && clear && app-jdownloader2 restart && echo "Password set successfully." && echo "Your password is $jd2pass"
