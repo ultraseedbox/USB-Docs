@@ -11,7 +11,11 @@ find . -type f -name "*.md" -print0 | xargs -0 sed -i -E 's|<p align="center"><i
 find . -type f -name "*.md" -print0 | xargs -0 sed -i 's|png"><\/p>)|png)|g'
 find . -type f -name "*.md" -print0 | xargs -0 sed -i 's|PNG"><\/p>)|PNG)|g'
 find . -type f -name "*.md" -print0 | xargs -0 sed -i 's|jpg"><\/p>)|jpg)|g'
-find . -type f -name "*.md" -print0 | xargs -0 sed -i 's|JPG"><\/p>)|JPG)|g'
+find . -type f -name "*.md" -print0 | xargs -0 sed -i 's|JPG">)|JPG)|g'
+find . -type f -name "*.md" -print0 | xargs -0 sed -i 's|png">)|png)|g'
+find . -type f -name "*.md" -print0 | xargs -0 sed -i 's|PNG">)|PNG)|g'
+find . -type f -name "*.md" -print0 | xargs -0 sed -i 's|jpg">)|jpg)|g'
+find . -type f -name "*.md" -print0 | xargs -0 sed -i 's|JPG">)|JPG)|g'
 
 # callout check
 find . -type f -name "*.md" -print0 | xargs -0 sed -i 's|<c><p class="callout info">|::: info\n|g'
