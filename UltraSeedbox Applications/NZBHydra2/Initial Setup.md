@@ -11,20 +11,20 @@ This guide will show you how to setup NZBHydra2 for the first time. You'll be do
 
 * Upon connecting, you'll be greeted by this window. Click OK to close the window. 
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591625119631.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591625119631.png)
 
 * Go to **Config -> Authorization**
 * Choose the auth type that you want. In this guide, we'll be using **Login form**
 * Under **Restrictions**, enable everything.
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591775421009.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591775421009.png)
 * Scroll down and click **Add user**. Then add the username and password that you wish. Since this is your first user, it's best to leave **May see admin area** to on.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591625351138.png"></p>
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591625501126.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591625351138.png)
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591625501126.png)
 
 * Once that's done, scroll up and click **Save** and restart when asked.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591625601580.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591625601580.png)
 
 * You may also set more user accounts and restrict certain areas of the instance in this page.
 
@@ -33,7 +33,7 @@ This guide will show you how to setup NZBHydra2 for the first time. You'll be do
 * Go to **Indexers** and click **Add new indexer**
 * Then here, you can add your indexers. You may look into the preset configurations specific to your indexers or you may look into adding your own indexer.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591775942988.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591775942988.png)
 
 * Listed below are the fields that might be relevant to you.
   * Name: Name of Indexer
@@ -42,29 +42,29 @@ This guide will show you how to setup NZBHydra2 for the first time. You'll be do
   * API hit Limit and Download Limit: Usually NZBHydra2 detects this already but you may add your account's Download and API limit here if you wish.
 * You may have to refer to your Usenet indexer for their specific configuration.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591776410072.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591776410072.png)
 
 * Once added, it'll check the connectivity and the capabilities of your indexer.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591776627949.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591776627949.png)
 
 * Once that's done, click **Save.**
 * After restarted, you will see the search page with your set indexers.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591109890576.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591109890576.png)
 
 ### Getting NZBHydra2 API
 
 * To get your NZBHydra2 API, go to **Config**. Beside the Save button, there's an **API?** button. Click that to show the API details. You may add that to apps such as Sonarr, Radarr and CouchPotato.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591776866257.png"></p>
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591776911480.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591776866257.png)
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591776911480.png)
 
 ### Connecting Usenet Downloaders (Optional)
 
 * If you wish to add your Usenet downloaders to download directly from NZBHydra2, go to **Downloading**, scroll down, and click **Add new Downloader**.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591777029589.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591777029589.png)
 
 * Select between NZBGet and SABnzbd and enter the following information
 
@@ -102,4 +102,6 @@ API Key: {sabnzbd api key}
 
 `https://{username}.{servername}.usbx.me/nzbhydra2`
 
-<c><p class="callout warning">Once you've done this, you will not access NZBHydra2 via the HTTP link. You may have to change the NZBHydra2 API URL to the new HTTPS link if you set your API already.</p></c>
+::: warning
+Once you've done this, you will not access NZBHydra2 via the HTTP link. You may have to change the NZBHydra2 API URL to the new HTTPS link if you set your API already.
+:::

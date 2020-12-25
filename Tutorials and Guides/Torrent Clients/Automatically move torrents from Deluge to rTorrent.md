@@ -1,10 +1,14 @@
-<c><p class="callout warning">This guide is for advanced users only and is not officially supported by USB, as it is frequently updated voluntarily by our staff and it may be broken in some slots. Only proceed if you know what you're doing. If there are any questions on the installation or the execution of the scripts, you may ask on the USB Community server.</p></c>
+::: warning
+This guide is for advanced users only and is not officially supported by USB, as it is frequently updated voluntarily by our staff and it may be broken in some slots. Only proceed if you know what you're doing. If there are any questions on the installation or the execution of the scripts, you may ask on the USB Community server.
+:::
 
 As many of you know, Deluge is fast and more aggressive to upload but it starts to become a real nuisance once you load more than 500 torrents. rTorrent, on the other hand, is good at handling a large amount of seeding torrents, making it ideal for long term seeding.
 
 This guide will help you automate the process of moving your torrents from Deluge to rTorrent for long-term seeding.
 
-<c><p class="callout info">The script is unable to transfer your torrent stats (ratio/seeding time) from Deluge to rTorrent.</p></c>
+::: info
+The script is unable to transfer your torrent stats (ratio/seeding time) from Deluge to rTorrent.
+:::
 
 ***
 
@@ -13,7 +17,9 @@ This guide will help you automate the process of moving your torrents from Delug
 * By default, Deluge downloads to `~/Downloads` and rTorrent downloads to `~/files`.
 * Please ensure that **both Deluge and rTorrent download to the _same_ directory.**
 
-<c><p class="callout info">Deluge _requires_ an absolute path to your **Download to:** directory, so you'll have to enter something like `/home13/username/Downloads`, not `~/Downloads`. rTorrent, on the other hand, will accept shortcuts such as `~/Downloads`.</p></c>
+::: info
+Deluge _requires_ an absolute path to your **Download to:** directory, so you'll have to enter something like `/home13/username/Downloads`, not `~/Downloads`. rTorrent, on the other hand, will accept shortcuts such as `~/Downloads`.
+:::
 
 ***
 
@@ -161,4 +167,6 @@ crontab -e
 0 */6 * * * /home23/usbdocs/scripts/move-torrent/autoExport.sh
 ```
 
-<c><p class="callout info">For more information on crontab schedules, visit [crontab.guru](https://crontab.guru/)</p></c>
+::: info
+For more information on crontab schedules, visit [crontab.guru](https://crontab.guru/)
+:::

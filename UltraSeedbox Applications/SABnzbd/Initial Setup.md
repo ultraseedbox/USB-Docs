@@ -22,7 +22,7 @@ To use SABnzbd, you may need the following:
 * Select your preferred language.
   * This guide will be assuming you selected English, however feel free to choose any other language, you will just need to translate the guide.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-09/1-Wizard.PNG"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-09/1-Wizard.PNG)
 
 * Input your Usenet service provider's server details; Host, Username and Password.
 * Tick SSL if you wish to use SSL, keep in mind this comes with a performance overhead and may degrade download speed.
@@ -32,4 +32,4 @@ To use SABnzbd, you may need the following:
 * After click Next, you will need to close the tab and reconnect by clicking the link in UCP.
   * The address SABnzbd forwards you to after completing the initial setup is incorrect.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-09/2-Wizard-Server-Setup.PNG"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-09/2-Wizard-Server-Setup.PNG)

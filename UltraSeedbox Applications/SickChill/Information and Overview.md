@@ -2,4 +2,4 @@ SickChill is an automatic Video Library Manager for TV Shows. It watches for new
 
 For more information, you may visit this guide here: [https://sickchill.github.io/](https://sickchill.github.io/)
 
-<p align="center"><img src="https://sickchill.github.io/images/screenshots/home.jpg"></p>
+![](https://sickchill.github.io/images/screenshots/home.jpg)

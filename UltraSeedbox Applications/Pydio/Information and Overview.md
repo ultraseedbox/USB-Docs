@@ -11,4 +11,4 @@ Pydio is an open-source file-sharing and synchronization software that runs on t
 
 For more information, you may visit [this link.](https://pydio.com/en)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623608085.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623608085.png)

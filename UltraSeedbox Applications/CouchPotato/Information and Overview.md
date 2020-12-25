@@ -2,4 +2,4 @@ CouchPotato is an automatic NZB and torrent downloader/media manager that is wri
 
 For more information about this app, you can visit [this link.](https://couchpota.to/)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589267749576.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589267749576.png)

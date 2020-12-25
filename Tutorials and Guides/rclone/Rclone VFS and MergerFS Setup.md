@@ -1,4 +1,6 @@
-<p class="callout warning">This guide is for advanced users only and it serves as a guide for you to use rclone and mergerFS. The files here are the recommended settings for our slots and will subject to change whenever there are new configurations that are appropriate for the slots. Furthermore, USB is not responsible for any data loss or application errors due to this setup should you proceed and will not provide official support for it due to the large volume of variables and different configurations possible with rclone and mergerFS. You may visit the community discord server or the software's respective forums for assistance.</p>
+::: warning
+This guide is for advanced users only and it serves as a guide for you to use rclone and mergerFS. The files here are the recommended settings for our slots and will subject to change whenever there are new configurations that are appropriate for the slots. Furthermore, USB is not responsible for any data loss or application errors due to this setup should you proceed and will not provide official support for it due to the large volume of variables and different configurations possible with rclone and mergerFS. You may visit the community discord server or the software's respective forums for assistance.
+:::
 
 This guide will teach you how to setup a rclone VFS mount and MergerFS on USB slots and it assumes the following:
 
@@ -58,7 +60,9 @@ mkdir -p ~/MergerFS
 mkdir -p ~/scripts
 ```
 
-<p class="callout warning">Do not attempt to mount your rclone remote directly on your home directory. This will lead to instabilities. Instead, always mount to an empty folder within your home directory.</p>
+::: warning
+Do not attempt to mount your rclone remote directly on your home directory. This will lead to instabilities. Instead, always mount to an empty folder within your home directory.
+:::
 
 ***
 
@@ -132,7 +136,9 @@ wget -P $HOME/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedb
 wget -P $HOME/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/MergerFS-Rclone/Service%20Files/mergerfs.service && nano $HOME/.config/systemd/user/mergerfs.service
 ```
 
-<c><p class="callout info">Shown below are example service files. Do not copy and paste anything from the example files as it does not always reflect the contents of the service files from our repository and in this guide. Please read the guide thoroughly before setting it up.</p></c>
+::: info
+Shown below are example service files. Do not copy and paste anything from the example files as it does not always reflect the contents of the service files from our repository and in this guide. Please read the guide thoroughly before setting it up.
+:::
 
 ### Example Rclone Service File
 
@@ -456,7 +462,9 @@ fi
 * Then, decide how often you want to execute the script. Our servers are in the Netherlands so the timezone is set to CET
   * In my case, I’d like to run the script at 1900 CEST every night. Translated to cron, that is `0 19 * * *`
 
-<c><p class="callout info">If you need help in translating the time you want to cron, you can visit [Crontab Guru](https://crontab.guru/) and [World Time Buddy](https://www.worldtimebuddy.com/) to help you with setting up the time.</p></c>
+::: info
+If you need help in translating the time you want to cron, you can visit [Crontab Guru](https://crontab.guru/) and [World Time Buddy](https://www.worldtimebuddy.com/) to help you with setting up the time.
+:::
 
 * Do `readlink -f rclone-upload.sh` to get the absolute path
 
@@ -470,8 +478,9 @@ kbguides@lw902:~/scripts$ readlink -f rclone-upload.sh
 * Add `> /dev/null 2>&1` if you don’t want your slot to send messages when the upload script fails.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image2019-6-30_17-39-47.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image2019-6-30_17-39-47.png)
+
+:::
 
 * Save cron by doing CTRL + O and CTRL+ X to exit the editor
 * Now, all you need to do is to access all your apps and point it to your newly made MergerFS folder which is `MergerFS`

@@ -20,11 +20,11 @@ Take note that Kodi only does direct play. It does not transcode your media.
 * This part of the guide sets the seedbox as your media source via FTP. In this case, we'll be adding our movies folder.
 * Highlight Movies and click on **Enter Files Section**.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591551573826.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591551573826.png)
 
 * Click **Add Videos**. The Add video source appears. Click **Browse**.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591551639251.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591551639251.png)
 
 * Click **Add network location** and add the following info:
 
@@ -39,91 +39,91 @@ Password: {set FTP password}
 
 * Click **OK** to save the remote location.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556679884.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556679884.png)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556805137.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556805137.png)
 
 * Select the remote you just created and verify if you have the correct path. Once that's done, click **OK**.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556879970.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556879970.png)
 
 * Then add a name to your added path. In this guide, we'll be using `USB_Movies`.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556929342.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556929342.png)
 
 * A Set content window comes up. Since the path contains Movies, change **This directory contains** dialogue to Movies.
 * Select the information provider that you want. In this case, it's *The Movie Database*.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591557089707.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591557089707.png)
 
 * Click **OK**. Kodi will scan your FTP location and add your Movies. That'll go to the Movies section.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591557159020.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591557159020.png)
 
 ### Google Drive
 
 * Install the Google Drive Plugin by going to **Settings ⇾ Add-ons ⇾ Install from repository**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558410337.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558410337.png)
 
 * Scroll down then click on **video add-ons** and click on **Google Drive**.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558431770.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558431770.png)
 
 * Finally, click **Install**. It'll ask for you to install other dependencies, click OK to proceed.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558445816.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558445816.png)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558475601.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558475601.png)
 
 * Go back to the **Home screen ⇾ Add-ons** and select **Google Drive**.
 
 * Click **Add an account**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558671115.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558671115.png)
 
 * A window appears with instructions on how to connect your Google Drive account to Kodi. Either scan the QR code or visit the link shown then enter the code to connect your Google Drive account.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558719387.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558719387.png)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558816723.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591558816723.png)
 
 * Next, create a folder somewhere on your device that you can save exported Google Drive `*.strm` files to.
   * In this example, `C:\Users\{username}\strm` is used.
 
 * Reopen your Google Drive add-on and browse through your account.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591559051423.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591559051423.png)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591559076662.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591559076662.png)
 
 * Right-click to the media folders you want to set. Right-click it and select `export to .strm files...`
 * Set the destination folder to the folder you set, which in this case is `C:\Users\{username}\strm`
 * Enable **Update library after export** and **Watch for changes in the Cloud folder** then click **OK**. Let Kodi scan for all the files in your Google Drive folders.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591561568087.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591561568087.png)
 
 * Go back to **Enter Files Section**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591551573826.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591551573826.png)
 
 * Click **Add Videos**. The Add video source appears. Click **Browse** then browse to where you created your folder, which should have the folders with `.strm` files.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591562454512.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591562454512.png)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556805137.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556805137.png)
 
 * Select the folder you just created and verify if you have the correct path. Once that's done, click **OK**.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556879970.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591556879970.png)
 
 * Then add a name to your added path. In this guide, we'll be using `TV`.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591562603998.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591562603998.png)
 
 * A Set content window comes up. Since the path contains TV Shows, change **This directory contains** dialogue to Movies.
 * Select the information provider that you want. In this case, it's choose `TVDB`. You can select that from the Get More button.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591562714511.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591562714511.png)
 
 * Click OK. Kodi will scan your Google Drive location and add your TV Shows. That'll go to the TV Shows section.

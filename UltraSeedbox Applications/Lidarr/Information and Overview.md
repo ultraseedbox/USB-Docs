@@ -13,4 +13,4 @@ Lidarr is a fork of Sonarr that can download and organize your music library. It
 
 For more information for this, you may visit [their site](https://lidarr.audio/) or [Lidarr's GitHub repo](https://github.com/lidarr/Lidarr).
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568640089029.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568640089029.png)

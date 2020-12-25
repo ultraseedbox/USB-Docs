@@ -42,9 +42,9 @@ usbdocs@lw976:~$
 * If you have multiple scripts, you can also organize which scripts goes first.
 * AFter you've set the scripts to your liking, click **Apply**. Scroll down and click **Save all changes**. Reload NZBGet after to properly load up your scripts.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591095916166.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591095916166.png)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591099165126.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591099165126.png)
 
 ## Recommended Post-Processing Scripts
 ### flatten.py

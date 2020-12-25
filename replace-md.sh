@@ -8,9 +8,7 @@
 # MD Image Replace
 find . -type f -name "*.md" -print0 | xargs -0 -t sed -i -E 's|\[https://i\.imgur\.com|\![https://i\.imgur\.com|g'
 find . -type f -name "*.md" -print0 | xargs -0 -t sed -i -E 's|<p align="center"><img src="|!\[\]\(|g'
-find . -type f -name "*.md" -print0 | xargs -0 -t sed -i -E 's|<p align="center">||g'
-find . -type f -name "*.md" -print0 | xargs -0 -t sed -i -E 's|<img src="|!\[\]\(|g'
-find . -type f -name "*.md" -print0 | xargs -0 -t sed -i -E 's|</p>||g'
+find . -type f -name "*.md" -print0 | xargs -0 -t sed -i -E 's|<p align="center">\n<img src="|!\[\]\(|g'
 find . -type f -name "*.md" -print0 | xargs -0 -t sed -i -E 's|png"><\/p>|png)|g'
 find . -type f -name "*.md" -print0 | xargs -0 -t sed -i -E 's|PNG"><\/p>|PNG)|g'
 find . -type f -name "*.md" -print0 | xargs -0 -t sed -i -E 's|jpg"><\/p>|jpg)|g'

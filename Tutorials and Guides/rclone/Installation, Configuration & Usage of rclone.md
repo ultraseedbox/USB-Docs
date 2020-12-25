@@ -1,4 +1,6 @@
-<p class="callout warning">USB support is unable to provide support for rclone, this is due to the large volume of variables and different configurations possible with rclone. The guides found here on the knowledge-base should be able to guide you through using rclone, and any further questions can easily be answered with a quick Google search. You may also be able to find community support for rclone through our community Discord server or the Rclone forums.</p>
+::: warning
+USB support is unable to provide support for rclone, this is due to the large volume of variables and different configurations possible with rclone. The guides found here on the knowledge-base should be able to guide you through using rclone, and any further questions can easily be answered with a quick Google search. You may also be able to find community support for rclone through our community Discord server or the Rclone forums.
+:::
 
 In this guide we will be going over the installation of rclone. We'll also cover the basic usages such as setting up a remote, and how to copy files between your seedbox and a remote file host.
 

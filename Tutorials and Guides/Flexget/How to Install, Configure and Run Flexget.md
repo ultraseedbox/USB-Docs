@@ -128,9 +128,13 @@ To check if your config is correctly formatted and configured, you may have to d
 * `flexget check` to check the config file for any errors
 * `flexget --test execute` to test run your configuration.
 
-<c><p class="callout warning">In my example, when you run it the first time, it may grab and download multiple torrents which may affect your tracker ratio. To mitigate this, run `flexget execute --learn`. This will save the entries accepted so it won't download again in the future.</p></c>
+::: warning
+In my example, when you run it the first time, it may grab and download multiple torrents which may affect your tracker ratio. To mitigate this, run `flexget execute --learn`. This will save the entries accepted so it won't download again in the future.
+:::
 
-<c><p class="callout info">You may refer to [FlexGet Configuration](https://flexget.com/Configuration) for more information about making your own config as well as [FlexGet Cookbook](https://flexget.com/Cookbook) for some basic automation tasks that you can do with FlexGet.</p></c>
+::: info
+You may refer to [FlexGet Configuration](https://flexget.com/Configuration) for more information about making your own config as well as [FlexGet Cookbook](https://flexget.com/Cookbook) for some basic automation tasks that you can do with FlexGet.
+:::
 
 ***
 
@@ -151,26 +155,30 @@ usbdocs@lw975:~$
 * Then type `crontab -e`.
   * If this is your first time running this command, there would be an option asking for your text editor. Select the editor you want but I would suggest selecting `1`.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/scaled-1680-/image-1585835022440.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/scaled-1680-/image-1585835022440.png)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/scaled-1680-/image-1585835057313.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/scaled-1680-/image-1585835057313.png)
 
 * To set it running every minute, you may set it as `* * * * *` then the absolute path of FlexGet, which is `/homexx/username/bin/flexget`. Then, add in the arguments of FlexGet which is `--cron execute`.
 * If we put it together, we get `* * * * * /homexx/username/bin/flexget --cron execute`
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/scaled-1680-/image-1585835133246.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/scaled-1680-/image-1585835133246.png)
 
-<c><p class="callout info">You may refer to [Crontab Guru](https://crontab.guru/) which is an quick and simple editor for cron schedule expressions.</p></c>
+::: info
+You may refer to [Crontab Guru](https://crontab.guru/) which is an quick and simple editor for cron schedule expressions.
+:::
 
 * If you don't want cron to message you whenever there's an error in FlexGet, append `> /dev/null 2>&1` right after execute
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/scaled-1680-/image-1585835164953.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/scaled-1680-/image-1585835164953.png)
 
 * Save your work with **CTRL + O**, press ENTER then **CTRL + X**
 
 ### systemd/Daemon mode
 
-<c><p class="callout info">For more information, please refer to [FlexGet Scheduler](https://flexget.com/Plugins/Daemon/scheduler).</p></c>
+::: info
+For more information, please refer to [FlexGet Scheduler](https://flexget.com/Plugins/Daemon/scheduler).
+:::
 
 * Open up your FlexGet config and add the scheduler plugin before tasks
 
@@ -269,7 +277,7 @@ WantedBy=default.target
 * Run `systemctl --user enable --now flexget-daemon.service` to immediately start the daemon and to automatically restart whenever the daemon crashed or if there's a server restart
 * To check if the daemon is running, run `flexget daemon status`
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-3_16-29-0%5B1%5D.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-3_16-29-0%5B1%5D.png)
 
 ***
 

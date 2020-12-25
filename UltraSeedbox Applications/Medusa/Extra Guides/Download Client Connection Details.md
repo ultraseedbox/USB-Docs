@@ -2,7 +2,7 @@
 
 * In **Search Settings** to add a Torrent download client click on the **Torrent Search** tab.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-223299233.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-223299233.png)
 
 ### rTorrent
 #### Connection Settings
@@ -22,25 +22,25 @@ Downloaded Files Location: <EMPTY>
 
 * Access and login to your ruTorrent instance using the credentials you set during installation
 * Go to **Settings** by clicking the **Gear Icon**
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/img-24112433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/img-24112433.png)
 
 * Click on the **Autotools** section in left column 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-242112433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-242112433.png)
 
 * Enable the checkbox that says: **Enable "Automove" if torrent's label matches fitler"** and change default entry **/.*/** to **/Medusa/**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-24231133.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-24231133.png)
 
 * Click the directory button next to **Path to finished downloads**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2231311113.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2231311113.png)
 
 * Upon clicking the directory button, it will auto-fill the default download path your ruTorrent is using. This default location is: `/{HOME##}/{USERNAME}/files`
   * Simply add: `/completed` to the end of the path, making the path: `/{HOME##}/{USERNAME}/files/completed`
   * {HOME##} is your home number, in this example it is `home8'
     * {USERNAME} is your slot username, in this example it is `docs`
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-22234234.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-22234234.png)
 
 <callout info>This step is very important if using ruTorrent as your download client. ruTorrent will not append an extension to downloads therefore Medusa's Post-Processor will import incomplete downloads if the Auotools-AutoMove plugin is not used in ruTorrent.</callout>
 
@@ -65,7 +65,7 @@ Transmission appends **".part"** to the downloading file extensions until the do
 
 * In **Search Settings**, to add a Usenet download client click on the **NZB Search** tab.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-222111433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-222111433.png)
 
 ### NZBGet: Connection Settings
 
@@ -86,15 +86,15 @@ Use NZBget category for anime (backlog episodes): Medusa-Anime
 * Access and login to your NZBget instance using the credentials you have set in the application.
 * Go to **Settings** In the top right corner of the menu at the top of the initial login page.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-6644312.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-6644312.png)
 
 * From here click on the **PATHS** link in the menu on left column menu
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-6611312.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-6611312.png)
 
 * Here you will see **MainDir** location default as `/downloads`
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-661122.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-661122.png)
 
 * **MainDir** needs to the full path of the `files` directory in your home.
   * `/{HOME##}/{USERNAME}/files/`
@@ -105,12 +105,12 @@ Use NZBget category for anime (backlog episodes): Medusa-Anime
  
 Per the example in the screenshot below, {HOME##} is **home8** and the {username} is **docs**, so the full path for the `files` directory would be: `/home8/docs/files`
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-211133.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-211133.png)
 
 
 * Scroll down to the bottom of the page to click **Save all changes** in lower left corner
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-22233.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-22233.png)
 
 
 ### SABnzbd: Connection Settings
@@ -135,20 +135,20 @@ Use SABnzbd category for anime (backlog episodes): Medusa-Anime
 * Access and login to your SABbzbd instance using the credentials you have set in the application.
 * Go to **Settings** In the top right corner of the menu at the top of the initial login page. 
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-242119933.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-242119933.png)
 
 * Next, click the **Folders** link. 
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-22229233.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-22229233.png)
 
 * From here you will see the 2 default directories that need to be changed
     * **Temporary Download Folder**: `/{HOME##}/{USERANME}/Downloads/incomplete`
     * **Completed Download Folder**: `/{HOME##}/{USERANME}/Downloads/complete`
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-12433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-12433.png)
 
 * These 2 default directories need to be set to:
   * **Temporary Download Folder**: `/{HOME##}/{USERANME}/incomplete`
   * **Completed Download Folder**: `/{HOME##}/{USERANME}/files/completed`
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2111113.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2111113.png)

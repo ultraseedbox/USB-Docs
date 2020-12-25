@@ -8,4 +8,4 @@ ZNC is an IRC network bouncer or BNC that is written in C++. It can detach the
 
 For more information, you can visit [this link.](https://wiki.znc.in/ZNC)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1569835065899.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1569835065899.png)

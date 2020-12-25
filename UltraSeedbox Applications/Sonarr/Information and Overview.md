@@ -16,4 +16,4 @@ Major features include:
 
 You can view the application's repo here: [https://github.com/Sonarr/Sonarr](https://github.com/Sonarr/Sonarr)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568548187358.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568548187358.png)

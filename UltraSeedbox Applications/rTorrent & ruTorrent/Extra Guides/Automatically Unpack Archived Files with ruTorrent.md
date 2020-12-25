@@ -5,7 +5,7 @@ This guide will teach you how to enable auto unpacking of archived files in your
 * Go to Settings -> Unpack
 * Check **Enable autounpacking if torrents label matches filter**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583405851245.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583405851245.png)
 
 * This will enable unpacking on all future torrents. You may also set Unpack to a directory you want within your home folder or leave it blank to extract it in-place/to your torrent's current directory
     * Leaving it blank is useful for DVR apps such as Sonarr, Radarr and Lidarr.
@@ -21,4 +21,4 @@ This guide will teach you how to enable auto unpacking of archived files in your
 /.*(tv-sonarr|radarr|lidarr).*/i
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583406417621.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583406417621.png)

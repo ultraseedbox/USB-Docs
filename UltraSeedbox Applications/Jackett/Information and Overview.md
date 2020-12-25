@@ -2,4 +2,4 @@ Jackett is a proxy server for torrent trackers and your apps. It acts as the mid
 
 For more information on this app, refer to the app's [GitHub page.](https://github.com/Jackett/Jackett)
 
-<p align="center"><img src="https://raw.githubusercontent.com/DyonR/docker-templates/master/Screenshots/jackettvpn/jackettvpn-mainpage.png"></p>
+![](https://raw.githubusercontent.com/DyonR/docker-templates/master/Screenshots/jackettvpn/jackettvpn-mainpage.png)

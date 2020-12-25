@@ -8,5 +8,6 @@ NZBGet is a binary downloader written in C++, which downloads files from Usenet 
 More information of this app can be accessed at [this link.](https://nzbget.net/)
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568808281471.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568808281471.png)
+
+:::

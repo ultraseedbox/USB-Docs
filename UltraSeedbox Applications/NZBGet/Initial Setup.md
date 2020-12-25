@@ -19,14 +19,16 @@ You may also need the following:
 
 
 <p align="center">
-<img src="https://i.imgur.com/MG6BkI9.png">
-</p>
+<img src="https://i.imgur.com/MG6BkI9.png)
+
+:::
 
 * Once logged in, you'll be greeted with the main interface of NZBget.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1572879211864.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1572879211864.png)
+
+:::
 
 
 ## Adding News Servers
@@ -48,5 +50,6 @@ Connections: This varies depending on provider, check your provided news provide
 * Once you've added the necessary information. Click **Save all changes** and **Reload NZBGet** to load the new configuration.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1572886463622.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1572886463622.png)
+
+:::

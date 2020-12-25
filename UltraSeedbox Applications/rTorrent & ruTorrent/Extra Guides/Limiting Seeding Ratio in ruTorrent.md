@@ -6,7 +6,7 @@ This short guide will show you how to limit the seeding ratio in ruTorrent, so y
 
 * Start off by opening up your settings in ruTorrent and clicking the **Ratio Groups** option.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583390471592.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583390471592.png)
 
 * Fill out the top group (or any other one if you wish) with the following settings and give it a name
   * In this example, this group stops the torrent from seeding over 2 ratio.
@@ -55,7 +55,7 @@ This short guide will show you how to limit the seeding ratio in ruTorrent, so y
   * We recommend **Stop** as the action. This is to stop the torrents from seeding, mark it as completed and for you to download the files to your PC
   * You can also select **Remove** to remove the torrent or **Remove data** to remove the torrent and its associated files.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/rutorrent-seed.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/rutorrent-seed.png)
 
 * You can also set this to be done by default to all future torrents by using the **Default ratio group** option in the bottom right of the ratio groups screen
 * Select the number corresponding to the created ratio group. In this case, select 1 and click **OK**.
@@ -81,7 +81,7 @@ cd ~/www/rutorrent/plugins/ && svn checkout https://github.com/Novik/rutorrent/t
     * In this case, it's named `Publics`.
   * Confirm the changes by clicking OK.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/unknown.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/unknown.png)
 
 * Should there be public torrents that are not throttled, it may be due to it not being included to ruTorrent's Public Tracker list.
   * You may have to manually add the tracker URL by selecting **One of torrent tracker's URLs contains** from the dropbox then input the public tracker's hostname.
@@ -92,4 +92,4 @@ cd ~/www/rutorrent/plugins/ && svn checkout https://github.com/Novik/rutorrent/t
   * One of torrent tracker's URLs contains
   * One of torrent trackers is private
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/unknown-(1).png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/unknown-(1).png)

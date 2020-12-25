@@ -17,7 +17,7 @@ Also take note if your plugin can be accessed with the thin client or the web cl
   * This'll install the plugin on your PC client and to the Seedbox Client.
   * After it's installed, tick the label name and click OK. You may have to do that a few times to get it properly installed.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image2019-8-30_21-3-23%5B1%5D.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image2019-8-30_21-3-23%5B1%5D.png)
 
 ***
 

@@ -16,4 +16,4 @@ Tautulli is a python based web application for monitoring, analytics and notifi
 
 For more information, visit [this link.](https://tautulli.com/)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1584546394186.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1584546394186.png)

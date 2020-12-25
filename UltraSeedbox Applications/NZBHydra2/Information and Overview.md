@@ -7,4 +7,4 @@ NZBHydra2 is a meta search for newznab indexers and torznab trackers. It consoli
 
 For more information about this app, you can visit their [GitHub repo.](https://github.com/theotherp/nzbhydra2)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591109890576.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591109890576.png)

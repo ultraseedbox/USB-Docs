@@ -2,4 +2,4 @@ Syncthing is a free, open-source peer-to-peer file synchronization application t
 
 For more information on this, please visit [this link.](https://syncthing.net/)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591019800959.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591019800959.png)

@@ -11,4 +11,4 @@ Some of the features are the following:
 
 For more information about this app, you may visit [this link.](https://gitlab.com/LazyLibrarian/LazyLibrarian)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568808021208.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568808021208.png)

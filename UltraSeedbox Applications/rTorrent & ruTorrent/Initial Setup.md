@@ -31,4 +31,4 @@ screen -r rtorrent
 
 * You'll get a similar interface as below. To exit the interface, do CTRL + A + D
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583246602380.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583246602380.png)

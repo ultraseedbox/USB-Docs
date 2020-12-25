@@ -17,4 +17,4 @@
 
 For more information, you can view the full list of features [here.](https://transmissionbt.com/about/)
 
-<p align="center"><img src="https://cdn.discordapp.com/attachments/519118436215816192/622656394054860826/transmission-2.png"></p>
+![](https://cdn.discordapp.com/attachments/519118436215816192/622656394054860826/transmission-2.png)

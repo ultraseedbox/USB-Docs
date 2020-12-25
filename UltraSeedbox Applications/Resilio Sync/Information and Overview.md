@@ -9,4 +9,4 @@ Resilio Sync (formerly BitTorrent Sync) is a proprietary peer-to-peer file sy
 
 For more information, you can visit [this link.](https://www.resilio.com/individuals/)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568886011701.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568886011701.png)

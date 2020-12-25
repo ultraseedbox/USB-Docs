@@ -22,51 +22,51 @@ usbdocs@lw975:~$
 
 * Login to your Pydio instance. In the main Pydio screen, click the 3 dot icon and select Settings
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589621894749.png"></p>
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589621940962.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589621894749.png)
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589621940962.png)
 
 * Then on Workspaces & Users -> Workspaces, click **+ Workspace**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589622498094.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589622498094.png)
 
 * A small window appears. On the first part, choose Driver.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589622578381.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589622578381.png)
 
 * On Choose Storage Driver, choose File System (Standard) on the dropbox.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589622662519.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589622662519.png)
 
 * Then on Driver Options. Paste in the output of `pwd` here. After that, click **Next** to continue.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589622760967.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589622760967.png)
 
 * Add a Label and a Description. In this example, we named this `My Home`. Once that's done, click **Create**.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589622841951.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589622841951.png)
 
 * Once that's done, close the window (1) and go back to Pydio home (2)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589622907808.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589622907808.png)
 
 * You should see your created workspace on the sidebar.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623010360.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623010360.png)
 
 ## Sharing Files/Folders
 
 * To share a file/folder on your seedbox, go to the created workspace.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623010360.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623010360.png)
 
 * Right-click the file that you want to share and select Share.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623161806.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623161806.png)
 
 * Check **Enable Public Link**. It'll generate you a public link to the file.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623225378.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623225378.png)
 
 * You may also change the link's Permissions and Secure access here. To Stop sharing the file, click **Stop Sharing** to make the file private again.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623308499.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589623308499.png)

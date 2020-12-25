@@ -15,34 +15,34 @@ We will be doing the following:
 * Access and login to your Medusa instance using the credentials you set during installation
 * Hover your mouse pointer over the  **Settings Gear** then click on **General**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/MyLrLDt.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/MyLrLDt.png)
 
 * Scroll down to the end of the first section to where you see **Show root directories** and then click **New**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/img-2423424233.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/img-2423424233.png)
 
 * This will bring up the Directory Browser window.
    * Select your`home##` folder where `home##` contains the node where your seedbox is in.
      * In the screenshot, the node where the seedbox is in `home8`
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2423224233.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2423224233.png)
 
 * Then, select your `username` directory
 * Next, select the `media` directory
 * Next, chose the `TV Shows` directory
 * To select the directory, click **OK** 
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2434624233.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2434624233.png)
 
 * Finally, click on **Set as Default**, and then **Save Changes**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2423724233.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2423724233.png)
 
 ## Adding Download Clients and setting their Post-Processing directories for Medusa
 
 * Hover your mouse pointer over the **Settings Gear** then click on **Search Providers** 
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/img-2423723433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/img-2423723433.png)
 
 For download client setup settings, you may refer to this guide: [Medusa Download Client Connection Details](https://docs.usbx.me/books/medusa/page/download-client-connection-details)
 
@@ -50,66 +50,68 @@ For download client setup settings, you may refer to this guide: [Medusa Downloa
 
 * Hover your mouse pointer over the  **Settings Gear Icon** then click on **Search Providers**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/img-2239723433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/img-2239723433.png)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2239333433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2239333433.png)
 
 * From here you will enable the check boxes for the trackers/search providers you wish to use
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232323433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232323433.png)
 
 * After you have selected your torrent search providers, click on the **Save Changes** button below the provider list, and then also click the **Save Changes** button in the lower-left corner.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/img-2422224233.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/img-2422224233.png)
 
 * If the trackers or nzb providers you have selected requires credentials, you will set these in the **Provider Options** tab.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2423723223.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2423723223.png)
 
 * And then click on the **Configure provider** dropdown menu to pick which provider you would like to enter credentials for.
 *Refer to your trackers and NZB providers for this information.*
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/img-2423523433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/img-2423523433.png)
 
 * If the provider allows search features, be sure to enable
   * **Enable daily searches**
   * **Enable 'Manual Search' feature**
   * **Enable backlog searches**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2224243433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2224243433.png)
 
 * After you have entered your provider credentials and settings, click on the **Save Changes** button below the provider list, and then also click the **Save Changes** button in the lower-left corner.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232242433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232242433.png)
 
 ## Post-Processing Settings
 
 * Hover your mouse pointer over the **Settings Gear** then click on **Post-Processing**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232225433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232225433.png)
 
 * Enable **Scheduled Post-Processor**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2423242433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2423242433.png)
 
 * Click on the directory browser button for **Post-Processing Dir**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2422222433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2422222433.png)
 
 * Using the blue directory icons, navigate to your {HOME##} then to your slot {USERNAME} then to your `files` directory, then finally to `completed` directory.
   * The screenshot example shows {HOME##} as `home8` and the slot {USERNAME} as `docs`
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/img-2232424233.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/img-2232424233.png)
 
 * To save the 'Post-Processing Dir click' **OK** in the directory browser dialog box
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2222225433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2222225433.png)
 
-<c><p class="callout info">Its important to be sure only your **COMPLETED** downloads are in this location, otherwise Medusa's Post-Processor may import incomplete media and cause errors. You may refer to the [Medusa Download Client Connection Details](https://docs.usbx.me/books/medusa/page/download-client-connection-details) to set completed directories for your download clients to this location</p></c>
+::: info
+Its important to be sure only your **COMPLETED** downloads are in this location, otherwise Medusa's Post-Processor may import incomplete media and cause errors. You may refer to the [Medusa Download Client Connection Details](https://docs.usbx.me/books/medusa/page/download-client-connection-details) to set completed directories for your download clients to this location
+:::
 
 * You will need to set the **Processing Method**:
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232223433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232223433.png)
 
 * **Processing Method: HARD LINK**
   * This method is recommended if you are using local storage on your seedbox.
@@ -123,42 +125,42 @@ For download client setup settings, you may refer to this guide: [Medusa Downloa
 
 If your torrent trackers have archives, it would be recommended to enable Medusa's **Unpack** feature:
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232222433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232222433.png)
 
 * To save your **Post Processing** settings, click on the **Save Changes** button below the provider list, and then click the **Save Changes** button in the lower-left corner.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2239722223.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2239722223.png)
 
 * For the **Post Processing scheduler** to be enabled, you *must* restart Medusa. You can do this easily by hovering your mouse pointer over the **Configuration Tool Icon** and then click on **Restart**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-24221113.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-24221113.png)
 
 ## Adding Your First Series
 
 * Hover your mouse pointer over the **Shows Menu Item** and then click on **Add Shows**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-22223433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-22223433.png)
 
 * Click on the **Add New Show** link.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2221433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2221433.png)
 
 * Enter the series name and then click **Search**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232133.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-2232133.png)
 
 * Choose the series and then click **Next**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-241433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-241433.png)
 
 * Select the Parent Folder and then click **Next**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-22313113.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-22313113.png)
 
 * Select your **Quality** choice for the series
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-242233.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-242233.png)
 
 * Scroll down to the bottom of the page and click **Add Show**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-222423433.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/scaled-1680-/img-222423433.png)

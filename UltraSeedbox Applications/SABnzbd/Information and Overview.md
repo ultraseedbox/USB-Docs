@@ -13,4 +13,5 @@ Here are SAB's features:
 
 If you want to know more you can head over [here.](https://sabnzbd.org)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-09/interface.webp"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-09/interface.webp">
+:::

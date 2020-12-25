@@ -18,8 +18,9 @@ In this guide, we'll be briefly teach you how to set it up. For `LabelPlus`, we 
   * Click **Apply** and then OK
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/deluge-seed.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2020-03/deluge-seed.png)
+
+:::
 
 ***
 
@@ -41,27 +42,31 @@ LabelPlus: https://github.com/ratanakvlun/deluge-labelplus/releases/download/v0.
   * After it's installed, tick **LabelPlus** and click **OK**. You may have to do that a few times to get it properly installed.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-3-23%5B1%5D.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-3-23%5B1%5D.png)
+
+:::
 
 * Close Preferences. On the left side, click **LabelPlus Tab**.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-4-27%5B1%5D.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-4-27%5B1%5D.png)
+
+:::
 
 * Right-click space → **Add Label** and give it a name.
 * Click **OK**. You'll see your newly created Label.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-5-11%5B1%5D.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-5-11%5B1%5D.png)
+
+:::
 
 * Right-click that new label and select Label Options to set your preferences, as described below.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-7-0%5B1%5D.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-7-0%5B1%5D.png)
+
+:::
 
 ### LabelPlus Label Options
 #### Downloads
@@ -69,8 +74,9 @@ LabelPlus: https://github.com/ratanakvlun/deluge-labelplus/releases/download/v0.
 * Here, you can set the download directory and to move some of your specifically labeled torrents to different locations
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-8-3%5B1%5D.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-8-3%5B1%5D.png)
+
+:::
 
 #### Bandwidth
 
@@ -79,8 +85,9 @@ LabelPlus: https://github.com/ratanakvlun/deluge-labelplus/releases/download/v0.
   * We recommend seeding them at a certain ratio instead.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-8-34%5B1%5D.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-30_21-8-34%5B1%5D.png)
+
+:::
 
 #### Queue
 
@@ -90,8 +97,9 @@ LabelPlus: https://github.com/ratanakvlun/deluge-labelplus/releases/download/v0.
   * USB TOS allows clients to seed public torrents up to 2.0. This is to adhere fair usage rules and to not drain your allocated bandwidth.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-26_17-21-16%5B1%5D.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-26_17-21-16%5B1%5D.png)
+
+:::
 
 #### Autolabel
 
@@ -105,5 +113,6 @@ LabelPlus: https://github.com/ratanakvlun/deluge-labelplus/releases/download/v0.
   * When I downloaded a torrent from tracker domains containing the ones I've set, it'll automatically put to Publics label and set to stop seeding until the ratio of 2.0 as set above.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-26_17-21-56%5B1%5D.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-26_17-21-56%5B1%5D.png)
+
+:::

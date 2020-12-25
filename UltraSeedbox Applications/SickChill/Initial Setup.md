@@ -12,37 +12,37 @@ In this guide, we’ll be setting up SickChill for the first time. This guide as
 
 After the Installation of SickChill via the Ultraseedbox Control Panel and opening the Web interface by clicking **Connect**, you will be presented with this page asking for your username and password. This is the password you set when installing SickChill Username can be found in the Control Panel.
 
-<p align="center"><img src="https://i.imgur.com/2lR6M1N.png"></p>
+![](https://i.imgur.com/2lR6M1N.png)
 
 Your first steps are to address the settings.
 
-<p align="center"><img src="https://i.imgur.com/52dufFE.png"></p>
+![](https://i.imgur.com/52dufFE.png)
 
 ### General Configuration
 #### Root Directories
 
-<p align="center"><img src="https://i.imgur.com/V1yDoun.png"></p>
+![](https://i.imgur.com/V1yDoun.png)
 
 There is only one option here that must be adjusted to work with the Ultraseedbox folder structure. By default, **Show root directories** is set to your `files` folder like this:
 
-<p align="center"><img src="https://i.imgur.com/dUYcsBo.png"></p>
+![](https://i.imgur.com/dUYcsBo.png)
 
 This needs to be edited to point towards your “media/TV Shows” folder like this:
 
-<p align="center"><img src="https://i.imgur.com/W90eCwK.png"></p>
+![](https://i.imgur.com/W90eCwK.png)
 
-<p align="center"><img src="https://i.imgur.com/DH87vrv.png"></p>
+![](https://i.imgur.com/DH87vrv.png)
 
 The result should look something like this but will include your username:
 
 
-<p align="center"><img src="https://i.imgur.com/dOxW38d.png"></p>
+![](https://i.imgur.com/dOxW38d.png)
 
 #### Interface
 
 The main setting to bring attention to in this section is your API. This is used to interface SickChill with other applications, and it can be found at the bottom of the page:
 
-<p align="center"><img src="https://i.imgur.com/j52lRvo.png"></p>
+![](https://i.imgur.com/j52lRvo.png)
 
 #### Search Settings
 ##### NZB Search
@@ -119,7 +119,7 @@ This is the page where you would select the providers you are a part of. You als
 
 To activate a Provider, you must tick it’s a checkbox. To rearrange the order, just click and drag through the list.
 
-<p align="center"><img src="https://i.imgur.com/58xGJ0i.png"></p>
+![](https://i.imgur.com/58xGJ0i.png)
 
 Important note: You must click save in the bottom left corner and refresh the page before the options appear in the next tab, “Provider Options.”
 
@@ -129,7 +129,7 @@ This is a very important page that must be completed correctly for SickChill to 
 
 **Torrent Provider Configuration**
 
-<p align="center"><img src="https://i.imgur.com/h2odtPw.png"></p>
+![](https://i.imgur.com/h2odtPw.png)
 
 **Configure provider:** The Dropdown menu selects the provider you want to configure here. 
 
@@ -157,7 +157,7 @@ example: `uid=1234;pass=567845439634987`
 
 **NZB Provider Configuration**
 
-<p align="center"><img src="https://i.imgur.com/NmT8qZW.png"></p>
+![](https://i.imgur.com/NmT8qZW.png)
 
 **Configure provider:** The Dropdown menu selects the provider you want to configure here. 
 
@@ -179,9 +179,9 @@ To make use of Provider’s not preinstalled into SickChill will require Jackett
 
 This is the section where you will be telling SickChill how to handle your completed downloads, Where to put them, Should they be renamed, etc. We will go through the relevant sections below.
 
-<p align="center"><img src="https://i.imgur.com/byOWGeV.png"></p>
+![](https://i.imgur.com/byOWGeV.png)
 
-<p align="center"><img src="https://i.imgur.com/Ccb6lPI.png"></p>
+![](https://i.imgur.com/Ccb6lPI.png)
 
 **Enable:** Turn Post Processing ON and OFF
 
@@ -214,17 +214,17 @@ If you are running torrents, hardlink is likely your best option as it will allo
 
 ## Adding your First Show
 
-<p align="center"><img src="https://i.imgur.com/ovmbS9j.png"></p>
+![](https://i.imgur.com/ovmbS9j.png)
 
 Adding a show is quite simple. There are multiple ways to do so, but here we will cover adding a show manually.
 
 After clicking “Add show”, you are presented with these options. 
 
-<p align="center"><img src="https://i.imgur.com/8jkAyQk.png"></p>
+![](https://i.imgur.com/8jkAyQk.png)
 
 Selecting the first option will move you to the next screen.
 
-<p align="center"><img src="https://i.imgur.com/aqdIgBX.png"></p>
+![](https://i.imgur.com/aqdIgBX.png)
 
 Here you need to type a show name then select it from the list that appears below.
 

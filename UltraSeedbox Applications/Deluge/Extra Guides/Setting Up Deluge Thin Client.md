@@ -22,15 +22,17 @@ Deluge Client 1.3.15
   * Confirm to restart Deluge
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-26_17-8-58%5B1%5D.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-26_17-8-58%5B1%5D.png)
+
+:::
 
 * Once Rebooted, a window named Connection Manager appears. Click **Add**.
 * Go back to your UCP, under Applications Tab find remote client access under Deluge and input the values accordingly.
 
 <p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-26_17-12-28%5B1%5D.png">
-</p>
+<img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-8-26_17-12-28%5B1%5D.png)
+
+:::
 
 * Once that's done, click add and wait for the Green circle to pop up.
 * Once that's popped up, highlight your new details and click **Connect**.

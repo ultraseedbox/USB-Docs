@@ -11,7 +11,7 @@ In this guide, we'll be setting up extensions that send torrent files from your 
 
 * Once installed, right-click the extension and click **Options**.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589347104757.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589347104757.png)
 
 * Then, a new tab appears with the Remote Torrent Adder setup page. Click the Add server button to add one. The following connection details are shown below:
 
@@ -22,7 +22,7 @@ Server name: {any name}
 Server type: ruTorrent WebUI
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589347320045.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589347320045.png)
 
 ```
 Host: {username}.{servername}.usbx.me
@@ -33,9 +33,11 @@ Password: Password: As configured in UCP under ruTorrent
 Relative Path: /rutorrent
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589349214407.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589349214407.png)
 
-<c><p class="callout info">This will throw a `Server responded with an irregular HTTP code` when adding a torrent. You can safely ignore this error.</p></c>
+::: info
+This will throw a `Server responded with an irregular HTTP code` when adding a torrent. You can safely ignore this error.
+:::
 
 #### Deluge
 
@@ -44,7 +46,7 @@ Server name: {any name}
 Server type: Deluge WebUI
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589349288697.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589349288697.png)
 
 ```
 Host: {username}.{servername}.usbx.me
@@ -54,7 +56,7 @@ Username: {username}
 Password: Password: As configured in UCP under Deluge
 Relative Path: /deluge
 ```
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589349399186.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589349399186.png)
 
 #### Transmission
 
@@ -63,7 +65,7 @@ Server name: {any name}
 Server type: Transmission WebUI
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589349481283.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589349481283.png)
 
 ```
 Host: {username}.{servername}.usbx.me/transmission/rpc
@@ -73,13 +75,13 @@ Username: {username}
 Password: Password: As configured in UCP under Transmission
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589350751030.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589350751030.png)
 
 ### Torrent Control
 
 * To set Torrent Control up, click the plugin icon. This will take you to its configuration page.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589349705028.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589349705028.png)
 
 * To add a new server, go to Server Configuration
 * On the Current server dropdown, select **New Server**
@@ -95,7 +97,7 @@ Password: As configured in UCP under ruTorrent
 
 Click Save after configuring
 ```
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589350881763.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589350881763.png)
 
 #### Deluge
 
@@ -108,7 +110,7 @@ Password: As configured in UCP under Deluge
 Click Save after configuring
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589350939412.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589350939412.png)
 
 #### Transmission
 
@@ -122,4 +124,4 @@ Password: As configured in UCP under Transmission
 Click Save after configuring
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589350996836.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589350996836.png)

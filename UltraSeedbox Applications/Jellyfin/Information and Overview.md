@@ -2,4 +2,4 @@
 
 For more information about this app, you may visit [this link.](https://jellyfin.org/)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571296377294.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571296377294.png)

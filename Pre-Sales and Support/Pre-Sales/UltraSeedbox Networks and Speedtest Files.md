@@ -28,17 +28,17 @@ Server: LW9xx
   </tr>
   <tr>
     <td class="tg-9wq8" rowspan="2">wget</td>
-    <td class="tg-0pky">IPV4: wget -4 -O /dev/null http://speedtest.yisp.nl/files/10000mb.bin<br></td>
+    <td class="tg-0pky">IPV4: wget -4 -O /dev/null http://speedtest.yisp.nl/files/10000mb.bin</td>
   </tr>
   <tr>
-    <td class="tg-0pky">IPV6: wget -6 -O /dev/null http://speedtest.yisp.nl/files/10000mb.bin<br></td>
+    <td class="tg-0pky">IPV6: wget -6 -O /dev/null http://speedtest.yisp.nl/files/10000mb.bin</td>
   </tr>
   <tr>
     <td class="tg-nrix" rowspan="2">iperf</td>
-    <td class="tg-0lax">Download: iperf3 -c speedtest.yisp.nl -P 10 -4 -R<br></td>
+    <td class="tg-0lax">Download: iperf3 -c speedtest.yisp.nl -P 10 -4 -R</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Upload: iperf3 -c speedtest.yisp.nl -P 10 -4<br></td>
+    <td class="tg-0lax">Upload: iperf3 -c speedtest.yisp.nl -P 10 -4</td>
   </tr>
 </table>
 
@@ -68,14 +68,14 @@ Server: LW8xx
 <table class="tg">
   <tr>
     <th class="tg-9wq8">Standard HTTP FIle</th>
-    <th class="tg-0pky">http://speedtest.novoserve.com/10GB.bin<br></th>
+    <th class="tg-0pky">http://speedtest.novoserve.com/10GB.bin</th>
   </tr>
   <tr>
     <td class="tg-9wq8" rowspan="2">wget</td>
-    <td class="tg-0pky">IPV4: wget -4 -O /dev/null http://speedtest.novoserve.com/10GB.bin<br></td>
+    <td class="tg-0pky">IPV4: wget -4 -O /dev/null http://speedtest.novoserve.com/10GB.bin</td>
   </tr>
   <tr>
-    <td class="tg-0pky">IPV6: wget -6 -O /dev/null http://speedtest.novoserve.com/10GB.bin<br></td>
+    <td class="tg-0pky">IPV6: wget -6 -O /dev/null http://speedtest.novoserve.com/10GB.bin</td>
   </tr>
 </table>
 

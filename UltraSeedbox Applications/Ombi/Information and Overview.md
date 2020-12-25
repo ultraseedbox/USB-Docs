@@ -11,6 +11,6 @@ Ombi is a self-hosted web application that automatically gives your shared Plex 
 
 For more information about this app, you may visit the app's [GitHub repo.](https://github.com/tidusjar/Ombi)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571304567853.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571304567853.png)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571304696162.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571304696162.png)

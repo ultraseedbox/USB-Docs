@@ -1,4 +1,6 @@
-<c><p class="callout warning">Do not log in using Emby Connect. Always select Skip or Connect to Server Manually and enter server details manually.</p></c>
+::: warning
+Do not log in using Emby Connect. Always select Skip or Connect to Server Manually and enter server details manually.
+:::
 
 ### All Clients
 #### SSL

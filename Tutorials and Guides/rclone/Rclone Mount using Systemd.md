@@ -1,4 +1,6 @@
-<p class="callout warning">This guide is for advanced users only and it serves as a guide for you to use rclone. The systemd files here are the recommended settings for our slots and will subject to change whenever there are new configurations that are appropriate for the slots. Furthermore, USB is not responsible for any data loss or application errors due to this setup should you proceed and will not provide official support for it due to the large volume of variables and different configurations possible with rclone. You may visit the community discord server for help.</p>
+::: warning
+This guide is for advanced users only and it serves as a guide for you to use rclone. The systemd files here are the recommended settings for our slots and will subject to change whenever there are new configurations that are appropriate for the slots. Furthermore, USB is not responsible for any data loss or application errors due to this setup should you proceed and will not provide official support for it due to the large volume of variables and different configurations possible with rclone. You may visit the community discord server for help.
+:::
 
 Rclone's mount allows you to mount any of your cloud storage accounts as part of your slot's file system using FUSE. In this guide, we will teach you how to run a rclone mount using systemd. Take note that this guide is setup using Google Drive as the cloud storage provider used. Should you use any other cloud storage providers, you may need consult rclone documentation for the appropriate flags for your setup.
 
@@ -91,7 +93,9 @@ wget -P ~/.config/systemd/user/ https://raw.githubusercontent.com/ultraseedbox/U
 * You may also add or edit some rclone flags here if you wish
 * Then save it by doing CTRL + O, press ENTER then exit nano by doing **CTRL + X**.
 
-<c><p class="callout info">Shown below are example service files. Do not copy and paste anything from the example files as it does not always reflect the contents of the service files from our repository and in this guide. Please read the guide thoroughly before setting it up.</p></c>
+::: info
+Shown below are example service files. Do not copy and paste anything from the example files as it does not always reflect the contents of the service files from our repository and in this guide. Please read the guide thoroughly before setting it up.
+:::
 
 ### Example rclone-normal.service
 
@@ -147,7 +151,9 @@ Restart=on-failure
 WantedBy=default.target
 ```
 
-<p class="callout warning">Do not attempt to mount your rclone remote directly on your home directory. This will lead to instabilities. Instead, always mount to an empty folder within your home directory.</p>
+::: warning
+Do not attempt to mount your rclone remote directly on your home directory. This will lead to instabilities. Instead, always mount to an empty folder within your home directory.
+:::
 
 ***
 

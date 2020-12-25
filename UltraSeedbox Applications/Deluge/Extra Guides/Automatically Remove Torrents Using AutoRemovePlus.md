@@ -39,28 +39,28 @@ https://forum.deluge-torrent.org/download/file.php?id=6306&sid=470233ee354e7045f
     * When disk space goes lower than the value set, it removes the torrents that meets the criteria until it reaches the minimum HDD space value set.
     * If set to `-1`, it will disable this option.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589198169952.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589198169952.png)
 
 * The next section concerns the global preferences for AutoRemovePlus to your torrents.
   * For example, you can set AutoRemovePlus to delete all torrents that has at least a 2.0 ratio
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589198650314.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589198650314.png)
 
   * You can also set it to remove that has at least 2.0 ratio or has been seeded for 7 days
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589198800549.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589198800549.png)
 
 * Under exception rules, you can set Global Exceptions.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589255540103.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589255540103.png)
 
 * Under the Type column, you can select if you want to filter out `Tracker` or `Label` and enter your preferred value on the next column. Shown below are some examples.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589255709936.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589255709936.png)
 
 * For the last three options, you can check both `Remove torrents` and `Remove torrent data`
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589260561417.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589260561417.png)
 
 ## Specific Remove Rules
 

@@ -2,4 +2,4 @@ Plex is a proprietary media player suite that organizes video, audio, and photos
 
 You can learn more about the app in [this link.](https://www.plex.tv/)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588442792496.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588442792496.png)

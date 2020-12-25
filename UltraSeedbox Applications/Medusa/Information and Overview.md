@@ -10,4 +10,4 @@ Medusa is an open-sourced fully-automated PVR written in Python. It enables you 
 
 For more information, you can visit [their site](https://pymedusa.com/) or [their GitHub repo](https://github.com/pymedusa/Medusa).
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-07/image-1594110108633.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-07/image-1594110108633.png)

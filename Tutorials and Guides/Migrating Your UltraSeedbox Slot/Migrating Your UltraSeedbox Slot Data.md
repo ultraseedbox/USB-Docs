@@ -8,11 +8,11 @@ We will be using SSH most of this guide, if you are unfamiliar with SSH we have 
 
 * Make sure you have an SSH password set for **both**  slots in your UCP. Login to your [User Control Panel](https://cp.ultraseedbox.com) and login with the credentials you set and Press **Connect**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-7_11-13-9%5B1%5D.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-7_11-13-9%5B1%5D.png)
 
 * Click **Access details** and click **Change password** beside SSH access.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-7_11-14-38%5B1%5D.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-7_11-14-38%5B1%5D.png)
 
 * Set your password to anything you wish. We recommend using a unique password that you do not use in any of your existing accounts and has the following
   * At least 12 characters
@@ -22,11 +22,11 @@ We will be using SSH most of this guide, if you are unfamiliar with SSH we have 
   * At least 1 symbol
 * When you're done click **Confirm change**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-7_11-19-3%5B1%5D.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-7_11-19-3%5B1%5D.png)
 
 * A popup saying *Password successfully changed* should appear on the lower right corner of the page, signifying that the password is set successfully.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-7_11-25-0%5B1%5D.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-7_11-25-0%5B1%5D.png)
 
 * If possible, it is recommended to stop your applications on your original slot while doing the transfer. This will help prevent possible changes in data during the transfer, and will likely assist with the actual data migration speeds to run as intended.
 * Also, you may want to stop any rclone/mergerfs mounts as a precaution.
@@ -71,17 +71,19 @@ After you have copied the `rsync` transfer command with your **ORIGINAL** slot d
 
 This initial step of `rsync` "receiving file list ..." may take some time to complete depending on the file/folder count, but rest assured the transfer will proceed to the next step of actually transferring the files
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-10/wAOehow[1].png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-10/wAOehow[1].png)
 
 After the `receiving file list ...` has finished, you will then see the transfer commencing. This example screenshot points out where you can see your transfer % progress and the estimated time for completion.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-10/DUO0cHG[1].png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-10/DUO0cHG[1].png)
 
-<c><p class="callout info">It may take some time for the rsync process to move on to larger files to actually see these values.</p></c>
+::: info
+It may take some time for the rsync process to move on to larger files to actually see these values.
+:::
 
 After the transfer is completed, you will see the text stop scrolling and will resemble the example screenshot below of a completed rsync transfer
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-10/6QuNdeq[1].png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-10/6QuNdeq[1].png)
 
 After confirming your rsync transfer is completed, you can then close out of your terminal screen by entering the command 
 
@@ -150,7 +152,7 @@ cat ~/transfer/.config/deluge/state/torrents.state | grep home --color
 
 As you can see in the screenshot example, the `home` will be colorized to make it easier to find. The value we need to note here in the example is `home8` and we will refer to this value as ***homeOLD***
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-10/3DD61mO[1].png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-10/3DD61mO[1].png)
 
 * Now, we will need to get your upgraded slot's **home#**, this can be found with the following SSH command
 
@@ -160,7 +162,7 @@ pwd
 
 In the screenshot example, `home34` is the current home number we will be needing, which we will refer to as ***homeNEW***
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-10/vx5jS3IGl8[1].png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-10/vx5jS3IGl8[1].png)
 
 * Now that we have our **homeOLD** using the `cat` command, and our **homeNEW** using the `pwd` command, we we can perform a "search and replace" using `sed` to replace all occurrences of your old **home#** with your current **home#**
 
@@ -212,7 +214,7 @@ cat ~/transfer/.config/rtorrent/session/*.rtorrent | grep home --color
 
 As you can see in the screenshot example, the `home` will be colorized to make it easier to find. The value we need to note here in the example is `home8` and we will refer to this value as ***homeOLD***
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-10/HLnouG3[1].png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-10/HLnouG3[1].png)
 
 
 * Now, we will need to get your upgraded slot's **home#**, this can be found with the following SSH command
@@ -223,7 +225,7 @@ pwd
 
 In the screenshot example, `home34` is the current home number we will be needing, which we will refer to as ***homeNEW***
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-10/jS3IGl8[1].png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-10/jS3IGl8[1].png)
 
 * Now that we have our **homeOLD** using the `cat` command, and our **homeNEW** using the `pwd` command,  we we can perform a "search and replace" using `sed` to replace all occurrences of your old **home#** with your current **home#**
 
@@ -277,7 +279,7 @@ cat ~/transfer/.config/transmission-daemon/resume/*.resume | grep -a home --colo
 
 As you can see in the screenshot example, `home` will be colorized to make it easier to find. The value we need to note here in the example is `home8` and we will refer to this value as ***homeOLD***
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-10/Pcs8tXH[1].png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-10/Pcs8tXH[1].png)
 
 * Now, we will need to get your upgraded slot's **home#**, this can be found with the following SSH command
 
@@ -287,7 +289,7 @@ pwd
 
 In the screenshot example, `home34` is the current home number we will be needing, which we will refer to as ***homeNEW***.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-10/SgnjS3IGl8[1].png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-10/SgnjS3IGl8[1].png)
 
 * Now that we have our **homeOLD** using the `cat` command, and our **homeNEW** using the `pwd` command,  we we can perform a "search and replace" using `sed` to replace all occurrences of your old **home#** with your current ****home#****
 
@@ -603,7 +605,7 @@ rm -rf ~/.apps/lazylibrarian.fresh ~/.config/lazylibrarian.fresh
   * If your LazyLibrarian application was using a custom directory for the eBook Library Folder setting or AudioBook Library Folder setting, you will need to update these paths to reflect their location on your upgraded slot.
     * These settings can be found at **LazyLibrarian >> Config >> Processing tab**
 
-<p align="center"><img src="https://i.imgur.com/2YBoX1e.png"></p>
+![](https://i.imgur.com/2YBoX1e.png)
 
 ***
 
@@ -655,19 +657,19 @@ rm -rf ~/.apps/lidarr.fresh
 
 * You will need to update your **Root Folder** settings for your music location(s). You can does this in bulk by navigating to **Library >> Mass Editor**
 
-<p align="center"><img src="https://i.imgur.com/vME9jEI.png"></p>
+![](https://i.imgur.com/vME9jEI.png)
 
 * From here you select items in bulk to then select the **Root Folder** drop-down menu. 
 
-<p align="center"><img src="https://i.imgur.com/bgtGSiK.png"></p>
+![](https://i.imgur.com/bgtGSiK.png)
 
 * You will need to click **Add a Different Path** to show your upgraded slot's directory options to select the correct local directory, or remote mount directory, on your upgraded slot. 
 
-<p align="center"><img src="https://i.imgur.com/ZzaZ8w7.png"></p>
+![](https://i.imgur.com/ZzaZ8w7.png)
 
 * After selecting the new **Root Folder** path that pertains to you upgraded slot directory of the media, click the **No, I Will Move the Files Myself** button in the dialog pop-up, and then your changes will be saved.
 
-<p align="center"><img src="https://i.imgur.com/6V1EWfU.png"></p> 
+![](https://i.imgur.com/6V1EWfU.png) 
 
 * You will need to update the URL of your USB hosted download clients such as SABnzbd/NZBget/rTorrent/Deluge/Transmission. 
 * If you use the Jackett application on your USB slot for your indexers in Lidarr, you will need to update your Jackett indexers URLs to reflect that of your upgraded slot's Jackett.
@@ -722,20 +724,20 @@ rm -rf ~/.apps/medusa.fresh
 
 * You will need to update your **Show Location** settings for each of your series. You can does this navigating to each series, click the **Edit** button in the top-right corner
 
-<p align="center"><img src="https://i.imgur.com/jAP0j1H.png"></p>
+![](https://i.imgur.com/jAP0j1H.png)
 
 * Then on the Main Tab you will see **Show Location** to update the series location of the local directory, or remote mount directory, on your upgraded slot. 
 
-<p align="center"><img src="https://i.imgur.com/tnJR4DP.png"></p>
+![](https://i.imgur.com/tnJR4DP.png)
 
 * Your **Post-Processing** directory will also need to be updated to the location of the local directory, or remote mount directory, on your upgraded slot
 * You can set this by click the "Cog" icon for **Settings** and then click **Post-Processing**
 
-<p align="center"><img src="https://i.imgur.com/7aQ52cK.png"></p>
+![](https://i.imgur.com/7aQ52cK.png)
 
 * From here you will see the **Post-Processing Dir** path you will need to update
 
-<p align="center"><img src="https://i.imgur.com/Q5vh7r1.png"></p>
+![](https://i.imgur.com/Q5vh7r1.png)
 
 ***
 
@@ -984,7 +986,9 @@ rm -rf ~/.config/plex.fresh
 * You will need to update each of your Plex library paths to reflect the local storage directories, or remote mount directories, on your upgraded slot.
   * Plex has an article located [here](https://support.plex.tv/articles/201154537-move-media-content-to-a-new-location/) on how to update your library paths.
 
-<c><p class="callout info">If you are experiencing any issues with your Plex.tv account not connecting to your slot's Plex Media Server "Securely" then you may need to reclaim your Plex application with the green actions button in your UCP.</p></c>
+::: info
+If you are experiencing any issues with your Plex.tv account not connecting to your slot's Plex Media Server "Securely" then you may need to reclaim your Plex application with the green actions button in your UCP.
+:::
 
 ***
 
@@ -1035,7 +1039,7 @@ rm -rf ~/.apps/pyload.fresh
 
 * You will need to update your Download Folder in your pyLoad Config settings page located in the General tab. 
 
-<p align="center"><img src="https://i.imgur.com/aPq7Gsd.png"></p>
+![](https://i.imgur.com/aPq7Gsd.png)
 
 * The pyLoad default download location is `~/Downloads`
 * To get the full path of you upgraded slot's `~/Downloads` directory, use the SSH command 
@@ -1093,11 +1097,11 @@ rm -rf ~/.apps/radarr.fresh
 
 * You will need to update your **Root Folder** settings for your series. You can does this in bulk by navigating to **Movies >> Movie Editor**
 
-<p align="center"><img src="https://i.imgur.com/Bt8ItHh.png"></p>
+![](https://i.imgur.com/Bt8ItHh.png)
 
 * From here you select items in bulk to then select the "Root Folder" drop-down menu.
 
-<p align="center"><img src="https://i.imgur.com/ysrbymX.png"></p>
+![](https://i.imgur.com/ysrbymX.png)
 
 * You will need to click **Add a Different Path** to show your upgraded slot's directory options to select the correct local directory, or remote mount directory, on your upgraded slot.
   * After selecting the new **Root Folder** path that pertains to you upgraded slot directory of the media, click the blue **Save**
@@ -1201,19 +1205,19 @@ rm -rf ~/.apps/sonarr.fresh
 
 * You will need to update your **Root Folder** settings for your series. You can does this in bulk by navigating to **Series >> Mass Editor**
 
-<p align="center"><img src="https://i.imgur.com/PdfcKEq.png"></p>
+![](https://i.imgur.com/PdfcKEq.png)
 
 * From here you can select items in bulk to then select the "Root Folder" drop-down menu. 
 
-<p align="center"><img src="https://i.imgur.com/UDjcnp3.png"></p>
+![](https://i.imgur.com/UDjcnp3.png)
 
 * You will need to click "Add New Path" to show your upgraded slot's directory options.
 
-<p align="center"><img src="https://i.imgur.com/EKys5gN.png"></p>
+![](https://i.imgur.com/EKys5gN.png)
 
 * After selecting the new "Root Folder" path that pertains to your upgraded slot directory of the media, click the "No I'll Move the Files Myself" option to update the path's of your selected media. 
 
-<p align="center"><img src="https://i.imgur.com/wQMJMUP.png"></p>
+![](https://i.imgur.com/wQMJMUP.png)
 
 * You will need to update the URL of your USB hosted download clients such as SABnzbd/NZBget/rTorrent/Deluge/Transmission.
   * If you use the Jackett application on your USB slot for your indexers in Sonarr, you will need to update your Jackett indexers URLs to reflect that of your upgraded slot's Jackett. 

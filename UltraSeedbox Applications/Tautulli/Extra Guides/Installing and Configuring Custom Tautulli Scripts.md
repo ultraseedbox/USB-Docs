@@ -5,7 +5,9 @@ In this guide, we'll be installing 2 scripts, `killstream.py` and `limiterr.py` 
 * `killstream.py` to disallow transcoding of 4k sources
 * `limiterr.py` to limit the amount of plays of a show during night time.
 
-<c><p class="callout info">Take note that the scripts in this guide requires Plex Pass and will only work on Plex Pass users.</p></c>
+::: info
+Take note that the scripts in this guide requires Plex Pass and will only work on Plex Pass users.
+:::
 
 ## Prerequisites
 
@@ -41,12 +43,12 @@ chmod a+x kill_stream.py
 
 * Open up Tautulli and go to Settings
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590155133634.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590155133634.png)
 
 * Then, on Notification Agents click **Add a new notification agent**. Scroll down and select **Script**.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590322948287.png"></p>
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323078825.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590322948287.png)
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323078825.png)
 
 * Then under Script Settings, enter the following information
 
@@ -58,7 +60,7 @@ Script file: ./kill_stream.py
 Description: [Add anything here.]
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323393737.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323393737.png)
 
 ```
 Triggers
@@ -67,7 +69,7 @@ Playback Start
 Transcode Decision Change
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323476172.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323476172.png)
 
 ```
 Conditions
@@ -78,7 +80,7 @@ Condition {2}: Library Name - contains - 4K
 Append 4k Library Namea with 4k movies/TV Shows in Plex for the second condition to work.
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323614866.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323614866.png)
 
 ```
 Arguments
@@ -88,7 +90,7 @@ Playback Start:
 --jbop stream --username {username} --sessionId {session_id} --killMessage 'Please do not transcode 4k. Thanks!'
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323763313.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323763313.png)
 
 ```
 Arguments
@@ -98,7 +100,7 @@ Transcode Decision Change:
 --jbop stream --username {username} --sessionId {session_id} --killMessage 'Please do not transcode 4k. Thanks!'
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323861186.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323861186.png)
 
 * Once that's all done, click **Save**
 
@@ -108,7 +110,9 @@ Transcode Decision Change:
 
 ## limiterr.py
 
-<c><p class="callout info">This script is dependent on the timezone of Plex instances. Our slots are hosted in The Netherlands, so its timezone is CET/CEST. Adjust the times as necessary. You may use [World Time Buddy](https://www.worldtimebuddy.com/) to check your local timezone in relation to the seedbox's timezone.</p></c>
+::: info
+This script is dependent on the timezone of Plex instances. Our slots are hosted in The Netherlands, so its timezone is CET/CEST. Adjust the times as necessary. You may use [World Time Buddy](https://www.worldtimebuddy.com/) to check your local timezone in relation to the seedbox's timezone.
+:::
 
 ### Downloading The Script
 
@@ -129,12 +133,12 @@ chmod a+x limiterr.py
 
 * Open up Tautulli and go to Settings
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590155133634.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590155133634.png)
 
 * Then, on Notification Agents click **Add a new notification agent**. Scroll down and select **Script**.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590322948287.png"></p>
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323078825.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590322948287.png)
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590323078825.png)
 
 * Then under Script Settings, enter the following information
 
@@ -146,7 +150,7 @@ Script file: ./limiterr.py
 Description: [Add anything here.]
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590324580891.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590324580891.png)
 
 ```
 Triggers
@@ -154,7 +158,7 @@ Triggers
 Playback Start
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590324679523.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590324679523.png)
 
 ```
 Conditions
@@ -164,7 +168,7 @@ Condition {1}: Current Hour - is - 22 or 23 or 0 or 1
 (Value is dependent in relation to your timezone and the seedbox's timezone.)
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590324783577.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590324783577.png)
 
 ```
 Arguments
@@ -174,7 +178,7 @@ Playback Start:
 --jbop limit --username {username} --sessionId {session_id} --grandparent_rating_key {grandparent_rating_key} --limit plays=3 --delay 60 --killMessage "You sleep bro?"
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590324872494.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1590324872494.png)
 
 * Once that's all done, click **Save**
 

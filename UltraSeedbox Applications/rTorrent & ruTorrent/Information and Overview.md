@@ -7,6 +7,6 @@ For more information on rTorrent and ruTorrent, refer to the following links:
 * https://github.com/rakshasa/rtorrent
 * https://github.com/Novik/ruTorrent
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583246602380.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583246602380.png)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583246730258.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583246730258.png)

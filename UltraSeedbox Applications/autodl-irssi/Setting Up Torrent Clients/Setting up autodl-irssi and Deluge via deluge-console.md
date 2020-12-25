@@ -27,7 +27,7 @@ kbguides@lw902:~$
       * Details are in Deluge's Remote Access details in UCP
     * Press **OK** and confirm that your configuration files are loaded by checking the output of autodl-irssi window in ruTorrent
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_9-21-3%5B1%5D.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_9-21-3%5B1%5D.png)
 
 * Go back to your SSH window. Decide where you want to save the script. Here, it is saved to a folder named `scripts` to make easy to organize. Create a folder named scripts with `mkdir scripts`
 
@@ -67,11 +67,11 @@ kbguides@lw902:~/scripts$
 
 * Open up deluge-reannounce.sh using your preferred text editor. In this tutorial, we'll be using nano. So do `nano deluge-reannounce.sh`
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-02/scaled-1680-/image-1582618070101.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-02/scaled-1680-/image-1582618070101.png)
 
 * Then, replace the following with the information from Deluge's Remote Access Details in UCP.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-5-15_5-5-37%5B1%5D.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-5-15_5-5-37%5B1%5D.png)
 
 * Find this exact line in the config and change the values accordingly
 
@@ -114,8 +114,8 @@ kbguides@lw902:~/scripts$
 * Login to Deluge's WebUI via UCP or Deluge's Thin Client
 * Click **Preferences** → **Plugins** → **Check Execute Plugin**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-45-36%5B1%5D.png"></p>
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-43-42%5B1%5D.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-45-36%5B1%5D.png)
+![](https://docs.usbx.me/uploads/images/gallery/2019-11/image2019-6-3_8-43-42%5B1%5D.png)
 
 * Click the **Execute Category** and Press **Add**
 * Input the following
@@ -124,4 +124,4 @@ kbguides@lw902:~/scripts$
 * After that, click **add**. Then Press **OK**.
 * Close Deluge then restart your deluge instance via UCP or SSH (`app-deluge restart`)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589891033979.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589891033979.png)

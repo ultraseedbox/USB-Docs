@@ -14,7 +14,9 @@ We'll be giving you an overview of the following:
 
 This varies wildly from your tracker.
 
-<p class="callout warning">It is vital to check with your tracker first before setting autodl-irssi. Incorrectly setting up autodl-irssi would result to undesirable consequences such as downloading unwanted releases, Hit and Run warnings and revoking certain rights on the tracker.</p>
+::: warning
+It is vital to check with your tracker first before setting autodl-irssi. Incorrectly setting up autodl-irssi would result to undesirable consequences such as downloading unwanted releases, Hit and Run warnings and revoking certain rights on the tracker.
+:::
 
 ***
 
@@ -24,7 +26,7 @@ This varies wildly from your tracker.
 * autodl will install 2 things. The first is the **autodl-irssi Tab** which is found on the bottom of the browser window.
   * This allows you to see real-time logging of the irssi daemon.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587308288920.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587308288920.png)
 
 * The second component is the autodl-irssi configuration interface. This makes it easy for you to set your autodl-irssi.
 * Click on the autodl-irssi button.
@@ -35,7 +37,7 @@ This varies wildly from your tracker.
   * Preferences
   * Help
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587307763428.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587307763428.png)
 
 We recommend setting this up as follows
 
@@ -46,7 +48,7 @@ We recommend setting this up as follows
 * Select the tracker you wish to add. Follow the instructions that are found in each tracker.
 * We recommend setting the delay to 0 unless specified by your tracker.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587308056109.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587308056109.png)
 
 ## IRC Servers
 
@@ -54,12 +56,14 @@ We recommend setting this up as follows
 * Here, you can put the IRC server information of your tracker. Refer to your tracker for details
 * Shown below is an example IRC server settings
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587308435625.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587308435625.png)
 
-<c><p class="callout info">Some IRC servers require you to register first before logging into their channels and most require you to own only 1 IRC account. If you wish to chat to their IRC channels while your autodl-irssi bot is in their announce channels, you may group your nickname.<br><br>Shown here is an example command assuming you registered your nickname (we'll use usbnick as your "main nick")<br><br>
-`/nick usbdocs|autodl`<br>
-`/msg NickServ group usbdocs irc_nickserv_password`<br>
-`/nick usbdocs`</p></c>
+::: info
+Some IRC servers require you to register first before logging into their channels and most require you to own only 1 IRC account. If you wish to chat to their IRC channels while your autodl-irssi bot is in their announce channels, you may group your nickname.Shown here is an example command assuming you registered your nickname (we'll use usbnick as your "main nick")
+`/nick usbdocs|autodl`
+`/msg NickServ group usbdocs irc_nickserv_password`
+`/nick usbdocs`
+:::
 
 ## Filters
 
@@ -72,7 +76,7 @@ We recommend setting this up as follows
   * Add a delay (specified by tracker)
   * Set the number of releases autodl grabs in Max downloads
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587308952904.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587308952904.png)
 
 ### Filtering Options
 
@@ -100,20 +104,20 @@ Here are the settings that are relevant to you.
   * Download duplicate releases if you prefer downloading the same release over multiple trackers
   * Use regex for match/except-releases if you prefer using regex to filter out releases that you want
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587306865292.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587306865292.png)
 
 ## Action
 
 * This is where you can set what action autodl-irssi should do after it matches your release.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587307124395.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587307124395.png)
 
 ## Advanced
 
 * Here, you can set debugging options as well such as Output Level and Advanced Output Sites
 * You may also change your download user agent here.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587307209878.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587307209878.png)
 
 # Updating autodl-irssi
 # Backup and Restore

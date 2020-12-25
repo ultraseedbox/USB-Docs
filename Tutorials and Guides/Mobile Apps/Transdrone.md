@@ -14,7 +14,7 @@ You can download Trandrone from there links:
 
 **Server Type:** Here is where you choose which client you wish to interface with. For this section, we will be using Deluge 1.2+
 
-<p align="center"><img src="https://i.imgur.com/Jmi8rnA.jpg"></p>
+![](https://i.imgur.com/Jmi8rnA.jpg)
 
 **IP or hostname:** Here, you need to add your Ultraseedbox URL, which can be found in the first half of your web UI URL  
 
@@ -24,7 +24,7 @@ The format looks like this `username.lw000.usbx.me`
 
 **Password:** Deluge password which can be found in the application tab of your control panel under show info for deluge under username (you may need to click the eyeball icon to reveal it)
 
-<p align="center"><img src="https://i.imgur.com/wdfZTOu.jpg"></p>
+![](https://i.imgur.com/wdfZTOu.jpg)
 
 **Advance Settings:** Advanced Settings only contains a few settings  you need to address:
 
@@ -33,13 +33,13 @@ The format looks like this `username.lw000.usbx.me`
 * **Use SSL:** Checked
 * **Accept all SSL certificates:** Checked
 
-<p align="center"><img src="https://i.imgur.com/yCSQW85.jpg"></p>
+![](https://i.imgur.com/yCSQW85.jpg)
 
-<p align="center"><img src="https://i.imgur.com/UUmIRgU.jpg"></p>
+![](https://i.imgur.com/UUmIRgU.jpg)
 
 **Optional Settings:** Most of these options are non-applicable; however, you may want to check notifications when a new torrent is added, and torrent finished notifications depending on your preference 
 
-<p align="center"><img src="https://i.imgur.com/pdeoC2H.jpg"></p>
+![](https://i.imgur.com/pdeoC2H.jpg)
 
 ### ruTorrent
 
@@ -49,7 +49,7 @@ Upon opening Transdrone, you will need to click the three dots on the top right-
 
 **Server Type:** Here is where you choose which client you wish to interface with. For this section, we will be using rtorrent
 
-<p align="center"><img src="https://i.imgur.com/Jmi8rnA.jpg"></p>
+![](https://i.imgur.com/Jmi8rnA.jpg)
 
 **IP or hostname:** Here, you need to add your hostname, which can be found in the Ultraseedbox Control panel under rutorrent and will include your username like below it may consist of `https://` this must be removed when adding to transdrone.
 
@@ -59,7 +59,7 @@ Upon opening Transdrone, you will need to click the three dots on the top right-
 
 **Password:** Rutorrent password which can be found in the application tab of your control panel under show info for Rutorrent under username (you may need to click the eyeball icon to reveal it)
 
-<p align="center"><img src="https://i.imgur.com/MTFJjBn.jpg"></p>
+![](https://i.imgur.com/MTFJjBn.jpg)
 
 **Advance Settings:** Advance Settings contains four settings you need to address 
 
@@ -68,13 +68,13 @@ Upon opening Transdrone, you will need to click the three dots on the top right-
 * **Use SSL:** Ticked
 * **Accept all SSL certificates:** Ticked
 
-<p align="center"><img src="https://i.imgur.com/FLI02e4.jpg"></p>
+![](https://i.imgur.com/FLI02e4.jpg)
 
-<p align="center"><img src="https://i.imgur.com/wzNjURl.jpg"></p>
+![](https://i.imgur.com/wzNjURl.jpg)
 
 **Optional Settings:** Most of these options are non-applicable; however, you may want to check notifications when a new torrent is added, and torrent finished notifications depending on your preference 
 
-<p align="center"><img src="https://i.imgur.com/pdeoC2H.jpg"></p>
+![](https://i.imgur.com/pdeoC2H.jpg)
 
 ### Transmission
 
@@ -84,7 +84,7 @@ Upon opening Transdrone, you will need to click the three dots on the top right-
 
 **Server Type:** Here is where you choose which client you wish to interface with. For this section, we will be using Transmission.
 
-<p align="center"><img src="https://i.imgur.com/Jmi8rnA.jpg"></p>
+![](https://i.imgur.com/Jmi8rnA.jpg)
 
 **IP or hostname:** Here, you need to add your hostname, which can be found in the Ultraseedbox Control panel under Transmission and will include your username like below it may consist of `https://` this must be removed when adding to Transdrone.
 
@@ -94,7 +94,7 @@ Upon opening Transdrone, you will need to click the three dots on the top right-
 
 **Password:** Transmission password which can be found in the application tab of your control panel under show info for Transmission under username (you may need to click the eyeball icon to reveal it)
 
-<p align="center"><img src="https://i.imgur.com/7hgdYWE.jpg"></p>
+![](https://i.imgur.com/7hgdYWE.jpg)
 
 **Advanced Settings:** Advanced Settings only contains a few settings you need to address:
 
@@ -103,10 +103,10 @@ Upon opening Transdrone, you will need to click the three dots on the top right-
 * **Use SSL:** Checked
 * **Accept all SSL certificates:** Checked
 
-<p align="center"><img src="https://i.imgur.com/PyaHW3K.jpg"></p>
+![](https://i.imgur.com/PyaHW3K.jpg)
 
-<p align="center"><img src="https://i.imgur.com/yBqamRb.jpg"></p>
+![](https://i.imgur.com/yBqamRb.jpg)
 
 **Optional Settings:** Most of these options are non-applicable; however, you may want to check notifications when a new torrent is added, and torrent finished notifications depending on your preference 
 
-<p align="center"><img src="https://i.imgur.com/pdeoC2H.jpg"></p>
+![](https://i.imgur.com/pdeoC2H.jpg)

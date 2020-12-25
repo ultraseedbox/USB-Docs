@@ -10,7 +10,7 @@ rTorrent Label: {Blank}
 rTorrent Directory: {blank}
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589363204741.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589363204741.png)
 
 ### Deluge
 #### Deluge Daemon
@@ -29,7 +29,7 @@ Deluge Label: {Blank}
 Download directory: {Blank}
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589376514921.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589376514921.png)
 
 #### Deluge WebUI
 
@@ -47,7 +47,7 @@ Deluge Label: {Blank}
 Download directory: {Blank}
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589376402870.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589376402870.png)
 
 ### Transmission
 
@@ -61,7 +61,7 @@ Download directory: {Blank}
 Transmission URL Base: {Blank}
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589376210383.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589376210383.png)
 
 ## Usenet Client
 ### NZBGet SSL
@@ -76,7 +76,7 @@ Category: {Blank}
 Priority: 0
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589376011914.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589376011914.png)
 
 ### SABnzbd
 
@@ -90,4 +90,4 @@ SABnzbd API Key: Generated SABnzbd API Key
 SABnzbd URL Base: /sabnzbd
 ```
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589376149350.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589376149350.png)

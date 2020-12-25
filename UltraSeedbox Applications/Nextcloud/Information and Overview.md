@@ -2,4 +2,4 @@ Nextcloud is a free and open-source suite of client-server software for creating
 
 For more information, visit [Nextcloud's home page.](https://nextcloud.com/)
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-04/serverwebui[1].png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/serverwebui[1].png)

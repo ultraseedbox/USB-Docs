@@ -13,4 +13,4 @@ Radarr is an automatic movie downloader and organizer forked from Sonarr. This a
 
 For more information of this app, you may visit [this link.](https://radarr.video/) 
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568366984299.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568366984299.png)

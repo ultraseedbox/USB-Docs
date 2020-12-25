@@ -4,26 +4,26 @@ This guide will show you how to set up an automatic PayPal subscription. This is
 
 * Login to your Ultraseedbox client area and click on **View All**
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588619314505.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588619314505.png)
 
 * Then on the next screen click on the **Unpaid** button
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588619356556.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588619356556.png)
 
 * Then click on the **PayPal Subscribe** button
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588619387175.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588619387175.png)
 
 * On the next screen you will get `Subscribe` and `PayPal Checkout` buttons. You can either choose the following:
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588619415512.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588619415512.png)
 
   * If you clicked **PayPal Checkout**, you will be greeted with the screen as shown below.
   * Enter your credentials there and make the payment as usual.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588620462570.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588620462570.png)
 
   * If **Subscribe** was clicked in the earlier step, you will be greeted with the screen shown below.
   * Enter your card and other details and proceed to make payment as usual, your subscription has been added.
 
-<p align="center"><img src="https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588619457500.png"></p>
+![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588619457500.png)
