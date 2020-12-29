@@ -1,5 +1,3 @@
-## Airsonic
-
 Airsonic is a free, full-featured, stable, Java-based self-hosted media server that is forked from Subsonic and Libresonic that is open source, and community-driven. Some features of this app are:
 
 * Designed to handle very large music collections
@@ -18,8 +16,6 @@ This assumes that your music library is in `~/media/Music`. We'll be doing the f
 1. Setting an admin password
 2. Adding music folders
 3. Add a limited user
-
-***
 
 ### Setting an administrator password
 
@@ -47,8 +43,6 @@ Password: admin
 ![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1584105705313.png)
 
 * Once that’s done, click **Save.**
-
-***
 
 ### Setting Media Folders
 
@@ -79,7 +73,7 @@ Password: admin
 
 * Now, Click **Scan Media folders now** to initialize a full scan of the folder. This will take a while depending on the size of the library.
 
-#### Media Folder Structure Recommendations
+### Media Folder Structure Recommendations
 
 * We recommend this folder structure for Airsonic to properly detect and organize the library.
 
