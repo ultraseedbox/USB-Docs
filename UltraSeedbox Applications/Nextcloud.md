@@ -1,4 +1,76 @@
-In this guide, we'll be configuring Nextcloud to share files. We'll be doing the following steps
+**Nextcloud** is a free and open-source suite of client-server software for creating and using file hosting services. It was a fork of ownCloud and it has been actively developed by some of the original developers of ownCloud. In contrast to proprietary cloud providers like Dropbox, Office 365 or Google Drive, Nextcloud enables users to deploy their own file hosting server and have full control of their data.
+
+For more information, visit [Nextcloud's home page.](https://nextcloud.com/)
+
+![](https://docs.usbx.me/uploads/images/gallery/2020-04/serverwebui[1].png)
+
+***
+
+In this section, we'll be installing and setting up Nextcloud for the first time. We'll be doing the following:
+
+1.  Installing MariaDB and Nextcloud
+2.  Creating an admin account
+3.  Connecting MariaDB to Nextcloud
+
+### Prerequisites
+
+* Before installing nextcloud, you need to Install MariaDB first.
+* Go to the Installers tab on the UCP and search for `mariadb`
+
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583220886423.png)
+
+* Click install and type your preferred password
+    * Make sure this password is unique from your other passwords
+
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583221042417.png)
+
+* Once it's installed, go ahead and install Nextcloud.
+
+### Creating Your Admin Account
+
+* Once you installed Nextcloud and click Connect, you'll be taken to Nextcloud's initial setup wizard.
+* First, create your own admin account by putting your preferred credentials
+  * Make sure this password is unique from your other passwords
+
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583223094507.png)
+
+### Setting Up Storage and Database
+
+* Click the storage and database below the field.
+
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583223242574.png)
+
+* Then, under configure the database, select **MySQL/MariaDB**
+* Then enter the details under Database Info on Nextcloud on your UCP.
+
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583223455697.png)
+
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583223565135.png)
+
+* Once that's done click Finish setup. This may take several minutes.
+    * If you get Error 504: Bad Gateway error, simply refresh the page
+* Once that's done, you'll be taken to your Nextcloud's Login page. Enter your admin account credentials to proceed.
+
+![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583223789698.png)
+
+***
+
+## Troubleshooting Information
+
+**I am unable to upload files more than the size of 10MB on Nextcloud. How to resolve it?**
+
+This is a default limitation of your nginx instance, as it is not needed by most of our clients. Run the following command to your slot’s shell to be able to upload more than 10MB.
+
+```sh
+sed -i 's|client_max_body_size .*;|client_max_body_size 0;|g' "$HOME"/.apps/nginx/nginx.conf && app-nginx restart
+```
+
+***
+
+## Extra Guides
+### Sharing and Syncing Files
+
+In this section, we'll be configuring Nextcloud to share files. We'll be doing the following steps
 
 1.  Enabling External Storage App
 2.  Accessing SSH to get your seedbox's home path
@@ -8,9 +80,7 @@ In this guide, we'll be configuring Nextcloud to share files. We'll be doing the
 
 We'll also guide you on how to sync your files to your device using Nextcloud's Sync Client.
 
-***
-
-## Enabling External Storage App
+#### Enabling External Storage App
 
 * Login to your Nextcloud interface. Click the gear icon (1) and click **Apps** (2).
 
@@ -24,9 +94,7 @@ We'll also guide you on how to sync your files to your device using Nextcloud's 
 
 ![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583224224872.png)
 
-***
-
-## Getting Your Seedbox's Home Path
+#### Getting Your Seedbox's Home Path
 
 * Next, we'll be getting your seedbox's absolute path/home folder location. To do that, you need to login to your seedbox's SSH.
   * For more information on how to connect to your slot's SSH, refer to [How to connect to your seedbox via SSH](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/how-to-connect-to-your-seedbox-via-ssh)
@@ -38,9 +106,7 @@ usbdocs@lw701:~$ echo $HOME
 usbdocs@lw701:~$ 
 ```
 
-***
-
-## Setting Up Seedbox as External Storage
+#### Setting Up Seedbox as External Storage
 
 * Go back to your Nextcloud, click the gear icon and click **Settings**
 
@@ -67,9 +133,7 @@ usbdocs@lw701:~$
 
 ![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583227558487.png)
 
-***
-
-## Navigation and Sharing
+#### Navigation and Sharing
 
 * Go back to your Nextcloud's Home page by clicking the Nextcloud Icon on the top left corner. You'll see a new entry here to which is your set external storage.
 
@@ -77,19 +141,19 @@ usbdocs@lw701:~$
 
 * You can do the following actions
 
-### Upload a file
+**Upload a file**
 
 * Click the + on the navigation bar and select the Upload file button.
 
 ![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583228299252.png)
 
-### Create a new folder
+**Create a new folder**
 
 * Click the + on the navigation bar and select new folder.
 
 ![](https://docs.usbx.me/uploads/images/gallery/2020-03/scaled-1680-/image-1583228336295.png)
 
-### Share a folder or file
+**Share a folder or file**
 
 * Click the sharing icon next to the item you wish to share
 
@@ -110,7 +174,7 @@ usbdocs@lw701:~$
 
 * You can also share items with other users on your Nextcloud instance, or even other Nextcloud instances with their federated cloud ID.
 
-## Syncing Files using Nextcloud Client
+#### Syncing Files using Nextcloud Client
 
 * Download and install Nextcloud Desktop Client [here.](https://nextcloud.com/install/#install-clients). In this example, we'll be using the Windows Client
 * Once launched, you'll be greeted by this window. Click **Log in** to proceed

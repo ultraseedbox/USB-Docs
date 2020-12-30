@@ -1,3 +1,0 @@
-Emby is a proprietary media server written in C# that organize, play, and stream audio and video to a variety of devices. Prior to Emby 3.5.3 release (and subsequently Emby 3.6 which has since been closed-source), Emby's source code was initially an open-source project with subsequent releases being released to their website are marked as proprietary. [Jellyfin](https://docs.usbx.me/books/jellyfin) is the fork of Emby prior of re-license. For more information about this app, please visit [this link.](https://emby.media/about.html)
-
-![](https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568990319987.png)

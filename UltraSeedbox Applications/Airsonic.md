@@ -1,4 +1,4 @@
-Airsonic is a free, full-featured, stable, Java-based self-hosted media server that is forked from Subsonic and Libresonic that is open source, and community-driven. Some features of this app are:
+**Airsonic** is a free, full-featured, stable, Java-based self-hosted media server that is forked from Subsonic and Libresonic that is open source, and community-driven. Some features of this app are:
 
 * Designed to handle very large music collections
 * It works for any audio or video format that can stream over HTTP
@@ -9,6 +9,7 @@ Airsonic is a free, full-featured, stable, Java-based self-hosted media server t
 
 For more information about this app, you may visit [this link](https://airsonic.github.io/).
 
+***
 ## Initial Setup
 
 This assumes that your music library is in `~/media/Music`. We'll be doing the following steps:

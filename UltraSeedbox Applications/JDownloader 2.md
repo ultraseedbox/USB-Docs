@@ -1,12 +1,25 @@
-In this guide, we'll be setting up JDownloader2 for the first time. We'll be doing the following:
+**JDownloader 2** is a download manager, written in Java, which allows automatic download of groups of files from one-click hosting sites. JDownloader has the following features
+
+* Use of premium accounts
+* Parallel downloads
+* Automatic CAPTCHA solving using its own OCR module
+* Automatic extraction of archived files, decryption of RSDF, CCF and DLC Container files
+* Integrated package manager
+* Themes
+* Multilingual support
+
+For more information about this app, refer to this link: [https://jdownloader.org/](https://jdownloader.org/)
+
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1592661355453.png)
+
+## Initial Setup
+
+In this section, we'll be setting up JDownloader2 for the first time. We'll be doing the following:
 
 1. Accessing JDownloader Interface
 2. Changing the Generated Password
 3. Creating and logging into your MyJdownloader2 Account (Optional)
 
-* * *
-
-## Initial Setup
 ### Accessing the JDownloader Interface
 
 * Install Jdownloader2 from our UCP. Once installed, go under JDownloader details to get your randomly-generated password.
@@ -47,7 +60,6 @@ usbdocs@lw873:~$
 ::: info
 If you chose your own password, this will not show up under your UCP.
 :::
-
 
 ### Registration to MyJDownloader and Accessing MyJdownloader Interface (Optional)
 

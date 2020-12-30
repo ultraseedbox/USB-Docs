@@ -1,8 +1,10 @@
-CouchPotato is an automatic NZB and torrent downloader/media manager that is written in Python. You can set what moves you want to watch. Once a movie is found, it will send it to your set Usenet downloader or torrent downloader and will organize it for you.
+**CouchPotato** is an automatic NZB and torrent downloader/media manager that is written in Python. You can set what moves you want to watch. Once a movie is found, it will send it to your set Usenet downloader or torrent downloader and will organize it for you.
 
 For more information about this app, you can visit [this link.](https://couchpota.to/)
 
 ![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589267749576.png)
+
+***
 
 ## Initial Setup
 
@@ -23,9 +25,11 @@ A setup wizard will assist you in setting up your CouchPotato.
 
 * For the `What download apps are you using?` section, select the clients that you want to use.
 
-## Download Client Connection Details
-### Torrent Clients
-#### Deluge
+***
+
+### Download Client Connection Details
+#### Torrent Clients
+##### Deluge
 
 ```
 Host: {servername}.usbx.me:{Deluge Daemon Port}
@@ -35,7 +39,7 @@ Directory: {Leave Blank}
 Label: {Optional}
 ```
 
-#### rTorrent
+##### rTorrent
 
 ```
 Host: https://{username}.{servername}.usbx.me/RPC2
@@ -45,7 +49,7 @@ Label: {Optional}
 Directory: {Leave Blank}
 ```
 
-#### Transmission
+##### Transmission
 
 ```
 Host: https://{username}.{servername}.usbx.me/transmission/rpc:443
@@ -54,8 +58,8 @@ Password: As configured in UCP under Transmission
 Directory: {Leave Blank}
 ```
 
-### Usenet Clients
-#### SABnzbd
+#### Usenet Clients
+##### SABnzbd
 
 ```
 Host: https://{username}.{servername}.usbx.me/sabnzbd
@@ -63,7 +67,7 @@ API Key: Generated SABnzbd API Key
 Category: movies
 ```
 
-#### NZBget
+##### NZBget
 
 ```
 Host: https://{username}.{servername}.usbx.me/nzbget

@@ -1,11 +1,16 @@
-In this guide, we'll be setting up Jackett for the first time. We'll go through the following steps:
+**Jackett** is a proxy server for torrent trackers and your apps. It acts as the middleman, translating queries from your apps (e.g. Sonarr, CouchPotato, etc.) to be sent and received by your trackers. It allows for getting recent uploads via RSS and performing searches from within your apps, even those without RSS feeds or is not supported by your apps.
+
+For more information on this app, refer to the app's [GitHub page.](https://github.com/Jackett/Jackett)
+
+![](https://raw.githubusercontent.com/DyonR/docker-templates/master/Screenshots/jackettvpn/jackettvpn-mainpage.png)
+
+## Initial Setup
+
+In this section, we'll be setting up Jackett for the first time. We'll go through the following steps:
 
 1. Logging into Jackett Interface
 2. Adding Indexers to Jackett
 
-***
-
-## Initial Setup
 ### Logging in
 
 * Upon entering the interface, you'll be greeted with the login window. Type in your set password to get into the interface.
@@ -54,13 +59,3 @@ In this guide, we'll be setting up Jackett for the first time. We'll go through 
 * Once that's done, you can now use Jackett to connect to your favorite applications.
 
 ![](https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571733144187.png)
-
-***
-
-## Jackett Configuration
-
-Most of the settings here are preconfigured and you can leave it as it is but there are some that could be useful for you.
-
-![](https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571836183523.png)
-
-* View logs - This will give you access to Jackett logs for debugging

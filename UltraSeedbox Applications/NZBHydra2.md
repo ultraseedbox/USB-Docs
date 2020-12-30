@@ -1,12 +1,24 @@
-This guide will show you how to setup NZBHydra2 for the first time. You'll be doing the following steps
+**NZBHydra2** is a meta search for newznab indexers and torznab trackers. It consolidates all of your Usenet indexers into 1 intuitive page. The following are the apps' features: 
+
+* Ability to search all of your indexers in one page
+* Can send downloads from search results into your Usenet downloaders
+* Use it as an indexer source for tools like Sonarr, Radarr, Lidarr or CouchPotato
+* Multi-user support
+
+For more information about this app, you can visit their [GitHub repo.](https://github.com/theotherp/nzbhydra2)
+
+![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591109890576.png)
+
+***
+
+## Initial Setup
+
+This section will show you how to setup NZBHydra2 for the first time. You'll be doing the following steps
 
 * Setting Up Username and Password
 * Add Usenet Indexers
 * Getting NZBHydra2 API for use with other programs
 
-***
-
-## Initial Setup
 ### Setting Up your Username and Password
 
 * Upon connecting, you'll be greeted by this window. Click OK to close the window. 
@@ -16,7 +28,9 @@ This guide will show you how to setup NZBHydra2 for the first time. You'll be do
 * Go to **Config -> Authorization**
 * Choose the auth type that you want. In this guide, we'll be using **Login form**
 * Under **Restrictions**, enable everything.
+
 ![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591775421009.png)
+
 * Scroll down and click **Add user**. Then add the username and password that you wish. Since this is your first user, it's best to leave **May see admin area** to on.
 
 ![](https://docs.usbx.me/uploads/images/gallery/2020-06/image-1591625351138.png)
@@ -68,16 +82,7 @@ This guide will show you how to setup NZBHydra2 for the first time. You'll be do
 
 * Select between NZBGet and SABnzbd and enter the following information
 
-#### NZBGet Non-SSL
-
-```
-Name: NZBGet
-URL: http://{servername}.usbx.me:{nzbget port}
-Username: {nzbget username}
-Password: {nzbget password}
-```
-
-#### NZBGet SSL
+#### NZBGet
 
 ```
 Name: NZBGet
@@ -93,15 +98,3 @@ Name: SABnzbd
 URL: https://{username}.{servername}.usbx.me/sabnzbd
 API Key: {sabnzbd api key}
 ```
-
-## Setting Up SSL
-
-* If you wish to access your NZBHydra2 instance, go to **Config -> Main**
-* Enter `/nzbhydra2` to the URL base. Once that's done, click **Save** and restart when prompted.
-* Once restarted, your instance will ONLY be accessible to the following link
-
-`https://{username}.{servername}.usbx.me/nzbhydra2`
-
-::: warning
-Once you've done this, you will not access NZBHydra2 via the HTTP link. You may have to change the NZBHydra2 API URL to the new HTTPS link if you set your API already.
-:::

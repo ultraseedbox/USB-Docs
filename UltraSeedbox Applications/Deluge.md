@@ -1,4 +1,4 @@
-Deluge is a full-featured BitTorrent application written in Python 2. It has a variety of features, including but not limited to:
+**Deluge** is a full-featured BitTorrent application written in Python 2. It has a variety of features, including but not limited to:
 
 * Client/server model
 * DHT support
@@ -11,6 +11,8 @@ Deluge is a full-featured BitTorrent application written in Python 2. It has a v
 When the server daemon is running, users can connect to it via a console client, a GTK-based GUI, or a Web-based UI. A full list of features can be viewed [here.](https://dev.deluge-torrent.org/wiki/About)
 
 ![](https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568366621954.png)
+
+***
 
 ## Initial Setup
 
@@ -26,11 +28,15 @@ Then, the Connection Manager settings will appear. Just click the host in the bo
 We recommend your Deluge password consists of LETTERS and NUMBERS only. This is particularly useful when you're using deluge-console injection for autodl-irssi.
 :::
 
+***
+
 ## Default File Paths
 
 Default Downloads Folder: `~/Downloads`
 
 Deluge's config folder: `~/.config/deluge`
+
+***
 
 ## Troubleshooting Information
 
@@ -56,6 +62,8 @@ This usually causes the following:
 Our seedbox IPs are pooled to avoid clashing on trackers with a more extensive user database to help peers and seeders.
 
 If you need to submit Deluge’s IP to your trackers, then you should use the IP's that are binding to the torrent clients. You can obtain them by logging into Deluge and go to **Settings -> Network -> Interface**. Copy the IP from that field.
+
+***
 
 ## Extra Guides
 ### Setting Up Deluge Thin Client
@@ -237,45 +245,15 @@ https://forum.deluge-torrent.org/download/file.php?id=6306&sid=470233ee354e7045f
 
 1. Delete all torrents under the `radarr` label that has a 3.0 ratio and above
 
-<table class="align-center" style="border-collapse: collapse; width: 100%;" border="1">
-<tbody>
-<tr>
-<td style="width: 162px;">Type</td>
-<td style="width: 162px;">Name</td>
-<td style="width: 162px;">Operator</td>
-<td style="width: 162px;">Remove Rule</td>
-<td style="width: 161px;">Minimum</td>
-</tr>
-<tr>
-<td style="width: 162px;">Label</td>
-<td style="width: 162px;">radarr</td>
-<td style="width: 162px;">and</td>
-<td style="width: 162px;">Ratio</td>
-<td style="width: 161px;">3</td>
-</tr>
-</tbody>
-</table>
+| Type | Name | Operator | Remove Rule | Minimum |
+| :---: | :---: | :---: | :---: | :---: |
+| Label | radarr | and | Ratio | 3 |
 
 2. Delete all torrents under the `rarbg.to` tracker that has been seeded for at least been seeded for 1 hour (0.0416 days)
 
-<table class="align-center" style="border-collapse: collapse; width: 100%;" border="1">
-<tbody>
-<tr>
-<td style="width: 162px;">Type</td>
-<td style="width: 162px;">Name</td>
-<td style="width: 162px;">Operator</td>
-<td style="width: 162px;">Remove Rule</td>
-<td style="width: 161px;">Minimum</td>
-</tr>
-<tr>
-<td style="width: 162px;">Tracker</td>
-<td style="width: 162px;">rarbg.to</td>
-<td style="width: 162px;">and</td>
-<td style="width: 162px;">Seed Time</td>
-<td style="width: 161px;">0.0416 days</td>
-</tr>
-</tbody>
-</table>
+| Type | Name | Operator | Remove Rule | Minimum |
+| :---: | :---: | :---: | :---: | :---: |
+| Tracker | rarbg.to | and | Seed Time | 0.0416 days |
 
 ### Limit Seeding in Deluge
 

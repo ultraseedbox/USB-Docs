@@ -1,4 +1,25 @@
-In this guide, we will be going into detail on installing, configuring and using Lidarr. The following are the steps that we will do:
+**Lidarr** is a fork of Sonarr that can download and organize your music library. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available. Some of the major features of this app are:
+
+* Automatically detects new tracks from NZB and Torrent sources
+* Can scan your existing library and download any missing tracks
+* Can watch for better quality versions of tracks you already have and do an automatic upgrade
+* Automatic failed download handling
+* Manual search so you can pick any release or to see why a release was not downloaded automatically
+* Fully configurable track renaming
+* Full integration with SABnzbd and NZBGet
+* Full integration with Kodi, Plex (notification, library update, metadata)
+* Full support for specials and multi-album releases
+* Beautiful UI
+
+For more information for this, you may visit [their site](https://lidarr.audio/) or [Lidarr's GitHub repo](https://github.com/lidarr/Lidarr).
+
+![](https://docs.usbx.me/uploads/images/gallery/2019-09/scaled-1680-/image-1568640089029.png)
+
+***
+
+## Initial Setup
+
+In this section, we will be going into detail on installing, configuring and using Lidarr. The following are the steps that we will do:
 
 * Setting Up Authentication
 * Enabling automatic organization and adding a root Folder
@@ -6,9 +27,6 @@ In this guide, we will be going into detail on installing, configuring and using
 * Connecting your download clients
 * Adding your first artist
 
-***
-
-## Initial Setup
 ### Setting Up Authentication
 
 * Go to **Settings -> General**, and change the dropdown that says **Authentication** to **Forms (Login Page)**
@@ -29,9 +47,70 @@ In this guide, we will be going into detail on installing, configuring and using
 
 ![](https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1575072067589.png)
 
-* Refer to the following link below to add your preferred download client.
+#### Torrent Clients
 
-[Lidarr Download Client Connection Details](https://docs.usbx.me/books/lidarr/page/download-client-connection-details)
+##### Deluge
+
+```
+Host: {username}.{servername}.usbx.me
+Port: 443
+URL Base: deluge
+Password: As configured in UCP under Deluge
+Category: tv-sonarr
+Add Paused: NO
+Use SSL: YES
+```
+
+##### rTorrent
+
+```
+Host: {username}.{servername}.usbx.me
+Port: 443
+URL Path: RPC2
+Username: {username}
+Password: As configured in UCP under ruTorrent
+Category: tv-sonarr
+Add Stopped: NO
+Use SSL: YES
+```
+
+##### Transmission
+
+```
+Host: {username}.{servername}.usbx.me
+Port: 443
+Username: {username}
+Password: As configured in UCP under Transmission
+Category: tv-sonarr
+Add Stopped: NO
+Use SSL: YES
+```
+
+#### Usenet Clients
+##### SABnzbd
+
+```
+Host: {username}.{servername}.usbx.me
+Port: 443
+URL Path: sabnzbd
+API Key: As obtained from SABnzbd
+Username: {username}
+Password: Configured during SABnzbd setup
+Category: tv
+Use SSL: YES
+```
+
+##### Nzbget
+
+```
+Host: {username}.{servername}.usbx.me
+Port: 443
+Username: {nzbget username}
+Password: {nzbget password}
+Category: tv
+Add Paused: NO
+Use SSL: YES
+```
 
 ### Add a Root Folder
 

@@ -1,4 +1,8 @@
-autodl-irssi is a plugin for irssi. It monitors IRC announce channels, downloads torrent files based your set filters and send it to your torrent client of choice or set it to run a custom program or a script. Included in the app is an easy-to-use interface in ruTorrent to configure your autodl-irssi instance, For more information about this app, you may visit [this link.](https://autodl-community.github.io/autodl-irssi/)
+**autodl-irssi** is a plugin for irssi. It monitors IRC announce channels, downloads torrent files based your set filters and send it to your torrent client of choice or set it to run a custom program or a script. Included in the app is an easy-to-use interface in ruTorrent to configure your autodl-irssi instance.
+
+For more information about this app, you may visit [this link.](https://autodl-community.github.io/autodl-irssi/)
+
+***
 
 ## Initial Setup
 
@@ -97,6 +101,8 @@ Wildcards are symbols used to replace or represent one or more characters.
 
 A regular expression is a sequence of characters that define a search pattern.
 
+***
+
 ## Configuration Overview
 
 Here are the settings that are relevant to you.
@@ -122,10 +128,19 @@ Here are the settings that are relevant to you.
 
 ![](https://docs.usbx.me/uploads/images/gallery/2020-04/image-1587307209878.png)
 
+***
+
 ## Updating autodl-irssi
+
+***
+
 ## Backup and Restore
+
 ### Backing Up
 ### Restoring
+
+***
+
 ## Setting Up Torrent Clients
 ### Deluge
 
@@ -253,6 +268,8 @@ kbguides@lw902:~/scripts$
 * Close Deluge then restart your deluge instance via UCP or SSH (`app-deluge restart`)
 
 ![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1589891033979.png)
+
+***
 
 ## Troubleshooting Information
 
