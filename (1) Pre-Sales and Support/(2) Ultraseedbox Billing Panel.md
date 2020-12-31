@@ -1,4 +1,18 @@
-This guide will show you how to set up an automatic PayPal subscription. This is for clients who used a different payment option and wished to use PayPal to automate their seedbox payments.
+
+## Ultraseedbox Billing Panel
+### Purchasing your Ultraseedbox Slot
+#### Creating an Account
+#### Purchasing a Product
+#### Purchasing Addons
+### Billing Panel Tour
+
+***
+
+## Supported Payment Methods
+### PayPal
+#### Setting Up a PayPal Subscription
+
+This section will show you how to set up an automatic PayPal subscription. This is for clients who used a different payment option and wished to use PayPal to automate their seedbox payments.
 
 ***
 
@@ -27,3 +41,5 @@ This guide will show you how to set up an automatic PayPal subscription. This is
   * Enter your card and other details and proceed to make payment as usual, your subscription has been added.
 
 ![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588619457500.png)
+
+#### Coinbase

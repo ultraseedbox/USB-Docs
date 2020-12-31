@@ -1,4 +1,10 @@
-### Community Discord Support
+Here we list the various ways of getting support from Ultraseedbox!
+
+***
+
+## UltraSeedbox Docs
+
+## Community Discord Support
 
 We offer a community-powered support Discord server. While staff may sometimes be available here, it is not an official line of support and as a result we cannot guarantee support through the server.
 
@@ -6,7 +12,7 @@ Please keep in mind our Discord support is primarily community-driven. As such p
 
 [Our community Discord server can be found at this link.](https://discord.com/invite/YXGYS9D)
 
-### Submitting a Ticket
+## Submitting a Ticket
 
 If you have searched our Docs for information to assist with your issue and was unable to get the problem solved, feel free to reach out to us via a ticket!
 
