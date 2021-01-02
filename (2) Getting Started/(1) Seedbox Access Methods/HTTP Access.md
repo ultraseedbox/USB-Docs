@@ -1,4 +1,4 @@
-One of the ways to manage files from your seedbox into your computer is through HTTP access. This provides you a quick and secure way to download files to your computer from your seedbox by using your web browser.
+One of the ways to manage files from your seedbox into your computer is through **HTTP access**. This provides you a quick and secure way to download files to your computer from your seedbox by using your web browser.
 
 It is not meant for you to share files to your friends. For that you need to either use [Userland ProFTPD](https://docs.usbx.me/books/file-transfer-protocol-%28ftp%29/page/userland-proftpd), [Nextcloud](https://docs.usbx.me/books/nextcloud) or [Pydio](https://docs.usbx.me/books/pydio).
 
@@ -10,7 +10,10 @@ Sharing your files to the public is considered to be abuse by USB TOS and will b
 
 In this guide, we'll be setting up HTTP access and adding a folder into your HTTP Access page.
 
-## Setting Up HTTP Access
+***
+
+## Initial Setup
+### Setting Up HTTP Access
 
 * Login to your [User Control Panel](https://cp.ultraseedbox.com) and login with the credentials you set and Press **Connect**
 
@@ -52,7 +55,7 @@ In this guide, we'll be setting up HTTP access and adding a folder into your HTT
 
 * The other link is `rutorrent` which is a direct link to your ruTorrent interface.
 
-## Adding Folders to HTTP Access
+### Adding Folders to HTTP Access
 
 * To add a folder to HTTP access, just login to SSH and run the follwing command:
 

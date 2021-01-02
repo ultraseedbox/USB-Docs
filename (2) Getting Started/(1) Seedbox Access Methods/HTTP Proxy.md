@@ -6,7 +6,8 @@ This guide shows you how to use the HTTP proxy by using a browser extension to q
 
 ***
 
-## Changing your HTTP Proxy Password
+## Initial Setup
+### Changing your HTTP Proxy Password
 
 Before logging into your HTTP Proxy, you should first set your own HTTP Proxy password.
 
@@ -30,12 +31,9 @@ Before logging into your HTTP Proxy, you should first set your own HTTP Proxy pa
 
 * A popup saying Password successfully changed should appear on the lower right corner of the page, signifying that the password is set successfully.
 
-<p align="center">
-<img src="https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-7_11-25-0%5B1%5D.png)
+![](https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-7_11-25-0%5B1%5D.png)
 
-:::
-
-## Installing and Setting Up Proxy SwitchyOmega
+### Installing and Setting Up Proxy SwitchyOmega
 
 There are many software/extensions to use the HTTP proxy. Here, we'll be using Proxy SwitchyOmega. This extension allows you to switch your HTTP proxy settings on the fly.
 
@@ -65,7 +63,7 @@ Port: 8080
 
 * Once that's entered, click the green apply changes to save your proxy.
 
-## Using the HTTP Proxy
+### Using the HTTP Proxy
 
 * To use the proxy, click the Proxy SwitchyOmega icon and select your set proxy.
 
