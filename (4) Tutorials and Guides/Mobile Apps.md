@@ -1,3 +1,9 @@
+This section shows you the different apps that you can use to manage your Ultraseedbox slot.
+
+***
+
+## Transdrone
+
 Manage your torrents from your Android device with Transdrone. All popular clients are supported: µTorrent, Transmission, rTorrent, Vuze, Deluge, BitTorrent 6, qBittorrent, and many more. You can view and manage running torrents and individual files. Adding is easy via the integrated search or RSS feeds (full version required). Monitor progress using the home screen widget or background alarm service.
 
 You can download Trandrone from there links:
@@ -5,10 +11,8 @@ You can download Trandrone from there links:
 * Google Play Store: [https://play.google.com/store/apps/details?id=org.transdroid.lite&hl=en&gl=US](https://play.google.com/store/apps/details?id=org.transdroid.lite&hl=en&gl=US)
 * F-Droid: [https://f-droid.org/en/packages/org.transdroid.lite/](https://f-droid.org/en/packages/org.transdroid.lite/)
 
-***
-
-## Connecting to your Ultraseedbox server
-### Deluge
+### Connecting to your Ultraseedbox server
+#### Deluge
 
 **Name:** This is just for your reference and can be any name you wish
 
@@ -41,7 +45,7 @@ The format looks like this `username.lw000.usbx.me`
 
 ![](https://i.imgur.com/pdeoC2H.jpg)
 
-### ruTorrent
+#### ruTorrent
 
 Upon opening Transdrone, you will need to click the three dots on the top right-hand side of your screen and press settings, then add server then a pop up will appear select “add normal, custom server.”
 
@@ -76,7 +80,7 @@ Upon opening Transdrone, you will need to click the three dots on the top right-
 
 ![](https://i.imgur.com/pdeoC2H.jpg)
 
-### Transmission
+#### Transmission
 
 Upon opening Transdrone, you will need to click the three dots on the top right-hand side of your screen and press settings, then add server then a pop up will appear select “add normal, custom server.”
 

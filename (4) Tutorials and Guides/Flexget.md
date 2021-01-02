@@ -1,4 +1,4 @@
-FlexGet is a multi-purpose automation tool for content like torrents, NZBs, podcasts, comics, series, movies, etc and is able to handle different kinds of sources like RSS feeds, HTML pages and CSV files. This allows you to integrate and create powerful automation between your downloaders, organizers and your media servers.
+**FlexGet** is a multi-purpose automation tool for content like torrents, NZBs, podcasts, comics, series, movies, etc and is able to handle different kinds of sources like RSS feeds, HTML pages and CSV files. This allows you to integrate and create powerful automation between your downloaders, organizers and your media servers.
 
 This guide shows you the following:
 
@@ -9,32 +9,30 @@ This guide shows you the following:
 * Upgrading and Removing FlexGet
 
 ***
-
-## Installation of FlexGet via python's virtual environment
-### Installing Python 3 and FlexGet Into your Slot
+## Initial Setup
+### Installation of FlexGet via python's virtual environment
+#### Installing Python 3 and FlexGet Into your Slot
 
 * First, login to your seedbox's SSH
   * For more information on how to access your seedbox's SSH, visit [this guide to learn more.](https://docs.usbx.me/books/secure-shell-%28ssh%29/page/how-to-connect-to-your-seedbox-via-ssh "How to connect to your seedbox via SSH")
 * Run the following commands and follow the instructions. This will install Python 3 and FlexGet into your slot.
 
-#### Python 3
+##### Python 3
 
 ```sh
 wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/Language%20Installers/python-pip-install.sh
 bash python-pip-install.sh
 ```
 
-#### FlexGet
+##### FlexGet
 
 ```sh
 wget https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/Flexget/flexget-install.sh
 bash flexget-install.sh
 ```
 
-***
-
-## Configuring FlexGet
-### Creating config.yml
+### Configuring FlexGet
+#### Creating config.yml
 
 * Here, we will now create your first FlexGet YAML. Start by creating FlexGet's config folder by running the following command:
 
@@ -54,7 +52,7 @@ cd "$HOME"/.config/flexget
 nano config.yml
 ```
 
-### Editing config.yml
+#### Editing config.yml
 
 In this part, depending on what you want to achieve your configuration may vary but take note that:
 
@@ -63,7 +61,7 @@ In this part, depending on what you want to achieve your configuration may vary 
 
 For this example, we'll be configuring FlexGet to monitor RSS feeds every minute and filters out the results using [Regular Expressions](https://www.geeksforgeeks.org/write-regular-expressions/) (regex). Those that are accepted will be fed directly to Deluge for it to download. The config is shown below.
 
-#### Example YAML Config
+##### Example YAML Config
 
 ```yaml
 tasks:
@@ -82,7 +80,7 @@ tasks:
         label: flexget
 ```
 
-#### YAML config with explanation
+##### YAML config with explanation
 
 ```yaml
 tasks:
@@ -136,13 +134,11 @@ In my example, when you run it the first time, it may grab and download multiple
 You may refer to [FlexGet Configuration](https://flexget.com/Configuration) for more information about making your own config as well as [FlexGet Cookbook](https://flexget.com/Cookbook) for some basic automation tasks that you can do with FlexGet.
 :::
 
-***
-
-## Running FlexGet
+### Running FlexGet
 
 Now, depending on your config you can either run it using cron or FlexGet's daemon mode.
 
-### Cron
+#### Cron
 
 * Type in your SSH window: `which flexget`. Take note of the output. This is the absolute path of FlexGet. Here, the absolute path is `/homexx/username/bin/flexget`
 
@@ -174,7 +170,7 @@ You may refer to [Crontab Guru](https://crontab.guru/) which is an quick and s
 
 * Save your work with **CTRL + O**, press ENTER then **CTRL + X**
 
-### systemd/Daemon mode
+#### systemd/Daemon mode
 
 ::: info
 For more information, please refer to [FlexGet Scheduler](https://flexget.com/Plugins/Daemon/scheduler).
@@ -182,7 +178,7 @@ For more information, please refer to [FlexGet Scheduler](https://flexget.com/P
 
 * Open up your FlexGet config and add the scheduler plugin before tasks
 
-#### YAML config with Scheduler Plugin
+##### YAML config with Scheduler Plugin
 
 ```yaml
 schedules:
@@ -279,9 +275,7 @@ WantedBy=default.target
 
 ![](https://docs.usbx.me/uploads/images/gallery/2019-10/image2019-5-3_16-29-0%5B1%5D.png)
 
-***
-
-## Upgrading FlexGet
+### Upgrading FlexGet
 
 * To upgrade FlexGet, just run the following command:
 
@@ -289,9 +283,7 @@ WantedBy=default.target
 "$HOME"/flexget/bin/python -m pip install flexget --upgrade
 ```
 
-***
-
-## Removing FlexGet
+### Removing FlexGet
 
 * To remove FlexGet, simply delete the `flexget` folder and your symbolic link.
 
