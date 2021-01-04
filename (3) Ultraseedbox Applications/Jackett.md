@@ -95,7 +95,7 @@ Web UI
     Web UI
 
 | Jackett Info | Gathered From Jackett Web UI                                                       |
-|--------------|------------------------------------------------------------------------------------|
+|:--------------:|:------------------------------------------------------------------------------------:|
 | URL          | https://usbdocs.server.usbx.me/jackett/api/v2.0/indexers/sitename/results/torznab/ |
 | API          | Use your key from the top right hand side of Jackett web ui                        |
 
@@ -115,7 +115,7 @@ Web UI
 ![](https://i.imgur.com/6vO8VYa.png)
 
 | Jackett Info | Gathered From Jackett Web UI                                                       |
-|--------------|------------------------------------------------------------------------------------|
+|::--------------:|:------------------------------------------------------------------------------------:|
 | URL          | https://usbdocs.server.usbx.me/jackett/api/v2.0/indexers/sitename/results/torznab/ |
 | API          | Use your key from the top right hand side of Jackett web ui                        |
 
@@ -151,7 +151,7 @@ Web UI
 -   Click Configure Custom Newznab Providers
 
 | Jackett Info | Gathered From Jackett Web UI                                                       |
-|--------------|------------------------------------------------------------------------------------|
+|:--------------:|:------------------------------------------------------------------------------------:|
 | URL          | https://usbdocs.server.usbx.me/jackett/api/v2.0/indexers/sitename/results/torznab/ |
 | API          | Use your key from the top right hand side of Jackett web ui                        |
 
