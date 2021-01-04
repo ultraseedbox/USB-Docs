@@ -130,3 +130,39 @@ Web UI
 ![](https://i.imgur.com/0bQoiHr.png)
 
 -   Once that's done, click **Save Changes**.
+
+## Adding Jackett site’s to Sickchill
+
+### Sickchill requires the setup of a deluge or rutorrent watch folder in order to function ``/homeX/usbdocs/watch/`` is the default for rutorrent and will be used in this guide to reference watch folders
+
+-   First Load Sickchill Web Ui
+
+-   Navigate to Settings \> Search Settings
+
+    ![]( https://i.imgur.com/hy9yrDi.png)
+
+-   Enable the NZB Search Function from NZB Search Tab, Select black hole and
+    input your watch folder path in the field Black hold folder location.
+
+![]( <https://i.imgur.com/9xZUDiH.png>)
+
+-   Navigate to Settings \> Search Providers
+
+-   Click Configure Custom Newznab Providers
+
+| Jackett Info | Gathered From Jackett Web UI                                                       |
+|--------------|------------------------------------------------------------------------------------|
+| URL          | https://usbdocs.server.usbx.me/jackett/api/v2.0/indexers/sitename/results/torznab/ |
+| API          | Use your key from the top right hand side of Jackett web ui                        |
+
+-   Here is where you would input the information gathered earlier from Jackett
+    Web UI
+
+-   Once that's done, click **Add**.
+
+-   This will now present you with Categories, Highlight all on the left and
+    click **Select Categories**.
+
+![]( https://i.imgur.com/R9WivH8.png)
+
+-   Once that's done, click **Save Changes**.
