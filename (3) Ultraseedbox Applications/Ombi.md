@@ -118,22 +118,6 @@ SSL: Checked
 Base URL: /{username}/couchpotato
 ```
 
-#### Music
-##### Lidarr SSL
-
-```
-Enable: Checked
-Hostname or IP: {username}.{servername}.usbx.me
-Port: 443
-API Key: {Sonarr API Key}
-SSL: Checked
-Base URL: /sonarr
-```
-
-![](https://docs.usbx.me/uploads/images/gallery/2020-05/image-1588618468854.png)
-
-***
-
 ## Troubleshooting Information
 
 **Why are Ombi’s movie & TV Shows search function not working?**
