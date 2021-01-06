@@ -11,6 +11,8 @@ assumes the following:
 
 ## Connecting your Download client
 
+Upon loading LazyLibrarian You will need to navigate to Config to list all the settings required to begin the use of LazyLibrarian, we will start by adding Downloaders.
+
 ### NZBGet
 
 | NZBget Details (NON SSL) | Value                                                                                                                                                                                                    |
@@ -61,6 +63,8 @@ Deluge Certificate | This can be Left blank as this is a non SSL Connection
 
 ## Adding Your Content Providers
 
+With your Downloaders added we now move on to Providers tab in Config
+
 ### Torznab (Jackett Required)
 
 | Torznab Connection Details    | Value                                                                                                          |
@@ -95,6 +99,39 @@ Be sure to click Save changes after inputting your values as this will keep the 
 
 Be sure to click Save changes after inputting your values as this will keep the information safe and create a new Newznab Provider for you to fill in.
 
-## Configuring automatic import and sorting
+## Configuring Automatic import and Sorting
+The next section is Processing. We will Highlight only the sections that require editing to help speed up the Setup Process.
 
-## Starting your first grab
+### Status
+
+
+|Status Option   |Value   |
+|:---|---:|
+|Missing Book Status  |   |
+|New Book Status |   |
+|New AudioBook Status   |   |
+|New Authors eBook Status  |   |
+|New Authors AudioBook Status   |   |
+|New Found Status   |   |
+|New Series Status   |   |
+|Include other books by new authors   |   |
+
+
+![](https://i.imgur.com/NtlGcY7.png)
+
+### Folders
+|Folders Option   |Value   |
+|:---|---:|
+|Download Directories  |   |
+|eBook Library Folder |   |
+|AudioBook Library Folder   |   |
+|Alternate Import/Export Folder  |   |
+
+
+![](https://i.imgur.com/fJOUT8d.png)
+
+## Adding your first Author
+![](imageurl)
+![](imageurl)
+![](imageurl)
+![](imageurl)
