@@ -107,14 +107,14 @@ The next section is Processing. We will Highlight only the sections that require
 
 |Status Option   |Value   |
 |:---|---:|
-|Missing Book Status  |   |
-|New Book Status |   |
-|New AudioBook Status   |   |
-|New Authors eBook Status  |   |
-|New Authors AudioBook Status   |   |
-|New Found Status   |   |
-|New Series Status   |   |
-|Include other books by new authors   |   |
+|Missing Book Status  | Recommended to set as wanted as any Missing items you will likely want to fill   |
+|New Book Status | Recommended to set as wanted as any new releases from an author you will likely want to fill  |
+|New AudioBook Status   | Recommended to set as wanted as any new releases from an author you will likely want to fill  |
+|New Authors eBook Status  |  Recommended to set as wanted as any new releases from an author you will likely want to fill |
+|New Authors AudioBook Status   |Recommended to set as wanted as any new author added  will likely have a back catalogue  |
+|New Found Status   | Recommended to set as wanted as anything new found in a auther catalouge will likely be wanted  |
+|New Series Status   | Recommended to set as wanted as you will likely want any thing from a new series  |
+|Include other books by new authors   | This will include details for other books by new authors found in wishlists or csv files, or when manually importing a book by a new author  |
 
 
 ![](https://i.imgur.com/NtlGcY7.png)
@@ -122,16 +122,22 @@ The next section is Processing. We will Highlight only the sections that require
 ### Folders
 |Folders Option   |Value   |
 |:---|---:|
-|Download Directories  |   |
-|eBook Library Folder |   |
-|AudioBook Library Folder   |   |
-|Alternate Import/Export Folder  |   |
+|Download Directories  |Should be set as your main download client completed folder for example  `/homeX/usbdocs/files` You can add multiple by separating them with a `,`(comma)  |
+|eBook Library Folder |Folder you'd like to store your Ebook formats in after processing   |
+|AudioBook Library Folder   | Folder you'd like to store your Audiobook formats in after processing |
+|Alternate Import/Export Folder  |Think of this as a Watch Folder LazyLibrarian will watch this folder for any content that matches any wanted content. It should be a different folder to your main download directories   |
 
 
 ![](https://i.imgur.com/fJOUT8d.png)
 
 ## Adding your first Author
-![](imageurl)
-![](imageurl)
-![](imageurl)
-![](imageurl)
+Your first step in adding a new Series/Author/ISBN Number, is to click Series in the top bar and locate the Search bar in the right hand corner.
+
+![](https://i.imgur.com/aaoLleK.png)
+
+![](https://i.imgur.com/36xNYEq.png)
+
+The next screen will present you with your possible results just click the green button to add the author.
+
+
+![](https://i.imgur.com/X1YDAq4.png)
