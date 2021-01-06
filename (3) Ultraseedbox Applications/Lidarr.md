@@ -21,21 +21,10 @@ For more information for this, you may visit [their site](https://lidarr.audio/)
 
 In this section, we will be going into detail on installing, configuring and using Lidarr. The following are the steps that we will do:
 
-* Setting Up Authentication
 * Enabling automatic organization and adding a root Folder
 * Adding indexers
 * Connecting your download clients
 * Adding your first artist
-
-### Setting Up Authentication
-
-* Go to **Settings -> General**, and change the dropdown that says **Authentication** to **Forms (Login Page)**
-* Set your login in the username and password fields.
-  * It is recommended that you do not reuse passwords for any of our services.
-
-![](https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1575036143915.png)
-
-* Once changed, it will prompt you to restart the UI, click **Yes**.
 
 ### Configure a Download Client
 

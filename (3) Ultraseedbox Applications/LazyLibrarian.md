@@ -11,7 +11,7 @@ assumes the following:
 
 ## Connecting your Download client
 
-Upon loading LazyLibrarian You will need to navigate to Config to list all the settings required to begin the use of LazyLibrarian, we will start by adding Downloaders.
+Upon loading LazyLibrarian You will need to navigate to `Config` to list all the settings required to begin the use of LazyLibrarian, we will start by adding Downloaders.
 
 ### NZBGet
 
