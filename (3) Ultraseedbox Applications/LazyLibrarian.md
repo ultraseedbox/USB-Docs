@@ -58,8 +58,17 @@ Deluge Certificate | This can be Left blank as this is a non SSL Connection
 ![](https://i.imgur.com/czfhZ2R.png)
 
 ### rTorrent
+| ruTorrent Details (NON SSL)  | Value  |
+|:---:|:---:|
+| rTorrent Host  |https://Username.Servername.usbx.me/RPC2    |
+| rTorrent User  | Username taken from Ultraseedbox Control  |
+| rTorrent Pass  |Password taken from Ultraseedbox Control   |
+| rTorrent label  | Can be left blank  |
+| rTorrent Directory | Leave blank  |
 
-![](imageurl)
+![](https://i.imgur.com/LMh7P1R.png)
+
+![](https://i.imgur.com/zLypEih.png)
 
 ## Adding Your Content Providers
 
@@ -106,7 +115,7 @@ The next section is Processing. We will Highlight only the sections that require
 
 
 |Status Option   |Value   |
-|:---|---:|
+|:---:|:---:|
 |Missing Book Status  | Recommended to set as wanted as any Missing items you will likely want to fill   |
 |New Book Status | Recommended to set as wanted as any new releases from an author you will likely want to fill  |
 |New AudioBook Status   | Recommended to set as wanted as any new releases from an author you will likely want to fill  |
@@ -121,7 +130,7 @@ The next section is Processing. We will Highlight only the sections that require
 
 ### Folders
 |Folders Option   |Value   |
-|:---|---:|
+|:---:|:---:|
 |Download Directories  |Should be set as your main download client completed folder for example  `/homeX/usbdocs/files` You can add multiple by separating them with a `,`(comma)  |
 |eBook Library Folder |Folder you'd like to store your Ebook formats in after processing   |
 |AudioBook Library Folder   | Folder you'd like to store your Audiobook formats in after processing |
