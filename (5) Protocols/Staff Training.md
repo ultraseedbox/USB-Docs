@@ -2,7 +2,9 @@
 
 This a rough collection of fixes, tips & tricks and routine jobs associated with being part of the Ultraseedbox Staff. Some may not apply depending on your role here — don’t worry this is just to give you the newcomer a point of reference when working. You are still encouraged to ask questions, be inquisitive and learn as much as you can.
 
+
 This guide does not aim to address one specific issue but merely serves as a record of all the fixes and tidbits we learn in a staffer’s role. We hope you enjoy your stay with us and we welcome you wholeheartedly to the Ultraseedbox Family. 
+
 
 *Please note this guide is forever evolving. If you would like to add to the guide with your tidbit, please feel free to do so but please make sure it is under a relevant header. If one does not exist please create one.*
 
@@ -102,7 +104,9 @@ Click Apply
 "DB Browser for SQLite" File >> Write Changes
 ```
 
+
 Upload fixed "OmbiSettings.db" overwriting `~/.config/ombi/OmbiSettings.db` on client's slot
+
 
 `app-ombi restart`
 
@@ -110,24 +114,11 @@ The client's Ombi installation should now be fixed and accessible from `https://
 
 ### RUTORRENT
 
+
 The client cannot connect to rTorrent session via ruTorrent, but we can. 
 
-```
-Your rutorrent webui is connecting to your rTorrent client from our end and listing your active torrents without any troubleshooting required, the issue seems to be local to yourself.
 
-Please try some of these troubleshooting steps to hopefully resolve your ruTorrent not loading for you locally:
-
-    Perform a browser "hard refresh" on your ruTorrent WebUI page using the keyboard combination CONTROL + F5
-
-    Try clearing your browser’s cache/cookies, then restart the browser, and then try loading your ruTorrent WebUI again.
-
-    Try another browser to access your ruTorrent WebUI
-
-    Check that no locally installed security software is interfering with or blocking your ruTorrent WebUI access page.
-
-```
-
-## Plex
+### Plex
 
 Non-direct/nonsec connection showing in plex
 
@@ -135,7 +126,7 @@ A reclaim will generally resolve the "non-direct/non-secure" connections
 
 `app-plex claim -c {claim-code-here}`
 
-## Bazarr
+### Bazarr
 
 If you happen to use HTTP Proxy when working with a clients slot it has been reported that certain plugins may cause a infinite number of refreshes to occur. This has so far been confirmed with Bazarr and  proxy switchyOmega Firefox Addon but may also affect other applications.
 
