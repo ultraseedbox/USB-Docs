@@ -7,6 +7,7 @@ This a rough collection of fixes, tips and tricks and routine jobs associated wi
 
 ## **Ticket Tidbits**
 
+This guide does not aim to address one specific issue but merely serves as a record of all the fixes and tidbits we learn in a staffer’s role. We hope you enjoy your stay with us and we welcome you wholeheartedly to the Ultraseedbox Family.
 
 
 
@@ -140,42 +141,7 @@ client's ombi should now be fixed and accessible from https://username.lw/###.us
 
 
 
-
-
-
-### **Reinstall app steps to possibly resolve an issue:**
-
-
-
-just a tip on app troubleshooting here:
-
-UCP wasn't showing any version for rTorrent
-```
-Stop rTorrent
-Backup rTorrent
-Uninstall rTorrent
-Reinstall rTorrent
-Restore rTorrent which now works (and usually does for a borked UCP app like this)
-```
-`app-rtorrent stop`
-
-`mv ~/.config/rtorrent ~/.config/rtorrent.BAK`
-
-`IN UCP:` uninstall rtorrent, reinstall rtorrent
-
-`app-rtorrent stop`
-
-`mv ~/.config/rtorrent ~/.config/rtorrent.FRESH`
-
-`cp -rv ~/.config/rtorrent.BAK ~/.config/rtorrent`
-
-`app-rtorrent restart`
-
-
-
-
-### **RUTORRENT - The client cannot connect to rTorrent session via ruTorrent, but we can (Antivirus ? something local?)**
-
+The client cannot connect to rTorrent session via ruTorrent, but we can.
 
 ```
 Your rutorrent webui is connecting to your rTorrent client from our end and listing your active torrents without any troubleshooting required, the issue seems to be local to yourself.
