@@ -130,7 +130,7 @@ Click Apply
 "DB browser for SQLite" File >> Write Changes
 ```
 
-Upload fixed OmbiSettings.db overwriting ~/.config/ombi/OmbiSettings.db on client's slot
+Upload fixed OmbiSettings.db overwriting `~/.config/ombi/OmbiSettings.db ` on client's slot
 
 `app-ombi restart`
 
@@ -151,11 +151,11 @@ just a tip on app troubleshooting here:
 
 UCP wasn't showing any version for rTorrent
 ```
-stop rTorrent
-backup rTorrent
-uninstall rTorrent
-reinstall rTorrent
-restore rTorrent which now works (and usually does for a borked UCP app like this)
+Stop rTorrent
+Backup rTorrent
+Uninstall rTorrent
+Reinstall rTorrent
+Restore rTorrent which now works (and usually does for a borked UCP app like this)
 ```
 `app-rtorrent stop`
 
@@ -197,7 +197,7 @@ Please try some of these troubleshooting steps to hopefully resolve your ruTorre
 
 ```
 
-## Plex
+### Plex
 
 non-direct/nonsec connection showing in plex
 
@@ -206,7 +206,7 @@ non-direct/nonsec connection showing in plex
 ` app-plex claim -c {claim-code-here} `
 
 
-## Bazarr
+### Bazarr
 
 If you happen to use HTTP Proxy when working with a clients slot it has been reported that certain plugins may cause a infinite number of refreshes to occur. This has so far been confirmed with Bazarr and  proxy switchyOmega Firefox Addon but may also affect other applications.
 
