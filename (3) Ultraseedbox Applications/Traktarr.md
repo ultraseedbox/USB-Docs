@@ -12,10 +12,10 @@ assumes the following:
 ## Creating folder structure and pulling the Traktarr Script from github
 
 If you don’t already have a “scripts” folder on your slot you will need to
-create one using the command ` mkdir ~/scripts ` enter the dir with ` cd
-~/scripts `. Now we need to pull Trakarr from github with the following
-command ` git clone https://github.com/l3uddz/traktarr ~/scripts/trakarr `
-and set its owner as your own ` chown -R usbdocs:usbdocs \~/scripts/trakarr `.
+create one using the command `mkdir ~/scripts` enter the dir with `cd
+~/scripts`. Now we need to pull Trakarr from github with the following
+command `git clone https://github.com/l3uddz/traktarr ~/scripts/trakarr`
+and set its owner as your own `chown -R usbdocs:usbdocs \~/scripts/trakarr`.
 
 ## Installing Python for your user
 
@@ -46,7 +46,7 @@ install all of Traktarr’s requirements.
 
 2.  Enter a name for your application; for example `traktarr`
 
-3.  Enter ` urn:ietf:wg:oauth:2.0:oob`  in the `Redirect uri` field.
+3.  Enter `urn:ietf:wg:oauth:2.0:oob`  in the `Redirect uri` field.
 
 4.  Click "SAVE APP".
 
@@ -54,12 +54,11 @@ install all of Traktarr’s requirements.
 
 To create Tracktarr configuration you will need to run it for the first time,
 First make sure you are inside the Tracktarr folder in ~/scripts/ run the
-command ` cd ~/scripts/trakarr ` and run tracktarr with ` ./trakarr.py run
-` .
+command `cd ~/scripts/trakarr` and run tracktarr with `./trakarr.py run` .
 
 You should be presented with the following message
 
-` Dumping default config to: /homeXX/username/scripts/trakarr/config.json `
+`Dumping default config to: /homeXX/username/scripts/trakarr/config.json`
 
 The path will be slightly different for you but be sure to keep a note of this
 as this is what we will be editing.
