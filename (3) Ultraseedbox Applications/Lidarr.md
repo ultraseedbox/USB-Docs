@@ -36,6 +36,8 @@ In this section, we will be going into detail on installing, configuring and usi
 
 ![](https://docs.usbx.me/uploads/images/gallery/2019-11/scaled-1680-/image-1575072067589.png)
 
+- Be Sure to enable "Show Advanced settings" Using the Cog Icon in the top left hand side to show URL Base Field
+
 #### Torrent Clients
 
 ##### Deluge
@@ -43,7 +45,7 @@ In this section, we will be going into detail on installing, configuring and usi
 ```
 Host: {username}.{servername}.usbx.me
 Port: 443
-URL Base: deluge
+URL Base: /deluge
 Password: As configured in UCP under Deluge
 Category: tv-sonarr
 Add Paused: NO
@@ -55,7 +57,7 @@ Use SSL: YES
 ```
 Host: {username}.{servername}.usbx.me
 Port: 443
-URL Path: RPC2
+URL Path: /RPC2
 Username: {username}
 Password: As configured in UCP under ruTorrent
 Category: tv-sonarr
@@ -81,7 +83,7 @@ Use SSL: YES
 ```
 Host: {username}.{servername}.usbx.me
 Port: 443
-URL Path: sabnzbd
+URL Path: /sabnzbd
 API Key: As obtained from SABnzbd
 Username: {username}
 Password: Configured during SABnzbd setup
@@ -94,6 +96,7 @@ Use SSL: YES
 ```
 Host: {username}.{servername}.usbx.me
 Port: 443
+URL Path: /nzbget
 Username: {nzbget username}
 Password: {nzbget password}
 Category: tv
