@@ -9,37 +9,33 @@ assumes the following:
 
 ## Initial Setup
 
-## Creating folder structure and pulling the Traktarr Script from github
 
-If you don’t already have a “scripts” folder on your slot you will need to
-create one using the command `mkdir ~/scripts` enter the dir with `cd
-~/scripts`. Now we need to pull Trakarr from github with the following
-command `git clone https://github.com/l3uddz/traktarr ~/scripts/trakarr`
-and set its owner as your own `chown -R usbdocs:usbdocs \~/scripts/trakarr`.
+## Installing updated Python3 dependency for your user
 
-## Installing Python for your user
-
-It is required to install python on your slot to operate Trakkarr but doing so
-is considered experimental.
+It is required to install python3 on your slot to operate Trakkarr but doing so
+is considered **experimental**.
 
 ```
-
-wget
-https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/Language%20Installers/python-pip-install.sh
-
-chmod +x python-pip-install.sh
-
-bash python-pip-install.sh
+bash <(wget -qO- https://raw.githubusercontent.com/ultraseedbox/UltraSeedbox-Scripts/master/Language%20Installers/python-pip-install.sh)
 
 ```
 
 You may need to run this twice as sometimes it may fail this is totally fine.
 
 After the script completes reload your shell environment with this command \`
-exec /bin/bash\` followed by \` python3 -m pip install -r requirements.txt\` to
-install all of Traktarr’s requirements.
+exec /bin/bash\`
 
-## Creating the Trakt.tv Application
+
+## Pulling Traktarr from github and installing the requirements
+
+Now we need to pull Trakarr from github and install the required modules, we have simplified this with the following command;
+
+```
+cd; git clone https://github.com/l3uddz/traktarr; cd traktarr; pip install -r requirements.txt
+```
+
+
+## Creating the Trakt.tv Application API
 
 1.  Create a Trakt application by going to
     https://trakt.tv/oauth/applications/new
@@ -54,7 +50,7 @@ install all of Traktarr’s requirements.
 
 To create Tracktarr configuration you will need to run it for the first time,
 First make sure you are inside the Tracktarr folder in ~/scripts/ run the
-command `cd ~/scripts/trakarr` and run tracktarr with `./trakarr.py run` .
+command `cd ~/scripts/traktarr` and run tracktarr with `./trakarr.py run` .
 
 You should be presented with the following message
 
