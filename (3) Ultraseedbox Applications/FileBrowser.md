@@ -35,14 +35,7 @@ File Browser allows you to upload and download files directly from the web UI us
 
 
 During upload and downloading FileBrowser will display a light blue bar in the top left-hand corner moving right to indicate progress, It is also confirmed as in progress by the changing of the icon on the right-hand side into spinning arrows
-![]( <https://i.imgur.com/DdBKLIN.png>)
-
-![]( <https://i.imgur.com/ppft6D0.png>)
-
-![]( <https://i.imgur.com/o9PfvNH.png>)
-
-[](https://i.imgur.com/o9PfvNH.png)
-
+![](https://i.imgur.com/GsksbLA.png)
 
 ## Adding a User and Setting file access
 
