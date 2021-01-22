@@ -1,4 +1,3 @@
-
 ## File Browser
 
 File browser provides a file managing interface within your home directory and it can be used to upload, delete, preview, rename and edit your files. All from within your web browser.
@@ -26,7 +25,7 @@ File browser provides a file managing interface within your home directory and i
 | Settings   | Various settings including language, Theme and user creation rules |
 | Logout     | Logout of current session                                          |
 
-## Downloading and uploading files
+### Downloading and uploading files
 
 File Browser allows you to upload and download files directly from the web UI using the array of icons in the top right corner of the page
 
@@ -35,30 +34,24 @@ File Browser allows you to upload and download files directly from the web UI us
 
 
 During upload and downloading FileBrowser will display a light blue bar in the top left-hand corner moving right to indicate progress, It is also confirmed as in progress by the changing of the icon on the right-hand side into spinning arrows
-![](https://i.imgur.com/GsksbLA.png)
+![](https://i.imgur.com/I2fgWdL.png)
 
-## Adding a User and Setting file access
+### Adding a User and Setting file access
 
 Under Settings, you will find the option to create a user.
 
 ![](https://i.imgur.com/QOk0Rwj.png)
 
-![](https://i.imgur.com/e3VScTo.png)
-
-By Clicking the button new you will be presented with the fields required to create a new user:
-![](https://i.imgur.com/e3VScTo.png)
-
-![](https://i.imgur.com/kfABePV.png)
-
-![](https://i.imgur.com/n6tWtz0.png)
 
 
-![](https://i.imgur.com/NptujM1.png)
+![](https://i.imgur.com/nvOaB5s.png)
+
+
 
 
 | Field       | Use                                                                                                                                                                                                                                                                                                         |
 |:-------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Username    | Desired Username for user                                                                                                                                                                                                                                                                                   |
 | Password    | Desired Password for user                                                                                                                                                                                                                                                                                   |
-| Scope       | This is an important option as this will be the folder the user may access. In this example, it is set to \`./share\` which is \`/home1/username/share \*\*Note: It is not recommended to point this directly to a rclone mount as this will cause extreme IO and possibly cause issues with your slot \*\* |
+| Scope       | This is an important option as this will be the folder the user may access. In this example, it is set to `./share` which is `/home1/username/share` Note: It is not recommended to point this directly to a rclone mount as this will cause extreme IO and possibly cause issues with your slot |
 | Permissions | You can set the kind of actions a user can perform, for example, you may want to allow download but never allow upload so that a user can not deposit files onto your slot. You’d untick create Files and Directories                                                                                       |
