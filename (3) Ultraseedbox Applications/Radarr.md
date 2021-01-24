@@ -80,13 +80,16 @@ In this section, we'll be setting up Radarr. This guide assumes that this is you
 
 * To add your preferred client, click the big + button then select your preferred client.
 
+- Be Sure to enable "Show Advanced settings" Using the Cog Icon in the top left hand side to show URL Base Field
+
 #### Torrent Clients
+
 ##### Deluge
 
 ```
 Host: {username}.{servername}.usbx.me
 Port: 443
-URL Base: deluge
+URL Base: /deluge
 Password: As configured in UCP under Deluge
 Category: tv-sonarr
 Add Paused: NO
@@ -98,7 +101,7 @@ Use SSL: YES
 ```
 Host: {username}.{servername}.usbx.me
 Port: 443
-URL Path: RPC2
+URL Path: /RPC2
 Username: {username}
 Password: As configured in UCP under ruTorrent
 Category: tv-sonarr
@@ -124,7 +127,7 @@ Use SSL: YES
 ```
 Host: {username}.{servername}.usbx.me
 Port: 443
-URL Path: sabnzbd
+URL Path: /sabnzbd
 API Key: As obtained from SABnzbd
 Username: {username}
 Password: Configured during SABnzbd setup
@@ -137,6 +140,7 @@ Use SSL: YES
 ```
 Host: {username}.{servername}.usbx.me
 Port: 443
+URL Path: /nzbget
 Username: {nzbget username}
 Password: {nzbget password}
 Category: tv

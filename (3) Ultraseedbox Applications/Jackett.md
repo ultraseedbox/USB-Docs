@@ -59,3 +59,110 @@ In this section, we'll be setting up Jackett for the first time. We'll go throug
 * Once that's done, you can now use Jackett to connect to your favorite applications.
 
 ![](https://docs.usbx.me/uploads/images/gallery/2019-10/scaled-1680-/image-1571733144187.png)
+
+## Connecting Jackett to various media management tools
+
+Adding your sites to different Media tools is fairly simple process but will
+branch out slightly depending on which Media Management tool you personally use.
+
+These steps will be universal no matter which tool you use, This will involve
+grabbing the Tornab Feed URL by clicking the blue button shown in these
+screenshots
+
+![](https://i.imgur.com/nVn3muP.png)
+
+![](https://i.imgur.com/QlLxYdI.png>)
+
+and your Jackett API which can be found in the top right hand side of Jackett
+Web UI
+
+![](https://i.imgur.com/M3jvm7X.png)
+
+## Adding Jackett site’s to Sonarr/Radarr
+
+-   First Load Sonarr/Radarr Web Ui
+
+-   Navigate to Settings > Indexers tab
+
+-   Add an indexer by clicking the big plus button (Blue box) Select Tornab
+    Custom
+![](https://i.imgur.com/LCfQ4GA.png)
+
+![](https://i.imgur.com/3MkiMbL.png)
+
+
+-   Here is where you would input the information gathered earlier from Jackett
+    Web UI
+
+| Jackett Info | Gathered From Jackett Web UI                                                       |
+|:--------------:|:------------------------------------------------------------------------------------:|
+| URL          | https://usbdocs.server.usbx.me/jackett/api/v2.0/indexers/sitename/results/torznab/ |
+| API          | Use your key from the top right hand side of Jackett web ui                        |
+
+
+-   Once that's done, click **save changes**.
+
+## Adding Jackett site’s to Medusa
+
+-   First Load Medusa Web Ui
+
+-   Navigate to Settings > Search Providers
+
+    ![](https://i.imgur.com/OgU088H.png)
+
+-   Add an Jackett Provider by clicking Configure Jackett Providers Tab
+
+![](https://i.imgur.com/6vO8VYa.png)
+
+| Jackett Info | Gathered From Jackett Web UI                                                       |
+|::--------------:|:------------------------------------------------------------------------------------:|
+| URL          | https://usbdocs.server.usbx.me/jackett/api/v2.0/indexers/sitename/results/torznab/ |
+| API          | Use your key from the top right hand side of Jackett web ui                        |
+
+-   Here is where you would input the information gathered earlier from Jackett
+    Web UI
+
+-    Once that's done, click **Add**.
+
+-   This will now present you with Categories, Highlight all on the left and
+    click **Select Categories**.
+
+![](https://i.imgur.com/0bQoiHr.png)
+
+-   Once that's done, click **Save Changes**.
+
+## Adding Jackett site’s to Sickchill
+
+### Sickchill requires the setup of a deluge or rutorrent watch folder in order to function ``/homeX/usbdocs/watch/`` is the default for rutorrent and will be used in this guide to reference watch folders
+
+-   First Load Sickchill Web Ui
+
+-   Navigate to Settings \> Search Settings
+
+    ![]( https://i.imgur.com/hy9yrDi.png)
+
+-   Enable the NZB Search Function from NZB Search Tab, Select black hole and
+    input your watch folder path in the field Black hold folder location.
+
+![]( <https://i.imgur.com/9xZUDiH.png>)
+
+-   Navigate to Settings \> Search Providers
+
+-   Click Configure Custom Newznab Providers
+
+| Jackett Info | Gathered From Jackett Web UI                                                       |
+|:--------------:|:------------------------------------------------------------------------------------:|
+| URL          | https://usbdocs.server.usbx.me/jackett/api/v2.0/indexers/sitename/results/torznab/ |
+| API          | Use your key from the top right hand side of Jackett web ui                        |
+
+-   Here is where you would input the information gathered earlier from Jackett
+    Web UI
+
+-   Once that's done, click **Add**.
+
+-   This will now present you with Categories, Highlight all on the left and
+    click **Select Categories**.
+
+![]( https://i.imgur.com/R9WivH8.png)
+
+-   Once that's done, click **Save Changes**.
